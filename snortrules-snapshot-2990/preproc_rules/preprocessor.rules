@@ -28,7 +28,7 @@ alert ( msg: "HI_CLIENT_NON_RFC_CHAR"; sid: 14; gid: 119; rev: 1; metadata: rule
 alert ( msg: "HI_CLIENT_OVERSIZE_DIR"; sid: 15; gid: 119; rev: 1; metadata: rule-type preproc, service http ; classtype:bad-unknown; reference:cve,2007-0774; reference:bugtraq,22791; reference:cve,2010-3281; reference:bugtraq,43338; reference:cve,2011-5007; )
 alert ( msg: "HI_CLIENT_LARGE_CHUNK"; sid: 16; gid: 119; rev: 2; metadata: rule-type preproc, service http ; classtype:attempted-admin; reference:cve,2013-2028; )
 alert ( msg: "HI_CLIENT_PROXY_USE"; sid: 17; gid: 119; rev: 1; metadata: rule-type preproc, service http ; classtype:protocol-command-decode; )
-alert ( msg: "HI_CLIENT_WEBROOT_DIR"; sid: 18; gid: 119; rev: 1; metadata: rule-type preproc, service http ; classtype:unknown; reference:cve,2001-0333; reference:cve,2002-1744; reference:cve,2008-5515; reference:2015-0666; )
+alert ( msg: "HI_CLIENT_WEBROOT_DIR"; sid: 18; gid: 119; rev: 1; metadata: rule-type preproc, service http ; classtype:unknown; reference:cve,2001-0333; reference:cve,2002-1744; reference:cve,2008-5515; reference:cve,2015-0666; )
 alert ( msg: "HI_CLIENT_LONG_HEADER"; sid: 19; gid: 119; rev: 1; metadata: rule-type preproc, service http ; classtype:bad-unknown; reference:cve,2009-4873; )
 alert ( msg: "HI_CLIENT_MAX_HEADERS"; sid: 20; gid: 119; rev: 1; metadata: rule-type preproc ; classtype:unknown; )
 alert ( msg: "HI_CLIENT_MULTIPLE_CONTLEN"; sid: 21; gid: 119; rev: 1; metadata: rule-type preproc ; classtype:unknown; )
