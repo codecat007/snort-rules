@@ -155,9 +155,15 @@ static RuleReference *rule21354refs[] =
 };
 
 /* metadata for sid 21354 */
-/* metadata:; */
+/* metadata:policy max-detect-ips drop; */
+static RuleMetaData rule21354policy0 =
+{
+   "policy max-detect-ips drop"
+};
+
 static RuleMetaData *rule21354metadata[] =
 {
+   &rule21354policy0,
     NULL
 };
 
@@ -182,7 +188,7 @@ Rule rule21354 = {
    { 
        3,  /* genid */
        21354, /* sigid */
-       4, /* revision */
+       5, /* revision */
        "misc-activity", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
        "PROTOCOL-DNS dns query - storing query and txid",     /* message */
@@ -248,7 +254,7 @@ Rule rule21355 = {
    { 
        3,  /* genid */
        21355, /* sigid */
-       4, /* revision */
+       5, /* revision */
        "attempted-recon", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
        "PROTOCOL-DNS potential dns cache poisoning attempt - mismatched txid",     /* message */

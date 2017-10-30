@@ -48,16 +48,13 @@ static RuleOption rule26972option0 =
    }
 };
 
-#ifndef CONTENT_FAST_PATTERN_ONLY
-#define CONTENT_FAST_PATTERN_ONLY CONTENT_FAST_PATTERN
-#endif
-// content:"application/ipp", depth 0, fast_pattern:only; 
+// content:"|01 01 00 0B|", offset 0, depth 4, fast_pattern, http_client_body; 
 static ContentInfo rule26972content1 = 
 {
-   (uint8_t *) "application/ipp", /* pattern (now in snort content format) */
-   0, /* depth */
+   (uint8_t *) "|01 01 00 0B|", /* pattern */
+   4, /* depth */
    0, /* offset */
-   CONTENT_FAST_PATTERN_ONLY|CONTENT_BUF_NORMALIZED, /* flags */
+   CONTENT_FAST_PATTERN|CONTENT_BUF_POST, /* flags */
    NULL, /* holder for boyer/moore PTR */
    NULL, /* more holder info - byteform */
    0, /* byteform length */
@@ -69,24 +66,6 @@ static RuleOption rule26972option1 =
    OPTION_TYPE_CONTENT,
    {
       &rule26972content1
-   }
-};
-
-// pcre:"^Content-Type\x3a[^\n]*?application\x2fipp.*?\n\r?\n", dotall, multiline, nocase;
-static PCREInfo rule26972pcre2 =
-{
-   "^Content-Type\\x3a[^\\n]*?application\\x2fipp.*?\\n\\r?\\n", /* pattern */
-   NULL,                               /* holder for compiled pattern */
-   NULL,                               /* holder for compiled pattern flags */
-   PCRE_CASELESS|PCRE_DOTALL|PCRE_MULTILINE,     /* compile flags */
-   CONTENT_BUF_NORMALIZED     /* content flags */
-};
-
-static RuleOption rule26972option2 =
-{
-   OPTION_TYPE_PCRE,
-   {
-      &rule26972pcre2
    }
 };
 
@@ -105,11 +84,11 @@ static RuleReference rule26972ref2 =
    "2010-2941" /* value */
 };
 
-/* reference: url "osvdb.org/show/osvdb/68951"; */
+/* reference: url "lists.apple.com/archives/security-announce/2010/Nov/msg00000.html"; */
 static RuleReference rule26972ref3 = 
 {
    "url", /* type */
-   "osvdb.org/show/osvdb/68951" /* value */
+   "lists.apple.com/archives/security-announce/2010/Nov/msg00000.html" /* value */
 };
 
 static RuleReference *rule26972refs[] =
@@ -121,33 +100,21 @@ static RuleReference *rule26972refs[] =
 };
 
 /* metadata for sid 26972 */
-/* metadata:service ipp, policy balanced-ips drop, policy security-ips drop; */
-static RuleMetaData rule26972service1 = 
+/* metadata:service ipp, policy max-detect-ips drop; */
+static RuleMetaData rule26972service0 = 
 {
    "service ipp"
 };
 
 static RuleMetaData rule26972policy1 = 
 {
-   "policy balanced-ips drop"
-};
-
-static RuleMetaData rule26972policy2 = 
-{
-   "policy security-ips drop"
-};
-
-static RuleMetaData rule26972policy3 = 
-{
    "policy max-detect-ips drop"
 };
 
 static RuleMetaData *rule26972metadata[] =
 {
-   &rule26972service1,
+   &rule26972service0,
    &rule26972policy1,
-   &rule26972policy2,
-   &rule26972policy3,
    NULL
 };
 
@@ -155,7 +122,6 @@ RuleOption *rule26972options[] =
 {
    &rule26972option0,
    &rule26972option1,
-   &rule26972option2,
    NULL
 };
 
@@ -173,7 +139,7 @@ Rule rule26972 = {
    { 
       3,  /* genid */
       26972, /* sigid */
-      3, /* revision */
+      4, /* revision */
       "attempted-admin", /* classification */
       0,  /* hardcoded priority */
       "SERVER-OTHER CUPS IPP multi-valued attribute memory corruption attempt",     /* message */
@@ -277,20 +243,17 @@ int rule26972eval(void *p) {
    // flow:established, to_server;
    if(checkFlow(p, rule26972options[0]->option_u.flowFlags) <= 0)
       return RULE_NOMATCH;
-  
-   // content:"application/ipp", depth 0, fast_pattern:only; 
-   // if(contentMatch(p, rule26972options[1]->option_u.content, &cursor_http_header) <= 0)
-   //    return RULE_NOMATCH; 
-   
-   // pcre:"^Content-Type\x3a[^\n]*?application\x2fipp.*?\n\r?\n", dotall, multiline, nocase;
-   if(pcreMatch(p, rule26972options[2]->option_u.pcre, &cursor_normal) == 0)
+ 
+   // Match the version and operation-id  
+   // content:"|01 01 00 0B|", offset 0, depth 4, fast_pattern, http_client_body;
+   if(contentMatch(p, rule26972options[1]->option_u.content, &cursor_normal) <= 0)
       return RULE_NOMATCH;
 
-   if(getBuffer(sp, CONTENT_BUF_NORMALIZED, &beg_of_buffer, &end_of_buffer) <= 0)
+   if(getBuffer(sp, CONTENT_BUF_POST, &beg_of_buffer, &end_of_buffer) <= 0)
       return RULE_NOMATCH;
 
-   // skip version (2 bytes) + operation-id (2 bytes) + request id (4 bytes)
-   cursor_normal += 8;
+   // skip request id (4 bytes)
+   cursor_normal += 4;
 
    // attribute-group (1 byte)
    if(cursor_normal + 10 > end_of_buffer) // extra bytes for minimum size req'd to exploit
