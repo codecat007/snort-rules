@@ -1726,3 +1726,9 @@ alert udp $HOME_NET any -> any 53 (msg:"ET POLICY localtunnel Reverse Proxy Doma
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET 443 (msg:"ET POLICY localtunnel Reverse Proxy Domain (localtunnel .me in TLS SNI)"; flow:established,to_server; content:".localtunnel.me"; fast_pattern:only; nocase; metadata: former_category POLICY; reference:url,localtunnel.github.io/www/; classtype:policy-violation; sid:2025139; rev:2; metadata:created_at 2017_12_06, updated_at 2017_12_06;)
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET POLICY IP Check (rl. ammyy. com)"; flow:to_server,established; urilen:1; content:"Host|3a 20|rl.ammyy.com|0d 0a|"; http_header; fast_pattern; content:"|0d 0a 0d 0a|"; isdataat:!1,relative; classtype:policy-violation; sid:2025149; rev:3; metadata:created_at 2017_12_13, updated_at 2017_12_13;)
+
+alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY IP Check Response (rl. ammyy. com)"; flow:to_client,established; file_data; content:"Your IP="; depth:8; content:", country = "; distance:0; isdataat:!3,relative; classtype:policy-violation; sid:2025150; rev:2; metadata:created_at 2017_12_13, updated_at 2017_12_13;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET POLICY External IP Lookup Domain (curlmyip .net in DNS lookup)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|curlmyip|03|net|00|"; nocase; distance:0; fast_pattern; metadata: former_category POLICY; reference:md5,c375012865b94fa037d23c555e6c2772; classtype:policy-violation; sid:2025154; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, affected_product Mac_OSX, affected_product Linux, attack_target Client_Endpoint, deployment Perimeter, signature_severity Minor, created_at 2017_12_15, performance_impact Low, updated_at 2017_12_15;)
+

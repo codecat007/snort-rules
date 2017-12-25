@@ -62,7 +62,7 @@ alert udp $EXTERNAL_NET any -> $HOME_NET 69 (msg:"GPL TFTP Put"; content:"|00 02
 
 alert udp any any -> any 69 (msg:"GPL TFTP GET Admin.dll"; content:"|00 01|"; depth:2; content:"admin.dll"; offset:2; nocase; reference:url,www.cert.org/advisories/CA-2001-26.html; classtype:successful-admin; sid:2101289; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert udp any any -> any 69 (msg:"GPL TFTP GET filename overflow attempt"; content:"|00 01|"; depth:2; isdataat:100,relative; content:!"|00|"; within:100; reference:bugtraq,5328; reference:cve,2002-0813; classtype:attempted-admin; sid:2101941; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
+#alert udp any any -> any 69 (msg:"GPL TFTP GET filename overflow attempt"; content:"|00 01|"; depth:2; isdataat:100,relative; content:!"|00|"; within:100; reference:bugtraq,5328; reference:cve,2002-0813; classtype:attempted-admin; sid:2101941; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert udp any any -> any 69 (msg:"GPL TFTP GET nc.exe"; content:"|00 01|"; depth:2; content:"nc.exe"; offset:2; nocase; classtype:successful-admin; sid:2101441; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
@@ -72,7 +72,7 @@ alert udp any any -> any 69 (msg:"GPL TFTP GET shadow"; content:"|00 01|"; depth
 
 #alert udp any any -> any 69 (msg:"GPL TFTP PUT filename overflow attempt"; content:"|00 02|"; depth:2; isdataat:100,relative; content:!"|00|"; within:100; reference:bugtraq,7819; reference:bugtraq,8505; reference:cve,2003-0380; classtype:attempted-admin; sid:2102337; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert udp $EXTERNAL_NET any -> $HOME_NET 69 (msg:"ET TFTP TFTPGUI Long Transport Mode Buffer Overflow"; content:"|00 02|"; depth:2; content:"|00|"; distance:0; within:50; content:!"|00|"; distance:0; within:9; reference:url,www.exploit-db.com/exploits/12482/; reference:url,packetstormsecurity.org/files/view/96395/tftputilgui-dos.rb.txt; reference:url,securityfocus.com/bid/39872/; classtype:attempted-dos; sid:2012051; rev:2; metadata:created_at 2010_12_14, updated_at 2010_12_14;)
+#alert udp $EXTERNAL_NET any -> $HOME_NET 69 (msg:"ET TFTP TFTPGUI Long Transport Mode Buffer Overflow"; content:"|00 02|"; depth:2; content:"|00|"; distance:0; within:50; content:!"|00|"; distance:0; within:9; reference:url,www.exploit-db.com/exploits/12482/; reference:url,packetstormsecurity.org/files/view/96395/tftputilgui-dos.rb.txt; reference:url,securityfocus.com/bid/39872/; classtype:attempted-dos; sid:2012051; rev:2; metadata:created_at 2010_12_14, updated_at 2010_12_14;)
 
 alert udp $HOME_NET any -> $EXTERNAL_NET 69 (msg:"ET TFTP Outbound TFTP Data Transfer with Cisco config"; content:"|00 03|"; depth:2; content:"|0a 21 20|version|20|"; distance:2; within:12; metadata: former_category TFTP; classtype:policy-violation; sid:2015857; rev:5; metadata:created_at 2012_10_31, updated_at 2017_07_19;)
 

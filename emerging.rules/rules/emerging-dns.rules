@@ -54,7 +54,7 @@
 
 #alert udp $DNS_SERVERS 53 -> any any (msg:"ET DNS Standard query response, Refused"; pcre:"/^..[\x81\x82\x83\x84\x85\x86\x87]\x85/"; reference:url,doc.emergingthreats.net/2001119; classtype:not-suspicious; sid:2001119; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS EXPLOIT named 8.2->8.2.1"; flow:to_server,established; content:"../../../"; reference:bugtraq,788; reference:cve,1999-0833; classtype:attempted-admin; sid:2100258; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS EXPLOIT named 8.2->8.2.1"; flow:to_server,established; content:"../../../"; reference:bugtraq,788; reference:cve,1999-0833; classtype:attempted-admin; sid:2100258; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 #alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS named overflow ADM"; flow:to_server,established; content:"thisissometempspaceforthesockinaddrinyeahyeahiknowthisislamebutanywaywhocareshorizongotitworkingsoalliscool"; reference:bugtraq,788; reference:cve,1999-0833; classtype:attempted-admin; sid:2100259; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
@@ -196,5 +196,5 @@ alert udp any 53 -> $HOME_NET any (msg:"ET DNS Reply Sinkhole FBI Zeus P2P 1 - 1
 
 alert udp $HOME_NET any -> any 53 (msg:"ET DNS Query to a *.top domain - Likely Hostile"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|03|top|00|"; fast_pattern; nocase; distance:0; threshold:type limit, track by_src, count 1, seconds 30; reference:url,www.symantec.com/connect/blogs/shady-tld-research-gdn-and-our-2016-wrap; reference:url,www.spamhaus.org/statistics/tlds/; classtype:bad-unknown; sid:2023883; rev:1; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, deployment Perimeter, signature_severity Major, created_at 2017_02_07, updated_at 2017_02_07;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET DNS Query for Suspicious .gr.com Domain (gr .com in DNS Lookup)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|02|gr|03|com|00|"; nocase; distance:0; fast_pattern; metadata: former_category DNS; reference:url,www.domain.gr.com; classtype:bad-unknown; sid:2025146; rev:1; metadata:created_at 2017_12_12, updated_at 2017_12_12;)
+alert udp $HOME_NET any -> any 53 (msg:"ET DNS Query for Suspicious .gr.com Domain (gr .com in DNS Lookup)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|02|gr|03|com|00|"; nocase; distance:0; fast_pattern; metadata: former_category DNS; reference:url,www.domain.gr.com; classtype:bad-unknown; sid:2025146; rev:1; metadata:created_at 2017_12_12, updated_at 2017_12_18;)
 
