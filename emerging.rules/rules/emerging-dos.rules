@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
 
 #alert udp any any -> any 53 (msg:"ET DOS DNS BIND 9 Dynamic Update DoS attempt"; byte_test:1,&,40,2; byte_test:1,>,0,5; byte_test:1,>,0,1; content:"|00 00 06|"; offset:8; content:"|c0 0c 00 ff|"; distance:2; reference:cve,2009-0696; reference:url,doc.emergingthreats.net/2009701; classtype:attempted-dos; sid:2009701; rev:2; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -86,9 +86,7 @@
 
 #alert tcp $EXTERNAL_NET any -> $HOME_NET 5900 (msg:"ET DOS Possible VNC ClientCutText Message Denial of Service/Memory Corruption Attempt"; flow:established,to_server; content:"|06|"; depth:1; isdataat:1000,relative; content:!"|0A|"; within:1000; reference:url,www.fortiguard.com/encyclopedia/vulnerability/vnc.server.clientcuttext.message.memory.corruption.html; reference:url,doc.emergingthreats.net/2011732; classtype:attempted-dos; sid:2011732; rev:2; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-#alert ip $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DOS IGMP dos attack"; fragbits:M+; ip_proto:2; reference:bugtraq,514; reference:cve,1999-0918; reference:url,www.microsoft.com/technet/security/bulletin/MS99-034.mspx; classtype:attempted-dos; sid:2100272; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert ip $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DOS Jolt attack"; dsize:408; fragbits:M; reference:cve,1999-0345; classtype:attempted-dos; sid:2100268; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert tcp any any -> $HOME_NET 3000 (msg:"ET DOS ntop Basic-Auth DOS inbound"; flow:established,to_server; content:"GET "; nocase; depth:4; content:"/configNtop.html"; distance:0; within:20; nocase; content:"Authorization|3a|"; nocase; content: "Basic"; distance:0; within:20; content:"=="; distance:0; within:100; reference:url,www.securityfocus.com/bid/36074; reference:url,www.securityfocus.com/archive/1/505862; reference:url,www.securityfocus.com/archive/1/505876; classtype:denial-of-service; sid:2011511; rev:1; metadata:created_at 2010_09_27, updated_at 2010_09_27;)
 

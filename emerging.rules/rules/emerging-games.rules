@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
 
 #alert udp any any -> $HOME_NET 27901 (msg:"ET GAMES Alien Arena 7.30 Remote Code Execution Attempt"; content:"print|0A 5C|"; isdataat:257,relative; pcre:"/\x5C[^\x5C\x00]{257}/"; reference:url,www.packetstormsecurity.org/0910-advisories/alienarena-exec.txt; reference:url,doc.emergingthreats.net/2010156; classtype:misc-attack; sid:2010156; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -174,7 +174,6 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET GAMES Blizzard Dow
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET 20000 (msg:"ET GAMES Gold VIP Club Casino Client in Use"; flow:established,to_server; dsize:25; content:"Gold VIP Club Casino"; reference:url,doc.emergingthreats.net/2007746; classtype:policy-violation; sid:2007746; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-#alert udp $EXTERNAL_NET any -> $HOME_NET 7787 (msg:"GPL GAMES Unreal Tournament secure overflow attempt"; content:"|5C|secure|5C|"; nocase; pcre:"/\x5csecure\x5c[^\x00]{50}/smi"; reference:bugtraq,10570; reference:cve,2004-0608; classtype:misc-attack; sid:2103080; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET GAMES Blizzard Web Downloader Install Detected"; flow: established,to_server; content: "User-Agent|3a| Blizzard Web Client"; nocase; classtype:policy-violation; sid:2012170; rev:2; metadata:created_at 2011_01_10, updated_at 2011_01_10;)
 

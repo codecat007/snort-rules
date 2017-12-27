@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
 
 alert tcp $HOME_NET $HTTP_PORTS -> $EXTERNAL_NET any (msg:"ET WEB_SERVER RFI Scanner Success (Fx29ID)"; flow:established,from_server; content:"FeeLCoMzFeeLCoMz"; fast_pattern:only; reference:url,doc.emergingthreats.net/2010463; reference:url,opinion.josepino.com/php/howto_website_hack1; classtype:successful-user; sid:2010463; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -350,141 +350,74 @@ alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SERVER /bi
 
 alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SERVER /bin/ksh In URI Possible Shell Command Execution Attempt"; flow:established,to_server; content:"/bin/ksh"; http_uri; nocase; classtype:web-application-attack; sid:2011467; rev:7; metadata:created_at 2010_09_09, updated_at 2010_09_09;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP"; flow:to_server,established; content:"http|3a|//127.0.0.1"; fast_pattern:only; pcre:"/http\x3A\/\/127\.0\.0\.1\/.*\.asp/i"; reference:cve,2005-2678; classtype:web-application-activity; sid:2100139; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"ET WEB_SERVER WEB-PHP phpinfo access"; flow:to_server,established; content:"/phpinfo.php"; fast_pattern:only; http_uri; nocase; reference:bugtraq,5789; reference:cve,2002-1149; reference:url,www.osvdb.org/displayvuln.php?osvdb_id=3356; classtype:successful-recon-limited; sid:2019526; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"GPL WEB_SERVER TRACE attempt"; flow:to_server,established; content:"TRACE"; http_method; reference:bugtraq,9561; reference:nessus,11213; reference:url,www.whitehatsec.com/press_releases/WH-PR-20030120.pdf; classtype:web-application-attack; sid:2102056; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"GPL WEB_SERVER Tomcat null byte directory listing attempt"; flow:to_server,established; content:"|00|.jsp"; http_uri; reference:bugtraq,2518; reference:bugtraq,6721; reference:cve,2003-0042; classtype:web-application-attack; sid:2102061; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"GPL WEB_SERVER globals.pl access"; flow:to_server,established; content:"/globals.pl"; http_uri; reference:bugtraq,2671; reference:cve,2001-0330; classtype:web-application-activity; sid:2102073; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"GPL WEB_SERVER mod_gzip_status access"; flow:to_server,established; content:"/mod_gzip_status"; http_uri; reference:nessus,11685; classtype:web-application-activity; sid:2102156; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"GPL WEB_SERVER perl post attempt"; flow:to_server,established; content:"POST"; http_method; content:"/perl/"; http_uri; reference:bugtraq,5520; reference:cve,2002-1436; reference:nessus,11158; classtype:web-application-attack; sid:2101979; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 2301 (msg:"GPL WEB_SERVER Compaq Insight directory traversal"; flow:to_server,established; content:"../../../"; reference:arachnids,244; reference:bugtraq,282; reference:cve,1999-0771; classtype:web-application-attack; sid:2101199; rev:13; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /bin/ls command attempt"; flow:to_server,established; content:"/bin/ls"; http_uri; nocase; classtype:web-application-attack; sid:2101369; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /bin/ls| command attempt"; flow:to_server,established; content:"/bin/ls|7C|"; http_uri; nocase; classtype:web-application-attack; sid:2101368; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /bin/ps command attempt"; flow:to_server,established; content:"/bin/ps"; http_uri; nocase; classtype:web-application-attack; sid:2101328; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /etc/inetd.conf access"; flow:to_server,established; content:"/etc/inetd.conf"; http_uri; nocase; classtype:web-application-activity; sid:2101370; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /etc/motd access"; flow:to_server,established; content:"/etc/motd"; nocase; http_uri; classtype:web-application-activity; sid:2101371; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /usr/bin/id command attempt"; flow:to_server,established; content:"/usr/bin/id"; http_uri; nocase; classtype:web-application-attack; sid:2101332; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /usr/bin/perl execution attempt"; flow:to_server,established; content:"/usr/bin/perl"; http_uri; nocase; classtype:web-application-attack; sid:2101355; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER bin/python access attempt"; flow:to_server,established; content:"bin/python"; http_uri; nocase; classtype:web-application-attack; sid:2101349; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER python access attempt"; flow:to_server,established; content:"python "; http_uri; nocase; classtype:web-application-attack; sid:2101350; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER perl command attempt"; flow:to_server,established; content:"/perl?"; http_uri; nocase; reference:arachnids,219; reference:cve,1999-0509; reference:nessus,10173; reference:url,www.cert.org/advisories/CA-1996-11.html; classtype:attempted-recon; sid:2101649; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER printenv access"; flow:to_server,established; content:"/printenv"; http_uri; reference:bugtraq,1658; reference:cve,2000-0868; reference:nessus,10188; reference:nessus,10503; classtype:web-application-activity; sid:2101877; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER datasource attempt"; flow:to_server,established; content:"CF_ISCOLDFUSIONDATASOURCE|28 29|"; nocase; reference:bugtraq,550; classtype:web-application-attack; sid:2100920; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER datasource password attempt"; flow:to_server,established; content:"CF_SETDATASOURCEPASSWORD|28 29|"; nocase; reference:bugtraq,550; classtype:web-application-attack; sid:2100919; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER datasource username attempt"; flow:to_server,established; content:"CF_SETDATASOURCEUSERNAME|28 29|"; nocase; reference:bugtraq,550; classtype:web-application-attack; sid:2100909; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER getodbcin attempt"; flow:to_server,established; content:"CFUSION_GETODBCINI|28 29|"; nocase; reference:bugtraq,550; classtype:web-application-attack; sid:2100923; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /_vti_bin/ access"; flow:to_server,established; content:"/_vti_bin/"; http_uri; nocase; reference:nessus,11032; classtype:web-application-activity; sid:2101288; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER _vti_rpc access"; flow:to_server,established; content:"/_vti_rpc"; http_uri; nocase; reference:bugtraq,2144; reference:cve,2001-0096; reference:nessus,10585; classtype:web-application-activity; sid:2100937; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER author.exe access"; flow:to_server,established; content:"/_vti_bin/_vti_aut/author.exe"; http_uri; nocase; classtype:web-application-activity; sid:2100952; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER authors.pwd access"; flow:to_server,established; content:"/authors.pwd"; http_uri; nocase; reference:bugtraq,989; reference:cve,1999-0386; reference:nessus,10078; classtype:web-application-activity; sid:2100951; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER service.cnf access"; flow:to_server,established; content:"/_vti_pvt/service.cnf"; http_uri; nocase; reference:bugtraq,4078; reference:nessus,10575; classtype:web-application-activity; sid:2100958; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER service.pwd"; flow:to_server,established; content:"/service.pwd"; http_uri; nocase; reference:bugtraq,1205; classtype:web-application-activity; sid:2100959; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER services.cnf access"; flow:to_server,established; content:"/_vti_pvt/services.cnf"; http_uri; nocase; reference:bugtraq,4078; reference:nessus,10575; classtype:web-application-activity; sid:2100961; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER writeto.cnf access"; flow:to_server,established; content:"/_vti_pvt/writeto.cnf"; nocase; http_uri; reference:bugtraq,4078; reference:nessus,10575; classtype:web-application-activity; sid:2100965; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /scripts/iisadmin/default.htm access"; flow:to_server,established; content:"/scripts/iisadmin/default.htm"; http_uri; nocase; classtype:web-application-attack; sid:2100994; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER IISProtect access"; flow:to_server,established; content:"/iisprotect/admin/"; http_uri; nocase; reference:nessus,11661; classtype:web-application-activity; sid:2102131; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER ISAPI .printer access"; flow:to_server,established; content:".printer"; http_uri; nocase; reference:arachnids,533; reference:bugtraq,2674; reference:cve,2001-0241; reference:nessus,10661; reference:url,www.microsoft.com/technet/security/bulletin/MS01-023.mspx; classtype:web-application-activity; sid:2100971; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER MS Site Server admin attempt"; flow:to_server,established; content:"/Site Server/Admin/knowledge/persmbr/"; nocase; http_uri; reference:nessus,11018; classtype:web-application-attack; sid:2101818; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER MS Site Server default login attempt"; flow:to_server,established; content:"/SiteServer/Admin/knowledge/persmbr/"; nocase; http_uri; content:"TERBUF9Bbm9ueW1vdXM6TGRhcFBhc3N3b3JkXzE"; pcre:"/^Authorization|3A|\s*Basic\s+TERBUF9Bbm9ueW1vdXM6TGRhcFBhc3N3b3JkXzE=/smi"; reference:nessus,11018; classtype:web-application-attack; sid:2101817; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER SAM Attempt"; flow:to_server,established; content:"sam._"; http_uri; nocase; reference:url,www.ciac.org/ciac/bulletins/h-45.shtml; classtype:web-application-attack; sid:2100988; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER WEBDAV nessus safe scan attempt"; flow:to_server,established; content:"SEARCH"; http_method; content:"/"; http_uri; urilen:1; content:" HTTP/1.1|0D 0A|Host|3A|"; content:"|0D 0A 0D 0A|"; within:255; reference:bugtraq,7116; reference:cve,2003-0109; reference:nessus,11412; reference:nessus,11413; reference:url,www.microsoft.com/technet/security/bulletin/ms03-007.mspx; classtype:attempted-admin; sid:2102091; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER global.asa access"; flow:to_server,established; content:"/global.asa"; http_uri; nocase; reference:cve,2000-0778; reference:nessus,10491; reference:nessus,10991; classtype:web-application-activity; sid:2101016; rev:14; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER iisadmin access"; flow:to_server,established; content:"/iisadmin"; nocase; http_uri; reference:bugtraq,189; reference:cve,1999-1538; reference:nessus,11032; classtype:web-application-attack; sid:2100993; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER msadcs.dll access"; flow:to_server,established; content:"/msadcs.dll"; http_uri; nocase; reference:bugtraq,529; reference:cve,1999-1011; reference:nessus,10357; classtype:web-application-activity; sid:2101023; rev:13; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER msdac access"; flow:to_server,established; content:"/msdac/"; nocase; http_uri; reference:nessus,11032; classtype:web-application-activity; sid:2101285; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER unicode directory traversal attempt"; flow:to_server,established; content:"/..%255c.."; nocase; reference:bugtraq,1806; reference:cve,2000-0884; reference:nessus,10537; classtype:web-application-attack; sid:2101945; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER .htaccess access"; flow:to_server,established; content:".htaccess"; nocase; http_uri; classtype:attempted-recon; sid:2101129; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER .htpasswd access"; flow:to_server,established; content:".htpasswd"; nocase; classtype:web-application-attack; sid:2101071; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /etc/passwd"; flow:to_server,established; content:"/etc/passwd"; fast_pattern:only; nocase; classtype:attempted-recon; sid:2101122; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /~ftp access"; flow:to_server,established; content:"/~ftp"; http_uri; nocase; classtype:attempted-recon; sid:2101662; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /~nobody access"; flow:to_server,established; content:"/~nobody"; http_uri; reference:nessus,10484; classtype:web-application-attack; sid:2101489; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER /~root access"; flow:to_server,established; content:"/~root"; http_uri; nocase; classtype:attempted-recon; sid:2101145; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER Apache Chunked-Encoding worm attempt"; flow:to_server,established; content:"CCCCCCC|3A| AAAAAAAAAAAAAAAAAAA"; fast_pattern:only; nocase; reference:bugtraq,4474; reference:bugtraq,4485; reference:bugtraq,5033; reference:cve,2002-0071; reference:cve,2002-0079; reference:cve,2002-0392; classtype:web-application-attack; sid:2101809; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER DELETE attempt"; flow:to_server,established; content:"DELETE"; http_method; nocase; reference:nessus,10498; classtype:web-application-activity; sid:2101603; rev:14; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER Oracle Java Process Manager access"; flow:to_server,established; content:"/oprocmgr-status"; http_uri; reference:nessus,10851; classtype:web-application-activity; sid:2101874; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER Tomcat directory traversal attempt"; flow:to_server,established; content:"|00|.jsp"; http_uri; reference:bugtraq,2518; classtype:web-application-attack; sid:2101055; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER Tomcat server snoop access"; flow:to_server,established; content:"/jsp/snp/"; http_uri; content:".snp"; http_uri; reference:bugtraq,1532; reference:cve,2000-0760; classtype:attempted-recon; sid:2101108; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER Tomcat sourcecode view attempt 1"; flow:to_server,established; content:".%256Asp"; http_uri; nocase; classtype:attempted-recon; sid:2101238; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER Tomcat sourcecode view attempt 2"; flow:to_server,established; content:".j%2573p"; http_uri; nocase; classtype:attempted-recon; sid:2101237; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER Tomcat sourcecode view attempt 3"; flow:to_server,established; content:".js%2570"; http_uri; nocase; classtype:attempted-recon; sid:2101236; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER Tomcat view source attempt"; flow:to_server,established; uricontent:"%252ejsp"; reference:bugtraq,2527; reference:cve,2001-0590; classtype:web-application-attack; sid:2101056; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER apache ?M=D directory list attempt"; flow:to_server,established; content:"/?M=D"; http_uri; reference:bugtraq,3009; reference:cve,2001-0731; classtype:web-application-activity; sid:2101519; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER apache directory disclosure attempt"; flow:to_server,established; content:"////////"; depth:200; reference:bugtraq,2503; classtype:attempted-dos; sid:2101156; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER apache source.asp file access"; flow:to_server,established; content:"/site/eg/source.asp"; http_uri; nocase; reference:bugtraq,1457; reference:cve,2000-0628; reference:nessus,10480; classtype:attempted-recon; sid:2101110; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER global.inc access"; flow:to_server,established; content:"/global.inc"; http_uri; nocase; reference:bugtraq,4612; reference:cve,2002-0614; classtype:web-application-attack; sid:2101738; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER ls%20-l"; flow:to_server,established; content:"ls%20-l"; nocase; classtype:attempted-recon; sid:2101118; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER robot.txt access"; flow:to_server,established; content:"/robot.txt"; http_uri; nocase; reference:nessus,10302; classtype:web-application-activity; sid:2101857; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER robots.txt access"; flow:to_server,established; content:"/robots.txt"; http_uri; nocase; reference:nessus,10302; classtype:web-application-activity; sid:2101852; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER viewcode access"; flow:to_server,established; content:"/viewcode"; http_uri; reference:cve,1999-0737; reference:nessus,10576; reference:nessus,12048; classtype:web-application-attack; sid:2101403; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SERVER webalizer access"; flow:established,to_server; content:"/webalizer/"; nocase; http_uri; reference:bugtraq,3473; reference:cve,2001-0835; reference:nessus,10816; classtype:web-application-activity; sid:2101847; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"GPL WEB_SERVER 403 Forbidden"; flow:from_server,established; content:"403"; http_stat_code; content:" 403";  classtype:attempted-recon; sid:2101201; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert tcp $HTTP_SERVERS $HTTP_PORTS -> any any (msg:"ET WEB_SERVER Phoenix Exploit Kit - Admin Login Page Detected Outbound"; flow:established,to_client; content:"<title>Phoenix Exploit's Kit - Log In</title>"; classtype:bad-unknown; sid:2011280; rev:2; metadata:created_at 2010_09_28, updated_at 2010_09_28;)
 

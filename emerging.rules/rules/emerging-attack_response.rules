@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
 
 #alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"ET ATTACK_RESPONSE HTTP 401 Unauthorized"; flow:from_server,established; content:"401"; http_stat_code; threshold: type both, count 1, seconds 300, track by_dst; reference:url,doc.emergingthreats.net/2009345; classtype:attempted-recon; sid:2009345; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -196,35 +196,20 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET 25 (msg:"ET ATTACK_RESPONSE Possible /e
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET 25 (msg:"ET ATTACK_RESPONSE Possible /etc/passwd via SMTP (BSD style)"; flow:established,to_server; content:"root|3a|*|3a|0|3a|0|3a|"; nocase; content:"|3a|/root|3a|/bin"; nocase; reference:url,doc.emergingthreats.net/bin/view/Main/2003150; classtype:successful-recon-limited; sid:2003150; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-#alert ip $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE id check returned userid"; content:"uid="; byte_test:5,<,65537,0,relative,string; content:" gid="; within:15; byte_test:5,<,65537,0,relative,string; classtype:bad-unknown; sid:2101882; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; content:"uid=0|28|root|29|"; fast_pattern:only; classtype:bad-unknown; sid:2100498; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL ATTACK_RESPONSE del attempt"; flow:to_server,established; content:"&del+/s+c|3A 5C|*.*"; fast_pattern:only; nocase; classtype:web-application-attack; sid:2101008; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL ATTACK_RESPONSE directory listing"; flow:to_server,established; content:"/ServerVariables_Jscript.asp"; http_uri; nocase; reference:nessus,10573; classtype:web-application-attack; sid:2101009; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE directory listing"; flow:established; content:"Volume Serial Number"; fast_pattern:only; classtype:bad-unknown; sid:2101292; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE Invalid URL"; flow:from_server,established; content:"Invalid URL"; fast_pattern:only; nocase; reference:url,www.microsoft.com/technet/security/bulletin/MS00-063.mspx; classtype:attempted-recon; sid:2101200; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE command completed"; flow:established; content:"Command completed"; fast_pattern:only; nocase; reference:bugtraq,1806; classtype:bad-unknown; sid:2100494; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE command error"; flow:established; content:"Bad command or filename"; fast_pattern:only; nocase; classtype:bad-unknown; sid:2100495; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE file copied ok"; flow:established; content:"1 file|28|s|29| copied"; fast_pattern:only; nocase; reference:bugtraq,1806; reference:cve,2000-0884; classtype:bad-unknown; sid:2100497; rev:14; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE id check returned apache"; flow:from_server,established; content:"uid="; content:"|28|apache|29|"; fast_pattern:only; classtype:bad-unknown; sid:2101886; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE id check returned http"; flow:from_server,established; content:"uid="; content:"|28|http|29|"; fast_pattern:only; classtype:bad-unknown; sid:2101885; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE id check returned nobody"; flow:from_server,established; content:"uid="; content:"|28|nobody|29|"; fast_pattern:only; classtype:bad-unknown; sid:2101883; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE id check returned web"; flow:from_server,established; content:"uid="; content:"|28|web|29|"; within:25; classtype:bad-unknown; sid:2101884; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE index of /cgi-bin/ response"; flow:from_server,established; content:"Index of /cgi-bin/"; fast_pattern:only; nocase; reference:nessus,10039; classtype:bad-unknown; sid:2101666; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert udp $HOME_NET 500 -> $EXTERNAL_NET 500 (msg:"GPL ATTACK_RESPONSE isakmp login failed"; content:"|10 05|"; depth:2; offset:17; content:"|00 00 00 01 01 00 00 18|"; within:8; distance:13; classtype:misc-activity; sid:2102043; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert tcp $HOME_NET any -> any any (msg:"ET ATTACK_RESPONSE Windows 7 CMD Shell from Local System"; flow:established; dsize:<160; content:"Microsoft Windows [Version "; depth:30; content:"Copyright (c)"; distance:0; content:"Microsoft Corp"; distance:0; classtype:successful-admin; sid:2012690; rev:1; metadata:created_at 2011_04_17, updated_at 2011_04_17;)
 

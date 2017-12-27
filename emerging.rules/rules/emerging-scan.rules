@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
 
 #alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"ET SCAN Unusually Fast 403 Error Messages, Possible Web Application Scan"; flow:from_server,established; content:"403"; http_stat_code; threshold: type threshold, track by_dst, count 35, seconds 60; reference:url,www.checkupdown.com/status/E403.html; reference:url,doc.emergingthreats.net/2009749; classtype:attempted-recon; sid:2009749; rev:4; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -350,99 +350,52 @@ alert udp $EXTERNAL_NET any -> $HOME_NET 5060 (msg:"ET SCAN SIP erase_registrati
 
 alert udp $EXTERNAL_NET any -> $HOME_NET 5060 (msg:"ET SCAN sipscan probe"; content:"sip|3a|thisisthecanary@"; content:"sip|3a|test@"; offset:30; depth:70; reference:url,www.hackingvoip.com/sec_tools.html; reference:url,doc.emergingthreats.net/2008641; classtype:attempted-recon; sid:2008641; rev:4; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-#alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN Broadscan Smurf Scanner"; dsize:4; icmp_id:0; icmp_seq:0; itype:8; classtype:attempted-recon; sid:2100478; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN ISS Pinger"; itype:8; content:"ISSPNGRQ"; depth:32; reference:arachnids,158; classtype:attempted-recon; sid:2100465; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN Nemesis v1.1 Echo"; dsize:20; icmp_id:0; icmp_seq:0; itype:8; content:"|00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00|"; reference:arachnids,449; classtype:attempted-recon; sid:2100467; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN PING CyberKit 2.2 Windows"; itype:8; content:"|AA AA AA AA AA AA AA AA AA AA AA AA AA AA AA AA|"; depth:32; reference:arachnids,154; classtype:misc-activity; sid:2100483; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN PING Delphi-Piette Windows"; itype:8; content:"Pinging from Del"; depth:32; reference:arachnids,155; classtype:misc-activity; sid:2100372; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN PING NMAP"; dsize:0; itype:8; reference:arachnids,162; classtype:attempted-recon; sid:2100469; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN PING Sniffer Pro/NetXRay network scan"; itype:8; content:"Cinco Network, Inc."; depth:32; classtype:misc-activity; sid:2100484; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN icmpenum v1.1.1"; dsize:0; icmp_id:666 ; icmp_seq:0; id:666; itype:8; reference:arachnids,450; classtype:attempted-recon; sid:2100471; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN superscan echo"; dsize:8; itype:8; content:"|00 00 00 00 00 00 00 00|"; classtype:attempted-recon; sid:2100474; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN webtrends scanner"; icode:0; itype:8; content:"|00 00 00 00|EEEEEEEEEEEE"; reference:arachnids,307; classtype:attempted-recon; sid:2100476; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN SolarWinds IP scan attempt"; icode:0; itype:8; content:"SolarWinds.Net"; nocase; classtype:network-scan; sid:2101918; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert ip any any -> any any (msg:"GPL SCAN same SRC/DST"; sameip; reference:bugtraq,2666; reference:cve,1999-0016; reference:url,www.cert.org/advisories/CA-1997-28.html; classtype:bad-unknown; sid:2100527; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert ip any any <> 127.0.0.0/8 any (msg:"GPL SCAN loopback traffic";  reference:url,rr.sans.org/firewall/egress.php; classtype:bad-unknown; sid:2100528; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET 10101 -> $HOME_NET any (msg:"GPL SCAN myscan"; flow:stateless; ack:0; flags:S; ttl:>220; reference:arachnids,439; classtype:attempted-recon; sid:2100613; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"GPL SCAN NetGear router default password login attempt admin/password"; flow:to_server,established; content:"Authorization|3A|"; http_header; nocase; content:"YWRtaW46cGFzc3dvcmQ"; http_header; distance:0; pcre:"/^Authorization\x3a\s*Basic\s+YWRtaW46cGFzc3dvcmQ/smi"; reference:nessus,11737; classtype:default-login-attempt; sid:2102230; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET 21 (msg:"GPL SCAN adm scan"; flow:to_server,established; content:"PASS ddd@|0A|"; reference:arachnids,332; classtype:suspicious-login; sid:2100353; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET 22 (msg:"GPL SCAN SSH Version map attempt"; flow:to_server,established; content:"Version_Mapper"; fast_pattern:only; nocase; classtype:network-scan; sid:2101638; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET 22 (msg:"GPL SCAN ssh-research-scanner"; flow:to_server,established; content:"|00 00 00|`|00 00 00 00 00 00 00 00 01 00 00 00|"; fast_pattern:only; classtype:attempted-recon; sid:2100617; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN Finger . query"; flow:to_server,established; content:"."; reference:arachnids,130; reference:cve,1999-0198; reference:nessus,10072; classtype:attempted-recon; sid:2100333; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN Finger / execution attempt"; flow:to_server,established; content:"/"; pcre:"/^\x2f/smi"; reference:cve,1999-0612; reference:cve,2000-0915; classtype:attempted-recon; sid:2103151; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN Finger 0 Query"; flow:to_server,established; content:"0"; reference:arachnids,131; reference:arachnids,378; reference:cve,1999-0197; reference:nessus,10069; classtype:attempted-recon; sid:2100332; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN Finger Account Enumeration Attempt"; flow:to_server,established; content:"a b c d e f"; nocase; reference:nessus,10788; classtype:attempted-recon; sid:2100321; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN cybercop query"; flow:to_server,established; content:"|0A|     "; depth:10; reference:arachnids,132; reference:cve,1999-0612; classtype:attempted-recon; sid:2100331; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN cybercop redirection"; dsize:11; flow:to_server,established; content:"@localhost|0A|"; reference:arachnids,11; classtype:attempted-recon; sid:2100329; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN Finger Null Request"; flow:to_server,established; content:"|00|"; reference:arachnids,377; classtype:attempted-recon; sid:2100324; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN Finger Probe 0 Attempt"; flow:to_server,established; content:"0"; reference:arachnids,378; classtype:attempted-recon; sid:2100325; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN Finger Redirection Attempt"; flow:to_server,established; content:"@"; reference:arachnids,251; reference:cve,1999-0105; reference:nessus,10073; classtype:attempted-recon; sid:2100330; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN Finger Root Query"; flow:to_server,established; content:"root"; reference:arachnids,376; classtype:attempted-recon; sid:2100323; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN Finger Search Query"; flow:to_server,established; content:"search"; reference:arachnids,375; reference:cve,1999-0259; classtype:attempted-recon; sid:2100322; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL SCAN Finger Version Query"; flow:to_server,established; content:"version"; classtype:attempted-recon; sid:2101541; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET 80 (msg:"GPL SCAN cybercop os probe"; flow:stateless; dsize:0; flags:SF12; reference:arachnids,146; classtype:attempted-recon; sid:2100619; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN NULL"; flow:stateless; ack:0; flags:0; seq:0; reference:arachnids,4; classtype:attempted-recon; sid:2100623; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN SYN FIN"; flow:stateless; flags:SF,12; reference:arachnids,198; classtype:attempted-recon; sid:2100624; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN XMAS"; flow:stateless; flags:SRAFPU,12; reference:arachnids,144; classtype:attempted-recon; sid:2100625; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN cybercop os PA12 attempt"; flow:stateless; flags:PA12; content:"AAAAAAAAAAAAAAAA"; depth:16; reference:arachnids,149; classtype:attempted-recon; sid:2100626; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN cybercop os SFU12 probe"; flow:stateless; ack:0; flags:SFU12; content:"AAAAAAAAAAAAAAAA"; depth:16; reference:arachnids,150; classtype:attempted-recon; sid:2100627; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN nmap TCP"; ack:0; flags:A,12; flow:stateless; reference:arachnids,28; classtype:attempted-recon; sid:2100628; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN nmap XMAS"; flow:stateless; flags:FPU,12; reference:arachnids,30; classtype:attempted-recon; sid:2101228; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN nmap fingerprint attempt"; flags:SFPU; flow:stateless; reference:arachnids,05; classtype:attempted-recon; sid:2100629; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL SCAN sensepost.exe command shell attempt"; flow:to_server,established; content:"/sensepost.exe"; http_uri; nocase; reference:nessus,11003; classtype:web-application-activity; sid:2100989; rev:13; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL SCAN cybercop os probe"; flow:stateless; ack:0; flags:SFP; content:"AAAAAAAAAAAAAAAA"; depth:16; reference:arachnids,145; classtype:attempted-recon; sid:2101133; rev:13; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL SCAN cybercop scan"; flow:to_server,established; content:"/cybercop"; http_uri; nocase; reference:arachnids,374; classtype:web-application-activity; sid:2101099; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL SCAN nessus 1.X 404 probe"; flow:to_server,established; content:"/nessus_is_probing_you_"; http_uri; reference:arachnids,301; classtype:web-application-attack; sid:2101102; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL SCAN nessus 2.x 404 probe"; flow:to_server,established; content:"/NessusTest"; http_uri; nocase; reference:nessus,10386; classtype:attempted-recon; sid:2102585; rev:2; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL SCAN whisker HEAD/./"; flow:to_server,established; content:"HEAD/./"; reference:url,www.wiretrip.net/rfp/pages/whitepapers/whiskerids.html; classtype:attempted-recon; sid:2101139; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert udp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN rusers query UDP"; content:"|00 01 86 A2|"; depth:4; offset:12; content:"|00 00 00 02|"; within:4; distance:4; content:"|00 00 00 00|"; depth:4; offset:4; reference:cve,1999-0626; classtype:attempted-recon; sid:2100612; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert udp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN Webtrends Scanner UDP Probe"; content:"|0A|help|0A|quite|0A|"; classtype:attempted-recon; sid:2100637; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"ET SCAN Hydra User-Agent"; flow: established,to_server; content:"User-Agent|3A| Mozilla/4.0 (Hydra)"; nocase; http_header; fast_pattern:23,8; threshold: type limit, track by_src,count 1, seconds 60; reference:url,freeworld.thc.org/thc-hydra; classtype:attempted-recon; sid:2011497; rev:3; metadata:created_at 2010_09_27, updated_at 2010_09_27;)
 

@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET !6666:7000 (msg:"ET TROJAN IRC Nick change on non-standard port"; flow:to_server,established; dsize:<64; content:"NICK "; depth:5; content:!"twitch.tv|0d 0a|"; reference:url,doc.emergingthreats.net/bin/view/Main/2000345; classtype:trojan-activity; sid:2000345; rev:16; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -1504,7 +1504,6 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET TROJAN xpsecurityc
 
 #alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET TROJAN UPX compressed file download possible malware"; flow:established,from_server; file_data; content:"MZ"; within:2; byte_jump:4,58,relative,little; content:"PE|00 00|"; distance:-64; within:4; content:"UPX0"; content:"UPX1"; content:"UPX!"; reference:url,doc.emergingthreats.net/2001046; classtype:misc-activity; sid:2001046; rev:12; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-#alert udp $EXTERNAL_NET any -> $HOME_NET 31337 (msg:"GPL TROJAN BackOrifice access"; content:"|CE|c|D1 D2 16 E7 13 CF|9|A5 A5 86|"; reference:arachnids,399; classtype:misc-activity; sid:2100116; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 #alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET TROJAN nte Binary Download Attempt (multiple malware variants served)"; flow:established,to_server; content:"GET"; http_method; content:"/nte/"; http_uri; content:!"Referer|3a| "; http_header; content:"User-Agent|3a| Java"; http_header; pcre:"/(\.php|\.asp|\.py|\.exe|\.htm|\.html)\/[A-Z0-9]+$/Ui"; reference:url,www.malwaredomainlist.com; reference:url,www.malwareurl.com/search.php?domain=&s=trest1&match=0&rp=200&urls=on&redirs=on&ip=on&reverse=on&as=on; classtype:trojan-activity; sid:2011576; rev:3; metadata:created_at 2010_09_27, updated_at 2010_09_27;)
 
