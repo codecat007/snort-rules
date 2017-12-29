@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
 
 #alert udp any 53 -> $DNS_SERVERS any (msg:"ET DNS Excessive DNS Responses with 1 or more RR's (100+ in 10 seconds) - possible Cache Poisoning Attempt"; byte_test:2,>,0,6; byte_test:2,>,0,10; threshold: type both, track by_src, count 100, seconds 10; reference:url,doc.emergingthreats.net/bin/view/Main/2008446; classtype:bad-unknown; sid:2008446; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -54,19 +54,33 @@
 
 #alert udp $DNS_SERVERS 53 -> any any (msg:"ET DNS Standard query response, Refused"; pcre:"/^..[\x81\x82\x83\x84\x85\x86\x87]\x85/"; reference:url,doc.emergingthreats.net/2001119; classtype:not-suspicious; sid:2001119; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS EXPLOIT named 8.2->8.2.1"; flow:to_server,established; content:"../../../"; reference:bugtraq,788; reference:cve,1999-0833; classtype:attempted-admin; sid:2100258; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS named overflow ADM"; flow:to_server,established; content:"thisissometempspaceforthesockinaddrinyeahyeahiknowthisislamebutanywaywhocareshorizongotitworkingsoalliscool"; reference:bugtraq,788; reference:cve,1999-0833; classtype:attempted-admin; sid:2100259; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS named overflow attempt"; flow:to_server,established; content:"|CD 80 E8 D7 FF FF FF|/bin/sh"; reference:url,www.cert.org/advisories/CA-1998-05.html; classtype:attempted-admin; sid:2100261; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS TCP inverse query overflow"; flow:to_server,established; byte_test:1,<,16,4; byte_test:1,&,8,4; isdataat:400; reference:bugtraq,134; reference:cve,1999-0009; classtype:attempted-admin; sid:2103153; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS named authors attempt"; flow:to_server,established; content:"|07|authors"; offset:12; nocase; content:"|04|bind|00|"; offset:12; nocase; reference:arachnids,480; reference:nessus,10728; classtype:attempted-recon; sid:2101435; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS named version attempt"; flow:to_server,established; content:"|07|version"; offset:12; nocase; content:"|04|bind|00|"; offset:12; nocase; reference:arachnids,278; reference:nessus,10028; classtype:attempted-recon; sid:2100257; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS zone transfer TCP"; flow:to_server,established; content:"|00 00 FC|"; offset:15; reference:arachnids,212; reference:cve,1999-0532; reference:nessus,10595; classtype:attempted-recon; sid:2100255; rev:14; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET 53 -> $HOME_NET any (msg:"GPL DNS SPOOF query response PTR with TTL of 1 min. and no authority"; content:"|85 80 00 01 00 01 00 00 00 00|"; content:"|C0 0C 00 0C 00 01 00 00 00|<|00 0F|"; classtype:bad-unknown; sid:2100253; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET 53 -> $HOME_NET any (msg:"GPL DNS SPOOF query response with TTL of 1 min. and no authority"; content:"|81 80 00 01 00 01 00 00 00 00|"; content:"|C0 0C 00 01 00 01 00 00 00|<|00 04|"; classtype:bad-unknown; sid:2100254; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS UDP inverse query overflow"; byte_test:1,<,16,2; byte_test:1,&,8,2; isdataat:400; reference:bugtraq,134; reference:cve,1999-0009; classtype:attempted-admin; sid:2103154; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert udp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS named authors attempt"; content:"|07|authors"; offset:12; nocase; content:"|04|bind|00|"; offset:12; nocase; reference:nessus,10728; classtype:attempted-recon; sid:2100256; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert udp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS named iquery attempt"; content:"|09 80 00 00 00 01 00 00 00 00|"; depth:16; offset:2; reference:bugtraq,134; reference:cve,1999-0009; reference:url,www.rfc-editor.org/rfc/rfc1035.txt; classtype:attempted-recon; sid:2100252; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert udp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS named version attempt"; content:"|07|version"; offset:12; nocase; content:"|04|bind|00|"; offset:12; nocase; reference:nessus,10028; classtype:attempted-recon; sid:2101616; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert udp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DNS zone transfer UDP"; content:"|00 00 FC|"; offset:14; reference:cve,1999-0532; reference:nessus,10595; classtype:attempted-recon; sid:2101948; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 #alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET DNS DNS Query for Suspicious .com.ru Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|03|com|02|ru|00|"; fast_pattern; nocase; distance:0; reference:url,sign.kaffenews.com/?p=104; classtype:bad-unknown; sid:2011407; rev:3; metadata:created_at 2010_09_27, updated_at 2010_09_27;)
 

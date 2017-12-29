@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
 
 #alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P ABC Torrent User-Agent (ABC/ABC-3.1.0)"; flow:to_server,established; content:"User-Agent|3a| ABC/ABC"; nocase; http_header; reference:url,pingpong-abc.sourceforge.net; reference:url,doc.emergingthreats.net/bin/view/Main/2003475; classtype:trojan-activity; sid:2003475; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -234,13 +234,21 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P p2p Related Us
 
 #alert tcp $HOME_NET any -> $EXTERNAL_NET 3531 (msg:"ET P2P JoltID Agent New Code Download"; flow: established; content:"PeerEnabler"; fast_pattern:only;  reference:url,www.joltid.com; reference:url,forum.treweeke.com/lofiversion/index.php/t597.html; reference:url,doc.emergingthreats.net/2001652; classtype:trojan-activity; sid:2001652; rev:39; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
+#alert tcp $EXTERNAL_NET 6666:6669 -> $HOME_NET any (msg:"GPL P2P eMule buffer overflow attempt"; flow:to_client,established; content:"PRIVMSG"; nocase; content:"|01|SENDLINK|7c|"; distance:0; pcre:"/^PRIVMSG\s+[^\s]+\s+\x3a\s*\x01SENDLINK\x7c[^\x7c]{69}/smi"; reference:bugtraq,10039; reference:nessus,12233; classtype:attempted-user; sid:2102584; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp any 4711 -> $HOME_NET any (msg:"GPL P2P eDonkey server response"; flow:established,from_server; content:"Server|3A| eMule"; reference:url,www.emule-project.net; classtype:policy-violation; sid:2102587; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET 6881:6889 (msg:"GPL P2P BitTorrent transfer"; flow:to_server,established; content:"|13|BitTorrent protocol"; depth:20; classtype:policy-violation; sid:2102181; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL P2P BitTorrent announce request"; flow:to_server,established; content:"GET /announce"; depth:13; content:"info_hash="; distance:0; content:"event=started"; distance:0; classtype:policy-violation; sid:2102180; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL P2P Fastrack kazaa/morpheus traffic"; flow:to_server,established; content:"GET "; depth:4; content:"UserAgent|3A| KazaaClient"; reference:url,www.kazaa.com; classtype:policy-violation; sid:2101699; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL P2P GNUTella client request"; flow:to_server,established; content:"GNUTELLA OK"; depth:40; classtype:policy-violation; sid:2100557; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL P2P GNUTella client request"; flow:to_server,established; content:"GNUTELLA"; depth:8; classtype:policy-violation; sid:2101432; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL P2P Outbound GNUTella client request"; flow:to_server,established; content:"GNUTELLA CONNECT"; depth:40; classtype:policy-violation; sid:2100556; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P BTWebClient UA uTorrent in use"; flow:established,to_server; content:"User-Agent|3a| BTWebClient"; http_header; classtype:policy-violation; sid:2012247; rev:2; metadata:created_at 2011_01_27, updated_at 2011_01_27;)
 

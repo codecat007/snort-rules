@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET ![25,587,6666:7000,8076] (msg:"ET POLICY IRC Channel JOIN on non-standard port"; flow:to_server,established; dsize:<64; content:"JOIN "; nocase; depth:5; pcre:"/&|#|\+|!/R"; reference:url,doc.emergingthreats.net/bin/view/Main/2000348; classtype:trojan-activity; sid:2000348; rev:15; metadata:created_at 2010_07_30, updated_at 2017_01_03;)
 
@@ -694,25 +694,45 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET POLICY Data POST t
 
 #alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET POLICY Data POST to an image file (png)"; flow:established,to_server; content:"POST"; nocase; http_method; content:".png"; nocase; http_uri; content:".png HTTP"; nocase; pcre:"/\.png$/Ui"; reference:url,doc.emergingthreats.net/2010070; classtype:trojan-activity; sid:2010070; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
+#alert ip $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL POLICY TRAFFIC Non-Standard IP protocol"; ip_proto:!1; ip_proto:!2; ip_proto:!47; ip_proto:!50; ip_proto:!51; ip_proto:!6; ip_proto:!89; ip_proto:!17; classtype:non-standard-protocol; sid:2101620; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL POLICY Windows Media Video download"; flow:from_server,established; content:"Content-type|3A| video/x-ms-asf"; nocase; http_header; classtype:policy-violation; sid:2101438; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL POLICY Windows Media download"; flow:from_server,established; content:"Content-Type|3A|"; nocase; http_header; pcre:"/^Content-Type\x3a\s*(?=[av])(video\/x\-ms\-(w[vm]x|asf)|a(udio\/x\-ms\-w(m[av]|ax)|pplication\/x\-ms\-wm[zd]))/Hmi"; classtype:policy-violation; sid:2101437; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 1080 (msg:"GPL POLICY SOCKS Proxy attempt"; flags:S,12; flow:stateless; reference:url,help.undernet.org/proxyscan/; classtype:attempted-recon; sid:2100615; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 1723 (msg:"GPL POLICY PPTP Start Control Request attempt"; flow:to_server,established,no_stream; content:"|00 01|"; depth:2; offset:2; content:"|00 01|"; depth:2; offset:8; classtype:attempted-admin; sid:2102044; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 3389 (msg:"GPL POLICY MS Remote Desktop Request RDP"; flow:to_server,established; content:"|03 00 00|"; depth:3; content:"|e0 00 00 00 00 00|"; distance:2; within:6; reference:bugtraq,3099; reference:cve,2001-0540; reference:url,www.microsoft.com/technet/security/bulletin/MS01-040.mspx; classtype:protocol-command-decode; sid:2101447; rev:14; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 34012 (msg:"GPL POLICY Remote PC Access connection attempt"; flow:to_server,established; content:"|28 00 01 00 04 00 00 00 00 00 00 00|"; depth:12; reference:nessus,11673; classtype:trojan-activity; sid:2102124; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $EXTERNAL_NET any -> $HOME_NET 5631 (msg:"GPL POLICY PCAnywhere Attempted Administrator Login"; flow:to_server,established; content:"ADMINISTRATOR"; classtype:attempted-admin; sid:2100507; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5802 (msg:"GPL POLICY vncviewer Java applet download attempt"; flow:to_server,established; content:"/vncviewer.jar"; reference:nessus,10758; classtype:misc-activity; sid:2101846; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $EXTERNAL_NET any -> $HOME_NET 8080 (msg:"GPL POLICY Linksys router default password login attempt"; flow:to_server,established; content:"Authorization|3A| OmFkbWlu"; nocase; reference:nessus,10999; classtype:default-login-attempt; sid:2101860; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $EXTERNAL_NET any -> $HOME_NET 8080 (msg:"GPL POLICY Linksys router default username and password login attempt"; flow:to_server,established; content:"Authorization|3A| YWRtaW46YWRtaW4"; nocase; reference:nessus,10999; classtype:default-login-attempt; sid:2101861; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $EXTERNAL_NET any -> $HOME_NET 9090 (msg:"GPL POLICY Sun JavaServer default password login attempt"; flow:to_server,established; content:"/servlet/admin"; content:"ae9f86d6beaa3f9ecb9a5b7e072a4138"; reference:cve,1999-0508; reference:nessus,10995; classtype:default-login-attempt; sid:2101859; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL POLICY VNC server response"; flow:established; content:"RFB 0"; depth:5; content:".0"; depth:2; offset:7; classtype:misc-activity; sid:2100560; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any <> $HOME_NET 0 (msg:"GPL POLICY tcp port 0 traffic"; flow:stateless; classtype:misc-activity; sid:2100524; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert tcp $HOME_NET 5631:5632 -> $EXTERNAL_NET any (msg:"GPL POLICY PCAnywhere Failed Login"; flow:from_server,established; content:"Invalid login"; depth:16; reference:arachnids,240; classtype:unsuccessful-user; sid:2100512; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 500 (msg:"GPL POLICY IPSec PGPNet connection attempt"; content:"|00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 10 02 00 00 00 00 00 00 00 00 88 0D 00 00 5C 00 00 00 01 00 00 00 01 00 00 00|P|01 01 00 02 03 00 00 24 01 01 00 00 80 01 00 06 80 02 00 02 80 03 00 03 80 04 00 05 80 0B 00 01 00 0C 00 04 00 01|Q|80 00 00 00 24 02 01 00 00 80 01 00 05 80 02 00 01 80 03 00 03 80 04 00 02 80 0B 00 01 00 0C 00 04 00 01|Q|80 00 00 00 10|"; classtype:protocol-command-decode; sid:2101771; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+alert udp $EXTERNAL_NET any -> $HOME_NET 5632 (msg:"GPL POLICY PCAnywhere server response"; content:"ST"; depth:2; classtype:misc-activity; sid:2100566; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 7001 (msg:"GPL POLICY AFS access"; content:"|00 00 03 E7 00 00 00 00 00 00 00|e|00 00 00 00 00 00 00 00 0D 05 00 00 00 00 00 00 00|"; fast_pattern:only; reference:nessus,10441; classtype:misc-activity; sid:2101504; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any <> $HOME_NET 0 (msg:"GPL POLICY udp port 0 traffic";  reference:bugtraq,576; reference:cve,1999-0675; reference:nessus,10074; classtype:misc-activity; sid:2100525; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp any any -> any 53 (msg:"GPL POLICY MISC Tunneling IP over DNS with NSTX"; byte_test: 1,>,32,12; content: "|00 10 00 01|"; offset: 12; rawbytes; threshold: type threshold, track by_src, count 50, seconds 60; reference:url,nstx.dereference.de/nstx/; reference:url,slashdot.org/articles/00/09/10/2230242.shtml; classtype:policy-violation; sid:2100208; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 #alert tcp $EXTERNAL_NET 443 -> $HOME_NET any (msg:"ET POLICY route1.com SSL certificate for remote access detected"; flow:established,to_client; content:"Route1 Security Corporation"; nocase; metadata: former_category POLICY; classtype:bad-unknown; sid:2011579; rev:1; metadata:attack_target Client_Endpoint, deployment Perimeter, tag SSL_Malicious_Cert, signature_severity Audit, created_at 2010_09_27, updated_at 2017_10_12;)
 

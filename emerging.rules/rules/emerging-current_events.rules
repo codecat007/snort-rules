@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
 
 #alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET CURRENT_EVENTS Malvertising drive by kit encountered - Loading..."; flow:established,to_client; content:"HTTP/1"; depth:6; content:"<html><head></head><body>Loading...<div id=|22|page|22| style=|22|display|3a| none|22|>"; nocase; reference:url,doc.emergingthreats.net/2011223; classtype:bad-unknown; sid:2011223; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -5951,4 +5951,10 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET CURRENT_EVENTS Pos
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET CURRENT_EVENTS Possible Ziraat Bank (TK) Phishing Landing - Title over non SSL"; flow:established,to_client; file_data; content:"<title>|20 48 6f c5 9f 67 65 6c 64 69 6e 69 7a 20 7c 20 5a 69 72 61 61 74 20 42 61 6e 6b 61 73 c4 b1|"; nocase; metadata: former_category CURRENT_EVENTS; classtype:bad-unknown; sid:2025160; rev:2; metadata:affected_product Web_Browsers, attack_target Client_Endpoint, deployment Perimeter, tag Phishing, signature_severity Minor, created_at 2017_12_20, updated_at 2017_12_20;)
 
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET CURRENT_EVENTS Paypal Phishing Landing 2017-12-26"; flow:established,to_client; file_data; content:"&Rho|3b|ay&Rho|3b|aI</title>"; within:200; metadata: former_category CURRENT_EVENTS; classtype:trojan-activity; sid:2025173; rev:2; metadata:affected_product Web_Browsers, attack_target Client_Endpoint, deployment Perimeter, tag Phishing, signature_severity Minor, created_at 2017_12_26, updated_at 2017_12_26;)
+
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET CURRENT_EVENTS Successful Yobit Cryptocurrency Exchange Phish 2017-12-28"; flow:established,to_server; content:"POST"; http_method; content:"login="; depth:6; nocase; http_client_body; content:"&email="; nocase; distance:0; http_client_body; content:"&psw1="; nocase; distance:0; http_client_body; content:"&psw2="; nocase; distance:0; http_client_body; fast_pattern; metadata: former_category CURRENT_EVENTS; classtype:trojan-activity; sid:2025174; rev:2; metadata:affected_product Web_Browsers, attack_target Client_Endpoint, deployment Perimeter, tag Phishing, signature_severity Major, created_at 2017_12_28, updated_at 2017_12_28;)
+
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET CURRENT_EVENTS Successful HitBTC Cryptocurrency Exchange Phish 2017-12-28"; flow:established,to_server; content:"POST"; http_method; content:"__csrf__="; depth:9; nocase; http_client_body; content:"&utc_offset_hours="; nocase; distance:0; http_client_body; fast_pattern; content:"&email="; nocase; distance:0; http_client_body; content:"&password="; nocase; distance:0; http_client_body; metadata: former_category CURRENT_EVENTS; classtype:trojan-activity; sid:2025175; rev:2; metadata:affected_product Web_Browsers, attack_target Client_Endpoint, deployment Perimeter, tag Phishing, signature_severity Major, created_at 2017_12_28, updated_at 2017_12_28;)
+
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET CURRENT_EVENTS Successful Liqui Cryptocurrency Exchange Phish 2017-12-28"; flow:established,to_server; content:"POST"; http_method; content:"login_type%5Bemail%5D="; depth:22; nocase; http_client_body; content:"&login_type%5Bpassword%5D="; nocase; distance:0; http_client_body; content:"&login_type%5BtwoFactorKey%5D="; nocase; distance:0; http_client_body; fast_pattern; metadata: former_category CURRENT_EVENTS; classtype:trojan-activity; sid:2025176; rev:2; metadata:affected_product Web_Browsers, attack_target Client_Endpoint, deployment Perimeter, tag Phishing, signature_severity Major, created_at 2017_12_28, updated_at 2017_12_28;)
 

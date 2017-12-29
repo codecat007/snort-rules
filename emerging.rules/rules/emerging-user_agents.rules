@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
 
 #alert tcp $HOME_NET any -> $EXTERNAL_NET 1024:65535 (msg:"ET USER_AGENTS Likely Spambot Web-based Control Traffic"; flow: to_server,established; content:"User-Agent|3a| Godzilla"; nocase; reference:url,doc.emergingthreats.net/bin/view/Main/2001711; classtype:trojan-activity; sid:2001711; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 

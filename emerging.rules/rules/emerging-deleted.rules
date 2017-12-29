@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
 
 #alert tcp $EXTERNAL_NET !6666:7000 -> $HOME_NET any (msg:"ET DELETED IRC Name response on non-standard port"; flow: to_client,established; dsize:<128; content:"|3a|"; depth:1; content:" 302 "; content:"=+"; content:"@"; reference:url,doc.emergingthreats.net/bin/view/Main/2000346; classtype:trojan-activity; sid:2000346; rev:12; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -1822,137 +1822,269 @@
 
 #alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET DELETED WordPress SQL Injection Attempt -- wp-trackback.php UPDATE"; flow:established,to_server; uricontent:"/wp-trackback.php?"; nocase; uricontent:"UPDATE"; nocase; pcre:"/UPDATE.+SET/Ui"; reference:cve,CVE-2007-0107; reference:url,www.securityfocus.com/bid/21907; reference:url,doc.emergingthreats.net/2005870; classtype:web-application-attack; sid:2005870; rev:6; metadata:affected_product Web_Server_Applications, affected_product Wordpress, affected_product Wordpress_Plugins, attack_target Web_Server, deployment Datacenter, tag SQL_Injection, tag Wordpress, signature_severity Major, created_at 2010_07_30, updated_at 2016_07_01;)
 
+#alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED TFN client command LE"; icmp_id:51201; icmp_seq:0; itype:0; reference:arachnids,183; classtype:attempted-dos; sid:2100251; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED Stacheldraht client check skillz"; icmp_id:666; itype:0; content:"skillz"; reference:arachnids,190; classtype:attempted-dos; sid:2100229; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED TFN Probe"; icmp_id:678; itype:8; content:"1234"; reference:arachnids,443; classtype:attempted-recon; sid:2100221; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED TFN client command BE"; icmp_id:456; icmp_seq:0; itype:0; reference:arachnids,184; classtype:attempted-dos; sid:2100228; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED tfn2k icmp possible communication"; icmp_id:0; itype:0; content:"AAAAAAAAAA"; reference:arachnids,425; classtype:attempted-dos; sid:2100222; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp $EXTERNAL_NET any <> $HOME_NET any (msg:"GPL DELETED Stacheldraht agent->handler skillz"; icmp_id:6666; itype:0; content:"skillz"; reference:url,staff.washington.edu/dittrich/misc/stacheldraht.analysis; classtype:attempted-dos; sid:2101855; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp $EXTERNAL_NET any <> $HOME_NET any (msg:"GPL DELETED Stacheldraht handler->agent ficken"; icmp_id:6667; itype:0; content:"ficken"; reference:url,staff.washington.edu/dittrich/misc/stacheldraht.analysis; classtype:attempted-dos; sid:2101856; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp $EXTERNAL_NET any <> $HOME_NET any (msg:"GPL DELETED Stacheldraht handler->agent niggahbitch"; icmp_id:9015; itype:0; content:"niggahbitch"; reference:url,staff.washington.edu/dittrich/misc/stacheldraht.analysis; classtype:attempted-dos; sid:2101854; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL DELETED Stacheldraht gag server response"; icmp_id:669; itype:0; content:"sicken"; reference:arachnids,195; classtype:attempted-dos; sid:2100225; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL DELETED Stacheldraht server response"; icmp_id:667; itype:0; content:"ficken"; reference:arachnids,191; classtype:attempted-dos; sid:2100226; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL DELETED TFN server response"; icmp_id:123; icmp_seq:0; itype:0; content:"shell bound to port"; reference:arachnids,182; classtype:attempted-dos; sid:2100238; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert icmp 3.3.3.3/32 any -> $EXTERNAL_NET any (msg:"GPL DELETED Stacheldraht server spoof"; icmp_id:666; itype:0; reference:arachnids,193; classtype:attempted-dos; sid:2100224; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $AIM_SERVERS any -> $HOME_NET any (msg:"GPL DELETED AIM AddExternalApp attempt"; flow:to_client,established; content:"aim|3A|AddExternalApp?"; nocase; reference:url,www.w00w00.org/files/w00aimexp/; classtype:misc-attack; sid:2101752; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $AIM_SERVERS any -> $HOME_NET any (msg:"GPL DELETED AIM AddGame attempt"; flow:to_client,established; content:"aim|3A|AddGame?"; nocase; reference:bugtraq,3769; reference:cve,2002-0005; reference:url,www.w00w00.org/files/w00aimexp/; classtype:misc-attack; sid:2101393; rev:13; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL DELETED dildo"; flow:to_client,established; content:"dildo"; nocase; classtype:policy-violation; sid:2101781; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL DELETED nipple clamp"; flow:to_client,established; content:"nipple"; nocase; content:"clamp"; nocase; classtype:policy-violation; sid:2101782; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL DELETED oral sex"; flow:to_client,established; content:"oral sex"; nocase; classtype:policy-violation; sid:2101783; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL DELETED raw sex"; flow:to_client,established; content:"raw sex"; nocase; classtype:policy-violation; sid:2101786; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL DELETED Content-Disposition CLSID command attempt"; flow:to_client,established; content:"Content-Disposition|3A|"; http_header; nocase; pcre:"/^Content-Disposition\x3a[^\r\n]*\{[\da-fA-F]{8}(-[\da-fA-F]{4}){3}-[\da-fA-F]{12}\}/smi"; reference:bugtraq,9510; reference:cve,2004-0420; reference:url,www.microsoft.com/technet/security/bulletin/ms04-024.mspx; classtype:attempted-user; sid:2102589; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL DELETED RealPlayer playlist file URL overflow attempt"; flow:from_server,established; flowbits:isset,realplayer.playlist; content:"file|3A|//"; nocase; pcre:"/^file\x3a\x2f\x2f[^\n]{400}/smi"; reference:bugtraq,9579; reference:cve,2004-0258; classtype:attempted-user; sid:2102438; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL DELETED RealPlayer playlist http URL overflow attempt"; flow:from_server,established; flowbits:isset,realplayer.playlist; content:"http|3A|//"; nocase; pcre:"/^http\x3a\x2f\x2f[^\n]{400}/smi"; reference:bugtraq,9579; reference:cve,2004-0258; classtype:attempted-user; sid:2102439; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL DELETED RealPlayer playlist rtsp URL overflow attempt"; flow:from_server,established; flowbits:isset,realplayer.playlist; content:"rtsp|3A|//"; nocase; pcre:"/^http\x3a\x2f\x2f[^\n]{400}/smi"; reference:bugtraq,9579; reference:cve,2004-0258; classtype:attempted-user; sid:2102440; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL DELETED server negative Content-Length attempt"; flow:from_server,established; content:"Content-Length|3A| -"; http_header; fast_pattern:only; reference:cve,2004-0492; reference:url,www.guninski.com/modproxy1.html; classtype:attempted-admin; sid:2102580; rev:11; metadata:created_at 2010_09_23, updated_at 2016_05_04;)
 
+#alert tcp $EXTERNAL_NET 113 -> $SMTP_SERVERS 25 (msg:"GPL DELETED sendmail 8.6.9 exploit"; flow:to_server,established; content:"|0A|D/"; reference:arachnids,140; reference:bugtraq,2311; reference:cve,1999-0204; classtype:attempted-admin; sid:2100655; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET 5050 -> $HOME_NET any (msg:"GPL DELETED Yahoo IM successful logon"; flow:from_server,established; content:"YMSG"; depth:4; nocase; content:"|00 01|"; depth:2; offset:10; classtype:policy-violation; sid:2102450; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET 6666:7000 -> $HOME_NET any (msg:"GPL DELETED IRC dns response"; flow:to_client,established; content:"|3A|"; offset:0; content:" 302 "; content:"=+"; classtype:policy-violation; sid:2101790; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 1020 (msg:"GPL DELETED Vampire 1.2 connection request"; flow:to_server,established; content:"Hello..."; depth:8; flowbits:set,backdoor.vampire_12.connect; flowbits:noalert; classtype:misc-activity; sid:2103063; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 109 (msg:"GPL DELETED FOLD arbitrary file attempt"; flow:established,to_server; content:"FOLD"; nocase; pcre:"/^FOLD\s+\//smi"; classtype:misc-attack; sid:2101935; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 109 (msg:"GPL DELETED FOLD overflow attempt"; flow:established,to_server; content:"FOLD"; nocase; isdataat:256,relative; pcre:"/^FOLD\s[^\n]{256}/smi"; reference:bugtraq,283; reference:cve,1999-0920; reference:nessus,10130; classtype:attempted-admin; sid:2101934; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 110 (msg:"GPL DELETED qpopper overflow"; flow:to_server,established; content:"|E8 D9 FF FF FF|/bin/sh"; reference:bugtraq,830; reference:cve,1999-0822; reference:nessus,10184; classtype:attempted-admin; sid:2100290; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 119 (msg:"GPL DELETED Cassandra Overflow"; dsize:>512; flow:to_server,established; content:"AUTHINFO USER"; depth:16; nocase; reference:arachnids,274; reference:bugtraq,1156; reference:cve,2000-0341; classtype:attempted-user; sid:2100291; rev:13; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 12345:12346 (msg:"GPL DELETED netbus getinfo"; flow:to_server,established; content:"GetInfo|0D|"; reference:arachnids,403; classtype:misc-activity; sid:2100110; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 143 (msg:"GPL DELETED auth literal overflow attempt"; flow:established,to_server; content:"AUTH"; nocase; pcre:"/({(?=\d+}[^\n]*?\sAUTH)|AUTH\s[^\n]*?{(?=\d+}))/smi"; byte_test:5,>,256,0,string,dec,relative; reference:cve,1999-0005; classtype:misc-attack; sid:2101930; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 143 (msg:"GPL DELETED login format string attempt"; flow:established,to_server; content:"LOGIN"; nocase; pcre:"/\sLOGIN\s[^\n]*?%/smi"; reference:bugtraq,10976; classtype:attempted-admin; sid:2102664; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 21 (msg:"GPL DELETED wu-ftp bad file completion attempt"; flow:to_server,established; content:"~"; content:"["; distance:0; reference:bugtraq,3581; reference:bugtraq,3707; reference:cve,2001-0550; reference:cve,2001-0886; classtype:misc-attack; sid:2101377; rev:18; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 21 (msg:"GPL DELETED wu-ftp bad file completion attempt with brace"; flow:to_server,established; content:"~"; content:"{"; distance:0; reference:bugtraq,3581; reference:bugtraq,3707; reference:cve,2001-0550; reference:cve,2001-0886; classtype:misc-attack; sid:2101378; rev:18; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 22 (msg:"GPL DELETED gobbles SSH exploit attempt"; flow:to_server,established; content:"GOBBLES"; reference:bugtraq,5093; reference:cve,2002-0390; reference:cve,2002-0639; classtype:misc-attack; sid:2101812; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 2401 (msg:"GPL DELETED CVS Max-dotdot integer overflow attempt"; flow:to_server,established; content:"Max-dotdot"; nocase; pcre:"/^Max-dotdot[\s\r\n]*\d{3,}/msi"; reference:bugtraq,10499; reference:cve,2004-0417; classtype:misc-attack; sid:2102583; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 32000 (msg:"GPL DELETED Xtramail Username overflow attempt"; flow:to_server,established; dsize:>500; content:"Username|3A|"; nocase; isdataat:100,relative; pcre:"/^Username\:[^\n]{100}/smi"; reference:bugtraq,791; reference:cve,1999-1511; reference:nessus,10323; classtype:attempted-admin; sid:2101636; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 3389 (msg:"GPL DELETED MS Remote Desktop non-encrypted session initiation attempt"; flow:to_server,established; content:"|03 00 01|"; depth:3; content:"|00|"; depth:1; offset:288; reference:url,www.microsoft.com/technet/security/bulletin/MS01-052.mspx; classtype:attempted-dos; sid:2102418; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 3389 (msg:"GPL DELETED MS Terminal server request"; flow:to_server,established; content:"|03 00 00|"; depth:3; content:"|e0 00 00 00 00 00|"; within:6; distance:2; reference:bugtraq,3099; reference:cve,2001-0540; reference:url,www.microsoft.com/technet/security/bulletin/MS01-040.mspx; classtype:protocol-command-decode; sid:2101448; rev:13; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 3535 (msg:"GPL DELETED RMD / attempt"; flow:to_server,established; content:"RMD"; nocase; pcre:"/^RMD\s+\x2f$/smi"; reference:bugtraq,9159; classtype:attempted-dos; sid:2102335; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 3632 (msg:"GPL DELETED distccd command execution attempt"; flow:to_server,established; content:"DIST00000001"; depth:12; nocase; reference:url,distcc.samba.org/security.html; classtype:misc-activity; sid:2103061; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 4080 (msg:"GPL DELETED iChat directory traversal attempt"; flow:to_server,established; content:"/../../"; reference:cve,1999-0897; classtype:web-application-activity; sid:2101604; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 42 (msg:"GPL DELETED WINS overflow attempt"; flow:to_server,established; byte_test:1,&,64,6; byte_test:1,&,32,6; byte_test:1,&,16,6; byte_test:1,&,8,6; pcre:!"/^.{8}(\x05\x37(\x1E[\x90-\xFF]|[\x1F-\x2F].|\x30[\x00-\x70])|\x00\x00\x00[\x00-\x65]|\x02\x68\x05\xC0)/s"; reference:bugtraq,11763; reference:cve,2004-1080; reference:url,www.immunitysec.com/downloads/instantanea.pdf; reference:url,www.microsoft.com/technet/security/bulletin/MS04-045.mspx; classtype:misc-attack; sid:2103017; rev:8; metadata:created_at 2010_09_23, updated_at 2016_06_14;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 457 (msg:"GPL DELETED Netscape Unixware overflow"; flow:to_server,established; content:"|EB|_|9A FF FF FF FF 07 FF C3|^1|C0 89|F|9D|"; fast_pattern:only; reference:arachnids,180; reference:bugtraq,908; reference:cve,1999-0744; classtype:attempted-recon; sid:2101132; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 500: (msg:"GPL DELETED AMD TCP amqproc_mount plog overflow attempt"; flow:to_server,established; content:"|00 04 93 F3|"; depth:4; offset:16; content:"|00 00 00 07|"; within:4; distance:4; byte_jump:4,4,relative,align; byte_jump:4,4,relative,align; byte_test:4,>,512,0,relative; content:"|00 00 00 00|"; depth:4; offset:8; reference:bugtraq,614; reference:cve,1999-0704; classtype:misc-attack; sid:2101906; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 500: (msg:"GPL DELETED AMD TCP pid request"; flow:to_server,established; content:"|00 04 93 F3|"; depth:4; offset:16; content:"|00 00 00 09|"; within:4; distance:4; content:"|00 00 00 00|"; depth:4; offset:8; classtype:rpc-portmap-decode; sid:2101953; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 500: (msg:"GPL DELETED AMD TCP version request"; flow:to_server,established; content:"|00 04 93 F3|"; depth:4; offset:16; content:"|00 00 00 08|"; within:4; distance:4; content:"|00 00 00 00|"; depth:4; offset:8; classtype:rpc-portmap-decode; sid:2101955; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DELETED EXPLOIT named tsig overflow attempt"; flow:to_server,established; content:"|AB CD 09 80 00 00 00 01 00 00 00 00 00 00 01 00 01|    |02|a"; reference:arachnids,482; reference:bugtraq,2302; reference:cve,2001-0010; classtype:attempted-admin; sid:2100303; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 6373 (msg:"GPL DELETED SCO calserver overflow"; flow:to_server,established; content:"|EB 7F|]U|FE|M|98 FE|M|9B|"; reference:bugtraq,2353; reference:cve,2000-0306; classtype:attempted-admin; sid:2100304; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 79 (msg:"GPL DELETED cmd_rootsh backdoor attempt"; flow:to_server,established; content:"cmd_rootsh"; reference:nessus,10070; reference:url,www.sans.org/y2k/TFN_toolkit.htm; reference:url,www.sans.org/y2k/fingerd.htm; classtype:attempted-admin; sid:2100320; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 8000 (msg:"GPL DELETED nstelemetry.adp access"; flow:to_server,established; content:"/nstelemetry.adp"; reference:nessus,10753; classtype:web-application-activity; sid:2101518; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 8080 (msg:"GPL DELETED story.pl access"; flow:to_server,established; uricontent:"/story.pl"; reference:bugtraq,3028; reference:cve,2001-0804; reference:nessus,10817; classtype:default-login-attempt; sid:2101869; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 8080 (msg:"GPL DELETED story.pl arbitrary file read attempt"; flow:to_server,established; content:"/story.pl"; http_uri; content:"next=../"; reference:bugtraq,3028; reference:cve,2001-0804; reference:nessus,10817; classtype:default-login-attempt; sid:2101868; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 8181 (msg:"GPL DELETED CISCO PIX Firewall Manager directory traversal attempt"; flow:to_server,established; content:"/pixfir~1/how_to_login.html"; reference:bugtraq,691; reference:cve,1999-0158; reference:nessus,10819; classtype:misc-attack; sid:2101858; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 8888 (msg:"GPL DELETED answerbook2 admin attempt"; flow:to_server,established; content:"/cgi-bin/admin/admin"; reference:bugtraq,5383; reference:cve,2000-0696; classtype:web-application-activity; sid:2101946; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 8888 (msg:"GPL DELETED answerbook2 arbitrary command execution attempt"; flow:to_server,established; content:"/ab2/"; content:"|3B|"; distance:1; reference:bugtraq,1556; reference:cve,2000-0697; classtype:web-application-attack; sid:2101947; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET 9000:9002 (msg:"GPL DELETED HP JetDirect LCD modification attempt"; flow:to_server,established; content:"@PJL RDYMSG DISPLAY ="; reference:arachnids,302; reference:bugtraq,2245; classtype:misc-activity; sid:2100510; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED Outbound GNUTella client request"; flow:established; content:"GNUTELLA OK"; depth:40; classtype:misc-activity; sid:2100558; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED SecureNetPro traffic"; flow:established; content:"|00|g|00 01 00 03|"; depth:6; classtype:bad-unknown; sid:2101629; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED Inbound GNUTella client request"; flags:A+; flow:established; content:"GNUTELLA CONNECT"; depth:40; classtype:misc-activity; sid:2100559; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED network-status-monitor mon-callback request TCP"; flow:to_server,established; content:"|00 03 0D|p"; depth:4; offset:16; content:"|00 00 00 01|"; within:4; distance:4; content:"|00 00 00 00|"; depth:4; offset:8; classtype:rpc-portmap-decode; sid:2102038; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED ypserv maplist request TCP"; flow:to_server,established; content:"|00 01 86 A4|"; depth:4; offset:16; content:"|00 00 00 0B|"; within:4; distance:4; content:"|00 00 00 00|"; depth:4; offset:8; reference:Cve,CAN-2002-1232; reference:bugtraq,5914; reference:bugtraq,6016; classtype:rpc-portmap-decode; sid:2102034; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED ypupdated arbitrary command attempt TCP"; flow:to_server,established; content:"|00 01 86 BC|"; depth:4; offset:16; content:"|00 00 00 01|"; within:4; distance:4; byte_jump:4,4,relative,align; byte_jump:4,4,relative,align; content:"|7C|"; distance:4; content:"|00 00 00 00|"; depth:4; offset:8; classtype:misc-attack; sid:2102089; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED SAP WAS syscmd access"; flow:to_server,established; content:"/sap/bc/BSp/sap/menu/frameset.htm"; http_uri; nocase; content:"sap-syscmd"; http_uri; nocase; reference:url,www.cybsec.com/vuln/CYBSEC_Security_Advisory_Multiple_XSS_in_SAP_WAS.pdf; classtype:web-application-activity; sid:2100183; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED /etc/shadow access"; flow:to_server,established; content:"/etc/shadow"; http_uri; nocase; classtype:web-application-activity; sid:2101372; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED SGI InfoSearch fname access"; flow:to_server,established; uricontent:"/infosrch.cgi"; reference:arachnids,290; reference:bugtraq,1031; reference:cve,2000-0207; classtype:web-application-activity; sid:2101727; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED evaluate.cfm access"; flow:to_server,established; content:"/cfdocs/snippets/evaluate.cfm"; nocase; http_uri; reference:bugtraq,550; classtype:attempted-recon; sid:2100915; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED IISProtect globaladmin.asp access"; flow:to_server,established; uricontent:"/iisprotect/admin/GlobalAdmin.asp"; nocase; reference:nessus,11661; classtype:web-application-activity; sid:2102157; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED cmd.exe access"; flow:to_server,established; content:"cmd.exe"; nocase; http_uri; classtype:web-application-attack; sid:2101002; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED Samba SWAT Authorization overflow attempt"; flow:to_server,established; content:"Authorization|3A| Basic"; nocase; http_header; pcre:"/^Authorization\x3a Basic\s+=/smi"; reference:bugtraq,10780; classtype:web-application-attack; sid:2102597; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED SecureSite authentication bypass attempt"; flow:to_server,established; content:"secure_site, ok"; nocase; reference:bugtraq,4621; classtype:web-application-attack; sid:2101744; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED Tomcat SnoopServlet servlet access"; flow:established,to_server; content:"/examples/servlet/SnoopServlet"; http_uri; reference:bugtraq,4575; reference:nessus,11046; classtype:web-application-activity; sid:2101830; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED Tomcat TroubleShooter servlet access"; flow:established,to_server; content:"/examples/servlet/TroubleShooter"; http_uri; reference:bugtraq,4575; reference:nessus,11046; classtype:web-application-activity; sid:2101829; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED Tomcat servlet mapping cross site scripting attempt"; flow:established,to_server; content:"/servlet/"; http_uri; content:"/org.apache."; http_uri; reference:bugtraq,5193; reference:cve,2002-0682; reference:nessus,11041; classtype:web-application-attack; sid:2101827; rev:9; metadata:affected_product Web_Server_Applications, attack_target Web_Server, deployment Datacenter, tag XSS, tag Cross_Site_Scripting, signature_severity Major, created_at 2010_09_23, updated_at 2016_07_01;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED xp_availablemedia attempt"; flow:to_server,established; content:"xp_availablemedia"; nocase; classtype:web-application-attack; sid:2101060; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED xp_cmdshell attempt"; flow:to_server,established; content:"xp_cmdshell"; nocase; classtype:web-application-attack; sid:2101061; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED xp_enumdsn attempt"; flow:to_server,established; content:"xp_enumdsn"; nocase; classtype:web-application-attack; sid:2101058; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED xp_regdeletekey attempt"; flow:to_server,established; content:"xp_regdeletekey"; nocase; classtype:web-application-activity; sid:2101978; rev:2; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED xp_regread attempt"; flow:to_server,established; content:"xp_regread"; nocase; classtype:web-application-activity; sid:2101069; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED xp_regwrite attempt"; flow:to_server,established; content:"xp_regwrite"; nocase; classtype:web-application-activity; sid:2101977; rev:2; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED DNSTools administrator authentication bypass attempt"; flow:to_server,established; uricontent:"/dnstools.php"; nocase; content:"user_logged_in=true"; nocase; content:"user_dnstools_administrator=true"; nocase; reference:bugtraq,4617; reference:cve,2002-0613; classtype:web-application-attack; sid:2101739; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL DELETED DNSTools authentication bypass attempt"; flow:to_server,established; uricontent:"/dnstools.php"; nocase; content:"user_logged_in=true"; reference:bugtraq,4617; reference:cve,2002-0613; classtype:web-application-attack; sid:2101740; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS 443 (msg:"GPL DELETED OpenSSL Worm traffic"; flow:to_server,established; content:"TERM=xterm"; nocase; reference:url,www.cert.org/advisories/CA-2002-27.html; classtype:web-application-attack; sid:2101887; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS 443 (msg:"GPL DELETED TLSv1 Client_Hello via SSLv2 handshake request"; flow:to_server,established; flowbits:isnotset,sslv2.client_hello.request; flowbits:isnotset,sslv3.client_hello.request; flowbits:isnotset,tlsv1.client_hello.request; byte_test:1,>,127,0; content:"|01|"; depth:1; offset:2; content:"|03 01|"; depth:2; offset:3; flowbits:set,tlsv1.client_hello.request; flowbits:noalert; classtype:protocol-command-decode; sid:2103059; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS 901 (msg:"GPL DELETED Samba SWAT Authorization port 901 overflow attempt"; flow:to_server,established; content:"Authorization|3A| Basic"; nocase; pcre:"/^Authorization\x3a Basic\s+=/smi"; reference:bugtraq,10780; classtype:web-application-attack; sid:2102598; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS $ORACLE_PORTS (msg:"GPL DELETED dbms_offline_og.begin_load buffer overflow attempt"; flow:to_server,established; content:"dbms_offline_og.begin_load"; nocase; fast_pattern:only; pcre:"/((\w+)[\r\n\s]*\x3a=[\r\n\s]*(\x27[^\x27]{1075,}\x27|\x22[^\x22]{1075,}\x22)[\r\n\s]*\x3b.*gname[\r\n\s]*=>[\r\n\s]*\2|gname\s*=>\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,})|\(\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,}))/si"; reference:url,www.appsecinc.com/resources/alerts/oracle/2004-0001/25.html; classtype:attempted-user; sid:2102710; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS $ORACLE_PORTS (msg:"GPL DELETED dbms_offline_snapshot.end_load buffer overflow attempt"; flow:to_server,established; content:"dbms_offline_snapshot.end_load"; nocase; fast_pattern:only; pcre:"/((\w+)[\r\n\s]*\x3a=[\r\n\s]*(\x27[^\x27]{1075,}\x27|\x22[^\x22]{1075,}\x22)[\r\n\s]*\x3b.*gname[\r\n\s]*=>[\r\n\s]*\2|gname\s*=>\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,})|\(\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,}))/si"; reference:url,www.appsecinc.com/resources/alerts/oracle/2004-0001/25.html; classtype:attempted-user; sid:2102716; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS $ORACLE_PORTS (msg:"GPL DELETED dbms_repcat.add_priority_number buffer overflow attempt"; flow:to_server,established; content:"dbms_repcat.add_priority_number"; nocase; pcre:"/((\w+)[\r\n\s]*\x3a=[\r\n\s]*(\x27[^\x27]{1075,}\x27|\x22[^\x22]{1075,}\x22)[\r\n\s]*\x3b.*gname[\r\n\s]*=>[\r\n\s]*\2|gname\s*=>\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,})|\(\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,}))/si"; reference:url,www.appsecinc.com/resources/alerts/oracle/2004-0001/25.html; classtype:attempted-user; sid:2102726; rev:2; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS $ORACLE_PORTS (msg:"GPL DELETED dbms_repcat.refresh_mview_repgroup buffer overflow attempt"; flow:to_server,established; content:"dbms_repcat.refresh_mview_repgroup"; nocase; fast_pattern:only; pcre:"/((\w+)[\r\n\s]*\x3a=[\r\n\s]*(\x27[^\x27]{1075,}\x27|\x22[^\x22]{1075,}\x22)[\r\n\s]*\x3b.*(gname|gowner)[\r\n\s]*=>[\r\n\s]*\2|(gname|gowner)\s*=>\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,})|\(\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,})|\(\s*(\x27[^\x27]*\x27|\x22[^\x22]+\x22)\s*,\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,}))/si"; reference:url,www.appsecinc.com/resources/alerts/oracle/2004-0001/25.html; classtype:attempted-user; sid:2102794; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS $ORACLE_PORTS (msg:"GPL DELETED dbms_repcat_instantiate.instantiate_online buffer overflow attempt"; flow:to_server,established; content:"dbms_repcat_instantiate.instantiate_online"; nocase; fast_pattern:only; pcre:"/((\w+)[\r\n\s]*\x3a=[\r\n\s]*(\x27[^\x27]{1075,}\x27|\x22[^\x22]{1075,}\x22)[\r\n\s]*\x3b.*refresh_template_name[\r\n\s]*=>[\r\n\s]*\2|refresh_template_name\s*=>\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,})|\(\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,}))/si"; reference:url,www.appsecinc.com/resources/alerts/oracle/2004-0001/25.html; classtype:attempted-user; sid:2102787; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS $ORACLE_PORTS (msg:"GPL DELETED dbms_repcat_rgt.drop_site_instantiation buffer overflow attempt"; flow:to_server,established; content:"dbms_repcat_rgt.drop_site_instantiation"; nocase; fast_pattern:only; pcre:"/((\w+)[\r\n\s]*\x3a=[\r\n\s]*(\x27[^\x27]{1075,}\x27|\x22[^\x22]{1075,}\x22)[\r\n\s]*\x3b.*(refresh_template_name|user_name)[\r\n\s]*=>[\r\n\s]*\2|(refresh_template_name|user_name)\s*=>\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,})|\(\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,})|\(\s*(\x27[^\x27]*\x27|\x22[^\x22]+\x22)\s*,\s*(\x27[^\x27]{1075,}|\x22[^\x22]{1075,}))/si"; reference:url,www.appsecinc.com/resources/alerts/oracle/2004-0001/25.html; classtype:attempted-user; sid:2102803; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 139 (msg:"GPL DELETED xp_displayparamstmt possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|d|00|i|00|s|00|p|00|l|00|a|00|y|00|p|00|a|00|r|00|a|00|m|00|s|00|t|00|m|00|t|00|"; offset:32; nocase; reference:bugtraq,2030; reference:cve,2000-1081; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100702; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 139 (msg:"GPL DELETED xp_enumresultset possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|e|00|n|00|u|00|m|00|r|00|e|00|s|00|u|00|l|00|t|00|s|00|e|00|t|00|"; offset:32; nocase; reference:bugtraq,2031; reference:cve,2000-1082; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100708; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 139 (msg:"GPL DELETED xp_peekqueue possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|p|00|e|00|e|00|k|00|q|00|u|00|e|00|u|00|e|00|"; offset:32; nocase; reference:bugtraq,2040; reference:cve,2000-1085; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100697; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 139 (msg:"GPL DELETED xp_proxiedmetadata possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|p|00|r|00|o|00|x|00|i|00|e|00|d|00|m|00|e|00|t|00|a|00|d|00|a|00|t|00|a|00|"; offset:32; nocase; reference:bugtraq,2042; reference:cve,2000-1087; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100698; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 139 (msg:"GPL DELETED xp_setsqlsecurity possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|s|00|e|00|t|00|s|00|q|00|l|00|s|00|e|00|c|00|u|00|r|00|i|00|t|00|y|00|"; offset:32; nocase; reference:bugtraq,2043; reference:cve,2000-1088; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100703; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 139 (msg:"GPL DELETED xp_showcolv possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|s|00|h|00|o|00|w|00|c|00|o|00|l|00|v|00|"; offset:32; nocase; reference:bugtraq,2038; reference:cve,2000-1083; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100696; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 139 (msg:"GPL DELETED xp_updatecolvbm possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|u|00|p|00|d|00|a|00|t|00|e|00|c|00|o|00|l|00|v|00|b|00|m|00|"; offset:32; nocase; reference:bugtraq,2039; reference:cve,2000-1084; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100700; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 1433 (msg:"GPL DELETED xp_displayparamstmt possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|d|00|i|00|s|00|p|00|l|00|a|00|y|00|p|00|a|00|r|00|a|00|m|00|s|00|t|00|m|00|t"; nocase; reference:bugtraq,2030; reference:cve,2000-1081; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100674; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 1433 (msg:"GPL DELETED xp_enumresultset possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|e|00|n|00|u|00|m|00|r|00|e|00|s|00|u|00|l|00|t|00|s|00|e|00|t|00|"; nocase; reference:bugtraq,2031; reference:cve,2000-1082; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100682; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 1433 (msg:"GPL DELETED xp_peekqueue possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|p|00|e|00|e|00|k|00|q|00|u|00|e|00|u|00|e|00|"; nocase; reference:bugtraq,2040; reference:cve,2000-1085; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100706; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 1433 (msg:"GPL DELETED xp_printstatements possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|p|00|r|00|i|00|n|00|t|00|s|00|t|00|a|00|t|00|e|00|m|00|e|00|n|00|t|00|s|00|"; nocase; reference:bugtraq,2041; reference:cve,2000-1086; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100699; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 1433 (msg:"GPL DELETED xp_proxiedmetadata possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|p|00|r|00|o|00|x|00|i|00|e|00|d|00|m|00|e|00|t|00|a|00|d|00|a|00|t|00|a|00|"; nocase; reference:bugtraq,2024; reference:cve,1999-0287; reference:cve,2000-1087; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100707; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 1433 (msg:"GPL DELETED xp_setsqlsecurity possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|s|00|e|00|t|00|s|00|q|00|l|00|s|00|e|00|c|00|u|00|r|00|i|00|t|00|y|00|"; nocase; reference:bugtraq,2043; reference:cve,2000-1088; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100675; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 1433 (msg:"GPL DELETED xp_showcolv possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|s|00|h|00|o|00|w|00|c|00|o|00|l|00|v|00|"; nocase; reference:bugtraq,2038; reference:cve,2000-1083; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100705; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 1433 (msg:"GPL DELETED xp_sprintf possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|s|00|p|00|r|00|i|00|n|00|t|00|f|00|"; nocase; reference:bugtraq,1204; reference:cve,2001-0542; reference:url,www.microsoft.com/technet/security/bulletin/MS01-060.mspx; classtype:attempted-user; sid:2100704; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 1433 (msg:"GPL DELETED xp_updatecolvbm possible buffer overflow"; flow:to_server,established; content:"x|00|p|00|_|00|u|00|p|00|d|00|a|00|t|00|e|00|c|00|o|00|l|00|v|00|b|00|m|00|"; nocase; reference:bugtraq,2039; reference:cve,2000-1084; reference:url,www.microsoft.com/technet/security/bulletin/MS00-092.mspx; classtype:attempted-user; sid:2100701; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $HOME_NET 1020 -> $EXTERNAL_NET any (msg:"GPL DELETED Vampire 1.2 connection confirmation"; flow:from_server,established; flowbits:isset,backdoor.vampire_12.connect; content:"Vampire v1.2 Server On-Line....."; depth:32; classtype:misc-activity; sid:2103064; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $HOME_NET 22 -> $EXTERNAL_NET any (msg:"GPL DELETED successful gobbles ssh exploit GOBBLE"; flow:from_server,established; content:"*GOBBLE*"; reference:bugtraq,5093; reference:cve,2002-0390; reference:cve,2002-0639; classtype:successful-admin; sid:2101810; rev:13; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $HOME_NET 22 -> $EXTERNAL_NET any (msg:"GPL DELETED successful gobbles ssh exploit uname"; flow:from_server,established; content:"uname"; reference:bugtraq,5093; reference:cve,2002-0390; reference:cve,2002-0639; classtype:misc-attack; sid:2101811; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $HOME_NET any -> $EXTERNAL_NET 4242 (msg:"GPL DELETED eDonkey transfer"; flow:to_server,established; content:"|E3|"; depth:1; reference:url,www.kom.e-technik.tu-darmstadt.de/publications/abstracts/HB02-1.html; classtype:policy-violation; sid:2102586; rev:4; metadata:created_at 2010_09_23, updated_at 2016_09_12;)
 
+#alert tcp $HOME_NET any -> $EXTERNAL_NET 6666:7000 (msg:"GPL DELETED IRC nick change"; flow:to_server,established; content:"NICK "; depth:5; fast_pattern; classtype:policy-violation; sid:2100542; rev:14; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp any any -> 212.146.0.34 1963 (msg:"GPL DELETED TCPDUMP/PCAP trojan traffic"; flow:stateless; reference:url,hlug.fscker.com; classtype:trojan-activity; sid:2101929; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 1024: (msg:"GPL DELETED status GHBN format string attack"; content:"|00 01 86 B8|"; depth:4; offset:12; content:"|00 00 00 02|"; within:4; distance:4; byte_jump:4,4,relative,align; byte_jump:4,4,relative,align; content:"%x %x"; within:256; content:"|00 00 00 00|"; depth:4; offset:4; reference:bugtraq,1480; reference:cve,2000-0666; classtype:misc-attack; sid:2101890; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 2140 (msg:"GPL DELETED DeepThroat 3.1 Connection attempt"; content:"00"; depth:2; reference:mcafee,98574; reference:nessus,10053; classtype:misc-activity; sid:2101980; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 3150 (msg:"GPL DELETED DeepThroat 3.1 Connection attempt 3150"; content:"00"; depth:2; reference:mcafee,98574; reference:nessus,10053; classtype:misc-activity; sid:2101981; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 35555 (msg:"GPL DELETED win-trin00 connection attempt"; content:"png []..Ks l44"; depth:14; reference:cve,2000-0138; reference:nessus,10307; classtype:attempted-admin; sid:2101853; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 4120 (msg:"GPL DELETED DeepThroat 3.1 Connection attempt 4120"; content:"00"; depth:2; reference:mcafee,98574; reference:nessus,10053; classtype:misc-activity; sid:2101983; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 49 (msg:"GPL DELETED xtacacs login attempt"; content:"|80 01|"; depth:2; content:"|00|"; distance:4; classtype:misc-activity; sid:2102040; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 500: (msg:"GPL DELETED AMD UDP pid request"; content:"|00 04 93 F3|"; depth:4; offset:12; content:"|00 00 00 09|"; within:4; distance:4; content:"|00 00 00 00|"; depth:4; offset:4; classtype:rpc-portmap-decode; sid:2101954; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 500: (msg:"GPL DELETED AMD UDP version request"; content:"|00 04 93 F3|"; depth:4; offset:12; content:"|00 00 00 08|"; within:4; distance:4; content:"|00 00 00 00|"; depth:4; offset:4; reference:bugtraq,1554; reference:cve,2000-0696; classtype:rpc-portmap-decode; sid:2101956; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET 53 (msg:"GPL DELETED EXPLOIT named tsig overflow attempt"; content:"|80 00 07 00 00 00 00 00 01|?|00 01 02|"; reference:bugtraq,2303; reference:cve,2001-0010; classtype:attempted-admin; sid:2100314; rev:10; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED EXPLOIT statdx"; content:"/bin|C7|F|04|/sh"; classtype:attempted-admin; sid:2101282; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED mountd UDP unmountall request"; content:"|00 01 86 A5|"; depth:4; offset:12; content:"|00 00 00 04|"; within:4; distance:4; content:"|00 00 00 00|"; depth:4; offset:4; classtype:attempted-recon; sid:2102023; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED network-status-monitor mon-callback request UDP"; content:"|00 03 0D|p"; depth:4; offset:12; content:"|00 00 00 01|"; within:4; distance:4; content:"|00 00 00 00|"; depth:4; offset:4; classtype:rpc-portmap-decode; sid:2102037; rev:6; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL DELETED sadmind UDP NETMGT_PROC_SERVICE CLIENT_DOMAIN overflow attempt"; content:"|00 01 87 88|"; depth:4; offset:12; content:"|00 00 00 01|"; within:4; distance:4; byte_jump:4,4,relative,align; byte_jump:4,4,relative,align; byte_jump:4,124,relative,align; byte_jump:4,20,relative,align; byte_test:4,>,512,4,relative; content:"|00 00 00 00|"; depth:4; offset:4; reference:bugtraq,866; reference:cve,1999-0977; classtype:attempted-admin; sid:2101911; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $HOME_NET 3150 -> $EXTERNAL_NET any (msg:"GPL DELETED DeepThroat 3.1 Server Response 3150"; content:"Ahhhh My Mouth Is Open"; reference:arachnids,106; reference:mcafee,98574; reference:nessus,10053; classtype:misc-activity; sid:2101982; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $HOME_NET 4120 -> $EXTERNAL_NET any (msg:"GPL DELETED DeepThroat 3.1 Server Response 4120"; content:"Ahhhh My Mouth Is Open"; reference:arachnids,106; reference:mcafee,98574; reference:nessus,10053; classtype:misc-activity; sid:2101984; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $HOME_NET 49 -> $EXTERNAL_NET any (msg:"GPL DELETED xtacacs failed login response"; content:"|80 02|"; depth:2; content:"|02|"; distance:4; classtype:misc-activity; sid:2102041; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert udp $HOME_NET 49 -> $EXTERNAL_NET any (msg:"GPL DELETED xtacacs accepted login response"; content:"|80 02|"; depth:2; content:"|01|"; distance:4; classtype:misc-activity; sid:2102042; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 #alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET DELETED ClearSite device_admin.php cs_base_path Parameter Remote File Inclusion Attempt"; flow:to_server,established; content:"GET "; depth:4; uricontent:"/include/admin/device_admin.php?"; nocase; uricontent:"cs_base_path="; nocase; pcre:"/cs_base_path=\s*(ftps?|https?|php)\:\//Ui"; reference:url,osvdb.org/show/osvdb/65117; reference:cve,CVE-2010-2145; classtype:web-application-attack; sid:2011556; rev:1; metadata:created_at 2010_09_27, updated_at 2010_09_27;)
 

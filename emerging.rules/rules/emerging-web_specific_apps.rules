@@ -2,7 +2,7 @@
 #
 # This distribution may contain rules under two different licenses. 
 #
-#  Rules with sids 100000000 through 100000908 are under the GPLv2.
+#  Rules with sids 1 through 3464, and 100000000 through 100000908 are under the GPLv2.
 #  A copy of that license is available at http://www.gnu.org/licenses/gpl-2.0.html
 #
 #  Rules with sids 2000000 through 2799999 are from Emerging Threats and are covered under the BSD License 
@@ -36,7 +36,7 @@
 #
 #
 
-# This Ruleset is EmergingThreats Open No-GPL optimized for snort-2.9.0-enhanced.
+# This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
 
 #alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SPECIFIC_APPS CVSTrac filediff Arbitrary Remote Code Execution"; flow: to_server,established; content:"filediff|3f|f="; nocase; http_uri; pcre:"/\/filediff\?((&?v\d?=[\d.]+?)+?&f\x3d|f\x3d.+?(&v\d?=[\d.]+?)+?).+?\x3b.+?\x3b/Ui"; reference:bugtraq,10878; reference:cve,2004-1456; reference:url,doc.emergingthreats.net/bin/view/Main/2002697; classtype:web-application-attack; sid:2002697; rev:8; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -5316,8 +5316,11 @@ alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SPECIFIC_A
 
 #alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SPECIFIC_APPS PHPAccounts SQL Injection Attempt -- index.php Vendor_ID UPDATE"; flow:established,to_server; uricontent:"/index.php?"; nocase; uricontent:"Vendor_ID="; nocase; uricontent:"UPDATE"; nocase; pcre:"/.+UPDATE.+SET/Ui"; reference:cve,CVE-2007-3345; reference:url,pridels-team.blogspot.com/2007/06/phpaccounts-vuln.html; reference:url,doc.emergingthreats.net/2006545; classtype:web-application-attack; sid:2006545; rev:5; metadata:affected_product Web_Server_Applications, attack_target Web_Server, deployment Datacenter, tag SQL_Injection, signature_severity Major, created_at 2010_07_30, updated_at 2016_07_01;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SPECIFIC_APPS PHPauction GPL converter.inc.php include_path Parameter Remote File Inclusion"; flow:to_server,established; content:"GET "; depth:4; uricontent:"/includes/converter.inc.php?"; nocase; uricontent:"include_path="; nocase; pcre:"/include_path=\s*(ftps?|https?|php)\://Ui"; reference:url,vupen.com/english/advisories/2008/0908; reference:bugtraq,28284; reference:url,milw0rm.com/exploits/5266; reference:url,doc.emergingthreats.net/2009871; classtype:web-application-attack; sid:2009871; rev:3; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SPECIFIC_APPS PHPauction GPL messages.inc.php include_path Parameter Remote File Inclusion"; flow:to_server,established; content:"GET "; depth:4; uricontent:"/includes/messages.inc.php?"; nocase; uricontent:"include_path="; nocase; pcre:"/include_path=\s*(ftps?|https?|php)\://Ui"; reference:url,vupen.com/english/advisories/2008/0908; reference:bugtraq,28284; reference:url,milw0rm.com/exploits/5266; reference:url,doc.emergingthreats.net/2009872; classtype:web-application-attack; sid:2009872; rev:3; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SPECIFIC_APPS PHPauction GPL settings.inc.php include_path Parameter Remote File Inclusion"; flow:to_server,established; content:"GET "; depth:4; uricontent:"/includes/settings.inc.php?"; nocase; uricontent:"include_path="; nocase; pcre:"/include_path=\s*(ftps?|https?|php)\://Ui"; reference:url,vupen.com/english/advisories/2008/0908; reference:bugtraq,28284; reference:url,milw0rm.com/exploits/5266; reference:url,doc.emergingthreats.net/2009873; classtype:web-application-attack; sid:2009873; rev:3; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
 #alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET WEB_SPECIFIC_APPS XSS Possible Arbitrary Scripting Code Attack in phpBB (private message)"; flow: established,from_server; content:"privmsg.php"; pcre:"/\<a href="[^"]*(script|about|applet|activex|chrome)\s*\:/i"; reference:url,www.securitytracker.com/alerts/2005/May/1013918.html; reference:url,doc.emergingthreats.net/2001928; classtype:web-application-attack; sid:2001928; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -9097,10 +9100,13 @@ alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SPECIFIC_A
 
 alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SPECIFIC_APPS z1exchange edit.php site parameter SQL injection"; flow:established,to_server; content:"GET "; depth:4; uricontent:"/edit.php?"; nocase; uricontent:"site="; nocase; uricontent:"UNION"; nocase; uricontent:"SELECT"; nocase; pcre:"/UNION.+SELECT/Ui"; reference:bugtraq,32556; reference:url,milw0rm.com/exploits/7311; reference:url,doc.emergingthreats.net/2008928; classtype:web-application-attack; sid:2008928; rev:3; metadata:affected_product Web_Server_Applications, attack_target Web_Server, deployment Datacenter, tag SQL_Injection, signature_severity Major, created_at 2010_07_30, updated_at 2016_07_01;)
 
+alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"GPL WEB_SPECIFIC_APPS PHPNuke Forum viewtopic SQL insertion attempt"; flow:to_server,established; uricontent:"/modules.php"; nocase; content:"name=Forums"; content:"file=viewtopic"; pcre:"/forum=.*'/"; reference:bugtraq,7193; classtype:web-application-attack; sid:2102654; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SPECIFIC_APPS BASE base_stat_common.php remote file include"; flow:to_server,established; content:"/base_stat_common.php"; nocase; http_uri; content:"BASE_path="; http_uri; nocase; pcre:"/BASE_path=(?:(?:ht|f)tps?|data|php)/Ui"; reference:url,secunia.com/advisories/20300/; classtype:web-application-attack; sid:2019524; rev:5; metadata:affected_product Any, attack_target Server, deployment Datacenter, tag Remote_File_Include, signature_severity Major, created_at 2010_09_23, updated_at 2016_07_01;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SPECIFIC_APPS NetScreen SA 5000 delhomepage.cgi access"; flow:to_server,established; content:"/delhomepage.cgi"; http_uri; fast_pattern:only; reference:bugtraq,9791; classtype:web-application-activity; sid:2103062; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
+#alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL WEB_SPECIFIC_APPS oracle web arbitrary command execution attempt"; flow:to_server,established; content:"/ows-bin/"; nocase; http_uri; content:"?&"; http_uri; reference:bugtraq,1053; reference:cve,2000-0169; reference:nessus,10348; classtype:web-application-attack; sid:2101193; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SPECIFIC_APPS Euchia CMS catalogo.php id_livello Parameter Cross Site Scripting Attempt"; flow:established,to_server; uricontent:"/catalogo.php?"; nocase; uricontent:"id_livello="; nocase; pcre:"/id_livello\x3d.+(script|onmouse[a-z]+|onkey[a-z]+|onload|onunload|ondragdrop|onblur|onfocus|onclick|ondblclick|onsubmit|onreset|onselect|onchange|style\x3D)/Ui"; reference:url,inj3ct0r.com/exploits/13028; classtype:web-application-attack; sid:2011571; rev:1; metadata:affected_product Web_Server_Applications, attack_target Web_Server, deployment Datacenter, tag XSS, tag Cross_Site_Scripting, signature_severity Major, created_at 2010_09_27, updated_at 2016_07_01;)
 
