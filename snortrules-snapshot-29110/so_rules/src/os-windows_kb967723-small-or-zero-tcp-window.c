@@ -89,10 +89,15 @@ static RuleReference *rule15912refs[] =
 };
 /* metadata for sid 15912 */
 /* metadata:; */
+static RuleMetaData rule15912policy1 =
+{
+   "policy max-detect-ips drop"
+};
 
 
 static RuleMetaData *rule15912metadata[] =
 {
+    &rule15912policy1,
     NULL
 };
 
@@ -119,7 +124,7 @@ Rule rule15912 = {
    { 
        3,  /* genid */
        15912, /* sigid */
-       8, /* revision */
+       9, /* revision */
    
 //       "attempted-dos; detection_filter: track by_src, count 200, seconds 30", /* classification */
        "attempted-dos", /* classification */
