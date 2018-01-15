@@ -73,7 +73,7 @@
 2000380 || ET EXPLOIT MS-SQL Spike buffer overflow || url,doc.emergingthreats.net/bin/view/Main/2000380 || bugtraq,5411
 2000381 || ET DELETED EXPLOIT MS-SQL DOS bouncing packets || url,doc.emergingthreats.net/bin/view/Main/2000381 || url,www.nextgenss.com/papers/tp-SQL2000.pdf
 2000418 || ET POLICY Executable and linking format (ELF) file download || url,doc.emergingthreats.net/bin/view/Main/2000418 || url,www.itee.uq.edu.au/~cristina/students/david/honoursThesis96/bff.htm
-2000419 || ET POLICY PE EXE or DLL Windows file download || url,doc.emergingthreats.net/bin/view/Main/2000419
+2000419 || ET POLICY PE EXE or DLL Windows file download Non-HTTP || url,doc.emergingthreats.net/bin/view/Main/2000419
 2000420 || ET POLICY REG files version 4 download || url,doc.emergingthreats.net/bin/view/Main/2000420 || url,www.ss64.com/nt/regedit.html
 2000421 || ET POLICY REG files version 5 download || url,doc.emergingthreats.net/bin/view/Main/2000421 || url,www.ss64.com/nt/regedit.html
 2000422 || ET POLICY REG files version 5 Unicode download || url,doc.emergingthreats.net/bin/view/Main/2000422 || url,www.ss64.com/nt/regedit.html
@@ -9932,7 +9932,7 @@
 2012609 || ET CURRENT_EVENTS Phoenix Java Exploit Attempt Request for .class from octal host || cve,CVE-2010-4452 || url,fhoguin.com/2011/03/oracle-java-unsigned-applet-applet2classloader-remote-code-execution-vulnerability-zdi-11-084-explained/
 2012610 || ET CURRENT_EVENTS Java Exploit io.exe download served
 2012611 || ET USER_AGENTS Suspicious User-Agent Sample
-2012612 || ET TROJAN Hiloti Style GET to PHP with invalid terse MSIE headers
+2012612 || ET INFO Hiloti Style GET to PHP with invalid terse MSIE headers
 2012613 || ET DELETED SpyeEye Trojan Request file=grabbers
 2012614 || ET CURRENT_EVENTS Internal WebServer Compromised By Lizamoon Mass SQL-Injection Attacks || url,malwaresurvival.net/tag/lizamoon-com/
 2012615 || ET MALWARE Unknown Malware PUTLINK Command Message
@@ -18575,46 +18575,46 @@
 2021642 || ET TROJAN Ponmocup Post Infection DNS Lookup messagewild
 2021643 || ET MALWARE DealPly Adware CnC Beacon 3
 2021644 || ET EXPLOIT Websense Content Gateway submit_net_debug.cgi cmd_param Param Buffer Overflow Attempt || url,seclists.org/fulldisclosure/2015/Aug/8 || cve,2015-5718
-2021645 || ET TROJAN APT Cheshire Cat DNS Lookup (holidayapartments4you. com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021646 || ET TROJAN APT Cheshire Cat DNS Lookup (euro-rafting.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021647 || ET TROJAN APT Cheshire Cat DNS Lookup (holidayapartments-Paris.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021648 || ET TROJAN APT Cheshire Cat DNS Lookup (paris-holidayapartments.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021649 || ET TROJAN APT Cheshire Cat DNS Lookup (franceholidayapartments.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021650 || ET TROJAN APT Cheshire Cat DNS Lookup (apartmentsin-paris.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021651 || ET TROJAN APT Cheshire Cat DNS Lookup (raftingholiday.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021652 || ET TROJAN APT Cheshire Cat DNS Lookup (eurorafting-tr.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021653 || ET TROJAN APT Cheshire Cat DNS Lookup (turkeyextremerafting.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021654 || ET TROJAN APT Cheshire Cat DNS Lookup (raftingtours-turkey.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021655 || ET TROJAN APT Cheshire Cat DNS Lookup (divextreme-ar.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021656 || ET TROJAN APT Cheshire Cat DNS Lookup (crazy-jump.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021657 || ET TROJAN APT Cheshire Cat DNS Lookup (dive-extreme.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021658 || ET TROJAN APT Cheshire Cat DNS Lookup (tandemskydive-ar.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021659 || ET TROJAN APT Cheshire Cat DNS Lookup (groupdive.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021660 || ET TROJAN APT Cheshire Cat DNS Lookup (skydivelessons.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021661 || ET TROJAN APT Cheshire Cat DNS Lookup (bungee4you-br.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021662 || ET TROJAN APT Cheshire Cat DNS Lookup (brazil-crazybungee.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021663 || ET TROJAN APT Cheshire Cat DNS Lookup (bungeejumping-br.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021664 || ET TROJAN APT Cheshire Cat DNS Lookup (groupbungee-br.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021665 || ET TROJAN APT Cheshire Cat DNS Lookup (divextreme-au.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021666 || ET TROJAN APT Cheshire Cat DNS Lookup (crazyjump-uy.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021667 || ET TROJAN APT Cheshire Cat DNS Lookup (stuntjumps.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021668 || ET TROJAN APT Cheshire Cat DNS Lookup (tandemskydive-au.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021669 || ET TROJAN APT Cheshire Cat DNS Lookup (groupdive-au.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021670 || ET TROJAN APT Cheshire Cat DNS Lookup (au-skydivelessons.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021671 || ET TROJAN APT Cheshire Cat DNS Lookup (bungee4you-uy.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021672 || ET TROJAN APT Cheshire Cat DNS Lookup (uruguay-crazybungee.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021673 || ET TROJAN APT Cheshire Cat DNS Lookup (bungeejumping-uy.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021674 || ET TROJAN APT Cheshire Cat DNS Lookup (groupbungee-uy.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021675 || ET TROJAN APT Cheshire Cat DNS Lookup (circlesofourlives-ir.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021676 || ET TROJAN APT Cheshire Cat DNS Lookup (clickflowers-hk.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021677 || ET TROJAN APT Cheshire Cat DNS Lookup (cropcirclestours.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021678 || ET TROJAN APT Cheshire Cat DNS Lookup (irelancropcircles.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021679 || ET TROJAN APT Cheshire Cat DNS Lookup (ir-cool.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021680 || ET TROJAN APT Cheshire Cat DNS Lookup (magnificentcircles.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021681 || ET TROJAN APT Cheshire Cat DNS Lookup (china-flowershop.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021682 || ET TROJAN APT Cheshire Cat DNS Lookup (hongkong-bouquets.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021683 || ET TROJAN APT Cheshire Cat DNS Lookup (beautifuldaisies.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
-2021684 || ET TROJAN APT Cheshire Cat DNS Lookup (rosesinchina.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021645 || ET DELETED APT Cheshire Cat DNS Lookup (holidayapartments4you. com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021646 || ET DELETED APT Cheshire Cat DNS Lookup (euro-rafting.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021647 || ET DELETED APT Cheshire Cat DNS Lookup (holidayapartments-Paris.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021648 || ET DELETED APT Cheshire Cat DNS Lookup (paris-holidayapartments.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021649 || ET DELETED APT Cheshire Cat DNS Lookup (franceholidayapartments.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021650 || ET DELETED APT Cheshire Cat DNS Lookup (apartmentsin-paris.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021651 || ET DELETED APT Cheshire Cat DNS Lookup (raftingholiday.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021652 || ET DELETED APT Cheshire Cat DNS Lookup (eurorafting-tr.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021653 || ET DELETED APT Cheshire Cat DNS Lookup (turkeyextremerafting.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021654 || ET DELETED APT Cheshire Cat DNS Lookup (raftingtours-turkey.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021655 || ET DELETED APT Cheshire Cat DNS Lookup (divextreme-ar.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021656 || ET DELETED APT Cheshire Cat DNS Lookup (crazy-jump.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021657 || ET DELETED APT Cheshire Cat DNS Lookup (dive-extreme.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021658 || ET DELETED APT Cheshire Cat DNS Lookup (tandemskydive-ar.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021659 || ET DELETED APT Cheshire Cat DNS Lookup (groupdive. com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021660 || ET DELETED APT Cheshire Cat DNS Lookup (skydivelessons.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021661 || ET DELETED APT Cheshire Cat DNS Lookup (bungee4you-br.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021662 || ET DELETED APT Cheshire Cat DNS Lookup (brazil-crazybungee.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021663 || ET DELETED APT Cheshire Cat DNS Lookup (bungeejumping-br.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021664 || ET DELETED APT Cheshire Cat DNS Lookup (groupbungee-br.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021665 || ET DELETED APT Cheshire Cat DNS Lookup (divextreme-au.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021666 || ET DELETED APT Cheshire Cat DNS Lookup (crazyjump-uy.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021667 || ET DELETED APT Cheshire Cat DNS Lookup (stuntjumps.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021668 || ET DELETED APT Cheshire Cat DNS Lookup (tandemskydive-au.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021669 || ET DELETED APT Cheshire Cat DNS Lookup (groupdive-au.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021670 || ET DELETED APT Cheshire Cat DNS Lookup (au-skydivelessons.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021671 || ET DELETED APT Cheshire Cat DNS Lookup (bungee4you-uy.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021672 || ET DELETED APT Cheshire Cat DNS Lookup (uruguay-crazybungee.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021673 || ET DELETED APT Cheshire Cat DNS Lookup (bungeejumping-uy.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021674 || ET DELETED APT Cheshire Cat DNS Lookup (groupbungee-uy.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021675 || ET DELETED APT Cheshire Cat DNS Lookup (circlesofourlives-ir.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021676 || ET DELETED APT Cheshire Cat DNS Lookup (clickflowers-hk.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021677 || ET DELETED APT Cheshire Cat DNS Lookup (cropcirclestours.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021678 || ET DELETED APT Cheshire Cat DNS Lookup (irelancropcircles.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021679 || ET DELETED APT Cheshire Cat DNS Lookup (ir-cool.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021680 || ET DELETED APT Cheshire Cat DNS Lookup (magnificentcircles.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021681 || ET DELETED APT Cheshire Cat DNS Lookup (china-flowershop.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021682 || ET DELETED APT Cheshire Cat DNS Lookup (hongkong-bouquets.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021683 || ET DELETED APT Cheshire Cat DNS Lookup (beautifuldaisies.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
+2021684 || ET DELETED APT Cheshire Cat DNS Lookup (rosesinchina.com) || url,kernelmode.info/forum/viewtopic.php?f=16&t=3981
 2021685 || ET TROJAN BandarChor Ransomware Checkin || url,f-secure.com/weblog/archives/00002795.html || md5,d32b6c067e64c141b0c239d23ab1ffd1 || md5,fba4af888ae0e838dd083d4cfebc8f39
 2021686 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Gozi MITM) || url,sslbl.abuse.ch
 2021687 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Gozi MITM) || url,sslbl.abuse.ch
@@ -22067,6 +22067,11 @@
 2025185 || ET WEB_CLIENT Spectre Kernel Memory Leakage JavaScript || url,spectreattack.com/spectre.pdf
 2025186 || ET CURRENT_EVENTS CoinMiner Malicious Authline Seen After CVE-2017-10271 Exploit || url,otx.alienvault.com/pulse/5a4e1c4993199b299f90a212
 2025187 || ET TROJAN MedusaHTTP CnC Checkin || url,www.arbornetworks.com/blog/asert/medusahttp-ddos-slithers-back-spotlight || md5,d463ee91a2d7b8482554c23bb7d9aa3d
+2025188 || ET WEB_CLIENT Spectre Exploit Javascript
+2025195 || ET EXPLOIT Possible MeltDown PoC Download In Progress
+2025196 || ET EXPLOIT Possible Spectre PoC Download In Progress
+2025197 || ET CURRENT_EVENTS Tech Support Phone Scam Landing 2018-01-10
+2025198 || ET TROJAN Bitter RAT HTTP CnC Beacon M2 || md5,cc58dd8592555ff6275196e62af3242e || url,community.rsa.com/community/products/netwitness/blog/2018/01/10/malspam-delivers-bitter-rat-07-01-2018
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -24748,6 +24753,8 @@
 2500075 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 38 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500076 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 39 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500077 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 39 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500078 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 40 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500079 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 40 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520001 || ET TOR Known Tor Exit Node UDP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520002 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -24896,8 +24903,6 @@
 2520145 || ET TOR Known Tor Exit Node UDP Traffic group 73 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520146 || ET TOR Known Tor Exit Node TCP Traffic group 74 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520147 || ET TOR Known Tor Exit Node UDP Traffic group 74 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520148 || ET TOR Known Tor Exit Node TCP Traffic group 75 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520149 || ET TOR Known Tor Exit Node UDP Traffic group 75 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522001 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26200,27 +26205,3 @@
 2523299 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 650 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523300 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 651 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523301 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 651 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523302 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 652 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523303 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 652 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523304 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 653 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523305 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 653 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523306 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 654 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523307 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 654 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523308 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 655 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523309 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 655 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523310 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 656 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523311 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 656 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523312 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 657 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523313 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 657 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523314 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 658 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523315 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 658 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523316 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 659 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523317 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 659 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523318 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 660 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523319 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 660 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523320 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 661 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523321 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 661 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523322 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 662 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523323 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 662 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523324 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 663 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523325 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 663 || url,doc.emergingthreats.net/bin/view/Main/TorRules
