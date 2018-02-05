@@ -132,10 +132,10 @@ static RuleMetaData rule13954service1 =
 };
 
 
-//static RuleMetaData rule13954policy1 = 
-//{
-//    "policy balanced-ips drop"
-//};
+static RuleMetaData rule13954policy1 = 
+{
+    "policy max-detect-ips drop"
+};
 //
 //static RuleMetaData rule13954policy2 = 
 //{
@@ -146,7 +146,7 @@ static RuleMetaData rule13954service1 =
 static RuleMetaData *rule13954metadata[] =
 {
     &rule13954service1,
-//    &rule13954policy1,
+    &rule13954policy1,
 //    &rule13954policy2,
     NULL
 };
@@ -173,7 +173,7 @@ Rule rule13954 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        13954, /* sigid */
-       9, /* revision */
+       10, /* revision */
    
        "attempted-user", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */

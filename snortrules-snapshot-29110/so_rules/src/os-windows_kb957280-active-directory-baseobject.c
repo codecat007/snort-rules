@@ -92,10 +92,10 @@ static RuleReference *rule14646refs[] =
 //};
 //
 //
-//static RuleMetaData rule14646policy1 = 
-//{
-//    "policy balanced-ips drop"
-//};
+static RuleMetaData rule14646policy1 = 
+{
+    "policy max-detect-ips drop"
+};
 //
 //static RuleMetaData rule14646policy2 = 
 //{
@@ -106,7 +106,7 @@ static RuleReference *rule14646refs[] =
 static RuleMetaData *rule14646metadata[] =
 {
 //    &rule14646service1,
-//    &rule14646policy1,
+    &rule14646policy1,
 //    &rule14646policy2,
     NULL
 };
@@ -132,7 +132,7 @@ Rule rule14646 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        14646, /* sigid */
-       7, /* revision */
+       8, /* revision */
    
        "attempted-dos", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */

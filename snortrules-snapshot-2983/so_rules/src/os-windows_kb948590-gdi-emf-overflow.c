@@ -152,13 +152,24 @@ static RuleMetaData rule13676service4 =
    "service pop3"
 };
 
+static RuleMetaData rule13676policy1 =
+{
+   "policy max-detect-ips drop"
+};
+
 static RuleMetaData *rule13676metadata[] =
 {
    &rule13676service1,
    &rule13676service2,
    &rule13676service3,
    &rule13676service4,
+   &rule13676policy1,
    NULL
+};
+
+static RuleMetaData rule40130policy1 =
+{
+   "policy max-detect-ips drop"
 };
 
 /* metadata for sid 40130 */
@@ -170,6 +181,7 @@ static RuleMetaData rule40130service1 =
 static RuleMetaData *rule40130metadata[] =
 {
    &rule40130service1,
+   &rule40130policy1,
    NULL
 };
 
@@ -196,7 +208,7 @@ Rule rule13676 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        13676, /* sigid */
-       9, /* revision */
+       10, /* revision */
        "attempted-user", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
        "OS-WINDOWS Microsoft Windows GDI emf filename buffer overflow attempt",     /* message */
@@ -231,7 +243,7 @@ Rule rule40130 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        40130, /* sigid */
-       1, /* revision */
+       2, /* revision */
        "attempted-user", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
        "OS-WINDOWS Microsoft Windows GDI emf filename buffer overflow attempt",     /* message */

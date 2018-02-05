@@ -97,6 +97,18 @@ RuleOption *ruleIGMPIPOPTDOSoptions[] =
     NULL
 };
 
+static RuleMetaData ruleIGMPIPOPTDOSpolicy1 =
+{
+   "policy max-detect-ips drop"
+};
+
+static RuleMetaData *ruleIGMPIPOPTDOSmetadata[] =
+{
+   &ruleIGMPIPOPTDOSpolicy1,
+   NULL
+};
+
+
 Rule ruleIGMPIPOPTDOS = {
    /* rule header, akin to => tcp any any -> any any               */
    {
@@ -111,13 +123,13 @@ Rule ruleIGMPIPOPTDOS = {
    { 
        3,  /* genid (HARDCODED!!!) */
        8092, /* sigid  ef742e3c-207d-4049-bfd8-4775ce84178c */
-       6, /* revision  5134a9bf-3823-4038-b0dd-79fb4f520908 */
+       7, /* revision  5134a9bf-3823-4038-b0dd-79fb4f520908 */
    
        "attempted-dos", /* classification, generic */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
        "OS-WINDOWS IGMP IP Options validation attempt",     /* message */
-       ruleIGMPIPOPTDOSrefs /* ptr to references */
-        ,NULL
+       ruleIGMPIPOPTDOSrefs, /* ptr to references */
+       ruleIGMPIPOPTDOSmetadata /* ptr to metadata */
    },
    ruleIGMPIPOPTDOSoptions, /* ptr to rule options */
    &ruleIGMPIPOPTDOSeval, /* ptr to rule detection function */

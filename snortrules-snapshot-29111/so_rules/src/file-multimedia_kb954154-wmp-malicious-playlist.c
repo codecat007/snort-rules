@@ -159,23 +159,15 @@ static RuleMetaData *rule14252metadata[] =
    NULL
 };
 
-/* metadata:policy balanced-ips drop, policy security-ips drop; */
-
-//static RuleMetaData ruleCVE_2008_2253policy1 = 
-//{
-//    "policy balanced-ips drop"
-//};
-//
-//static RuleMetaData ruleCVE_2008_2253policy2 = 
-//{
-//    "policy security-ips drop"
-//};
-
+/* metadata:policy max-detect-ips drop; */
+static RuleMetaData ruleCVE_2008_2253policy1 = 
+{
+    "policy max-detect-ips drop"
+};
 
 static RuleMetaData *ruleCVE_2008_2253metadata[] =
 {
-//    &ruleCVE_2008_2253policy1,
-//    &ruleCVE_2008_2253policy2,
+    &ruleCVE_2008_2253policy1,
     NULL
 };
 
@@ -270,7 +262,7 @@ Rule rule14253 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        14253, /* sigid */
-       15, /* revision */
+       16, /* revision */
    
        "attempted-user", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
@@ -347,7 +339,7 @@ Rule rule14254 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        14254, /* sigid */
-       15, /* revision */
+       16, /* revision */
    
        "attempted-user", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */

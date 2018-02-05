@@ -130,12 +130,17 @@ static RuleMetaData rule17700policy2 =
     "policy security-ips drop"
 };
 
+static RuleMetaData rule17700policy3 = 
+{
+    "policy max-detect-ips drop"
+};
 
 static RuleMetaData *rule17700metadata[] =
 {
     &rule17700service1,
     &rule17700policy1,
     &rule17700policy2,
+    &rule17700policy3,
     NULL
 };
 
@@ -164,7 +169,7 @@ Rule rule17700 = {
    { 
        3,  /* genid */
        17700, /* sigid */
-       6, /* revision */
+       7, /* revision */
        "attempted-user", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
        "FILE-MULTIMEDIA RealNetworks RealPlayer wav chunk string overflow attempt",     /* message */

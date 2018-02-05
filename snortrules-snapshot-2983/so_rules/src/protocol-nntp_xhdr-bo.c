@@ -85,6 +85,17 @@ RuleOption *ruleNNTP_XHDR_BOoptions[] =
     NULL
 };
 
+static RuleMetaData ruleNNTP_XHDR_BOpolicy1 =
+{
+   "policy max-detect-ips drop"
+};
+
+static RuleMetaData *ruleNNTP_XHDR_BOmetadata[] =
+{
+   &ruleNNTP_XHDR_BOpolicy1,
+   NULL
+};
+
 Rule ruleNNTP_XHDR_BO = {
    /* rule header */
    {
@@ -99,13 +110,13 @@ Rule ruleNNTP_XHDR_BO = {
    { 
        3,  /* genid (HARDCODED!!!) */
        12636, /* sigid 441ad88b-8be7-4969-88a5-cf17bdb63172 */
-       5, /* revision c72a2f58-fcc3-4c2b-b365-958f2a3df598 */
+       6, /* revision c72a2f58-fcc3-4c2b-b365-958f2a3df598 */
    
        "attempted-user", /* classification, generic */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
        "PROTOCOL-NNTP XHDR buffer overflow attempt",     /* message */
-       ruleNNTP_XHDR_BOrefs /* ptr to references */
-        ,NULL
+       ruleNNTP_XHDR_BOrefs, /* ptr to references */
+       ruleNNTP_XHDR_BOmetadata /* ptr to metadata */
    },
    ruleNNTP_XHDR_BOoptions, /* ptr to rule options */
    &ruleNNTP_XHDR_BOeval, /* ptr to rule detection function */

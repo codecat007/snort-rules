@@ -146,6 +146,18 @@ static RuleOption rule15328option4 =
     }
 };
 
+/* metadata for sid 15328 */
+/* metadata:policy max-detect-ips drop; */
+static RuleMetaData rule15328policy1 = 
+{
+   "policy max-detect-ips drop"
+};
+
+static RuleMetaData *rule15328metadata[] =
+{
+   &rule15328policy1,
+   NULL
+};
 
 RuleOption *rule15328options[] =
 {
@@ -171,12 +183,13 @@ Rule rule15328 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        15328, /* sigid */
-       5, /* revision  */
+       6, /* revision  */
    
        "attempted-user", /* classification, generic */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
        "FILE-JAVA Sun JDK image parsing library ICC buffer overflow attempt",     /* message */
-       rule15328refs /* ptr to references */
+       rule15328refs, /* ptr to references */
+       rule15328metadata /* ptr to metadata */
    },
    rule15328options, /* ptr to rule options */
    &rule15328eval, /* ptr to rule detection function */

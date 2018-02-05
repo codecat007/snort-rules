@@ -192,15 +192,15 @@ static RuleReference *rule13666refs[] =
 /* metadata for sid 13666 */
 /* metadata:policy security-ips drop; */
 
-//static RuleMetaData rule13666policy1 = 
-//{
-//    "policy security-ips drop"
-//};
+static RuleMetaData rule13666policy1 = 
+{
+    "policy max-detect-ips drop"
+};
 
 
 static RuleMetaData *rule13666metadata[] =
 {
-//    &rule13666policy1,
+    &rule13666policy1,
     NULL
 };
 RuleOption *rule13666options[] =
@@ -229,7 +229,7 @@ Rule rule13666 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        13666, /* sigid */
-       12, /* revision */
+       13, /* revision */
    
        "attempted-user", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */

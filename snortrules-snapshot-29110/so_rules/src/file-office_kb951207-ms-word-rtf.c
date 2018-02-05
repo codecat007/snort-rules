@@ -109,17 +109,15 @@ static RuleMetaData rule13803service1 =
     "service http"
 };
 
-
-//static RuleMetaData rule13803policy1 = 
-//{
-//    "policy security-ips drop"
-//};
-
+static RuleMetaData rule13803policy1 = 
+{
+    "policy max-detect-ips drop"
+};
 
 static RuleMetaData *rule13803metadata[] =
 {
     &rule13803service1,
-//    &rule13803policy1,
+    &rule13803policy1,
     NULL
 };
 RuleOption *rule13803options[] =
@@ -144,7 +142,7 @@ Rule rule13803 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        13803, /* sigid */
-       13, /* revision */
+       14, /* revision */
    
        "attempted-user", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */

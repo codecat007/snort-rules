@@ -151,6 +151,11 @@ static RuleMetaData rule13897policy2 =
    "policy security-ips drop"
 };
 
+static RuleMetaData rule13897policy3 = 
+{
+   "policy max-detect-ips drop"
+};
+
 static RuleMetaData *rule13897metadata[] =
 {
    &rule13897service1,
@@ -158,6 +163,7 @@ static RuleMetaData *rule13897metadata[] =
    &rule13897service3,
    &rule13897policy1,
    &rule13897policy2,
+   &rule13897policy3,
    NULL
 };
 
@@ -184,7 +190,7 @@ Rule rule13897 = {
    { 
       3,  /* genid */
       13897, /* sigid */
-      8, /* revision */
+      9, /* revision */
       "attempted-user", /* classification */
       0,  /* hardcoded priority */
       "FILE-MULTIMEDIA Apple Quicktime crgn atom parsing stack buffer overflow attempt",     /* message */

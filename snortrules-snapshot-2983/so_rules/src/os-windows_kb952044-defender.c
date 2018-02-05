@@ -113,16 +113,16 @@ static RuleMetaData rule13798service1 =
 };
 
 
-//static RuleMetaData rule13798policy1 = 
-//{
-//    "policy security-ips drop"
-//};
+static RuleMetaData rule13798policy1 = 
+{
+    "policy max-detect-ips drop"
+};
 
 
 static RuleMetaData *rule13798metadata[] =
 {
     &rule13798service1,
-//    &rule13798policy1,
+    &rule13798policy1,
     NULL
 };
 
@@ -148,7 +148,7 @@ Rule rule13798 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        13798, /* sigid */
-       7, /* revision */
+       8, /* revision */
    
        "attempted-dos", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
@@ -317,16 +317,16 @@ static RuleMetaData rule13802service1 =
 };
 
 
-//static RuleMetaData rule13802policy1 = 
-//{
-//    "policy security-ips drop"
-//};
+static RuleMetaData rule13802policy1 = 
+{
+    "policy max-detect-ips drop"
+};
 
 
 static RuleMetaData *rule13802metadata[] =
 {
     &rule13802service1,
-//    &rule13802policy1,
+    &rule13802policy1,
     NULL
 };
 
@@ -356,7 +356,7 @@ Rule rule13802 = {
    { 
        3,  /* genid (HARDCODED!!!) */
        13802, /* sigid */
-       6, /* revision */
+       7, /* revision */
    
        "attempted-dos", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */

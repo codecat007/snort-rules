@@ -125,12 +125,15 @@ static RuleMetaData rule24666service3 =
    "service pop3"
 };
 
-
 static RuleMetaData rule24666policy1 = 
 {
    "policy security-ips drop"
 };
 
+static RuleMetaData rule24666policy2 = 
+{
+   "policy max-detect-ips drop"
+};
 
 static RuleMetaData *rule24666metadata[] =
 {
@@ -138,6 +141,7 @@ static RuleMetaData *rule24666metadata[] =
    &rule24666service2,
    &rule24666service3,
    &rule24666policy1,
+   &rule24666policy2,
    NULL
 };
 
@@ -163,7 +167,7 @@ Rule rule24666 = {
    { 
       3,  /* genid */
       24666, /* sigid */
-      5, /* revision */
+      6, /* revision */
       "attempted-user", /* classification */
       0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
       "FILE-OFFICE Excel invalid data item buffer overflow attempt",    /* message */

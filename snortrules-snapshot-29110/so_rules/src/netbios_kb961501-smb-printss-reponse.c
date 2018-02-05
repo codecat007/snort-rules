@@ -196,12 +196,17 @@ static RuleReference *rule20275refs[] =
     &rule20275ref3,
     NULL
 };
-/* metadata for sid 20275 */
-/* metadata:; */
 
+/* metadata for sid 20275 */
+/* metadata:policy max-detect-ips drop; */
+static RuleMetaData rule20275policy1 = 
+{
+   "policy max-detect-ips drop"
+};
 
 static RuleMetaData *rule20275metadata[] =
 {
+    &rule20275policy1,
     NULL
 };
 
@@ -231,7 +236,7 @@ Rule rule20275 = {
    { 
        3,  /* genid */
        20275, /* sigid */
-       6, /* revision */
+       7, /* revision */
        "attempted-admin", /* classification */
        0,  /* hardcoded priority XXX NOT PROVIDED BY GRAMMAR YET! */
        "NETBIOS DCERPC NCACN-IP-TCP spoolss NetShareEnumAll response overflow attempt",     /* message */

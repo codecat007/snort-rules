@@ -192,6 +192,7 @@ static RuleMetaData *rule33587metadata[] =
 {
    &rule33587service1,
    &rule_RTFlistoverride_policy1,
+   &rule_RTFlistoverride_policy2,
    NULL
 };
 
@@ -253,7 +254,7 @@ Rule rule33587 = {
    { 
       3,  /* genid */
       33587, /* sigid */
-      4, /* revision */
+      5, /* revision */
       "attempted-user", /* classification */
       0,  /* hardcoded priority */
       "FILE-OFFICE Microsoft RTF improper listoverride nesting attempt",     /* message */
