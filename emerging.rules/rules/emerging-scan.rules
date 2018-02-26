@@ -340,7 +340,7 @@ alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET SCAN WITOOL SQ
 
 alert icmp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET SCAN Port Unreachable Response to Xprobe2 OS Fingerprint Scan"; itype:3; dsize:>69; content:"securityfocus"; content:"securityfocus"; distance:50; within:15; reference:url,xprobe.sourceforge.net/; reference:url,doc.emergingthreats.net/2009298; classtype:attempted-recon; sid:2009298; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"ET SCAN ZmEu exploit scanner"; flow:established,to_server; content:"User-Agent|3a| Made by ZmEu"; http_header; threshold: type limit, track by_src, seconds 180, count 1; reference:url,doc.emergingthreats.net/2010715; classtype:web-application-attack; sid:2010715; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"ET SCAN ZmEu exploit scanner"; flow:established,to_server; content:"User-Agent|3a| Made by ZmEu"; http_header; threshold: type limit, track by_src, seconds 180, count 1; metadata: former_category SCAN; reference:url,doc.emergingthreats.net/2010715; classtype:web-application-attack; sid:2010715; rev:7; metadata:created_at 2010_07_30, updated_at 2018_02_14;)
 
 alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET SCAN ICMP @hello request Likely Precursor to Scan"; itype:8; icode:0; content:"@hello ???"; fast_pattern:only; metadata: former_category SCAN; reference:url,doc.emergingthreats.net/2010641; classtype:misc-activity; sid:2010641; rev:4; metadata:created_at 2010_07_30, updated_at 2017_05_11;)
 
