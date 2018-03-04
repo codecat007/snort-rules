@@ -584,3 +584,5 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS Go HTT
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS [PTsecurity] Possible Trojan.Downloader UserAgent (binary_getter)"; flow:established,to_server; content:"User-Agent|3a 20|binary_getter"; http_header; metadata: former_category USER_AGENTS; classtype:bad-unknown; sid:2025203; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, deployment Perimeter, signature_severity Minor, created_at 2018_01_16, updated_at 2018_01_16;)
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS APN/Ask Toolbar PUA/PUP User-Agent"; flow:established,to_server; content:"User-Agent|3a 20|TBNotifier|0d 0a|"; http_header; fast_pattern:12,12; metadata: former_category USER_AGENTS; classtype:trojan-activity; sid:2025400; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, deployment Perimeter, signature_severity Minor, created_at 2018_02_27, performance_impact Low, updated_at 2018_02_27;)
+
