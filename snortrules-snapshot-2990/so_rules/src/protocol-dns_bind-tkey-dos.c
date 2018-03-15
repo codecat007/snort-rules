@@ -222,7 +222,7 @@ Rule rule35942 = {
    { 
       3,  /* genid */
       35942, /* sigid */
-      2, /* revision */
+      3, /* revision */
       "attempted-dos", /* classification */
       0,  /* hardcoded priority */
       "PROTOCOL-DNS ISC BIND TKEY query processing denial of service attempt",     /* message */
@@ -257,7 +257,7 @@ Rule rule35943 = {
    { 
       3,  /* genid */
       35943, /* sigid */
-      2, /* revision */
+      3, /* revision */
       "attempted-dos", /* classification */
       0,  /* hardcoded priority */
       "PROTOCOL-DNS ISC BIND TKEY query processing denial of service attempt",     /* message */
@@ -476,8 +476,15 @@ static int DetectBindTkeyDos(const uint8_t *cursor_normal, const uint8_t *end_of
 
       cursor_normal = check;
 
-      // verify type is NOT TKEY (1st condition of vuln)
-      if(additional_rr_type == 0x00F9)
+      // skip RR if type is:
+      //  TKEY (0x00F9) (expected normal)
+      //   -- or --
+      //  OPT  (0x0029) (not in vulnerable msg->section)
+      //  TSIG (0x00FA) (not in vulnerable msg->section)
+      // (1st condition of vuln)
+      if(additional_rr_type == 0x00F9 ||
+         additional_rr_type == 0x0029 ||
+         additional_rr_type == 0x00FA)
          continue;
 
       // if we skipped a pointer to the Query, then the
