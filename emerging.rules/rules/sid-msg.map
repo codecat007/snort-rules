@@ -16120,7 +16120,7 @@
 2019090 || ET EXPLOIT F5 BIG-IP rsync cmi authorized_keys successful upload || url,www.security-assessment.com/files/documents/advisory/F5_Unauthenticated_rsync_access_to_Remote_Root_Code_Execution.pdf
 2019091 || ET EXPLOIT Metasploit Random Base CharCode JS Encoded String
 2019093 || ET CURRENT_EVENTS ScanBox Framework used in WateringHole Attacks
-2019094 || ET CURRENT_EVENTS ScanBox Framework used in WateringHole Attacks Intial (POST) || url,www.alienvault.com/open-threat-exchange/blog/scanbox-a-reconnaissance-framework-used-on-watering-hole-attacks
+2019094 || ET CURRENT_EVENTS ScanBox Framework used in WateringHole Attacks Initial (POST) || url,www.alienvault.com/open-threat-exchange/blog/scanbox-a-reconnaissance-framework-used-on-watering-hole-attacks
 2019095 || ET CURRENT_EVENTS ScanBox Framework used in WateringHole Attacks (POST) PluginData || url,www.alienvault.com/open-threat-exchange/blog/scanbox-a-reconnaissance-framework-used-on-watering-hole-attacks
 2019096 || ET CURRENT_EVENTS ScanBox Framework used in WateringHole Attacks KeepAlive || url,www.alienvault.com/open-threat-exchange/blog/scanbox-a-reconnaissance-framework-used-on-watering-hole-attacks
 2019097 || ET CURRENT_EVENTS Archie EK SilverLight URI Struct
@@ -22091,7 +22091,7 @@
 2025215 || ET CURRENT_EVENTS Paypal Phishing Landing 2018-01-18 M2
 2025216 || ET CURRENT_EVENTS Malicious Chrome Extension Domain Request (change-request .info in DNS Lookup) || url,icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
 2025217 || ET CURRENT_EVENTS Malicious Chrome Extension Domain Request (nyoogle .info in DNS Lookup) || url,icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
-2025218 || ET CURRENT_EVENTS Malicious Chrome Extension Domain Request (stickies .pro in DNS Lookup) || url,icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
+2025218 || ET CURRENT_EVENTS Malicious Chrome Extension Domain Request (stickies .pro in DNS Lookup) || url,www.icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
 2025219 || ET CURRENT_EVENTS Malicious Chrome Extension Domain Request (lite-bookmarks .info in DNS Lookup) || url,icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
 2025220 || ET TROJAN Malicious Chrome Extension Requesting Websocket || url,icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
 2025221 || ET TROJAN Malicious Chrome Extension Click Fraud Activity via Websocket || url,icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
@@ -22284,6 +22284,7 @@
 2025410 || ET CURRENT_EVENTS OneDrive Phishing Landing 2018-03-08
 2025411 || ET INFO Secondary Flash Request Seen (no alert)
 2025412 || ET TROJAN [PTsecurity] Fake SSL Certificate Observed (Yahoo) || md5,ce413a29e6cde5701a26e7e4e02ecc66
+2025413 || ET TROJAN [PTsecurity] Fake SSL Certificate Observed (Oracle America) || md5,a0bbfdb2d4dbfb2f3c182bd394099803
 2025414 || ET TROJAN [PTsecurity] Fake SSL Certificate Observed (Google) || md5,8c7722acb2f7400df1027fa6741e37d5
 2025415 || ET TROJAN [PTsecurity] Fake SSL Certificate Observed (Oracle canada) || md5,f71d168b5b987d9fde792098ca5cca19
 2025416 || ET TROJAN StrongPity APT SSL Certificate Detected || url,citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-deploy-government-spyware-turkey-syria/
@@ -22299,11 +22300,14 @@
 2025426 || ET EXPLOIT MikroTik RouterOS Chimay Red Remote Code Execution Probe || url,www.exploit-db.com/exploits/44283/ || url,www.exploit-db.com/exploits/44284/
 2025427 || ET EXPLOIT [PT Security] Exim <4.90.1 Base64 Overflow RCE (CVE-2018-6789) || url,github.com/ptresearch/AttackDetection/blob/master/CVE-2018-6789/cve-2018-6789.rules || url,devco.re/blog/2018/03/06/exim-off-by-one-RCE-exploiting-CVE-2018-6789-en/ || cve,2018-6789
 2025428 || ET INFO Possible Sandvine PacketLogic Injection || url,citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-deploy-government-spyware-turkey-syria/
-2025429 || ET TROJAN Arkei Stealer IP Lookup || md5,f50d618e3a4434baa2b7167eed6308e6
-2025430 || ET TROJAN Arkei Stealer Config Download Request || md5,f50d618e3a4434baa2b7167eed6308e6
-2025431 || ET TROJAN Arkei Stealer Client Data Upload || md5,f50d618e3a4434baa2b7167eed6308e6
+2025429 || ET TROJAN Arkei Stealer IP Lookup || md5,1f075616f69983f5b3fc7ba068032c6d
+2025430 || ET TROJAN Arkei Stealer Config Download Request || md5,1f075616f69983f5b3fc7ba068032c6d
+2025431 || ET TROJAN Arkei Stealer Client Data Upload || md5,72bcbfd1020d002d2e20e0707b8ef700
 2025432 || ET EXPLOIT Apache CouchDB JSON Remote Privesc Attempt (CVE-2017-12636) || url,blog.trendmicro.com/trendlabs-security-intelligence/vulnerabilities-apache-couchdb-open-door-monero-miners/ || cve,2017-12636
 2025433 || ET TROJAN Observed Malicious SSL Cert (Bancos Variant CnC) || md5,f8b2e89717f77633c7d112c98f2d22ab
+2025434 || ET TROJAN Observed Sofacy CnC Domain (ndpmedia24 .com in DNS Lookup) || url,researchcenter.paloaltonetworks.com/2018/03/unit42-sofacy-uses-dealerschoice-target-european-government-agency
+2025435 || ET EXPLOIT Apache CouchDB JSON Remote Privesc Attempt (CVE-2017-12635) || url,blog.trendmicro.com/trendlabs-security-intelligence/vulnerabilities-apache-couchdb-open-door-monero-miners/ || cve,2017-12635
+2025436 || ET INFO Suspicious User-Agent (CustomStringHere) || md5,7a8cb1223e006bc7e70169c060d7057b
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -24724,8 +24728,6 @@
 2404699 || ET CNC Ransomware Tracker Reported CnC Server UDP group 150 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404700 || ET CNC Ransomware Tracker Reported CnC Server TCP group 151 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404701 || ET CNC Ransomware Tracker Reported CnC Server UDP group 151 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404702 || ET CNC Ransomware Tracker Reported CnC Server TCP group 152 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404703 || ET CNC Ransomware Tracker Reported CnC Server UDP group 152 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405000 || ET CNC Shadowserver Reported CnC Server Port 22 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405001 || ET CNC Shadowserver Reported CnC Server Port 80 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405002 || ET CNC Shadowserver Reported CnC Server Port 81 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -25026,8 +25028,6 @@
 2500099 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 50 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500100 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 51 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500101 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 51 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500102 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 52 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500103 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 52 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520001 || ET TOR Known Tor Exit Node UDP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520002 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -25182,8 +25182,6 @@
 2520151 || ET TOR Known Tor Exit Node UDP Traffic group 76 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520152 || ET TOR Known Tor Exit Node TCP Traffic group 77 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520153 || ET TOR Known Tor Exit Node UDP Traffic group 77 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520154 || ET TOR Known Tor Exit Node TCP Traffic group 78 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520155 || ET TOR Known Tor Exit Node UDP Traffic group 78 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522001 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26516,3 +26514,7 @@
 2523329 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 665 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523330 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 666 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523331 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 666 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523332 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 667 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523333 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 667 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523334 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 668 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523335 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 668 || url,doc.emergingthreats.net/bin/view/Main/TorRules
