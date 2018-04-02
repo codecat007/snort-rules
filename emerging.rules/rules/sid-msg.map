@@ -8497,11 +8497,11 @@
 2010931 || ET WEB_CLIENT Possible IE iepeers.dll Use-after-free Code Execution Attempt || url,doc.emergingthreats.net/2010931 || cve,2010-0806 || url,www.kb.cert.org/vuls/id/744549 || url,www.microsoft.com/technet/security/bulletin/ms10-018.mspx || url,tools.cisco.com/security/center/viewAlert.x?alertId=20052 || url,www.rec-sec.com/2010/03/10/internet-explorer-iepeers-use-after-free-exploit/
 2010932 || ET TROJAN Dropper Checkin 2 (often scripts.dlv4.com related) || url,doc.emergingthreats.net/2010932
 2010934 || ET MALWARE Infobox3 Spyware User-Agent (InfoBox) || url,doc.emergingthreats.net/2010934
-2010935 || ET POLICY Suspicious inbound to MSSQL port 1433 || url,doc.emergingthreats.net/2010935
-2010936 || ET POLICY Suspicious inbound to Oracle SQL port 1521 || url,doc.emergingthreats.net/2010936
-2010937 || ET POLICY Suspicious inbound to mySQL port 3306 || url,doc.emergingthreats.net/2010937
-2010938 || ET POLICY Suspicious inbound to mSQL port 4333 || url,doc.emergingthreats.net/2010938
-2010939 || ET POLICY Suspicious inbound to PostgreSQL port 5432 || url,doc.emergingthreats.net/2010939
+2010935 || ET SCAN Suspicious inbound to MSSQL port 1433 || url,doc.emergingthreats.net/2010935
+2010936 || ET SCAN Suspicious inbound to Oracle SQL port 1521 || url,doc.emergingthreats.net/2010936
+2010937 || ET SCAN Suspicious inbound to mySQL port 3306 || url,doc.emergingthreats.net/2010937
+2010938 || ET SCAN Suspicious inbound to mSQL port 4333 || url,doc.emergingthreats.net/2010938
+2010939 || ET SCAN Suspicious inbound to PostgreSQL port 5432 || url,doc.emergingthreats.net/2010939
 2010941 || ET EXPLOIT Possible Sendmail SpamAssassin Milter Plugin Remote Arbitrary Command Injection Attempt || url,doc.emergingthreats.net/2010941 || url,seclists.org/fulldisclosure/2010/Mar/140 || url,www.securityfocus.com/bid/38578
 2010942 || ET WEB_SPECIFIC_APPS Joomla Component com_jcollection controller Parameter Local File Inclusion Attempt || url,doc.emergingthreats.net/2010942 || url,www.exploit-db.com/exploits/11088
 2010943 || ET ACTIVEX SoftCab Sound Converter ActiveX SaveFormat File overwrite Attempt || url,doc.emergingthreats.net/2010943 || url,secunia.com/advisories/37967/
@@ -18401,7 +18401,7 @@
 2021418 || ET TROJAN Bedep HTTP POST CnC Beacon
 2021419 || ET TROJAN APT CozyCar SSL Cert 2 || url,researchcenter.paloaltonetworks.com/2015/07/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
 2021420 || ET TROJAN APT CozyCar SSL Cert 3 || url,researchcenter.paloaltonetworks.com/2015/07/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
-2021421 || ET TROJAN APT CozyCar SSL Cert 4 || url,researchcenter.paloaltonetworks.com/2015/07/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
+2021421 || ET DELETED APT CozyCar SSL Cert 4 || url,researchcenter.paloaltonetworks.com/2015/07/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
 2021422 || ET TROJAN APT CozyCar SSL Cert 5 || url,researchcenter.paloaltonetworks.com/2015/07/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
 2021423 || ET TROJAN APT CozyCar SSL Cert 6 || url,researchcenter.paloaltonetworks.com/2015/07/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
 2021424 || ET TROJAN APT CozyCar SSL Cert 7 || url,researchcenter.paloaltonetworks.com/2015/07/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
@@ -22309,6 +22309,20 @@
 2025435 || ET EXPLOIT Apache CouchDB JSON Remote Privesc Attempt (CVE-2017-12635) || url,blog.trendmicro.com/trendlabs-security-intelligence/vulnerabilities-apache-couchdb-open-door-monero-miners/ || cve,2017-12635
 2025436 || ET INFO Suspicious User-Agent (CustomStringHere) || md5,7a8cb1223e006bc7e70169c060d7057b
 2025437 || ET CURRENT_EVENTS [PTsecurity] Grandsoft EK Payload || url,www.malware-traffic-analysis.net/2018/03/15/index3.html
+2025438 || ET TROJAN Cobalt Group SSL Certificate Detected || md5,26406f5cc72e13c798485f80ad3cbbdb
+2025439 || ET TROJAN Possible Sharik/Smoke Loader Microsoft Connectivity check M2 || md5,e297f2ed2d162ad925ac140915a21405
+2025440 || ET TROJAN Possible Sharik/Smoke Loader Microsoft Connectivity check M3 || md5,e297f2ed2d162ad925ac140915a21405
+2025441 || ET TROJAN Sharik/Smoke CnC Beacon 10 || md5,e297f2ed2d162ad925ac140915a21405
+2025442 || ET CURRENT_EVENTS Adobe PDF Reader Phishing Landing 2018-03-27
+2025443 || ET CURRENT_EVENTS IRS Phishing Landing 2018-03-28
+2025444 || ET TROJAN [PTsecurity] Ursnif Socks Proxy Check-in
+2025445 || ET TROJAN [PTsecurity] Ursnif Socks5 Proxy Connection
+2025446 || ET POLICY DNS Query to .onion proxy Domain (onion. sx) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
+2025447 || ET CURRENT_EVENTS Chase Phishing Landing 2018-03-28
+2025448 || ET CURRENT_EVENTS Impots Phishing Landing 2018-03-28
+2025449 || ET POLICY DNS Query to .onion proxy Domain (onion. pw) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
+2025450 || ET CURRENT_EVENTS Comcast/Xfinity Phishing Landing 2018-03-30
+2025451 || ET POLICY Monero Mining Pool Lookup
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -24235,104 +24249,6 @@
 2403497 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 99 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
 2403498 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 100 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
 2403499 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 100 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2404000 || ET CNC Shadowserver Reported CnC Server TCP group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404001 || ET CNC Shadowserver Reported CnC Server UDP group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404002 || ET CNC Shadowserver Reported CnC Server TCP group 2 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404003 || ET CNC Shadowserver Reported CnC Server UDP group 2 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404004 || ET CNC Shadowserver Reported CnC Server TCP group 3 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404005 || ET CNC Shadowserver Reported CnC Server UDP group 3 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404006 || ET CNC Shadowserver Reported CnC Server TCP group 4 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404007 || ET CNC Shadowserver Reported CnC Server UDP group 4 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404008 || ET CNC Shadowserver Reported CnC Server TCP group 5 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404009 || ET CNC Shadowserver Reported CnC Server UDP group 5 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404010 || ET CNC Shadowserver Reported CnC Server TCP group 6 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404011 || ET CNC Shadowserver Reported CnC Server UDP group 6 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404012 || ET CNC Shadowserver Reported CnC Server TCP group 7 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404013 || ET CNC Shadowserver Reported CnC Server UDP group 7 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404014 || ET CNC Shadowserver Reported CnC Server TCP group 8 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404015 || ET CNC Shadowserver Reported CnC Server UDP group 8 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404016 || ET CNC Shadowserver Reported CnC Server TCP group 9 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404017 || ET CNC Shadowserver Reported CnC Server UDP group 9 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404018 || ET CNC Shadowserver Reported CnC Server TCP group 10 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404019 || ET CNC Shadowserver Reported CnC Server UDP group 10 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404020 || ET CNC Shadowserver Reported CnC Server TCP group 11 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404021 || ET CNC Shadowserver Reported CnC Server UDP group 11 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404022 || ET CNC Shadowserver Reported CnC Server TCP group 12 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404023 || ET CNC Shadowserver Reported CnC Server UDP group 12 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404024 || ET CNC Shadowserver Reported CnC Server TCP group 13 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404025 || ET CNC Shadowserver Reported CnC Server UDP group 13 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404026 || ET CNC Shadowserver Reported CnC Server TCP group 14 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404027 || ET CNC Shadowserver Reported CnC Server UDP group 14 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404028 || ET CNC Shadowserver Reported CnC Server TCP group 15 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404029 || ET CNC Shadowserver Reported CnC Server UDP group 15 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404030 || ET CNC Shadowserver Reported CnC Server TCP group 16 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404031 || ET CNC Shadowserver Reported CnC Server UDP group 16 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404032 || ET CNC Shadowserver Reported CnC Server TCP group 17 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404033 || ET CNC Shadowserver Reported CnC Server UDP group 17 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404034 || ET CNC Shadowserver Reported CnC Server TCP group 18 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404035 || ET CNC Shadowserver Reported CnC Server UDP group 18 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404036 || ET CNC Shadowserver Reported CnC Server TCP group 19 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404037 || ET CNC Shadowserver Reported CnC Server UDP group 19 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404038 || ET CNC Shadowserver Reported CnC Server TCP group 20 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404039 || ET CNC Shadowserver Reported CnC Server UDP group 20 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404040 || ET CNC Shadowserver Reported CnC Server TCP group 21 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404041 || ET CNC Shadowserver Reported CnC Server UDP group 21 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404042 || ET CNC Shadowserver Reported CnC Server TCP group 22 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404043 || ET CNC Shadowserver Reported CnC Server UDP group 22 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404044 || ET CNC Shadowserver Reported CnC Server TCP group 23 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404045 || ET CNC Shadowserver Reported CnC Server UDP group 23 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404046 || ET CNC Shadowserver Reported CnC Server TCP group 24 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404047 || ET CNC Shadowserver Reported CnC Server UDP group 24 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404048 || ET CNC Shadowserver Reported CnC Server TCP group 25 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404049 || ET CNC Shadowserver Reported CnC Server UDP group 25 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404050 || ET CNC Shadowserver Reported CnC Server TCP group 26 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404051 || ET CNC Shadowserver Reported CnC Server UDP group 26 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404052 || ET CNC Shadowserver Reported CnC Server TCP group 27 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404053 || ET CNC Shadowserver Reported CnC Server UDP group 27 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404054 || ET CNC Shadowserver Reported CnC Server TCP group 28 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404055 || ET CNC Shadowserver Reported CnC Server UDP group 28 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404056 || ET CNC Shadowserver Reported CnC Server TCP group 29 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404057 || ET CNC Shadowserver Reported CnC Server UDP group 29 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404058 || ET CNC Shadowserver Reported CnC Server TCP group 30 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404059 || ET CNC Shadowserver Reported CnC Server UDP group 30 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404060 || ET CNC Shadowserver Reported CnC Server TCP group 31 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404061 || ET CNC Shadowserver Reported CnC Server UDP group 31 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404062 || ET CNC Shadowserver Reported CnC Server TCP group 32 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404063 || ET CNC Shadowserver Reported CnC Server UDP group 32 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404064 || ET CNC Shadowserver Reported CnC Server TCP group 33 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404065 || ET CNC Shadowserver Reported CnC Server UDP group 33 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404066 || ET CNC Shadowserver Reported CnC Server TCP group 34 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404067 || ET CNC Shadowserver Reported CnC Server UDP group 34 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404068 || ET CNC Shadowserver Reported CnC Server TCP group 35 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404069 || ET CNC Shadowserver Reported CnC Server UDP group 35 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404070 || ET CNC Shadowserver Reported CnC Server TCP group 36 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404071 || ET CNC Shadowserver Reported CnC Server UDP group 36 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404072 || ET CNC Shadowserver Reported CnC Server TCP group 37 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404073 || ET CNC Shadowserver Reported CnC Server UDP group 37 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404074 || ET CNC Shadowserver Reported CnC Server TCP group 38 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404075 || ET CNC Shadowserver Reported CnC Server UDP group 38 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404076 || ET CNC Shadowserver Reported CnC Server TCP group 39 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404077 || ET CNC Shadowserver Reported CnC Server UDP group 39 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404078 || ET CNC Shadowserver Reported CnC Server TCP group 40 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404079 || ET CNC Shadowserver Reported CnC Server UDP group 40 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404080 || ET CNC Shadowserver Reported CnC Server TCP group 41 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404081 || ET CNC Shadowserver Reported CnC Server UDP group 41 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404082 || ET CNC Shadowserver Reported CnC Server TCP group 42 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404083 || ET CNC Shadowserver Reported CnC Server UDP group 42 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404084 || ET CNC Shadowserver Reported CnC Server TCP group 43 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404085 || ET CNC Shadowserver Reported CnC Server UDP group 43 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404086 || ET CNC Shadowserver Reported CnC Server TCP group 44 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404087 || ET CNC Shadowserver Reported CnC Server UDP group 44 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404088 || ET CNC Shadowserver Reported CnC Server TCP group 45 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404089 || ET CNC Shadowserver Reported CnC Server UDP group 45 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404090 || ET CNC Shadowserver Reported CnC Server TCP group 46 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404091 || ET CNC Shadowserver Reported CnC Server UDP group 46 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404092 || ET CNC Shadowserver Reported CnC Server TCP group 47 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404093 || ET CNC Shadowserver Reported CnC Server UDP group 47 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404094 || ET CNC Shadowserver Reported CnC Server TCP group 48 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404095 || ET CNC Shadowserver Reported CnC Server UDP group 48 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404096 || ET CNC Shadowserver Reported CnC Server TCP group 49 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404097 || ET CNC Shadowserver Reported CnC Server UDP group 49 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404150 || ET CNC Zeus Tracker Reported CnC Server TCP group 1 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404151 || ET CNC Zeus Tracker Reported CnC Server UDP group 1 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404152 || ET CNC Zeus Tracker Reported CnC Server TCP group 2 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -24729,204 +24645,6 @@
 2404699 || ET CNC Ransomware Tracker Reported CnC Server UDP group 150 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404700 || ET CNC Ransomware Tracker Reported CnC Server TCP group 151 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404701 || ET CNC Ransomware Tracker Reported CnC Server UDP group 151 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405000 || ET CNC Shadowserver Reported CnC Server Port 22 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405001 || ET CNC Shadowserver Reported CnC Server Port 80 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405002 || ET CNC Shadowserver Reported CnC Server Port 81 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405003 || ET CNC Shadowserver Reported CnC Server Port 110 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405004 || ET CNC Shadowserver Reported CnC Server Port 123 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405005 || ET CNC Shadowserver Reported CnC Server Port 443 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405006 || ET CNC Shadowserver Reported CnC Server Port 1023 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405007 || ET CNC Shadowserver Reported CnC Server Port 1080 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405008 || ET CNC Shadowserver Reported CnC Server Port 1090 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405009 || ET CNC Shadowserver Reported CnC Server Port 1099 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405010 || ET CNC Shadowserver Reported CnC Server Port 1101 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405011 || ET CNC Shadowserver Reported CnC Server Port 1223 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405012 || ET CNC Shadowserver Reported CnC Server Port 1234 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405013 || ET CNC Shadowserver Reported CnC Server Port 1337 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405014 || ET CNC Shadowserver Reported CnC Server Port 1346 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405015 || ET CNC Shadowserver Reported CnC Server Port 1433 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405016 || ET CNC Shadowserver Reported CnC Server Port 1453 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405017 || ET CNC Shadowserver Reported CnC Server Port 1587 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405018 || ET CNC Shadowserver Reported CnC Server Port 1661 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405019 || ET CNC Shadowserver Reported CnC Server Port 1728 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405020 || ET CNC Shadowserver Reported CnC Server Port 1803 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405021 || ET CNC Shadowserver Reported CnC Server Port 1863 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405022 || ET CNC Shadowserver Reported CnC Server Port 1866 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405023 || ET CNC Shadowserver Reported CnC Server Port 1868 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405024 || ET CNC Shadowserver Reported CnC Server Port 1875 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405025 || ET CNC Shadowserver Reported CnC Server Port 1887 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405026 || ET CNC Shadowserver Reported CnC Server Port 1888 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405027 || ET CNC Shadowserver Reported CnC Server Port 1889 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405028 || ET CNC Shadowserver Reported CnC Server Port 1905 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405029 || ET CNC Shadowserver Reported CnC Server Port 1921 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405030 || ET CNC Shadowserver Reported CnC Server Port 1935 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405031 || ET CNC Shadowserver Reported CnC Server Port 1989 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405032 || ET CNC Shadowserver Reported CnC Server Port 1991 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405033 || ET CNC Shadowserver Reported CnC Server Port 1995 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405034 || ET CNC Shadowserver Reported CnC Server Port 1998 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405035 || ET CNC Shadowserver Reported CnC Server Port 2007 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405036 || ET CNC Shadowserver Reported CnC Server Port 2009 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405037 || ET CNC Shadowserver Reported CnC Server Port 2012 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405038 || ET CNC Shadowserver Reported CnC Server Port 2087 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405039 || ET CNC Shadowserver Reported CnC Server Port 2201 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405040 || ET CNC Shadowserver Reported CnC Server Port 2233 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405041 || ET CNC Shadowserver Reported CnC Server Port 2293 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405042 || ET CNC Shadowserver Reported CnC Server Port 2319 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405043 || ET CNC Shadowserver Reported CnC Server Port 2345 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405044 || ET CNC Shadowserver Reported CnC Server Port 2525 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405045 || ET CNC Shadowserver Reported CnC Server Port 2828 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405046 || ET CNC Shadowserver Reported CnC Server Port 3060 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405047 || ET CNC Shadowserver Reported CnC Server Port 3108 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405048 || ET CNC Shadowserver Reported CnC Server Port 3132 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405049 || ET CNC Shadowserver Reported CnC Server Port 3179 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405050 || ET CNC Shadowserver Reported CnC Server Port 3211 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405051 || ET CNC Shadowserver Reported CnC Server Port 3303 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405052 || ET CNC Shadowserver Reported CnC Server Port 3306 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405053 || ET CNC Shadowserver Reported CnC Server Port 3333 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405054 || ET CNC Shadowserver Reported CnC Server Port 3435 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405055 || ET CNC Shadowserver Reported CnC Server Port 3705 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405056 || ET CNC Shadowserver Reported CnC Server Port 3737 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405057 || ET CNC Shadowserver Reported CnC Server Port 3921 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405058 || ET CNC Shadowserver Reported CnC Server Port 3935 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405059 || ET CNC Shadowserver Reported CnC Server Port 4001 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405060 || ET CNC Shadowserver Reported CnC Server Port 4040 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405061 || ET CNC Shadowserver Reported CnC Server Port 4042 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405062 || ET CNC Shadowserver Reported CnC Server Port 4222 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405063 || ET CNC Shadowserver Reported CnC Server Port 4242 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405064 || ET CNC Shadowserver Reported CnC Server Port 4244 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405065 || ET CNC Shadowserver Reported CnC Server Port 4318 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405066 || ET CNC Shadowserver Reported CnC Server Port 4433 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405067 || ET CNC Shadowserver Reported CnC Server Port 4443 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405068 || ET CNC Shadowserver Reported CnC Server Port 4466 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405069 || ET CNC Shadowserver Reported CnC Server Port 4510 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405070 || ET CNC Shadowserver Reported CnC Server Port 4598 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405071 || ET CNC Shadowserver Reported CnC Server Port 4646 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405072 || ET CNC Shadowserver Reported CnC Server Port 4667 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405073 || ET CNC Shadowserver Reported CnC Server Port 4676 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405074 || ET CNC Shadowserver Reported CnC Server Port 4723 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405075 || ET CNC Shadowserver Reported CnC Server Port 4747 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405076 || ET CNC Shadowserver Reported CnC Server Port 4949 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405077 || ET CNC Shadowserver Reported CnC Server Port 5050 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405078 || ET CNC Shadowserver Reported CnC Server Port 5190 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405079 || ET CNC Shadowserver Reported CnC Server Port 5205 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405080 || ET CNC Shadowserver Reported CnC Server Port 5337 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405081 || ET CNC Shadowserver Reported CnC Server Port 5487 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405082 || ET CNC Shadowserver Reported CnC Server Port 5498 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405083 || ET CNC Shadowserver Reported CnC Server Port 5500 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405084 || ET CNC Shadowserver Reported CnC Server Port 5505 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405085 || ET CNC Shadowserver Reported CnC Server Port 5546 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405086 || ET CNC Shadowserver Reported CnC Server Port 5794 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405087 || ET CNC Shadowserver Reported CnC Server Port 5900 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405088 || ET CNC Shadowserver Reported CnC Server Port 6060 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405089 || ET CNC Shadowserver Reported CnC Server Port 6374 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405090 || ET CNC Shadowserver Reported CnC Server Port 6467 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405091 || ET CNC Shadowserver Reported CnC Server Port 6532 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405092 || ET CNC Shadowserver Reported CnC Server Port 6543 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405093 || ET CNC Shadowserver Reported CnC Server Port 6556 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405094 || ET CNC Shadowserver Reported CnC Server Port 6565 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405095 || ET CNC Shadowserver Reported CnC Server Port 6567 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405096 || ET CNC Shadowserver Reported CnC Server Port 6660 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405097 || ET CNC Shadowserver Reported CnC Server Port 6662 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405098 || ET CNC Shadowserver Reported CnC Server Port 6663 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405099 || ET CNC Shadowserver Reported CnC Server Port 6664 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405100 || ET CNC Shadowserver Reported CnC Server Port 6665 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405101 || ET CNC Shadowserver Reported CnC Server Port 6666 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405102 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405103 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 2 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405104 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 3 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405105 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 4 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405106 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 5 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405107 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 6 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405108 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 7 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405109 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 8 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405110 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 9 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405111 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 10 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405112 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 11 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405113 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 12 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405114 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 13 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405115 || ET CNC Shadowserver Reported CnC Server Port 6668 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405116 || ET CNC Shadowserver Reported CnC Server Port 6669 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405117 || ET CNC Shadowserver Reported CnC Server Port 6676 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405118 || ET CNC Shadowserver Reported CnC Server Port 6677 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405119 || ET CNC Shadowserver Reported CnC Server Port 6678 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405120 || ET CNC Shadowserver Reported CnC Server Port 6680 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405121 || ET CNC Shadowserver Reported CnC Server Port 6764 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405122 || ET CNC Shadowserver Reported CnC Server Port 6768 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405123 || ET CNC Shadowserver Reported CnC Server Port 6900 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405124 || ET CNC Shadowserver Reported CnC Server Port 6969 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405125 || ET CNC Shadowserver Reported CnC Server Port 7000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405126 || ET CNC Shadowserver Reported CnC Server Port 7001 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405127 || ET CNC Shadowserver Reported CnC Server Port 7002 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405128 || ET CNC Shadowserver Reported CnC Server Port 7100 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405129 || ET CNC Shadowserver Reported CnC Server Port 7193 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405130 || ET CNC Shadowserver Reported CnC Server Port 7362 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405131 || ET CNC Shadowserver Reported CnC Server Port 7493 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405132 || ET CNC Shadowserver Reported CnC Server Port 7654 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405133 || ET CNC Shadowserver Reported CnC Server Port 7665 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405134 || ET CNC Shadowserver Reported CnC Server Port 7770 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405135 || ET CNC Shadowserver Reported CnC Server Port 7771 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405136 || ET CNC Shadowserver Reported CnC Server Port 7776 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405137 || ET CNC Shadowserver Reported CnC Server Port 7777 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405138 || ET CNC Shadowserver Reported CnC Server Port 7878 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405139 || ET CNC Shadowserver Reported CnC Server Port 8000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405140 || ET CNC Shadowserver Reported CnC Server Port 8059 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405141 || ET CNC Shadowserver Reported CnC Server Port 8067 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405142 || ET CNC Shadowserver Reported CnC Server Port 8080 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405143 || ET CNC Shadowserver Reported CnC Server Port 8089 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405144 || ET CNC Shadowserver Reported CnC Server Port 8585 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405145 || ET CNC Shadowserver Reported CnC Server Port 8718 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405146 || ET CNC Shadowserver Reported CnC Server Port 8765 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405147 || ET CNC Shadowserver Reported CnC Server Port 8778 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405148 || ET CNC Shadowserver Reported CnC Server Port 8799 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405149 || ET CNC Shadowserver Reported CnC Server Port 8879 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405150 || ET CNC Shadowserver Reported CnC Server Port 8888 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405151 || ET CNC Shadowserver Reported CnC Server Port 9000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405152 || ET CNC Shadowserver Reported CnC Server Port 9001 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405153 || ET CNC Shadowserver Reported CnC Server Port 9111 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405154 || ET CNC Shadowserver Reported CnC Server Port 9450 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405155 || ET CNC Shadowserver Reported CnC Server Port 9475 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405156 || ET CNC Shadowserver Reported CnC Server Port 9500 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405157 || ET CNC Shadowserver Reported CnC Server Port 9592 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405158 || ET CNC Shadowserver Reported CnC Server Port 9731 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405159 || ET CNC Shadowserver Reported CnC Server Port 9841 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405160 || ET CNC Shadowserver Reported CnC Server Port 9872 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405161 || ET CNC Shadowserver Reported CnC Server Port 9898 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405162 || ET CNC Shadowserver Reported CnC Server Port 9899 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405163 || ET CNC Shadowserver Reported CnC Server Port 9900 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405164 || ET CNC Shadowserver Reported CnC Server Port 9955 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405165 || ET CNC Shadowserver Reported CnC Server Port 10324 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405166 || ET CNC Shadowserver Reported CnC Server Port 11830 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405167 || ET CNC Shadowserver Reported CnC Server Port 13001 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405168 || ET CNC Shadowserver Reported CnC Server Port 15000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405169 || ET CNC Shadowserver Reported CnC Server Port 15474 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405170 || ET CNC Shadowserver Reported CnC Server Port 15656 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405171 || ET CNC Shadowserver Reported CnC Server Port 16667 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405172 || ET CNC Shadowserver Reported CnC Server Port 18888 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405173 || ET CNC Shadowserver Reported CnC Server Port 19899 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405174 || ET CNC Shadowserver Reported CnC Server Port 21321 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405175 || ET CNC Shadowserver Reported CnC Server Port 21333 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405176 || ET CNC Shadowserver Reported CnC Server Port 24300 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405177 || ET CNC Shadowserver Reported CnC Server Port 24430 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405178 || ET CNC Shadowserver Reported CnC Server Port 26745 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405179 || ET CNC Shadowserver Reported CnC Server Port 27034 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405180 || ET CNC Shadowserver Reported CnC Server Port 31091 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405181 || ET CNC Shadowserver Reported CnC Server Port 31092 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405182 || ET CNC Shadowserver Reported CnC Server Port 31093 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405183 || ET CNC Shadowserver Reported CnC Server Port 31902 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405184 || ET CNC Shadowserver Reported CnC Server Port 32132 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405185 || ET CNC Shadowserver Reported CnC Server Port 32164 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405186 || ET CNC Shadowserver Reported CnC Server Port 32321 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405187 || ET CNC Shadowserver Reported CnC Server Port 32322 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405188 || ET CNC Shadowserver Reported CnC Server Port 32768 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405189 || ET CNC Shadowserver Reported CnC Server Port 33333 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405190 || ET CNC Shadowserver Reported CnC Server Port 40669 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405191 || ET CNC Shadowserver Reported CnC Server Port 45351 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405192 || ET CNC Shadowserver Reported CnC Server Port 47221 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405193 || ET CNC Shadowserver Reported CnC Server Port 51115 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405194 || ET CNC Shadowserver Reported CnC Server Port 51987 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405195 || ET CNC Shadowserver Reported CnC Server Port 54321 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405196 || ET CNC Shadowserver Reported CnC Server Port 64500 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405197 || ET CNC Shadowserver Reported CnC Server Port 65267 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2500000 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 1 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500001 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 1 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500002 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 2 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
@@ -25183,6 +24901,10 @@
 2520153 || ET TOR Known Tor Exit Node UDP Traffic group 77 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520154 || ET TOR Known Tor Exit Node TCP Traffic group 78 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520155 || ET TOR Known Tor Exit Node UDP Traffic group 78 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520156 || ET TOR Known Tor Exit Node TCP Traffic group 79 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520157 || ET TOR Known Tor Exit Node UDP Traffic group 79 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520158 || ET TOR Known Tor Exit Node TCP Traffic group 80 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520159 || ET TOR Known Tor Exit Node UDP Traffic group 80 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522001 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26521,19 +26243,3 @@
 2523335 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 668 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523336 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 669 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523337 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 669 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523338 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 670 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523339 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 670 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523340 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 671 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523341 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 671 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523342 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 672 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523343 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 672 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523344 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 673 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523345 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 673 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523346 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 674 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523347 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 674 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523348 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 675 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523349 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 675 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523350 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 676 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523351 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 676 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523352 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 677 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523353 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 677 || url,doc.emergingthreats.net/bin/view/Main/TorRules

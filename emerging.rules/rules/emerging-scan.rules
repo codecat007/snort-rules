@@ -38,6 +38,16 @@
 
 # This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
 
+alert tcp $EXTERNAL_NET any -> $HOME_NET 1433 (msg:"ET SCAN Suspicious inbound to MSSQL port 1433"; flow:to_server; flags:S; threshold: type limit, count 5, seconds 60, track by_src; metadata: former_category POLICY; reference:url,doc.emergingthreats.net/2010935; classtype:bad-unknown; sid:2010935; rev:3; metadata:created_at 2010_07_30, updated_at 2018_03_27;)
+
+alert tcp $EXTERNAL_NET any -> $HOME_NET 1521 (msg:"ET SCAN Suspicious inbound to Oracle SQL port 1521"; flow:to_server; flags:S; threshold: type limit, count 5, seconds 60, track by_src; metadata: former_category POLICY; reference:url,doc.emergingthreats.net/2010936; classtype:bad-unknown; sid:2010936; rev:3; metadata:created_at 2010_07_30, updated_at 2018_03_27;)
+
+alert tcp $EXTERNAL_NET any -> $HOME_NET 3306 (msg:"ET SCAN Suspicious inbound to mySQL port 3306"; flow:to_server; flags:S; threshold: type limit, count 5, seconds 60, track by_src; metadata: former_category POLICY; reference:url,doc.emergingthreats.net/2010937; classtype:bad-unknown; sid:2010937; rev:3; metadata:created_at 2010_07_30, updated_at 2018_03_27;)
+
+alert tcp $EXTERNAL_NET any -> $HOME_NET 4333 (msg:"ET SCAN Suspicious inbound to mSQL port 4333"; flow:to_server; flags:S; threshold: type limit, count 5, seconds 60, track by_src; metadata: former_category SCAN; reference:url,doc.emergingthreats.net/2010938; classtype:bad-unknown; sid:2010938; rev:3; metadata:created_at 2010_07_30, updated_at 2018_03_27;)
+
+alert tcp $EXTERNAL_NET any -> $HOME_NET 5432 (msg:"ET SCAN Suspicious inbound to PostgreSQL port 5432"; flow:to_server; flags:S; threshold: type limit, count 5, seconds 60, track by_src; metadata: former_category POLICY; reference:url,doc.emergingthreats.net/2010939; classtype:bad-unknown; sid:2010939; rev:3; metadata:created_at 2010_07_30, updated_at 2018_03_27;)
+
 #alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"ET SCAN Unusually Fast 403 Error Messages, Possible Web Application Scan"; flow:from_server,established; content:"403"; http_stat_code; threshold: type threshold, track by_dst, count 35, seconds 60; reference:url,www.checkupdown.com/status/E403.html; reference:url,doc.emergingthreats.net/2009749; classtype:attempted-recon; sid:2009749; rev:4; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
 alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET SCAN Absinthe SQL Injection Tool HTTP Header Detected"; flow:established,to_server; content:"User-Agent|3A| Absinthe"; fast_pattern:only; http_header; nocase; reference:url,0x90.org/releases/absinthe; reference:url,doc.emergingthreats.net/2009555; classtype:attempted-recon; sid:2009555; rev:7; metadata:affected_product Web_Server_Applications, attack_target Web_Server, deployment Datacenter, tag SQL_Injection, signature_severity Major, created_at 2010_07_30, updated_at 2016_07_01;)
