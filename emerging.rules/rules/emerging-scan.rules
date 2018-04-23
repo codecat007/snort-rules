@@ -360,6 +360,8 @@ alert udp $EXTERNAL_NET any -> $HOME_NET 5060 (msg:"ET SCAN SIP erase_registrati
 
 alert udp $EXTERNAL_NET any -> $HOME_NET 5060 (msg:"ET SCAN sipscan probe"; content:"sip|3a|thisisthecanary@"; content:"sip|3a|test@"; offset:30; depth:70; reference:url,www.hackingvoip.com/sec_tools.html; reference:url,doc.emergingthreats.net/2008641; classtype:attempted-recon; sid:2008641; rev:4; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
+alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"ET SCAN PHP Attack Tool Morfeus F Scanner"; flow:established,to_server; content:"User-Agent|3a| Morfeus"; fast_pattern:only; nocase; http_header; metadata: former_category WEB_SERVER; reference:url,www.webmasterworld.com/search_engine_spiders/3227720.htm; reference:url,doc.emergingthreats.net/2003466; classtype:web-application-attack; sid:2003466; rev:13; metadata:created_at 2010_07_30, updated_at 2018_04_17;)
+
 #alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN Broadscan Smurf Scanner"; dsize:4; icmp_id:0; icmp_seq:0; itype:8; classtype:attempted-recon; sid:2100478; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"GPL SCAN ISS Pinger"; itype:8; content:"ISSPNGRQ"; depth:32; reference:arachnids,158; classtype:attempted-recon; sid:2100465; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
