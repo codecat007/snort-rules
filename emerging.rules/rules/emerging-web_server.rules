@@ -810,7 +810,7 @@ alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SERVER Web
 
 alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SERVER WebShell - Pouya - URI - action="; flow:established,to_server; content:".asp?action="; http_uri; nocase; fast_pattern:only; pcre:"/\.asp\?action=(?:txt(?:edit|view)|upload|info|del)(&|$)/Ui"; classtype:trojan-activity; sid:2017091; rev:1; metadata:created_at 2013_07_02, updated_at 2013_07_02;)
 
-alert tcp $HOME_NET $HTTP_PORTS -> $EXTERNAL_NET any (msg:"ET WEB_SERVER WebShell - Generic - GIF Header With HTML Form"; flow:established,to_client; file_data; content:"GIF89a"; within:6; content:"<form "; nocase; fast_pattern; within:150; classtype:trojan-activity; sid:2017134; rev:3; metadata:created_at 2013_07_11, updated_at 2013_07_11;)
+alert tcp $HOME_NET $HTTP_PORTS -> $EXTERNAL_NET any (msg:"ET WEB_SERVER WebShell - Generic - GIF Header With HTML Form"; flow:established,to_client; file_data; content:"GIF89a"; within:6; content:"<form "; nocase; fast_pattern; within:150; content:!"_VIEWSTATE"; classtype:trojan-activity; sid:2017134; rev:4; metadata:created_at 2013_07_11, updated_at 2013_07_11;)
 
 alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SERVER CRLF Injection - Newline Characters in URL"; flow:established,to_server; content:"|0D 0A|"; fast_pattern:only; http_uri; pcre:"/[\n\r](?:content-(type|length)|set-cookie|location)\x3a/Ui"; reference:url,www.owasp.org/index.php/CRLF_Injection; classtype:web-application-attack; sid:2017143; rev:2; metadata:created_at 2013_07_12, updated_at 2013_07_12;)
 

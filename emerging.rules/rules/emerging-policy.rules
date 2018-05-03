@@ -1180,6 +1180,8 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET POLICY Unsupported
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET POLICY HTTP connection to net78.net Free Web Hosting (Used by Various Trojans)"; flow:established,to_server; content:".net78.net|0d 0a|"; http_header; fast_pattern:only; nocase; reference:url,www.net78.net; classtype:bad-unknown; sid:2016944; rev:1; metadata:created_at 2013_05_29, updated_at 2013_05_29;)
 
+#alert ip $HOME_NET any -> 1.1.1.0/24 any (msg:"ET POLICY Connection to previously unallocated address space 1.1.1.0/24"; threshold:type limit,track by_src,seconds 3600,count 1; metadata: former_category POLICY; classtype:trojan-activity; sid:2017000; rev:3; metadata:created_at 2013_06_10, updated_at 2018_04_24;)
+
 alert tcp $EXTERNAL_NET 443 -> $HOME_NET any (msg:"ET POLICY DropBox User Content Access over SSL"; flow:established,from_server; content:"|55 04 03|"; content:"|18|*.dropboxusercontent.com"; nocase; distance:1; within:25; reference:url,www.dropbox.com/help/201/en; classtype:policy-violation; sid:2017015; rev:6; metadata:created_at 2013_06_13, updated_at 2013_06_13;)
 
 alert udp $EXTERNAL_NET any -> $HOME_NET 623 (msg:"ET POLICY Possible IPMI 2.0 RAKP Remote SHA1 Password Hash Retreival RAKP message 1 with default BMC usernames (Admin|root|Administrator|USERID)"; content:"|06 12|"; offset:4; depth:2; pcre:"/((\x0d|\x05)Admin(istrator)?|\x04root|\x06USERID)/Ri"; classtype:protocol-command-decode; sid:2017120; rev:2; metadata:created_at 2013_07_09, updated_at 2013_07_09;)
@@ -1525,6 +1527,8 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET POLICY External IP
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY Exe32Pack Packed Executable Download"; flow:established,to_client; file_data; content:"Packed by exe32pack"; content:"SteelBytes All rights reserved"; distance:0; reference:md5,93be88ad3816c19d74155f8cd3aae1d2; classtype:policy-violation; sid:2020914; rev:1; metadata:created_at 2015_04_15, updated_at 2015_04_15;)
 
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY Petite Packed Binary Download"; flow:to_client,established; flowbits:isnotset,ET.http.binary; file_data; content:"MZ"; within:2; byte_jump:4,58,relative,little; content:"PE|00 00|"; distance:-64; within:4; content:"|43 6F 6D 70 72 65 73 73 65 64 20 62 79 20 50 65 74 69 74 65 20 28 63 29 31 39 39 39 20 49 61 6E 20 4C 75 63 6B 2E 00 00|"; distance:-44; flowbits:set,ET.http.binary; reference:md5,fa2c0e8b486c879f4baee1d5bebdf0a2; classtype:trojan-activity; sid:2020973; rev:4; metadata:created_at 2015_04_22, updated_at 2015_04_22;)
+
+alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY WebRTC IP tracking Javascript"; flow:established,from_server; file_data; content:"function getIPs|28|callback|29|"; nocase; fast_pattern; content:"ip_dups"; nocase; content:"handleCandidate"; nocase; content:"RTCPeerConnection"; nocase; metadata: former_category POLICY; reference:url,github.com/diafygi/webrtc-ips; classtype:successful-recon-limited; sid:2021089; rev:2; metadata:created_at 2015_05_12, updated_at 2018_04_26;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET POLICY External Timezone Check (earthtools.org)"; flow:established,to_server; content:"Host|3a 20|www.earthtools.org|0d 0a|"; http_header; fast_pattern:6,20; content:"/timezone/"; depth:10; http_uri; content:!"Referer|3a|"; http_header; classtype:policy-violation; sid:2021120; rev:1; metadata:created_at 2015_05_20, updated_at 2015_05_20;)
 
