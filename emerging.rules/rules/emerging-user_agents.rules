@@ -588,3 +588,5 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS APN/As
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS Suspicious User-Agent (=Mozilla)"; flow:established,to_server; content:"User-Agent|3a|=Mozilla/5"; http_header; fast_pattern:1,20; metadata: former_category USER_AGENTS; classtype:trojan-activity; sid:2025456; rev:2; metadata:affected_product Web_Browsers, attack_target Client_and_Server, deployment Perimeter, signature_severity Major, created_at 2018_03_27, performance_impact Low, updated_at 2018_04_03;)
 
+alert tcp any any -> $HOME_NET $HTTP_PORTS (msg:"ET USER_AGENTS HackingTrio UA (Hello, World)"; flow:established,to_server; content:"POST"; http_method; content:"User-Agent|3a 20|Hello, World|0d 0a|"; http_header; fast_pattern:6,20; metadata: former_category USER_AGENTS; classtype:trojan-activity; sid:2025576; rev:2; metadata:attack_target Client_and_Server, deployment Perimeter, signature_severity Major, created_at 2018_05_11, performance_impact Low, updated_at 2018_05_11;)
+
