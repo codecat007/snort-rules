@@ -4890,3 +4890,5 @@
 
 #alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET DELETED Possible Apache Struts OGNL Expression Injection (CVE-2017-5638) (Content-Disposition) M2"; flow:to_server,established; content:"Content-Disposition|3a 20 25 7b 28|"; nocase; content:"{"; content:"}"; metadata: former_category WEB_SPECIFIC_APPS; classtype:web-application-attack; sid:2024097; rev:1; metadata:affected_product Apache_Struts2, attack_target Web_Server, deployment Datacenter, signature_severity Major, created_at 2017_03_20, updated_at 2017_03_21;)
 
+#alert udp $HOME_NET any -> any 53 (msg:"ET DELETED Possible Winnti-related DNS Lookup"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|0f|securitytactics|03|com|00|"; nocase; distance:0; fast_pattern; metadata: former_category TROJAN; reference:url,401trg.pw/an-update-on-winnti/; classtype:trojan-activity; sid:2024868; rev:2; metadata:created_at 2017_10_18, updated_at 2018_05_23;)
+
