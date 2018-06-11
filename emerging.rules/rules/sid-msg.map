@@ -22457,6 +22457,8 @@
 2025583 || ET TROJAN [PTsecurity] PS/TrojanDownloader.Agent.NNR XORed Zip payload (key 0x91) || url,dctoralves.wordpress.com/2018/05/03/phishing-report-policia-civil/
 2025584 || ET POLICY HTTPie User-Agent Outbound || url,httpie.org
 2025585 || ET TROJAN Known Sinkhole Response Header INetSim
+2025586 || ET TROJAN Aurora/OneKeyLocker Ransomware CnC Checkin || md5,31d65e315115c823f619a381576984f8
+2025587 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2018-05-31
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -24180,6 +24182,8 @@
 2400030 || ET DROP Spamhaus DROP Listed Traffic Inbound group 31 || url,www.spamhaus.org/drop/drop.lasso
 2400031 || ET DROP Spamhaus DROP Listed Traffic Inbound group 32 || url,www.spamhaus.org/drop/drop.lasso
 2400032 || ET DROP Spamhaus DROP Listed Traffic Inbound group 33 || url,www.spamhaus.org/drop/drop.lasso
+2400033 || ET DROP Spamhaus DROP Listed Traffic Inbound group 34 || url,www.spamhaus.org/drop/drop.lasso
+2400034 || ET DROP Spamhaus DROP Listed Traffic Inbound group 35 || url,www.spamhaus.org/drop/drop.lasso
 2402000 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
 2402001 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
 2403300 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 1 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
@@ -24488,6 +24492,8 @@
 2404189 || ET CNC Zeus Tracker Reported CnC Server UDP group 20 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404190 || ET CNC Zeus Tracker Reported CnC Server TCP group 21 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404191 || ET CNC Zeus Tracker Reported CnC Server UDP group 21 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404192 || ET CNC Zeus Tracker Reported CnC Server TCP group 22 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404193 || ET CNC Zeus Tracker Reported CnC Server UDP group 22 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404300 || ET CNC Feodo Tracker Reported CnC Server TCP group 1 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404301 || ET CNC Feodo Tracker Reported CnC Server UDP group 1 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404302 || ET CNC Feodo Tracker Reported CnC Server TCP group 2 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -25058,6 +25064,10 @@
 2520157 || ET TOR Known Tor Exit Node UDP Traffic group 79 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520158 || ET TOR Known Tor Exit Node TCP Traffic group 80 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520159 || ET TOR Known Tor Exit Node UDP Traffic group 80 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520160 || ET TOR Known Tor Exit Node TCP Traffic group 81 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520161 || ET TOR Known Tor Exit Node UDP Traffic group 81 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520162 || ET TOR Known Tor Exit Node TCP Traffic group 82 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520163 || ET TOR Known Tor Exit Node UDP Traffic group 82 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522001 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26432,3 +26442,25 @@
 2523371 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 686 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523372 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 687 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523373 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 687 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523374 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 688 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523375 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 688 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523376 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 689 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523377 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 689 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523378 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 690 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523379 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 690 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523380 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 691 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523381 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 691 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523382 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 692 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523383 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 692 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523384 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 693 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523385 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 693 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523386 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 694 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523387 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 694 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523388 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 695 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523389 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 695 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523390 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 696 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523391 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 696 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523392 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 697 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523393 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 697 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523394 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 698 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523395 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 698 || url,doc.emergingthreats.net/bin/view/Main/TorRules
