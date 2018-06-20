@@ -9909,7 +9909,7 @@
 2012584 || ET WEB_SPECIFIC_APPS ardeaCore PHP Framework CURRENT_BLOG_PATH Parameter Remote File Inclusion Attempt || url,securityreason.com/wlb_show/WLB-2011010005 || url,exploit-db.com/exploits/15840/
 2012585 || ET WEB_SPECIFIC_APPS coRED CMS rubID Parameter DELETE FROM SQL Injection Attempt || url,packetstormsecurity.org/files/view/98769/coredcms-sql.txt
 2012586 || ET USER_AGENTS Suspicious User-Agent Im Luo
-2012587 || ET TROJAN VirTool-Win32-VBInject.gen-FA Reporting || url,threatexpert.com/report.aspx?md5=85a9f25c9b6614a8ad16dd7f3363a247
+2012587 || ET TROJAN BlackshadesRAT Reporting || url,threatexpert.com/report.aspx?md5=85a9f25c9b6614a8ad16dd7f3363a247
 2012588 || ET DELETED RiskTool.Win32.WFPDisabler Reporting || url,threatexpert.com/report.aspx?md5=c81be1cf10d9578803dab8c1bc62ccfa
 2012589 || ET DELETED Trojan-Dropper.Win32.Mudrop.asj Reporting || url,threatexpert.com/report.aspx?md5=0398af3218eb6f21195d701a0b001445
 2012590 || ET TROJAN Best Spyware Scanner FaveAV Download
@@ -11155,7 +11155,7 @@
 2013935 || ET TROJAN Win32.Zbot.chas/Unruy.H Covert DNS CnC Channel TXT Response
 2013936 || ET POLICY SSH banner detected on TCP 443 likely proxy evasion
 2013937 || ET WEB_SERVER Weevely PHP backdoor detected (system() function used) || url,bechtsoudis.com/security/put-weevely-on-the-your-nids-radar
-2013938 || ET WEB_SERVER Weevely PHP backdoor detected (passthru() function used) || url,bechtsoudis.com/security/put-weevely-on-the-your-nids-radar
+2013938 || ET WEB_SERVER Weevely PHP backdoor detected (passthru() function used) M1 || url,bechtsoudis.com/security/put-weevely-on-the-your-nids-radar
 2013939 || ET WEB_SERVER Weevely PHP backdoor detected (shell_exec() function used) || url,bechtsoudis.com/security/put-weevely-on-the-your-nids-radar
 2013940 || ET WEB_SERVER Weevely PHP backdoor detected (proc_open() function used) || url,bechtsoudis.com/security/put-weevely-on-the-your-nids-radar
 2013941 || ET WEB_SERVER Weevely PHP backdoor detected (popen() function used) || url,bechtsoudis.com/security/put-weevely-on-the-your-nids-radar
@@ -13666,7 +13666,7 @@
 2016548 || ET DELETED W32/Ponik.Downloader Randomware Download || url,www.symantec.com/security_response/writeup.jsp?docid=2012-110915-5758-99 || url,www.symantec.com/connect/blogs/fake-adobe-flash-update-installs-ransomware-performs-click-fraud
 2016549 || ET CURRENT_EVENTS Base64 http argument in applet (Neutrino/Angler)
 2016550 || ET TROJAN Win32/Fareit Checkin 2 || md5,10baa5250610fc2b5b2cdf932f2007c0
-2016551 || ET CURRENT_EVENTS Possible Neutrino EK Downloading Jar
+2016551 || ET DELETED Possible Neutrino EK Downloading Jar
 2016552 || ET TROJAN W32/Trustezeb.C CnC Beacon || url,www.virusradar.com/Win32_Trustezeb.C/description || url,www.abuse.ch/?p=5175
 2016553 || ET TROJAN Win32/Urausy.C Checkin || md5,1494b8b9f42753a4bc1762d8f3287db6 || md5,b18f80d665f340af91003226a2b974b6 || md5,09462f13d7e6aaa0bff2788158343829
 2016554 || ET DELETED Possible FiestaEK CVE-2013-0431 Artifact (1) Mar 07 2013
@@ -13677,7 +13677,7 @@
 2016559 || ET DELETED CoolEK Payload Download (7)
 2016560 || ET CURRENT_EVENTS GonDadEK Plugin Detect March 11 2013 || url,kahusecurity.com/2012/new-chinese-exploit-pack/
 2016561 || ET DELETED W32/Asprox Spam Module CnC Beacon || url,www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-asprox-reborn.pdf || url,www.welivesecurity.com/2013/03/08/sinkholing-trojan-downloader-zortob-b-reveals-fast-growing-malware-threat/
-2016562 || ET CURRENT_EVENTS Possible Neutrino EK Posting Plugin-Detect Data
+2016562 || ET DELETED Possible Neutrino EK Posting Plugin-Detect Data
 2016563 || ET DELETED Blackhole 16-hex/q.php Landing Page/Java exploit URI
 2016564 || ET DELETED Blackhole 16-hex/q.php Jar Download
 2016566 || ET CURRENT_EVENTS SNET EK Downloading Payload
@@ -13862,10 +13862,10 @@
 2016749 || ET TROJAN RansomCrypt Getting Template
 2016751 || ET CURRENT_EVENTS RedKit/Sakura/CritX/SafePack/FlashPack applet + obfuscated URL Apr 10 2013
 2016752 || ET DELETED W32/Nymaim Checkin || md5,b904ce55532582a6ea516399d8e4b410
-2016753 || ET CURRENT_EVENTS Possible Neutrino EK Posting Plugin-Detect Data April 12 2013
+2016753 || ET DELETED Possible Neutrino EK Posting Plugin-Detect Data April 12 2013
 2016754 || ET POLICY Internal Host Retrieving External IP via myip.dnsomatic.com
 2016755 || ET DELETED Blackhole 2 Landing Page (9)
-2016756 || ET CURRENT_EVENTS Neutrino EK Plugin-Detect April 12 2013
+2016756 || ET DELETED Neutrino EK Plugin-Detect April 12 2013
 2016757 || ET TROJAN W32/Nymaim Checkin (2)
 2016758 || ET POLICY Bitcoin Mining Extensions Header
 2016759 || ET TROJAN Win32/Redyms.A Checkin
@@ -13962,7 +13962,7 @@
 2016850 || ET TROJAN Possible Linux/Cdorked.A CnC || url,welivesecurity.com/2013/04/26/linuxcdorked-new-apache-backdoor-in-the-wild-serves-blackhole/ || url,code.google.com/p/malware-lu/wiki/en_malware_cdorked_A
 2016851 || ET CURRENT_EVENTS Winwebsec/Zbot/Luder Checkin Response
 2016852 || ET CURRENT_EVENTS Sakura obfuscated javascript May 10 2013
-2016853 || ET CURRENT_EVENTS Possible Neutrino EK Posting Plugin-Detect Data May 15 2013
+2016853 || ET DELETED Possible Neutrino EK Posting Plugin-Detect Data May 15 2013
 2016854 || ET TROJAN Embedded Android Dalvik Executable File With Fake Windows Executable Header - Possible AV Bypass Attempt || url,research.zscaler.com/2013/03/guess-who-am-i-pe-or-apk.html
 2016855 || ET TROJAN Embedded ZIP/APK File With Fake Windows Executable Header - Possible AV Bypass Attempt || url,research.zscaler.com/2013/03/guess-who-am-i-pe-or-apk.html
 2016856 || ET POLICY Android Dalvik Executable File Download || url,source.android.com/tech/dalvik/dex-format.html
@@ -13977,7 +13977,7 @@
 2016865 || ET TROJAN TrojanSpy.KeyLogger.acqh User-Agent(EMSFRTCBVD) || url,enterprise.norman.com/resources/files/unveiling_an_indian_cyberattack_infrastructure_appendixes.pdf || md5,0e9e46d068fea834e12b2226cc8969fd
 2016866 || ET TROJAN Trojan-Spy.Win32.KeyLogger.acuj Checkin || url,enterprise.norman.com/resources/files/unveiling_an_indian_cyberattack_infrastructure_appendixes.pdf || md5,078d12eb9fc2b1665c0cc3001448b69b
 2016867 || ET TROJAN Backdoor.Win32.Pushdo.s Checkin
-2016868 || ET CURRENT_EVENTS Neutrino EK Plugin-Detect 2 May 20 2013
+2016868 || ET DELETED Neutrino EK Plugin-Detect 2 May 20 2013
 2016869 || ET CURRENT_EVENTS FlimKit Post Exploit Payload Download
 2016870 || ET POLICY Unsupported/Fake Internet Explorer Version MSIE 5.
 2016871 || ET POLICY Unsupported/Fake Internet Explorer Version MSIE 4.
@@ -14083,7 +14083,7 @@
 2016972 || ET DELETED Blackhole 32-hex/a.php Jar Download
 2016973 || ET DELETED Blackhole 16-hex/a.php Landing Page/Java exploit URI
 2016974 || ET DELETED Blackhole 16-hex/a.php Jar Download
-2016975 || ET CURRENT_EVENTS Neutrino EK Landing URI Format
+2016975 || ET DELETED Neutrino EK Landing URI Format
 2016976 || ET CURRENT_EVENTS CoolEK Payload Download (9)
 2016977 || ET WEB_SERVER allow_url_include PHP config option in uri || url,seclists.org/fulldisclosure/2013/Jun/21
 2016978 || ET WEB_SERVER safe_mode PHP config option in uri || url,seclists.org/fulldisclosure/2013/Jun/21
@@ -14209,7 +14209,7 @@
 2017100 || ET CURRENT_EVENTS /Styx EK - /jlnp.html || url,blogs.mcafee.com/mcafee-labs/styx-exploit-kit-takes-advantage-of-vulnerabilities
 2017101 || ET CURRENT_EVENTS /Styx EK - /jovf.html || url,blogs.mcafee.com/mcafee-labs/styx-exploit-kit-takes-advantage-of-vulnerabilities
 2017102 || ET CURRENT_EVENTS /Styx EK - /jorg.html || url,blogs.mcafee.com/mcafee-labs/styx-exploit-kit-takes-advantage-of-vulnerabilities
-2017104 || ET CURRENT_EVENTS Neutrino EK Landing URI Format July 04 2013
+2017104 || ET DELETED Neutrino EK Landing URI Format July 04 2013
 2017106 || ET CURRENT_EVENTS FlimKit Landing Applet Jul 05 2013
 2017107 || ET CURRENT_EVENTS FlashPlayerSetup.x86.exe pull || url,blog.avast.com/2013/07/03/fake-flash-player-installer
 2017108 || ET CURRENT_EVENTS FlashPlayerSetup.x86.exe checkin UA || url,blog.avast.com/2013/07/03/fake-flash-player-installer
@@ -14277,8 +14277,8 @@
 2017176 || ET WEB_SERVER Possible Apache Struts OGNL Command Execution CVE-2013-2251 action || url,struts.apache.org/release/2.3.x/docs/s2-016.html
 2017177 || ET CURRENT_EVENTS DRIVEBY Rawin - Landing Page Received
 2017178 || ET CURRENT_EVENTS DRIVEBY Rawin - Java Exploit -dubspace.jar
-2017179 || ET CURRENT_EVENTS Possible Neutrino EK Java Payload Download
-2017180 || ET CURRENT_EVENTS Possible Neutrino EK Java Payload Download 2
+2017179 || ET DELETED Possible Neutrino EK Java Payload Download
+2017180 || ET DELETED Possible Neutrino EK Java Payload Download 2
 2017181 || ET CURRENT_EVENTS Sibhost/FlimKit/Glazunov Jar with lowercase class names
 2017182 || ET CURRENT_EVENTS DRIVEBY Possible CritXPack - Landing Page - jnlp_embedded
 2017183 || ET WEB_SERVER WebShell ASPXShell - Title
@@ -14362,9 +14362,9 @@
 2017263 || ET TROJAN StealRat Checkin
 2017264 || ET TROJAN CBReplay Checkin
 2017265 || ET DELETED BlackHole EK Non-standard base64 Key
-2017266 || ET CURRENT_EVENTS Neutrino EK Landing URI Format Sep 30 2013
-2017267 || ET CURRENT_EVENTS Possible Neutrino EK Java Exploit Download Sep 30 2013
-2017268 || ET CURRENT_EVENTS Possible Neutrino EK Java Payload Download Sep 30 2013
+2017266 || ET DELETED Neutrino EK Landing URI Format Sep 30 2013
+2017267 || ET DELETED Possible Neutrino EK Java Exploit Download Sep 30 2013
+2017268 || ET DELETED Possible Neutrino EK Java Payload Download Sep 30 2013
 2017269 || ET TROJAN CBReplay.P Ransomware
 2017270 || ET CURRENT_EVENTS Styx Exploit Kit Landing Applet With Payload Aug 02 2013 || url,malwaremustdie.blogspot.co.uk/2013/02/the-infection-of-styx-exploit-kit.html
 2017271 || ET CURRENT_EVENTS Plugin-Detect with global % replace on unescaped string (Sakura)
@@ -14579,9 +14579,9 @@
 2017488 || ET CURRENT_EVENTS Unknown EK Using Office/.Net ROP/ASLR Bypass
 2017489 || ET TROJAN W32/Zzinfor.A Retrieving Instructions From CnC Server || md5,422b926dbbe03d0e4555328282c8f32b || md5,7e37a407a8fb0df3b2835419ad16f500
 2017490 || ET TROJAN W32/Downloader.Mevade.FBV CnC Beacon || url,blog.damballa.com/archives/2135 || url,blog.trendmicro.com/trendlabs-security-intelligence/us-taiwan-most-affected-by-mevade-malware/
-2017491 || ET CURRENT_EVENTS Neutrino EK Landing URI Format Sep 19 2013
-2017492 || ET CURRENT_EVENTS Possible Neutrino EK Java Exploit Download Sep 19 2013
-2017493 || ET CURRENT_EVENTS Possible Neutrino EK Java Payload Download Sep 19 2013
+2017491 || ET DELETED Neutrino EK Landing URI Format Sep 19 2013
+2017492 || ET DELETED Possible Neutrino EK Java Exploit Download Sep 19 2013
+2017493 || ET DELETED Possible Neutrino EK Java Payload Download Sep 19 2013
 2017494 || ET DELETED Possible JavaFX Click To Run Bypass 1 || url,seclists.org/bugtraq/2013/Jul/41
 2017495 || ET DELETED Possible JavaFX Click To Run Bypass 2 || url,seclists.org/bugtraq/2013/Jul/41
 2017496 || ET DELETED Possible JavaFX Click To Run Bypass 3 || url,seclists.org/bugtraq/2013/Jul/41
@@ -14656,9 +14656,9 @@
 2017566 || ET INFO Obfuscated fromCharCode
 2017567 || ET CURRENT_EVENTS FiestaEK js-redirect
 2017568 || ET CURRENT_EVENTS Possible Metasploit Java CVE-2013-2465 Class Name Sub Algo || url,github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/browser/java_storeimagearray.rb || url,seclists.org/fulldisclosure/2013/Aug/134 || cve,2013-2465
-2017569 || ET CURRENT_EVENTS Angler EK Landing Page
+2017569 || ET DELETED Angler EK Landing Page
 2017570 || ET DELETED Angler EK Exploit Download
-2017571 || ET CURRENT_EVENTS Angler EK Payload Download
+2017571 || ET DELETED Angler EK Payload Download
 2017572 || ET WEB_CLIENT Possible Microsoft Internet Explorer Use-After-Free CVE-2013-3897 || cve,2013-3897
 2017573 || ET WEB_SPECIFIC_APPS Possible JBoss/JMX InvokerServlet RCE Using Marshalled Object || url,www.exploit-db.com/exploits/28713/
 2017574 || ET WEB_SPECIFIC_APPS Possible JBoss/JMX EJBInvokerServlet RCE Using Marshalled Object || url,www.exploit-db.com/exploits/28713/
@@ -14679,11 +14679,11 @@
 2017590 || ET CURRENT_EVENTS D-LINK Router Backdoor via Specific UA || url,www.devttys0.com/2013/10/reverse-engineering-a-d-link-backdoor/
 2017591 || ET CURRENT_EVENTS Unknown Malvertising Related EK Landing Oct 14 2013 || url,www.malwaresigs.com/2013/10/14/unknown-ek/
 2017592 || ET CURRENT_EVENTS Unknown Malvertising Related EK Redirect Oct 14 2013 || url,malwageddon.blogspot.fi/2013/09/unknown-ek-it-aint-no-trick-to-get-rich.html
-2017593 || ET CURRENT_EVENTS Neutrino EK Landing URI Format Oct 15 2013
-2017594 || ET CURRENT_EVENTS Possible Neutrino EK Java Exploit Download Oct 15 2013
-2017595 || ET CURRENT_EVENTS Possible Neutrino EK Java Payload Download Oct 15 2013
-2017596 || ET CURRENT_EVENTS Neutrino EK XORed pluginDetect 1
-2017597 || ET CURRENT_EVENTS Neutrino EK XORed pluginDetect 2
+2017593 || ET DELETED Neutrino EK Landing URI Format Oct 15 2013
+2017594 || ET DELETED Possible Neutrino EK Java Exploit Download Oct 15 2013
+2017595 || ET DELETED Possible Neutrino EK Java Payload Download Oct 15 2013
+2017596 || ET DELETED Neutrino EK XORed pluginDetect 1
+2017597 || ET DELETED Neutrino EK XORed pluginDetect 2
 2017598 || ET TROJAN Possible Kelihos.F EXE Download Common Structure || md5,f5bcc28e7868a68e473373d684a8c54a
 2017599 || ET TROJAN W32.Nemim Checkin || url,symantec.com/connect/blogs/infostealernemim-how-pervasive-infostealer-continues-evolve
 2017600 || ET TROJAN Backdoor.Egobot Checkin || url,symantec.com/connect/blogs/backdooregobot-how-effectively-execute-targeted-campaign
@@ -14714,7 +14714,7 @@
 2017627 || ET TROJAN W32/Kegotip CnC Beacon || url,www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=PWS%3AWin32%2FKegotip.C || url,www.soleranetworks.com/blogs/cryptolocker-kegotip-medfos-malware-triple-threat/
 2017628 || ET CURRENT_EVENTS Possible Sakura Jar Download Oct 22 2013
 2017629 || ET CURRENT_EVENTS FlashPack Oct 23 2013
-2017630 || ET CURRENT_EVENTS Angler EK encrypted binary (1)
+2017630 || ET DELETED Angler EK encrypted binary (1)
 2017631 || ET CURRENT_EVENTS Netgear WNDR4700 Auth Bypass || url,securityevaluators.com/content/case-studies/routers/netgear_wndr4700.jsp
 2017632 || ET CURRENT_EVENTS Netgear WNDR3700 Auth Bypass || url,shadow-file.blogspot.ro/2013/10/complete-persistent-compromise-of.html
 2017633 || ET TROJAN Athena DDoS Bot Checkin || md5,19ca0d830cd7b44e5de1ab85f4e17d82
@@ -14735,8 +14735,8 @@
 2017648 || ET CURRENT_EVENTS Possible Sweet Orange payload Request
 2017649 || ET CURRENT_EVENTS Sweet Orange encrypted payload
 2017650 || ET CURRENT_EVENTS SofosFO/Grandsoft Plugin-Detect
-2017652 || ET CURRENT_EVENTS Possible Neutrino EK Landing URI Format Nov 1 2013
-2017653 || ET CURRENT_EVENTS Possible Neutrino EK Java Exploit/Payload Download Nov 1 2013 || url,pastebin.com/194D8UuK
+2017652 || ET DELETED Possible Neutrino EK Landing URI Format Nov 1 2013
+2017653 || ET DELETED Possible Neutrino EK Java Exploit/Payload Download Nov 1 2013 || url,pastebin.com/194D8UuK
 2017654 || ET DELETED W32/Badur.Spy User Agent HWMPro || md5,234c47b5b29a2cfcc00900bbc13ea181
 2017655 || ET TROJAN W32/Badur.Spy User Agent lawl || md5,4f5d28c43795b9c4e6257bf26c52bdfe
 2017656 || ET TROJAN W32/InstallMonster.Downloader Checkin || md5,70a6d9cb37e346b4dfd28bd4ea1f8671
@@ -14744,7 +14744,7 @@
 2017658 || ET DELETED Unknown Trojan Secondary Download || md5,3a2c3b422a7ec78f88a939d20ed07615
 2017659 || ET DELETED Unknown Trojan Download || md5,3a2c3b422a7ec78f88a939d20ed07615
 2017660 || ET CURRENT_EVENTS Malicious Cookie Set By Flash Malvertising || md5,cce9dcad030c4cba605a8ee65572136a
-2017661 || ET CURRENT_EVENTS Possible Redirect to Neutrino EK goi.php Nov 4 2013
+2017661 || ET DELETED Possible Redirect to Neutrino EK goi.php Nov 4 2013
 2017662 || ET TROJAN Known Sinkhole Response Header || md5,723a90462a417337355138cc6aba2290
 2017663 || ET CURRENT_EVENTS Fredcot campaign php5-cgi initial exploit || url,eindbazen.net/2012/05/php-cgi-advisory-cve-2012-1823/ || cve,2012-1823
 2017664 || ET CURRENT_EVENTS Fredcot campaign payload download || url,permalink.gmane.org/gmane.comp.security.ids.snort.emerging-sigs/20243 || md5,e69bbd29f2822c1846d569ace710c9d5
@@ -14777,7 +14777,7 @@
 2017691 || ET TROJAN W32/Citadel.Arx Varient CnC Beacon 2 || url,www.fireeye.com/blog/technical/cyber-exploits/2013/11/the-dual-use-exploit-cve-2013-3906-used-in-both-targeted-attacks-and-crimeware-campaigns.html || url,botnetlegalnotice.com/citadel/files/Patel_Decl_Ex20.pdf
 2017693 || ET CURRENT_EVENTS Styx iframe with obfuscated CVE-2013-2551
 2017694 || ET CURRENT_EVENTS Possible Magnitude IE EK Payload Nov 8 2013
-2017695 || ET CURRENT_EVENTS Possible Angler EK Flash Exploit
+2017695 || ET DELETED Possible Angler EK Flash Exploit
 2017696 || ET CURRENT_EVENTS FaceBook IM & Web Driven Facebook Trojan Download || url,pastebin.com/raw.php?i=tdATTg7L
 2017697 || ET TROJAN FaceBook IM & Web Driven Facebook Trojan Posting Data || url,pastebin.com/raw.php?i=tdATTg7L
 2017698 || ET CURRENT_EVENTS Magnitude Landing Nov 11 2013
@@ -14785,7 +14785,7 @@
 2017700 || ET TROJAN Possible Stitur Secondary Download
 2017701 || ET ATTACK_RESPONSE webr00t WebShell Access || url,blog.sucuri.net/2013/11/case-study-analyzing-a-wordpress-attack-dissecting-the-webr00t-cgi-shell-part-i.html
 2017702 || ET TROJAN Possible Trojan.APT.9002 POST || url,www.fireeye.com/blog/technical/cyber-exploits/2013/11/operation-ephemeral-hydra-ie-zero-day-linked-to-deputydog-uses-diskless-method.html
-2017703 || ET CURRENT_EVENTS Angler EK Possible Flash/IE Payload
+2017703 || ET DELETED Angler EK Possible Flash/IE Payload
 2017704 || ET WEB_CLIENT Possible IE 0day CVE-2013-3918 1 || url,www.fireeye.com/blog/technical/cyber-exploits/2013/11/operation-ephemeral-hydra-ie-zero-day-linked-to-deputydog-uses-diskless-method.html
 2017705 || ET WEB_CLIENT Possible IE 0day CVE-2013-3918 2 || url,www.fireeye.com/blog/technical/cyber-exploits/2013/11/operation-ephemeral-hydra-ie-zero-day-linked-to-deputydog-uses-diskless-method.html
 2017706 || ET CURRENT_EVENTS Possible Sweet Orange IE Payload Request
@@ -14809,10 +14809,10 @@
 2017726 || ET TROJAN Downloader (P2P Zeus dropper UA)
 2017727 || ET TROJAN Possible SSH Linux.Fokirtor backchannel command || url,www.symantec.com/connect/blogs/linux-back-door-uses-covert-communication-protocol
 2017728 || ET TROJAN Trojan.Dropper.Win32.Dapato.braa.AMN CnC traffic || md5,6ef66c2336b2b5aaa697c2d0ab2b66e2
-2017729 || ET CURRENT_EVENTS Angler EK Landing Nov 18 2013
+2017729 || ET DELETED Angler EK Landing Nov 18 2013
 2017730 || ET EXPLOIT JavaX Toolkit Posting Plugin-Detect Data || url,github.com/MrXors/Javax/
 2017731 || ET CURRENT_EVENTS Possible Styx EK SilverLight Payload
-2017732 || ET CURRENT_EVENTS Possible Styx/Angler EK SilverLight Exploit
+2017732 || ET DELETED Possible Styx/Angler EK SilverLight Exploit
 2017733 || ET DELETED Possible Upatre Downloader SSL certificate
 2017734 || ET WEB_SERVER WEBSHELL pwn.jsp shell || url,blog.imperva.com/2013/11/threat-advisory-a-jboss-as-exploit-web-shell-code-injection.html || url,nickhumphreyit.blogspot.co.il/2013/10/jboss-42-hacked-by-pwnjsp.html
 2017735 || ET CURRENT_EVENTS WhiteLotus EK PluginDetect Nov 20 2013
@@ -14889,7 +14889,7 @@
 2017806 || ET WEB_SERVER Possible WebLogic Operator Login With Default Creds || url,media.blackhat.com/us-13/US-13-Polyakov-Practical-Pentesting-of-ERPs-and-Business-Applications-Slides.pdf
 2017807 || ET WEB_SERVER Possible MySQL SQLi User-Dump Attempt || url,pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
 2017808 || ET WEB_SERVER Possible MySQL SQLi Attempt Information Schema Access || url,pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
-2017809 || ET CURRENT_EVENTS Angler EK XOR'd Payload
+2017809 || ET DELETED Angler EK XOR'd Payload
 2017810 || ET EXPLOIT Metasploit Browser Exploit Server Plugin Detect
 2017811 || ET CURRENT_EVENTS Magnitude EK (formerly Popads) Java Jar Download
 2017812 || ET DELETED Safe/CritX/FlashPack URI with Windows Plugin-Detect Data
@@ -14904,7 +14904,7 @@
 2017821 || ET WEB_SERVER IIS ISN BackDoor Command Delete Log || url,blog.spiderlabs.com/2013/12/the-curious-case-of-the-malicious-iis-module.html
 2017822 || ET WEB_SERVER IIS ISN BackDoor Command Get Logpath || url,blog.spiderlabs.com/2013/12/the-curious-case-of-the-malicious-iis-module.html
 2017823 || ET CURRENT_EVENTS heapSpray in jjencode || url,www.invincea.com/2013/12/e-k-i-a-adobe-reader-exploit-cve-2013-3346-kernel-ndproxy-sys-zero-day-eop/
-2017824 || ET CURRENT_EVENTS Neutrino EK Landing Page Dec 09 2013
+2017824 || ET DELETED Neutrino EK Landing Page Dec 09 2013
 2017825 || ET EXPLOIT Zollard PHP Exploit UA Outbound || url,blogs.cisco.com/security/the-internet-of-everything-including-malware/ || cve,2012-1823
 2017826 || ET CURRENT_EVENTS SPL2 EK Landing Dec 09 2013
 2017827 || ET CURRENT_EVENTS SPL2 EK Dec 09 2013 Java Request
@@ -14981,10 +14981,10 @@
 2017898 || ET EXPLOIT Metasploit Plugin-Detect Posting Data 3 || url,github.com/rapid7/metasploit-framework/wiki/How-to-write-a-browser-exploit-using-BrowserExploitServer
 2017899 || ET CURRENT_EVENTS Possible PDF Dictionary Entry with Hex/Ascii replacement
 2017900 || ET CURRENT_EVENTS Metasploit 2013-3346
-2017901 || ET CURRENT_EVENTS Possible Angler EK Flash Exploit Dec 24 2013
-2017902 || ET CURRENT_EVENTS Angler EK Possible Flash/IE Payload Dec 24 2013
+2017901 || ET DELETED Possible Angler EK Flash Exploit Dec 24 2013
+2017902 || ET DELETED Angler EK Possible Flash/IE Payload Dec 24 2013
 2017903 || ET TROJAN Win32/Urausy.C Checkin 4 || md5,0032856449dbef5e63b8ed2f7a61fff9
-2017904 || ET CURRENT_EVENTS Possible Angler EK Flash Exploit Dec 26 2013
+2017904 || ET DELETED Possible Angler EK Flash Exploit Dec 26 2013
 2017905 || ET CURRENT_EVENTS SofosFO/GrandSoft PDF
 2017906 || ET CURRENT_EVENTS TDS Unknown_.aso - URI - IP.aso
 2017907 || ET CURRENT_EVENTS GoonEK Landing with CVE-2013-2551 Dec 29 2013
@@ -15031,12 +15031,12 @@
 2017950 || ET SCAN FOCA uri || url,blog.bannasties.com/2013/08/vulnerability-scans/
 2017951 || ET WEB_SERVER ATTACKER WebShell - PHP Offender - Title
 2017952 || ET WEB_SERVER ATTACKER WebShell - PHP Offender - POST Command
-2017953 || ET CURRENT_EVENTS Angler EK Landing Jan 10 2014
-2017954 || ET CURRENT_EVENTS Angler EK Landing Jan 10 2014 1
-2017955 || ET CURRENT_EVENTS Angler EK Landing Jan 10 2014 2
-2017956 || ET CURRENT_EVENTS Angler EK Landing Jan 10 2014 3
+2017953 || ET DELETED Angler EK Landing Jan 10 2014
+2017954 || ET DELETED Angler EK Landing Jan 10 2014 1
+2017955 || ET DELETED Angler EK Landing Jan 10 2014 2
+2017956 || ET DELETED Angler EK Landing Jan 10 2014 3
 2017957 || ET CURRENT_EVENTS GoonEK Landing Jan 10 2014
-2017958 || ET CURRENT_EVENTS Possible Neutrino EK SilverLight Exploit Jan 11 2014
+2017958 || ET DELETED Possible Neutrino EK SilverLight Exploit Jan 11 2014
 2017959 || ET TROJAN W32/Mevade.Variant CnC POST || url,www.anubisnetworks.com/unknowndga17-the-mevade-connection/ || url,labs.umbrella.com/2013/10/24/mysterious-dga-lets-investigate-sgraph/
 2017960 || ET POLICY Bitcoin Mining Server Stratum Protocol HTTP Header || url,www.anubisnetworks.com/unknowndga17-the-mevade-connection/
 2017961 || ET DELETED PE EXE or DLL Windows file download disguised as ASCII - SET
@@ -15049,7 +15049,7 @@
 2017968 || ET INFO Suspicious Possible Process Dump in POST body || url,www.securelist.com/en/blog/208214213/The_Icefog_APT_Hits_US_Targets_With_Java_Backdoor
 2017969 || ET EXPLOIT Netgear passwordrecovered.cgi attempt || cve,2017-5521 || url,www.trustwave.com/Resources/Security-Advisories/Advisories/TWSL2017-003/?fid=8911 || url,www.securityfocus.com/archive/1/530743/30/0/threaded
 2017970 || ET TROJAN PWS.Win32/Daceluw.A Checkin || url,xylibox.com/2014/01/trojwowspy-a.html
-2017971 || ET CURRENT_EVENTS Possible Neutrino EK IE/Silverlight Payload Download
+2017971 || ET DELETED Possible Neutrino EK IE/Silverlight Payload Download
 2017972 || ET TROJAN ICEFOG JAVAFOG JAR checkin || url,jsunpack.jeek.org/dec/go?report=6b63068d3259f5032a301e0d3f935b4d3f2e2998 || url,www.securelist.com/en/blog/208214213/The_Icefog_APT_Hits_US_Targets_With_Java_Backdoor
 2017973 || ET CURRENT_EVENTS Nuclear EK CVE-2013-3918
 2017974 || ET TROJAN Backdoor family PCRat/Gh0st CnC traffic (OUTBOUND) 15 || md5,edd8c8009fc1ce2991eef6069ae6bf82 || url,www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name=Backdoor%3AWin32%2FPcClient.ZR&ThreatID=-2147325231 || url,www.securelist.com/en/descriptions/10155706/Trojan-GameThief.Win32.Magania.eogz
@@ -15062,12 +15062,12 @@
 2017981 || ET CURRENT_EVENTS Possible Updatre Compromised SSL Certificate thebostonshaker
 2017982 || ET MALWARE Suspicious User-Agent 100 non-printable char || md5,176638536e926019e3e79370777d5e03
 2017983 || ET TROJAN Java/Jacksbot Check-in || md5,6d93fc6132ae6938013cdd95354bff4e
-2017984 || ET CURRENT_EVENTS Angler EK encrypted binary (1) Jan 17 2013
-2017985 || ET CURRENT_EVENTS Angler EK encrypted binary (2) Jan 17 2013
-2017986 || ET CURRENT_EVENTS Angler EK encrypted binary (3) Jan 17 2013
+2017984 || ET DELETED Angler EK encrypted binary (1) Jan 17 2013
+2017985 || ET DELETED Angler EK encrypted binary (2) Jan 17 2013
+2017986 || ET DELETED Angler EK encrypted binary (3) Jan 17 2013
 2017987 || ET CURRENT_EVENTS Upatre SSL Compromised site appsredeeem
 2017988 || ET TROJAN Backdoor family PCRat/Gh0st CnC traffic (OUTBOUND) 16 || md5,ece8808981043f830bacc4133d68e394 || url,www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name=Backdoor%3AWin32%2FPcClient.ZR&ThreatID=-2147325231 || url,www.securelist.com/en/descriptions/10155706/Trojan-GameThief.Win32.Magania.eogz
-2017989 || ET CURRENT_EVENTS Angler EK encrypted binary (4)
+2017989 || ET DELETED Angler EK encrypted binary (4)
 2017990 || ET TROJAN Cybergate/Rebhip/Spyrat Backdoor Keepalive
 2017991 || ET TROJAN Cybergate/Rebhip/Spyrat Backdoor Keepalive Response
 2017992 || ET MALWARE Win32/OutBrowse.G Variant Checkin || url,www.virustotal.com/en/file/95e0eaaee080f2c167464ed6da7e4b7a27937ac64fd3e1792a1aa84c1aed488e analysis/ || md5,d75055c45e2c5293c3e0fbffb299ea6d
@@ -15247,7 +15247,7 @@
 2018168 || ET WEB_SPECIFIC_APPS MediaWiki thumb.php RCE || cve,2014-1610 || url,github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/mediawiki_thumb.rb
 2018169 || ET TROJAN Gulpix/PlugX Client Request || url,www.fireeye.com/blog/technical/targeted-attack/2014/02/operation-greedywonk-multiple-economic-and-foreign-policy-sites-compromised-serving-up-flash-zero-day-exploit.html || md5,663d7774b6727a070b558676cee9fe43
 2018170 || ET POLICY Application Crash Report Sent to Microsoft
-2018171 || ET CURRENT_EVENTS Angler EK Landing Page Feb 24 2014
+2018171 || ET DELETED Angler EK Landing Page Feb 24 2014
 2018172 || ET CURRENT_EVENTS SUSPICIOUS Java Lang Runtime in Response
 2018174 || ET INFO RelevantKnowledge Adware CnC Beacon || md5,d93b888e08693119a1b0dd3983b8d1ec
 2018175 || ET CURRENT_EVENTS SUSPICIOUS XXTEA UTF-16 Encoded HTTP Response
@@ -15415,7 +15415,7 @@
 2018343 || ET CURRENT_EVENTS Hikvision DVR  attempted Synology Recon Scan || url,isc.sans.edu/forums/diary/More+Device+Malware+This+is+why+your+DVR+attacked+my+Synology+Disk+Station+and+now+with+Bitcoin+Miner/17879
 2018344 || ET CURRENT_EVENTS Hikvision DVR Synology Recon Scan Checkin || url,isc.sans.edu/forums/diary/More+Device+Malware+This+is+why+your+DVR+attacked+my+Synology+Disk+Station+and+now+with+Bitcoin+Miner/17879
 2018345 || ET TROJAN W32/SpeedingUpMyPC.Rootkit Successful Install GET Type CnC Beacon || md5,cb6cb201eab321f7a827bb3cb1b311b6
-2018346 || ET CURRENT_EVENTS DRIVEBY Angler EK Landing Apr 01 2014
+2018346 || ET DELETED DRIVEBY Angler EK Landing Apr 01 2014
 2018348 || ET CURRENT_EVENTS Possible Deep Panda WateringHole Related URI Struct
 2018350 || ET CURRENT_EVENTS Upatre SSL Compromised site potpourriflowers
 2018351 || ET CURRENT_EVENTS Upatre SSL Compromised site kionic || url,blog.malwaremustdie.org/2014/04/upatre-downloading-gmo-is-back-to-ssl.html
@@ -15454,7 +15454,7 @@
 2018384 || ET TROJAN Zeus.Downloader Campaign Unknown Initial CnC Beacon 10/4/2014 || md5,94d5d99b910f9184573a01873fdc42fc
 2018385 || ET TROJAN Zeus.Downloader Campaign Second Stage Executable Request 10/4/2014 || md5,94d5d99b910f9184573a01873fdc42fc
 2018386 || ET TROJAN cryptodefense Checkin
-2018387 || ET CURRENT_EVENTS Angler EK Landing Apr 14 2014
+2018387 || ET DELETED Angler EK Landing Apr 14 2014
 2018388 || ET CURRENT_EVENTS Possible TLS HeartBleed Unencrypted Request Method 4 (Inbound to Common SSL Port) || url,blog.fox-it.com/2014/04/08/openssl-heartbleed-bug-live-blog/ || url,heartbleed.com/ || url,blog.inliniac.net/2014/04/08/detecting-openssl-heartbleed-with-suricata/ || cve,2014-0160
 2018389 || ET CURRENT_EVENTS Possible TLS HeartBleed Unencrypted Request Method 3 (Inbound to Common SSL Port) || url,blog.fox-it.com/2014/04/08/openssl-heartbleed-bug-live-blog/ || url,heartbleed.com/ || url,blog.inliniac.net/2014/04/08/detecting-openssl-heartbleed-with-suricata/ || cve,2014-0160
 2018390 || ET TROJAN Backdoor Win32/Zegost.Q CnC traffic (OUTBOUND) || md5,4f0d365408b439eb9aaf0b2352abb662 || url,www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name=Backdoor%3AWin32%2FPcClient.ZR&ThreatID=-2147325231 || url,www.securelist.com/en/descriptions/10155706/Trojan-GameThief.Win32.Magania.eogz
@@ -15558,7 +15558,7 @@
 2018495 || ET WEB_SERVER Possible CVE-2014-3120 Elastic Search Remote Code Execution Attempt || url,bouk.co/blog/elasticsearch-rce/
 2018496 || ET TROJAN Win32/Geodo Checkin || url,pastebin.com/qnLmpKuQ || md5,fa50062b7763487b3dd6f9ed0a2f3549
 2018497 || ET DELETED Angler EK SilverLight Payload Request - May 2014 || url,blogs.cisco.com/security/angling-for-silverlight-exploits/
-2018498 || ET CURRENT_EVENTS Possible Styx/Angler EK SilverLight Exploit 2
+2018498 || ET DELETED Possible Styx/Angler EK SilverLight Exploit 2
 2018499 || ET TROJAN Win32/Urausy.C response || md5,6213597f40ecb3e7cf2ab3ee5c8b1c70
 2018500 || ET CURRENT_EVENTS Metasploit Various Java Exploit Common Class name
 2018501 || ET CURRENT_EVENTS Gongda EK Secondary Landing
@@ -15569,9 +15569,9 @@
 2018506 || ET TROJAN Upatre Compromised Site hot-buys || md5,bad758023d2e3cc17b61423720cdb5b7
 2018507 || ET TROJAN Trojan-Dropper.Win32.Agent.ksja || md5,3b440e052da726942763d11cf9e3f72c
 2018508 || ET TROJAN Win32/Enosch.A gtalk connectivity check || md5,b13db8b21289971b3c88866d202fad49
-2018509 || ET CURRENT_EVENTS Angler EK encrypted binary (5)
-2018510 || ET CURRENT_EVENTS Angler EK encrypted binary (6)
-2018511 || ET TROJAN Angler EK encrypted binary (7)
+2018509 || ET DELETED Angler EK encrypted binary (5)
+2018510 || ET DELETED Angler EK encrypted binary (6)
+2018511 || ET DELETED Angler EK encrypted binary (7)
 2018512 || ET MALWARE Adware.MultiInstaller || md5,a74b1602a50b9c7d3262e3f80a6a2e68 || md5, 26973eeddb4781225b7c23d2d9cce996
 2018513 || ET MALWARE PUP Win32/DownloadGuide.A || md5,37b91123a58a48975770241445392aeb
 2018514 || ET CURRENT_EVENTS Possible Malicious Injected Redirect June 02 2014
@@ -15910,7 +15910,7 @@
 2018873 || ET TROJAN Tor based locker Ransom Page
 2018874 || ET TROJAN Tor based locker .onion Proxy DNS lookup July 31 2014 || md5,de81fab8ec96bef76db828f4c1a42e4d
 2018875 || ET POLICY tor4u tor2web .onion Proxy DNS  lookup || md5,de81fab8ec96bef76db828f4c1a42e4d
-2018876 || ET POLICY  DNS Query to .onion proxy Domain (onion.cab) || md5,de81fab8ec96bef76db828f4c1a42e4d
+2018876 || ET POLICY DNS Query to .onion proxy Domain (onion.cab) || md5,de81fab8ec96bef76db828f4c1a42e4d
 2018877 || ET TROJAN Tor based locker knowledgewiki.info in SNI July 31 2014 || md5,de81fab8ec96bef76db828f4c1a42e4d
 2018878 || ET POLICY tor4u tor2web .onion Proxy domain in SNI || md5,de81fab8ec96bef76db828f4c1a42e4d
 2018879 || ET POLICY onion.cab tor2web .onion Proxy domain in SNI || md5,de81fab8ec96bef76db828f4c1a42e4d
@@ -15981,13 +15981,13 @@
 2018947 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (KINS C2) || url,sslbl.abuse.ch
 2018948 || ET TROJAN Likely Synolocker .onion DNS lookup
 2018949 || ET TROJAN Win32/PSW.Steam.NBP Checkin || md5,bec091077138a1cac49db00495d456e7 || md5,17d2b62f2fa20f407485437de17787fb
-2018950 || ET CURRENT_EVENTS DRIVEBY Angler EK Landing Aug 16 2014
+2018950 || ET DELETED DRIVEBY Angler EK Landing Aug 16 2014
 2018951 || ET TROJAN Tor Based Locker Page (Torrentlocker)
 2018953 || ET TROJAN ShellBot.C retrieval || url,pastebin.com/C0arvGxU || url,pastebin.com/0dAciksC || md5,3e44252394078c8fd792da1583525d0c
-2018954 || ET CURRENT_EVENTS Angler EK Encoded Shellcode IE
-2018955 || ET CURRENT_EVENTS Angler EK Encoded Shellcode Silverlight
-2018956 || ET CURRENT_EVENTS Angler EK Encoded Shellcode Flash
-2018957 || ET CURRENT_EVENTS Angler EK Encoded Shellcode Java
+2018954 || ET DELETED Angler EK Encoded Shellcode IE
+2018955 || ET DELETED Angler EK Encoded Shellcode Silverlight
+2018956 || ET DELETED Angler EK Encoded Shellcode Flash
+2018957 || ET DELETED Angler EK Encoded Shellcode Java
 2018958 || ET TROJAN Worm.Win32.Vobfus Checkin 3 || md5,a2049adc2834d797b37f45382608f2b4 || md5,3ed744b12a77359576af10a265154081
 2018959 || ET POLICY PE EXE or DLL Windows file download HTTP || url,doc.emergingthreats.net/bin/view/Main/2000419
 2018960 || ET TROJAN ZeroLocker Downloading Config || url,symantec.com/security_response/writeup.jsp?docid=2014-081521-4509-99 || url,webroot.com/blog/2014/08/14/zero-locker/ || url,securelist.com/blog/incidents/66135/zerolocker-wont-come-to-your-rescue/
@@ -16246,7 +16246,7 @@
 2019221 || ET TROJAN njrat ver 0.7d Malware CnC Callback (File Manager Actions) || md5,bbc68c34bb2dac3ae382ecf785bdb441
 2019222 || ET TROJAN njrat ver 0.7d Malware CnC Callback (Keylogging) || md5,bbc68c34bb2dac3ae382ecf785bdb441
 2019223 || ET DELETED njrat ver 0.7d Malware CnC Callback || md5,bbc68c34bb2dac3ae382ecf785bdb441
-2019224 || ET CURRENT_EVENTS DRIVEBY Angler EK Apr 01 2014
+2019224 || ET DELETED DRIVEBY Angler EK Apr 01 2014
 2019225 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (UPATRE CnC) || url,sslbl.abuse.ch
 2019226 || ET CURRENT_EVENTS DRIVEBY Nuclear EK 2013-3918
 2019227 || ET CURRENT_EVENTS Win32/Spy.Zbot.ACB SSL Cert Sept 24 2014 || md5,2ceda25b44378583dfb6df64b92ac654
@@ -16504,8 +16504,8 @@
 2019485 || ET CURRENT_EVENTS Win32/Zbot SSL Cert Oct 21 2014 || md5,1fedcd44951c3dfb861fa83ddcec2b84
 2019486 || ET TROJAN Possible IRC Bot Common PRIVMSG Commands
 2019487 || ET CURRENT_EVENTS FlashPack Payload URI Struct Oct 22 2014
-2019488 || ET CURRENT_EVENTS Angler EK Oct 22 2014
-2019489 || ET CURRENT_EVENTS Angler EK Landing Oct 22 2014
+2019488 || ET DELETED Angler EK Oct 22 2014
+2019489 || ET DELETED Angler EK Landing Oct 22 2014
 2019490 || ET EXPLOIT Possible Malicious NAT-PMP Response to External Network || url,community.rapid7.com/community/metasploit/blog/2014/10/21/r7-2014-17-nat-pmp-implementation-and-configuration-vulnerabilities
 2019491 || ET EXPLOIT Possible Malicious NAT-PMP Response Successful TCP Map to External Network || url,community.rapid7.com/community/metasploit/blog/2014/10/21/r7-2014-17-nat-pmp-implementation-and-configuration-vulnerabilities
 2019492 || ET EXPLOIT Possible Malicious NAT-PMP Response Successful UDP Map to External Network || url,community.rapid7.com/community/metasploit/blog/2014/10/21/r7-2014-17-nat-pmp-implementation-and-configuration-vulnerabilities
@@ -16529,8 +16529,8 @@
 2019510 || ET MOBILE_MALWARE Android/Koler.C Checkin || md5,6ae7b0d04e2fd64a50703910d0eff9cc
 2019511 || ET MALWARE Adware.InstallCore.B Checkin || md5,d933bef7e1118b181add31eb5edc5c73
 2019512 || ET POLICY Possible IP Check api.ipify.org
-2019513 || ET CURRENT_EVENTS Angler EK Flash Exploit URI Struct
-2019514 || ET CURRENT_EVENTS Angler EK Java Exploit URI Struct
+2019513 || ET DELETED Angler EK Flash Exploit URI Struct
+2019514 || ET DELETED Angler EK Java Exploit URI Struct
 2019515 || ET TROJAN W32/Siggen.Dropper CnC Beacon || md5,ee363de2168aab353c829434189350e4
 2019516 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Backoff CnC) || url,sslbl.abuse.ch
 2019517 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (KINS CnC) || url,sslbl.abuse.ch
@@ -16769,9 +16769,9 @@
 2019758 || ET TROJAN Bamital Checkin Response 2
 2019759 || ET TROJAN Win32/Zemot Requesting PE || md5,08aab7cdbfc2446fbca2a2f350df4ea2
 2019760 || ET TROJAN Rerdom/Asprox CnC Beacon || url,www.damballa.com/wp-content/uploads/2014/11/Behind_Malware_Infection_Chain_Rerdom.pdf || url,malware-traffic-analysis.net/2014/08/24/index.html
-2019761 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing Nov 20 2014
-2019762 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing Nov 20 2014
-2019763 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Flash Exploit Nov 20 2014
+2019761 || ET DELETED Job314/Neutrino Reboot EK Landing Nov 20 2014
+2019762 || ET DELETED Job314/Neutrino Reboot EK Landing Nov 20 2014
+2019763 || ET DELETED Job314/Neutrino Reboot EK Flash Exploit Nov 20 2014
 2019764 || ET DELETED Job314/Neutrino Reboot EK Payload Nov 20 2014
 2019765 || ET CURRENT_EVENTS DRIVEBY Nuclear EK SWF
 2019766 || ET CURRENT_EVENTS FlashPack Flash Exploit Nov 20 2014
@@ -16900,7 +16900,7 @@
 2019890 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (KINS CnC) || url,sslbl.abuse.ch
 2019891 || ET TROJAN W32/Dridex POST CnC Beacon || md5,d37256439d5ab7f25561cc390d8aa1ea
 2019892 || ET CURRENT_EVENTS Malicious Iframe Leading to EK Dec 08 2014
-2019893 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (1)
+2019893 || ET DELETED Angler EK XTEA encrypted binary (1)
 2019894 || ET CURRENT_EVENTS Probable malicious download from e-mail link /1.php
 2019895 || ET CURRENT_EVENTS Malicious Redirect Leading to EK Dec 08 2014
 2019896 || ET TROJAN Backdoor.Linux.Turla Download || md5,19fbd8cbfb12482e8020a887d6427315 || url,securelist.com/blog/research/67962/the-penquin-turla-2/
@@ -16915,7 +16915,7 @@
 2019905 || ET CURRENT_EVENTS QNAP Shellshock script retrieval || cve,2014-6271 || url,blogs.akamai.com/2014/09/environment-bashing.html || url,www.fireeye.com/blog/threat-research/2014/10/the-shellshock-aftershock-for-nas-administrators.html
 2019906 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Cridex CnC) || url,sslbl.abuse.ch
 2019907 || ET CURRENT_EVENTS Gootkit SSL Cert Dec 10 2014 || md5,c05453a18b6dc45bc258a377d2161b1c
-2019908 || ET CURRENT_EVENTS Evil Flash Redirector to Job314/Neutrino Reboot EK
+2019908 || ET DELETED Evil Flash Redirector to Job314/Neutrino Reboot EK
 2019909 || ET TROJAN Win32/Critroni Tor DNS Proxy lookup || md5,194a931aa49583191eedd19478396ebc
 2019910 || ET TROJAN DNS Query for Cloud Atlas haarmannsi.cz || url,securelist.com/blog/research/68083/cloud-atlas-redoctober-apt-is-back-in-style/
 2019911 || ET TROJAN DNS Query for Cloud Atlas sanygroup.co.uk || url,securelist.com/blog/research/68083/cloud-atlas-redoctober-apt-is-back-in-style/
@@ -16974,8 +16974,8 @@
 2019965 || ET TROJAN FinancialStatement Keylogger POSTing keystrokes || url,techhelplist.com/index.php/spam-list/695-financial-statement-malware
 2019966 || ET TROJAN Win32/Poweliks.A Checkin 2
 2019967 || ET CURRENT_EVENTS Evil Flash Redirector to RIG EK Dec 17 2014
-2019968 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (2)
-2019969 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (3)
+2019968 || ET DELETED Angler EK XTEA encrypted binary (2)
+2019969 || ET DELETED Angler EK XTEA encrypted binary (3)
 2019970 || ET CURRENT_EVENTS Upatre Download Redirection Dec 18 2014
 2019973 || ET CURRENT_EVENTS Archie EK T2 Activity Dec 18 2014
 2019974 || ET MALWARE PUP W32/DownloadGuide.D || md5,294752c7c4fcf4252a9e99bb4df7ff5c
@@ -16995,8 +16995,8 @@
 2019989 || ET CURRENT_EVENTS Evil Redirector Leading to EK Dec 22 2014 Video
 2019990 || ET CURRENT_EVENTS Evil Redirector Leading to EK Dec 22 2014 Player
 2019991 || ET CURRENT_EVENTS Evil Redirector Leading to EK Dec 22 2014 Search
-2019992 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (4)
-2019993 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (5)
+2019992 || ET DELETED Angler EK XTEA encrypted binary (4)
+2019993 || ET DELETED Angler EK XTEA encrypted binary (5)
 2019994 || ET TROJAN US-CERT TA14-353A Wiper 2 || url,www.us-cert.gov/ncas/alerts/TA14-353A
 2019995 || ET TROJAN US-CERT TA14-353A Listening Implant 1 || url,www.us-cert.gov/ncas/alerts/TA14-353A
 2019996 || ET TROJAN US-CERT TA14-353A Listening Implant 2 || url,www.us-cert.gov/ncas/alerts/TA14-353A
@@ -17069,11 +17069,11 @@
 2020065 || ET TROJAN DNS query for known Anunak APT Domain (ddnservice11.ru) || url,fox-it.com/en/files/2014/12/Anunak_APT-against-financial-institutions2.pdf
 2020066 || ET TROJAN DNS query for known Anunak APT Domain (financialnewsonline.pw) || url,fox-it.com/en/files/2014/12/Anunak_APT-against-financial-institutions2.pdf
 2020067 || ET CURRENT_EVENTS Possible CVE-2014-6332 Arrays with Offset Dec 23 || cve,2014-6332 || md5,d2d3c212f430bff2b5f075fa083de047
-2020068 || ET CURRENT_EVENTS Angler EK Dec 24 2014
+2020068 || ET DELETED Angler EK Dec 24 2014
 2020069 || ET TROJAN TROJ_WHAIM.A message
 2020070 || ET TROJAN Unknown Dropped by RIG EK || md5,18fa3ab45c6fa9da218dd4c35688c5f4
-2020071 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (6)
-2020072 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (7)
+2020071 || ET DELETED Angler EK XTEA encrypted binary (6)
+2020072 || ET DELETED Angler EK XTEA encrypted binary (7)
 2020073 || ET DELETED DNS query for known Anunak APT Domain (ddnservice11.ru) || url,fox-it.com/en/files/2014/12/Anunak_APT-against-financial-institutions2.pdf
 2020074 || ET DELETED DNS query for known Anunak APT Domain (financialnewsonline.pw) || url,fox-it.com/en/files/2014/12/Anunak_APT-against-financial-institutions2.pdf
 2020075 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (KINS CnC) || url,sslbl.abuse.ch
@@ -17204,7 +17204,7 @@
 2020201 || ET TROJAN Filename server.exe Download - Common Hostile Filename
 2020202 || ET POLICY Terse Named Filename EXE Download - Possibly Hostile
 2020203 || ET TROJAN Win32/Zeprox.B Checkin || url,www.microsoft.com/security/portal/threat/encyclopedia/entry.aspx?Name=Backdoor%3AWin32/Zeprox.B || md5,38c89cca7806fde08bba82b3cb533e5a || md5,bc27f28e5fe47b78202fd3108d39aac1
-2020204 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (8)
+2020204 || ET DELETED Angler EK XTEA encrypted binary (8)
 2020205 || ET TROJAN Possible Mailer Dropped by Dyre SSL Cert || md5,dbcdaf617e19d2a35f763ac996cf8cd7
 2020206 || ET TROJAN Critroni Variant .onion Proxy Domain || md5,35a7f70c5e0cd4814224c96e3c62fa42
 2020207 || ET CURRENT_EVENTS Nuclear EK Landing Jan 19 2014
@@ -17225,7 +17225,7 @@
 2020222 || ET TROJAN Win32/Nitol.A Checkin 2 || md5,b9096b87cf643c5f86789d995e9e773d
 2020223 || ET TROJAN Known Sinkhole Response abuse.ch
 2020224 || ET CURRENT_EVENTS Possible Successful Phishing Attempt Jan 20 2015
-2020225 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (9)
+2020225 || ET DELETED Angler EK XTEA encrypted binary (9)
 2020226 || ET TROJAN Critroni Variant .onion Proxy Domain
 2020227 || ET DELETED Angler EK XTEA encrypted binary (10)
 2020228 || ET TROJAN DNS Query for Suspicious proxy1-1-1.i2p Domain - Possible CryptoWall Activity || url,isc.sans.edu/forums/diary/Traffic+Patterns+For+CryptoWall+30/19203/
@@ -17234,7 +17234,7 @@
 2020231 || ET TROJAN DNS Query for Suspicious proxy4-4-4.i2p Domain - Possible CryptoWall Activity || url,isc.sans.edu/forums/diary/Traffic+Patterns+For+CryptoWall+30/19203/
 2020232 || ET TROJAN DNS Query for Suspicious proxy5-5-5.i2p Domain - Possible CryptoWall Activity || url,isc.sans.edu/forums/diary/Traffic+Patterns+For+CryptoWall+30/19203/
 2020233 || ET TROJAN CryptoWall CryptoWall 3.0 Check-in || md5,3c53c9f7ab32a09de89bb44e5f91f9af
-2020234 || ET CURRENT_EVENTS Possible Angler EK Flash Exploit URI Structure Jan 21 2015
+2020234 || ET DELETED Possible Angler EK Flash Exploit URI Structure Jan 21 2015
 2020235 || ET TROJAN Mazilla Suspicious User-Agent Jan 15 2015 || url,malware-traffic-analysis.net/2015/01/15/index.html
 2020236 || ET CURRENT_EVENTS Nuclear EK Landing Jan 21 2014
 2020237 || ET TROJAN Inception APT malware || url,www.bluecoat.com/security-blog/2015-01-20/reversing-inception-apt-malware
@@ -17320,8 +17320,8 @@
 2020317 || ET CURRENT_EVENTS DRIVEBY Nuclear EK SilverLight M2
 2020318 || ET CURRENT_EVENTS DRIVEBY Nuclear EK Landing Jan 27 2015 M1
 2020319 || ET CURRENT_EVENTS DRIVEBY Nuclear EK Landing Jan 27 2015 M2
-2020320 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing Jan 27 2015
-2020321 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing Jan 27 2015
+2020320 || ET DELETED Job314/Neutrino Reboot EK Landing Jan 27 2015
+2020321 || ET DELETED Job314/Neutrino Reboot EK Landing Jan 27 2015
 2020322 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (KINS CnC) || url,sslbl.abuse.ch
 2020323 || ET WEB_SERVER Heimdallbot Attack Tool Inbound
 2020324 || ET POLICY Onion2Web Tor Proxy Cookie || url,github.com/starius/onion2web || md5,2b62cdb6bcec4bff47eff437e4fc46d3 || md5,a46e609662eb94a726fcb4471b7057d4
@@ -17355,8 +17355,8 @@
 2020352 || ET CURRENT_EVENTS DRIVEBY Nuclear EK Landing Feb 03 2015 M2
 2020353 || ET MOBILE_MALWARE Android/SMSThief.F Banker CnC Beacon || md5,ff081c1400a948f2bcc4952fed2c818b || url,research.zscaler.com/2015/02/android-banking-trojan-and-sms-stealer.html
 2020354 || ET CURRENT_EVENTS DRIVEBY Nuclear EK Landing Feb 03 2015 M2
-2020355 || ET CURRENT_EVENTS Angler EK Feb 04 2015
-2020356 || ET CURRENT_EVENTS Angler EK Feb 04 2015 M2
+2020355 || ET DELETED Angler EK Feb 04 2015
+2020356 || ET DELETED Angler EK Feb 04 2015 M2
 2020357 || ET TROJAN Critroni Variant .onion Proxy Domain
 2020358 || ET TROJAN Critroni Variant .onion Proxy Domain || md5,adb0de790bd3fb88490a60f0dddd90fa
 2020359 || ET TROJAN Critroni Variant .onion Proxy Domain
@@ -17364,9 +17364,9 @@
 2020361 || ET TROJAN Critroni Variant .onion Proxy Domain
 2020363 || ET MOBILE_MALWARE Operation Pawn Storm IOS_XAGENT Checkin || url,blog.trendmicro.com/trendlabs-security-intelligence/pawn-storm-update-ios-espionage-app-found/
 2020364 || ET MOBILE_MALWARE IOS_XAGENT UA || url,blog.trendmicro.com/trendlabs-security-intelligence/pawn-storm-update-ios-espionage-app-found/
-2020365 || ET CURRENT_EVENTS DRIVEBY Angler EK Landing Primer Feb 04 2014 (noalert)
-2020366 || ET CURRENT_EVENTS DRIVEBY Angler EK Landing Primer Feb 04 2014 (noalert)
-2020367 || ET CURRENT_EVENTS DRIVEBY Angler EK Landing Feb 04 2014 T1
+2020365 || ET DELETED DRIVEBY Angler EK Landing Primer Feb 04 2014 (noalert)
+2020366 || ET DELETED DRIVEBY Angler EK Landing Primer Feb 04 2014 (noalert)
+2020367 || ET DELETED DRIVEBY Angler EK Landing Feb 04 2014 T1
 2020368 || ET WEB_SPECIFIC_APPS FancyBox Remote Code Inclusion POST Request || url,blog.sucuri.net/2015/02/zero-day-in-the-fancybox-for-wordpress-plugin.html
 2020369 || ET TROJAN Common Upatre URI/Headers Struct
 2020370 || ET TROJAN Upatre External IP Check
@@ -17386,8 +17386,8 @@
 2020384 || ET TROJAN Skeleton Key Filename in SMB2 Traffic || url,www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis
 2020385 || ET DELETED Angler EK Payload DL M1 Feb 06 2015
 2020386 || ET POLICY SUSPICIOUS *.rar.exe in HTTP URL
-2020387 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (11)
-2020388 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Payload Nov 20 2014
+2020387 || ET DELETED Angler EK XTEA encrypted binary (11)
+2020388 || ET DELETED Job314/Neutrino Reboot EK Payload Nov 20 2014
 2020389 || ET TROJAN Linux/Xnote Keep-Alive || url,deependresearch.org/2015/02/linuxbackdoorxnote1-indicators.html
 2020390 || ET POLICY DNS Query to .onion proxy Domain (optionstorpay22.com) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
 2020391 || ET POLICY DNS Query to .onion proxy Domain (bananator.com) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
@@ -17489,7 +17489,7 @@
 2020493 || ET TROJAN SuperFish Possible SSL Cert Signed By Compromised Root CA || url,myce.com/news/lenovo-laptops-come-with-preinstalled-advertisement-injecting-adware-74290/ || url,blog.erratasec.com/2015/02/extracting-superfish-certificate.html
 2020494 || ET CURRENT_EVENTS KaiXin Secondary Landing Page M2
 2020495 || ET CURRENT_EVENTS KaiXin Landing M3
-2020496 || ET CURRENT_EVENTS Angler EK Post-infection HTTP Request Feb 20 2015
+2020496 || ET DELETED Angler EK Post-infection HTTP Request Feb 20 2015
 2020497 || ET DELETED DRIVEBY Angler EK Landing URI Struct Feb 21
 2020498 || ET CURRENT_EVENTS DRIVEBY Possible Unknown EK HFS CVE-2014-6332
 2020500 || ET CURRENT_EVENTS DRIVEBY Likely Evil EXE with no referer from HFS webserver (used by Unknown EK)
@@ -17580,16 +17580,16 @@
 2020588 || ET CURRENT_EVENTS Possible Scam - FakeAV Alert Landing March 2 2015
 2020589 || ET CURRENT_EVENTS Possible Scam - FakeAV Alert Landing March 2 2015
 2020590 || ET EXPLOIT D-Link and TRENDnet ncc2 Service Vulnerability (ping.ccp) 2015-1187 || url,github.com/darkarnium/secpub/tree/master/Multivendor/ncc2
-2020591 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (12)
-2020592 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (13)
-2020593 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (14)
-2020594 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (15)
-2020595 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (16)
-2020596 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (17)
-2020597 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (18)
-2020598 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (19)
-2020599 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (20)
-2020600 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (21)
+2020591 || ET DELETED Angler EK XTEA encrypted binary (12)
+2020592 || ET DELETED Angler EK XTEA encrypted binary (13)
+2020593 || ET DELETED Angler EK XTEA encrypted binary (14)
+2020594 || ET DELETED Angler EK XTEA encrypted binary (15)
+2020595 || ET DELETED Angler EK XTEA encrypted binary (16)
+2020596 || ET DELETED Angler EK XTEA encrypted binary (17)
+2020597 || ET DELETED Angler EK XTEA encrypted binary (18)
+2020598 || ET DELETED Angler EK XTEA encrypted binary (19)
+2020599 || ET DELETED Angler EK XTEA encrypted binary (20)
+2020600 || ET DELETED Angler EK XTEA encrypted binary (21)
 2020601 || ET TROJAN Xunpf.A Retrieving DLL || md5,dfb7dd8b6975b73dc9c731319a05f86d
 2020602 || ET TROJAN LogPOS Sending Data || url,morphick.net/blog/2015/2/27/mailslot-pos
 2020603 || ET EXPLOIT D-Link and TRENDnet ncc2 Service Vulnerability (fwupdate.cpp) 2015-1187 || url,github.com/darkarnium/secpub/tree/master/Multivendor/ncc2
@@ -17718,7 +17718,7 @@
 2020727 || ET TROJAN Zbot .onion Proxy Domain (3bjpwsf3fjcwtnwx)
 2020728 || ET TROJAN Possible Adwind SSL Cert (assylias.Inc) || md5,4e5c28fab23b35dea2d48a1c2db32b56
 2020729 || ET MOBILE_MALWARE Android.Trojan.SMSSend.Y || md5,ef79985c90675e7abfb6b9a6bc5a6c65
-2020730 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (22)
+2020730 || ET DELETED Angler EK XTEA encrypted binary (22)
 2020731 || ET WEB_SPECIFIC_APPS Possible Netscaler SQLi bypass (URI data) || url,seclists.org/fulldisclosure/2015/Mar/95
 2020732 || ET WEB_SPECIFIC_APPS Possible Netscaler SQLi bypass (POST data) || url,seclists.org/fulldisclosure/2015/Mar/95
 2020733 || ET WEB_SPECIFIC_APPS Possible Netscaler SQLi bypass (cookie) || url,seclists.org/fulldisclosure/2015/Mar/95
@@ -18046,7 +18046,7 @@
 2021056 || ET TROJAN Dyre Downloading Mailer 2 || md5,999bc5e16312db6abff5f6c9e54c546f || url,www.seculert.com/blog/2015/04/new-dyre-version-evades-sandboxes.html
 2021057 || ET TROJAN njRAT Variant Outbound CnC Beacon
 2021058 || ET SCAN Xenu Link Sleuth Scanner Outbound
-2021059 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (23)
+2021059 || ET DELETED Angler EK XTEA encrypted binary (23)
 2021060 || ET USER_AGENTS MSF Meterpreter Default User Agent || url,blog.didierstevens.com/2015/03/16/quickpost-metasploit-user-agent-strings
 2021061 || ET TROJAN Ursnif SSL Cert
 2021062 || ET WEB_SPECIFIC_APPS WP Jetpack/Twentyfifteen Possible XSS Request || url,blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss.html
@@ -18113,8 +18113,8 @@
 2021123 || ET TROJAN Worm.VBS.Jenxcus.H User Agent || url,www.virustotal.com/en/file/a00eaca44c480843b1a8a11ac8870a931477be08d98f0476d1f8f60433e3f40a/analysis
 2021124 || ET EXPLOIT Logjam Weak DH/DHE Export Suite From Server || url,weakdh.org
 2021125 || ET EXPLOIT Logjam Weak DH/DHE Export Suite From Server || url,weakdh.org
-2021126 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (24)
-2021127 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (25)
+2021126 || ET DELETED Angler EK XTEA encrypted binary (24)
+2021127 || ET DELETED Angler EK XTEA encrypted binary (25)
 2021128 || ET TROJAN Blue Bot DDoS Proxy Request || url,research.zscaler.com/2015/05/rig-exploit-kit-infection-cycle-analysis.html || md5,7d9411f7204782fdbcd0fd0f20956bbc
 2021129 || ET TROJAN Blue Bot DDoS Blog Request || url,research.zscaler.com/2015/05/rig-exploit-kit-infection-cycle-analysis.html || md5,7d9411f7204782fdbcd0fd0f20956bbc
 2021130 || ET TROJAN Blue Bot DDoS Target Request || url,research.zscaler.com/2015/05/rig-exploit-kit-infection-cycle-analysis.html || md5,7d9411f7204782fdbcd0fd0f20956bbc
@@ -18144,7 +18144,7 @@
 2021154 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Dyre CnC) || url,sslbl.abuse.ch
 2021155 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Yakes CnC) || url,sslbl.abuse.ch || md5,6cdd93dcb1c54a4e2b036d2e13b51216
 2021156 || ET CURRENT_EVENTS Evil JS iframe Embedded In GIF
-2021157 || ET CURRENT_EVENTS Angler EK Exploit URI Struct May 28 2015 M1
+2021157 || ET DELETED Angler EK Exploit URI Struct May 28 2015 M1
 2021158 || ET DELETED Angler EK Payload URI Struct May 28 2015 M1
 2021160 || ET TROJAN Win32/Gatak.DR Payload Instructions || url,microsoft.com/security/portal/threat/encyclopedia/entry.aspx?Name=Trojan:Win32/Gatak.DR#tab=2
 2021161 || ET DELETED External IP Lookup - whoer.net
@@ -18233,7 +18233,7 @@
 2021245 || ET TROJAN Possible Dridex Download URI Struct with no referer
 2021246 || ET TROJAN Win32/Gatak.DR Activity || md5,adb3242f8efad48ca174a7e46991f507
 2021247 || ET TROJAN Possible Duqu 2.0 Request || url,www.symantec.com/connect/blogs/duqu-20-reemergence-aggressive-cyberespionage-threat
-2021248 || ET CURRENT_EVENTS Angler EK Landing URI Struct Jun 11
+2021248 || ET DELETED Angler EK Landing URI Struct Jun 11
 2021249 || ET CURRENT_EVENTS Possible Evil Redirector Leading to EK June 11 2015
 2021250 || ET POLICY Possible External IP Lookup ip.webmasterhome.cn
 2021251 || ET TROJAN Poweliks Clickfraud CnC M4 || md5,e13234077f513208238203108df30ff4 || url,www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/evolution-of-poweliks.pdf
@@ -18251,12 +18251,12 @@
 2021263 || ET DELETED Possible Angler EK Landing URI Struct June 13 M1
 2021264 || ET DELETED Possible Angler EK Landing URI Struct June 13 M2
 2021265 || ET DELETED Possible Angler EK Landing URI Struct June 13 M3
-2021266 || ET CURRENT_EVENTS Angler EK Landing URI Struct Jun 11 M2
-2021267 || ET CURRENT_EVENTS Angler EK Landing URI Struct Jun 11 M3
+2021266 || ET DELETED Angler EK Landing URI Struct Jun 11 M2
+2021267 || ET DELETED Angler EK Landing URI Struct Jun 11 M3
 2021268 || ET TROJAN Gatak CnC || url,www.secureworks.com/cyber-threat-intelligence/threats/stegoloader-a-stealthy-information-stealer/ || md5,636a911cc059415963da7009277bae17
-2021269 || ET CURRENT_EVENTS Angler EK Landing URI Struct Jun 15
-2021270 || ET CURRENT_EVENTS Angler EK Landing URI Struct Jun 15 M2
-2021271 || ET CURRENT_EVENTS Angler EK Landing URI Struct Jun 15 M3
+2021269 || ET DELETED Angler EK Landing URI Struct Jun 15
+2021270 || ET DELETED Angler EK Landing URI Struct Jun 15 M2
+2021271 || ET DELETED Angler EK Landing URI Struct Jun 15 M3
 2021273 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (TeslaCrypt MITM) || md5,1b4e97af9f327126146338b8cd21dd86
 2021274 || ET TROJAN Backdoor.Elise CnC Beacon 1 M1 || url,github.com/pan-unit42/iocs/tree/master/lotusblossom || md5,23ace716ec34bfd9c98efd79b23a01af
 2021275 || ET TROJAN Backdoor.Elise CnC Beacon 1 M2 || url,github.com/pan-unit42/iocs/tree/master/lotusblossom || md5,23ace716ec34bfd9c98efd79b23a01af
@@ -18264,8 +18264,8 @@
 2021277 || ET TROJAN Backdoor.Elise CnC Beacon 3 M1 || url,github.com/pan-unit42/iocs/tree/master/lotusblossom || md5,cf3f36dd3235d2cff5754b19b9e1cb1f
 2021278 || ET TROJAN Backdoor.Elise CnC Beacon 3 M2 || url,github.com/pan-unit42/iocs/tree/master/lotusblossom || md5,cf3f36dd3235d2cff5754b19b9e1cb1f
 2021279 || ET TROJAN Backdoor.Elise SSL Cert || url,github.com/pan-unit42/iocs/tree/master/lotusblossom || md5,8334f346585aa27ac6ae86e5adcaefa2
-2021280 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (16) M2
-2021281 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (11) M2
+2021280 || ET DELETED Angler EK XTEA encrypted binary (16) M2
+2021281 || ET DELETED Angler EK XTEA encrypted binary (11) M2
 2021282 || ET MALWARE Win32/DownloadAssistant.A PUP CnC || md5,a54f78d0fe6d1a1a09c22a71646c24b3
 2021283 || ET MALWARE PUP Win32/DownloadAssistant.A Checkin || md5,62a4d32dcb1c495c5583488638452ff9
 2021284 || ET TROJAN W2KM_BARTALEX Downloading Payload || md5,0ed66982890ec483c3bc6f883e2424fb
@@ -18343,8 +18343,8 @@
 2021357 || ET CURRENT_EVENTS Fake AV Phone Scam Landing June 26 2015 M1
 2021358 || ET CURRENT_EVENTS Fake AV Phone Scam Landing June 26 2015 M2
 2021359 || ET CURRENT_EVENTS Fake AV Phone Scam Landing June 26 2015 M3
-2021360 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (26)
-2021361 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (27)
+2021360 || ET DELETED Angler EK XTEA encrypted binary (26)
+2021361 || ET DELETED Angler EK XTEA encrypted binary (27)
 2021363 || ET TROJAN AlphaCrypt .onion Proxy Domain (djdkduep62kz4nzx) || url,malwr.com/analysis/YjllZWEzNmQ0MDA4NGNhNGIxYzIzNjU3YjczOTYxZjg/ || md5,1dd542bf3c1781df9a335f74eacc82a4
 2021364 || ET CURRENT_EVENTS Magnitude CVE-2015-3113 Jun 29 2015 M1
 2021365 || ET CURRENT_EVENTS Fake AV Phone Scam Landing June 26 2015 M4
@@ -18439,8 +18439,8 @@
 2021506 || ET TROJAN Sednit Connectivity Check 0 Byte POST || url,blog.trendmicro.com/trendlabs-security-intelligence/an-in-depth-look-at-how-pawn-storms-java-zero-day-was-used
 2021507 || ET CURRENT_EVENTS NullHole URI Struct Jul 22 2015 M2
 2021508 || ET CURRENT_EVENTS NullHole URI Struct Jul 22 2015 M3
-2021509 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (28)
-2021510 || ET CURRENT_EVENTS Angler EK XTEA encrypted binary (29)
+2021509 || ET DELETED Angler EK XTEA encrypted binary (28)
+2021510 || ET DELETED Angler EK XTEA encrypted binary (29)
 2021511 || ET POLICY Edwards Packed proxy.pac from 724sky || md5,50bd21aac1f57d90c54683995ec102aa
 2021512 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Dridex CnC) || url,sslbl.abuse.ch
 2021513 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Dridex CnC) || url,sslbl.abuse.ch
@@ -18517,10 +18517,10 @@
 2021584 || ET TROJAN APT Lurker POST CnC Beacon || url,blogs.rsa.com/wp-content/uploads/2015/05/RSA-IR-Case-Study.pdf || md5,c5a8e09295b852a6e32186374b66e1a7
 2021585 || ET TROJAN APT Lurker GET CnC Beacon || url,blogs.rsa.com/wp-content/uploads/2015/05/RSA-IR-Case-Study.pdf || md5,c5a8e09295b852a6e32186374b66e1a7
 2021586 || ET CURRENT_EVENTS Possible Dyre SSL Cert (non-ASCII) Jul 21 2015
-2021587 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing Aug 02 2015
-2021588 || ET CURRENT_EVENTS Job314/Neutrino EK Flash Exploit M2 Aug 02 2015
-2021589 || ET CURRENT_EVENTS Job314/Neutrino EK Flash Exploit M3 Aug 02 2015
-2021590 || ET CURRENT_EVENTS Job314/Neutrino EK Flash Exploit M1 Aug 02 2015 (IE)
+2021587 || ET DELETED Job314/Neutrino Reboot EK Landing Aug 02 2015
+2021588 || ET DELETED Job314/Neutrino EK Flash Exploit M2 Aug 02 2015
+2021589 || ET DELETED Job314/Neutrino EK Flash Exploit M3 Aug 02 2015
+2021590 || ET DELETED Job314/Neutrino EK Flash Exploit M1 Aug 02 2015 (IE)
 2021591 || ET TROJAN APT  CozyCar SSL Cert 1 || url,researchcenter.paloaltonetworks.com/2015/07/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
 2021592 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Tinba MITM) || url,sslbl.abuse.ch
 2021593 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Tinba MITM) || url,sslbl.abuse.ch
@@ -18623,7 +18623,7 @@
 2021691 || ET CURRENT_EVENTS Likely Linux/Tsunami DDoS Attack Participation (s-p-o-o-f-e-d.h-o-s-t.name) || md5,c01991d55133d0057c9b721bb141a5d9
 2021692 || ET CURRENT_EVENTS Possible Successful Generic Phish - Credit Card
 2021693 || ET CURRENT_EVENTS Possible Successful Generic Phish - Three Security Questions
-2021694 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Payload Aug 19 2015
+2021694 || ET DELETED Job314/Neutrino Reboot EK Payload Aug 19 2015
 2021695 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Gozi CnC) || url,sslbl.abuse.ch
 2021696 || ET CURRENT_EVENTS Possible TDS Redirecting to EK Aug 19 2015
 2021697 || ET TROJAN EXE Download Request To Wordpress Folder Likely Malicious
@@ -18681,7 +18681,7 @@
 2021749 || ET CURRENT_EVENTS Possible Upatre/Dyre/Kegotip SSL Cert Sept 8 2015 || url,us-cert.gov/ncas/alerts/TA14-300A || md5,52faadf69c492e5bea1b3ad77fd7e8b1
 2021750 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (TorrentLocker CnC) || url,sslbl.abuse.ch
 2021751 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (TorrentLocker CnC) || url,sslbl.abuse.ch
-2021752 || ET CURRENT_EVENTS SUSPICIOUS Likely Neutrino EK or other EK IE Flash request to DYNDNS set non-standard filename
+2021752 || ET DELETED SUSPICIOUS Likely Neutrino EK or other EK IE Flash request to DYNDNS set non-standard filename
 2021753 || ET TROJAN Backdoor family PCRat/Gh0st CnC traffic (OUTBOUND) 103 || url,researchcenter.paloaltonetworks.com/2015/09/musical-chairs-multi-year-campaign-involving-new-variant-of-gh0st-malware/ || md5,b0c2a5a3cfef4e759979b7d0869b7612
 2021754 || ET TROJAN Corebot Module Download 2 || md5,f32f2209a1986c55750ceb6d8066df9f || url,securityintelligence.com/watch-out-for-corebot-new-stealer-in-the-wild/
 2021755 || ET CURRENT_EVENTS possible Sofacy encrypted binary (1) || url,www.isightpartners.com/2015/07/microsoft-office-zero-day-cve-2015-2424-leveraged-by-tsar-team/ || url,labsblog.f-secure.com/2015/09/08/sofacy-recycles-carberp-and-metasploit-code/
@@ -18765,7 +18765,7 @@
 2021837 || ET TROJAN r0 CnC Architecture POST 4 || url,blog.cari.net/carisirt-defaulting-on-passwords-part-1-r0_bot/
 2021838 || ET TROJAN r0 CnC Report POST || url,blog.cari.net/carisirt-defaulting-on-passwords-part-1-r0_bot/
 2021839 || ET TROJAN r0 CnC POST || url,blog.cari.net/carisirt-defaulting-on-passwords-part-1-r0_bot/
-2021840 || ET CURRENT_EVENTS Possible Angler EK Redirector Sept 25 2015
+2021840 || ET DELETED Possible Angler EK Redirector Sept 25 2015
 2021841 || ET CURRENT_EVENTS Evil Redirector Leading to EK Sept 25 2015
 2021842 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Shifu CnC) || md5,b40fc2d1f343affad7bc02ae9b37cd89
 2021843 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (TorrentLocker CnC) || url,www.csis.dk/da/csis/news/4726/ || md5,bfd8db9ed284deb64c9e4fc5bfa758bd
@@ -18893,11 +18893,11 @@
 2021966 || ET CURRENT_EVENTS Fake Virus Phone Scam Landing Oct 19 M4
 2021967 || ET CURRENT_EVENTS Fake Virus Phone Scam Redirector Oct 19 M1
 2021968 || ET CURRENT_EVENTS Fake Virus Phone Scam Redirector Oct 19 M2
-2021969 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing Oct 19 2015
-2021970 || ET CURRENT_EVENTS Angler EK encrypted payload Oct 19 (1)
-2021971 || ET CURRENT_EVENTS Angler EK encrypted payload Oct 19 (2)
-2021972 || ET CURRENT_EVENTS Angler EK encrypted payload Oct 19 (3)
-2021973 || ET CURRENT_EVENTS Angler EK encrypted payload Oct 19 (4)
+2021969 || ET DELETED Job314/Neutrino Reboot EK Landing Oct 19 2015
+2021970 || ET DELETED Angler EK encrypted payload Oct 19 (1)
+2021971 || ET DELETED Angler EK encrypted payload Oct 19 (2)
+2021972 || ET DELETED Angler EK encrypted payload Oct 19 (3)
+2021973 || ET DELETED Angler EK encrypted payload Oct 19 (4)
 2021974 || ET CURRENT_EVENTS Fake Virus Phone Scam Redirector Oct 19 M3
 2021975 || ET CURRENT_EVENTS Fake Virus Phone Scam Landing Oct 19 M5
 2021976 || ET TROJAN NetWire Variant - Client Hello || url,www.circl.lu/pub/tr-23 || url,researchcenter.paloaltonetworks.com/2014/08/new-release-decrypting-netwire-c2-traffic
@@ -18913,8 +18913,8 @@
 2021986 || ET CURRENT_EVENTS Possible click2play bypass Oct 19 2015 B64 1 || url,blog.trendmicro.com/trendlabs-security-intelligence/new-headaches-how-the-pawn-storm-zero-day-evaded-javas-click-to-play-protection/
 2021987 || ET CURRENT_EVENTS Possible click2play bypass Oct 19 2015 B64 2 || url,blog.trendmicro.com/trendlabs-security-intelligence/new-headaches-how-the-pawn-storm-zero-day-evaded-javas-click-to-play-protection/
 2021988 || ET CURRENT_EVENTS Possible click2play bypass Oct 19 2015 B64 3 || url,blog.trendmicro.com/trendlabs-security-intelligence/new-headaches-how-the-pawn-storm-zero-day-evaded-javas-click-to-play-protection/
-2021989 || ET CURRENT_EVENTS Angler EK encrypted payload Oct 19 (5)
-2021990 || ET CURRENT_EVENTS Angler EK encrypted payload Oct 19 (6)
+2021989 || ET DELETED Angler EK encrypted payload Oct 19 (5)
+2021990 || ET DELETED Angler EK encrypted payload Oct 19 (6)
 2021991 || ET CURRENT_EVENTS Fake Java Installer Landing Page Oct 21 || url,heimdalsecurity.com/blog/security-alert-blackhat-seo-campaign-passes-around-malware-to-unsuspecting-users
 2021992 || ET WEB_SPECIFIC_APPS Possible Joomla SQLi Attempt || url,trustwave.com/Resources/SpiderLabs-Blog/Joomla-SQL-Injection-Vulnerability-Exploit-Results-in-Full-Administrative-Access
 2021993 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Dridex) || url,sslbl.abuse.ch
@@ -21924,31 +21924,31 @@
 2025037 || ET CURRENT_EVENTS Dadong Exploit Kit Downloaded || url,www.kahusecurity.com/2012/chinese-pack-using-dadongs-jsxx-vip-script/
 2025038 || ET CURRENT_EVENTS Evil Redirector Leading to EK Feb 24 2016 (Evil Keitaro FB Set)
 2025039 || ET CURRENT_EVENTS Evil Redirector Leading to EK Feb 29 2016 (Evil Keitaro FB Set)
-2025040 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing Jan 07 2015
-2025041 || ET CURRENT_EVENTS Possible Job314/Neutrino Reboot EK Flash Exploit Jan 07 2015 M1
-2025042 || ET CURRENT_EVENTS Possible Job314/Neutrino Reboot EK Flash Exploit Jan 07 2015 M2
-2025043 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing May 31 2016
-2025044 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing June 11 2016
-2025045 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing June 11 2016 M2
-2025046 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing June 11 2016 M2
-2025047 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing June 11 2016 M3
-2025048 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing June 11 2016 M4 (with URI Primer)
-2025049 || ET CURRENT_EVENTS Job314/Neutrino EK Landing Jul 04 2016 M1
-2025050 || ET CURRENT_EVENTS Job314/Neutrino EK Landing Jul 04 2016 M2
-2025051 || ET CURRENT_EVENTS Job314/Neutrino EK Landing Jul 04 2016 M3
-2025052 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing July 07 2016 M1
-2025053 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing July 07 2016 M2
-2025054 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing July 07 2016 M3
-2025055 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing July 07 2016 M4
-2025056 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing July 07 2016 M5
-2025057 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing July 07 2016 M6
-2025058 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing July 07 2016 M7
-2025059 || ET CURRENT_EVENTS Job314/Neutrino Reboot EK Landing July 07 2016 M8
+2025040 || ET DELETED Job314/Neutrino Reboot EK Landing Jan 07 2015
+2025041 || ET DELETED Possible Job314/Neutrino Reboot EK Flash Exploit Jan 07 2015 M1
+2025042 || ET DELETED Possible Job314/Neutrino Reboot EK Flash Exploit Jan 07 2015 M2
+2025043 || ET DELETED Job314/Neutrino Reboot EK Landing May 31 2016
+2025044 || ET DELETED Job314/Neutrino Reboot EK Landing June 11 2016
+2025045 || ET DELETED Job314/Neutrino Reboot EK Landing June 11 2016 M2
+2025046 || ET DELETED Job314/Neutrino Reboot EK Landing June 11 2016 M2
+2025047 || ET DELETED Job314/Neutrino Reboot EK Landing June 11 2016 M3
+2025048 || ET DELETED Job314/Neutrino Reboot EK Landing June 11 2016 M4 (with URI Primer)
+2025049 || ET DELETED Job314/Neutrino EK Landing Jul 04 2016 M1
+2025050 || ET DELETED Job314/Neutrino EK Landing Jul 04 2016 M2
+2025051 || ET DELETED Job314/Neutrino EK Landing Jul 04 2016 M3
+2025052 || ET DELETED Job314/Neutrino Reboot EK Landing July 07 2016 M1
+2025053 || ET DELETED Job314/Neutrino Reboot EK Landing July 07 2016 M2
+2025054 || ET DELETED Job314/Neutrino Reboot EK Landing July 07 2016 M3
+2025055 || ET DELETED Job314/Neutrino Reboot EK Landing July 07 2016 M4
+2025056 || ET DELETED Job314/Neutrino Reboot EK Landing July 07 2016 M5
+2025057 || ET DELETED Job314/Neutrino Reboot EK Landing July 07 2016 M6
+2025058 || ET DELETED Job314/Neutrino Reboot EK Landing July 07 2016 M7
+2025059 || ET DELETED Job314/Neutrino Reboot EK Landing July 07 2016 M8
 2025060 || ET WEB_CLIENT Google Chrome Credential Stealing via SCF file Reflected Request || url,defensecode.com/whitepapers/Stealing-Windows-Credentials-Using-Google-Chrome.pdf
 2025061 || ET WEB_CLIENT PowerShell call in script 1
 2025062 || ET WEB_CLIENT PowerShell call in script 2
 2025063 || ET EXPLOIT Exim4 UAF Attempt (BDAT with non-printable chars) || url,lists.exim.org/lurker/message/20171125.034842.d1d75cac.en.html
-2025064 || ET CURRENT_EVENTS Possible Neutrino EK Landing Landing URI Struct (fb set)
+2025064 || ET DELETED Possible Neutrino EK Landing Landing URI Struct (fb set)
 2025065 || ET TROJAN Backdoor.Perl.Shellbot.cd IRC Bot that have DoS/DDoS functions || url,theprojectxblog.net/another-perl-irc-bot-that-have-dosddos-functions/
 2025066 || ET CHAT IRC USER Likely bot with 0 0 colon checkin
 2025067 || ET CHAT IRC USER Off-port Likely bot with 0 0 colon checkin
@@ -22094,7 +22094,7 @@
 2025218 || ET CURRENT_EVENTS Malicious Chrome Extension Domain Request (stickies .pro in DNS Lookup) || url,www.icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
 2025219 || ET CURRENT_EVENTS Malicious Chrome Extension Domain Request (lite-bookmarks .info in DNS Lookup) || url,icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
 2025220 || ET TROJAN Malicious Chrome Extension Requesting Websocket || url,icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
-2025221 || ET TROJAN Malicious Chrome Extension Click Fraud Activity via Websocket || url,icebrg.io/blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
+2025221 || ET TROJAN Malicious Chrome Extension Click Fraud Activity via Websocket || url,www.icebrg.io/blog/more-extensions-more-money-more-problems || url,www.icebrg.io/index.php?p=blog/malicious-chrome-extensions-enable-criminals-to-impact-over-half-a-million-users-and-global-businesses
 2025222 || ET EXPLOIT Generic ADSL Router DNS Change Request
 2025223 || ET EXPLOIT Possible Belkin N600DB Wireless Router Request Forgery Attempt
 2025224 || ET TROJAN Unknown EXE Dropped by 2017-11882 RTF || url,twitter.com/securitydoggo/status/954337767751905280
@@ -22459,6 +22459,14 @@
 2025585 || ET TROJAN Known Sinkhole Response Header INetSim
 2025586 || ET TROJAN Aurora/OneKeyLocker Ransomware CnC Checkin || md5,31d65e315115c823f619a381576984f8
 2025587 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2018-05-31
+2025588 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2018-06-11
+2025589 || ET MALWARE WiseCleaner Installed (PUA) || md5,cd6e96207ea60b3e6e46c393fdcc9e0c || url,wisecleaner.com
+2025590 || ET MALWARE Antibody Software Installed (PUA) || md5,8e22d630b992f9cb4d7f6b0aceebb37f || url,antibody-software.com
+2025591 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2018-06-14
+2025592 || ET CURRENT_EVENTS Generic Paypal Phish Kit Landing
+2025593 || ET WEB_SERVER Weevely PHP backdoor detected (passthru() function used) M2 || url,bechtsoudis.com/security/put-weevely-on-the-your-nids-radar
+2025594 || ET WEB_SERVER Weevely PHP backdoor detected (passthru() function used) M3 || url,bechtsoudis.com/security/put-weevely-on-the-your-nids-radar
+2025595 || ET TROJAN [PTsecurity] Donut Ransomware CnC Checkin
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -24183,7 +24191,6 @@
 2400031 || ET DROP Spamhaus DROP Listed Traffic Inbound group 32 || url,www.spamhaus.org/drop/drop.lasso
 2400032 || ET DROP Spamhaus DROP Listed Traffic Inbound group 33 || url,www.spamhaus.org/drop/drop.lasso
 2400033 || ET DROP Spamhaus DROP Listed Traffic Inbound group 34 || url,www.spamhaus.org/drop/drop.lasso
-2400034 || ET DROP Spamhaus DROP Listed Traffic Inbound group 35 || url,www.spamhaus.org/drop/drop.lasso
 2402000 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
 2402001 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
 2403300 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 1 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
@@ -25068,6 +25075,8 @@
 2520161 || ET TOR Known Tor Exit Node UDP Traffic group 81 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520162 || ET TOR Known Tor Exit Node TCP Traffic group 82 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520163 || ET TOR Known Tor Exit Node UDP Traffic group 82 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520164 || ET TOR Known Tor Exit Node TCP Traffic group 83 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520165 || ET TOR Known Tor Exit Node UDP Traffic group 83 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522001 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26464,3 +26473,7 @@
 2523393 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 697 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523394 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 698 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523395 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 698 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523396 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 699 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523397 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 699 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523398 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 700 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523399 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 700 || url,doc.emergingthreats.net/bin/view/Main/TorRules
