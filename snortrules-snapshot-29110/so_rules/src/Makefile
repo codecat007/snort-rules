@@ -231,7 +231,8 @@ ifneq (,$(findstring FreeBSD, $(OS)))
 LD_FLAGS += -ldl
 endif
 
-
+# Needed for sin()
+LD_FLAGS += -lm
 
 all: $(files) $(utils) $(cats) $(libs)
 	@rm -f test.conf
