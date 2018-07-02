@@ -3,7 +3,7 @@ ENGINEDIR=$(BASEDIR)/src/dynamic-plugins/sf_engine
 PLUGINDIR=$(BASEDIR)/src/dynamic-plugins
 ENGINE=$(BASEDIR)/src/dynamic-plugins/sf_engine/.libs/libsf_engine.so
 SNORT=$(BASEDIR)/src/snort
-SNORT_VERSION=2.9.11.1
+SNORT_VERSION=2.9.13.0
 
 PATH:=$(PATH):/opt/intel/compiler70/ia32/bin
 CC=$(shell if PATH=$(PATH) which icc > /dev/null 2>&1; then echo icc; else echo gcc; fi)
@@ -255,7 +255,7 @@ $(libs): $(cats) $(utils) $(files)
 	@echo -n "building $@ ... "
 	@$(CC) -c $(MYCFLAGS) -D DETECTION_LIB_NAME=\"$@\" -o $@.o $@.c
 	@$(CC) -c $(MYCFLAGS) -D DETECTION_LIB_NAME=\"$@\" -o _meta.o _meta.c
-	@$(CC) $(LD_FLAGS) $@_*.o _meta.o $@.o so-util_base.o ${MYUTILS} -o $@.so
+	@$(CC) $@_*.o _meta.o $@.o so-util_base.o ${MYUTILS} -o $@.so $(LD_FLAGS)
 	@$(SNORT) -q --dynamic-engine-lib=$(ENGINE) \
 		--dynamic-detection-lib=./$@.so \
 		--dump-dynamic-rules=./
