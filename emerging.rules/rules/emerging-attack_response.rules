@@ -368,3 +368,5 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET ATTACK_RESPONSE Possible B
 
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HTTP_SERVERS any (msg:"ET ATTACK_RESPONSE 401TRG Perl DDoS IRCBot File Download"; flow:established,from_server; content:"|6d 79 20 24 70 72 6f 63 65 73 73 20 3d 20 24 72 70 73 5b 72 61 6e 64 20 73 63 61 6c 61 72 20 40 72 70 73 5d 3b|"; metadata: former_category ATTACK_RESPONSE; classtype:trojan-activity; sid:2024977; rev:1; metadata:affected_product Apache_HTTP_server, attack_target Web_Server, deployment Datacenter, signature_severity Major, created_at 2017_11_07, malware_family webshell, performance_impact Moderate, updated_at 2017_11_07;)
 
+alert tcp $HTTP_SERVERS $HTTP_PORTS -> $EXTERNAL_NET any (msg:"ET ATTACK_RESPONSE passwd file Outbound from WEB SERVER Linux"; flow:established,from_server; file_data; content:"root:x:0:0:root:/root:/bin/"; within:27; classtype:successful-recon-limited; sid:2025879; rev:2; metadata:created_at 2018_07_20, updated_at 2018_07_20;)
+

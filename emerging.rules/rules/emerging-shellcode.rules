@@ -408,3 +408,5 @@ alert ip $EXTERNAL_NET any -> $HOME_NET any (msg:"ET SHELLCODE Linux/x86-64 - Po
 
 alert ip $EXTERNAL_NET any -> $HOME_NET any (msg:"ET SHELLCODE Linux/x86-64 - Reverse Shell Shellcode"; content:"|6a 02 6a 2a 6a 10 6a 29 6a 01 6a 02|"; content:"|48 bf 2f 2f 62 69 6e 2f 73 68|"; fast_pattern:only; metadata: former_category SHELLCODE; reference:url,exploit-db.com/exploits/41477/; classtype:shellcode-detect; sid:2024065; rev:1; metadata:affected_product Linux, attack_target Client_and_Server, deployment Perimeter, signature_severity Critical, created_at 2017_03_16, performance_impact Low, updated_at 2017_03_16;)
 
+alert ip $EXTERNAL_NET any -> $HOME_NET any (msg:"ET SHELLCODE Execve(/bin/sh) Shellcode"; content:"|31 c0 50 68 2f 2f 73 68 68 2f 62 69 6e 89 e3 50 53 89 e1 b0 0b cd 80|"; metadata: former_category SHELLCODE; classtype:shellcode-detect; sid:2025695; rev:1; metadata:affected_product Linux, attack_target Server, deployment Perimeter, created_at 2018_07_13, performance_impact Low, updated_at 2018_07_13;)
+

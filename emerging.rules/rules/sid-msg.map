@@ -9040,7 +9040,7 @@
 2011578 || ET TROJAN DNSTrojan FakeAV Dropper Activity Observed (2) || url,www.threatexpert.com/report.aspx?md5=b93360ec3798215a5cca573747df0139 || url,www.threatexpert.com/report.aspx?md5=c59cdd1366dd5c2f448c03738ec0dc88 || url,www.abuse.ch/?p=2796 || url,www.abuse.ch/?p=2740
 2011579 || ET POLICY route1.com SSL certificate for remote access detected
 2011581 || ET POLICY Vulnerable Java Version 1.5.x Detected || url,www.oracle.com/technetwork/java/javase/documentation/index.html
-2011582 || ET POLICY Vulnerable Java Version 1.6.x Detected || url,www.oracle.com/technetwork/java/javase/documentation/index.html
+2011582 || ET POLICY Vulnerable Java Version 1.6.x Detected || url,www.oracle.com/technetwork/articles/javase/overview-156328.html
 2011583 || ET CURRENT_EVENTS Neosploit Exploit Pack Activity Observed || url,dxp2532.blogspot.com/2007/12/neosploit-exploit-toolkit.html || url,blog.fireeye.com/research/2010/06/neosploit_notes.html || url,blog.fireeye.com/research/2010/01/pdf-obfuscation.html
 2011584 || ET POLICY Vulnerable Java Version 1.4.x Detected || url,www.oracle.com/technetwork/java/javase/documentation/index.html
 2011585 || ET TROJAN Avzhan DDOS Bot Outbound Hardcoded Malformed GET Request Denial Of Service Attack Detected || url,asert.arbornetworks.com/2010/09/another-family-of-ddos-bots-avzhan/
@@ -10546,7 +10546,7 @@
 2013233 || ET ACTIVEX Chilkat Crypt ActiveX Control SaveDecrypted Insecure Method Vulnerability || bugtraq,48585
 2013234 || ET WEB_SPECIFIC_APPS ActivDesk cid Parameter Blind SQL Injection Attempt || url,packetstormsecurity.org/files/view/102537/activdesk-sqlxss.txt
 2013235 || ET SCADA Golden FTP Server PASS Command Remote Buffer Overflow Attempt || bugtraq,45957
-2013236 || ET TROJAN Palevo (OUTBOUND) || url,threatexpert.com/report.aspx?md5=5f1296995c7ccba13c0c0655baf03a3a
+2013236 || ET TROJAN Palevo (OUTBOUND) || md5,095d76e0bc48361b40d717b238f11501 || md5,119ee859144111dbc5419f4d5fd9b6b1 || url,threatexpert.com/report.aspx?md5=5f1296995c7ccba13c0c0655baf03a3a
 2013237 || ET CURRENT_EVENTS Obfuscated Javascript Often Used in Drivebys
 2013238 || ET MOBILE_MALWARE Android/GoldDream Infected Device Registration || url,www.fortiguard.com/encyclopedia/virus/android_golddream.a!tr.spy.html
 2013240 || ET MOBILE_MALWARE Android/GoldDream Task Information Retrieval || url,www.fortiguard.com/encyclopedia/virus/android_golddream.a!tr.spy.html
@@ -10959,7 +10959,7 @@
 2013736 || ET SCADA Sunway ForceControl Activex Control Remote Code Execution Vulnerability 2 || bugtraq,49747
 2013737 || ET TROJAN Suspicious User-Agent (GenericHttp/VER_STR_COMMA)
 2013738 || ET WEB_SPECIFIC_APPS Joomla RokQuickCart view Parameter Local File Inclusion Attempt || url,packetstormsecurity.org/files/view/96804/joomlarokquickcart-lfi.txt
-2013739 || ET TROJAN Zeus P2P CnC || url,www.abuse.ch/?p=3499
+2013739 || ET DELETED Zeus P2P CnC || url,www.abuse.ch/?p=3499
 2013740 || ET TROJAN Zeus/Aeausuc P2P Variant Retrieving Peers List || url,www.abuse.ch/?p=3499
 2013741 || ET TROJAN Trojan-Dropper.Win32.StartPage.dvm or Mebromi Bios Rootkit CnC Count Checkin || url,threatexpert.com/report.aspx?md5=b3106dbfb3ab114755af311883f33697%20 || url,blog.webroot.com/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/ || url,www.threatexpert.com/report.aspx?md5=7d2eb4b364e15e90cec1ddd7dcb97f64
 2013742 || ET WEB_CLIENT Google Chrome Multiple Iframe PDF File Handling Memory Corruption Attempt || cve,2011-2841 || bid,49933
@@ -11506,7 +11506,7 @@
 2014294 || ET DELETED High Probability Blackhole Landing with catch qq
 2014295 || ET CURRENT_EVENTS DRIVEBY Java Atomic Exploit Downloaded
 2014296 || ET WEB_SERVER eval/base64_decode Exploit Attempt Inbound
-2014297 || ET POLICY Vulnerable Java Version 1.7.x Detected || url,www.oracle.com/technetwork/java/javase/documentation/index.html
+2014297 || ET POLICY Vulnerable Java Version 1.7.x Detected || url,www.oracle.com/technetwork/java/javase/documentation/javase7supportreleasenotes-1601161.html
 2014298 || ET DELETED Blackhole obfuscated Javascript 171 charcodes >= 48
 2014299 || ET DELETED Blackhole Java Exploit request to /content/viewer.jar
 2014300 || ET TROJAN Win32/Kryptik.ABUD Checkin || md5,00b714468f1bc2254559dd8fd84186f1
@@ -14232,7 +14232,7 @@
 2017125 || ET CURRENT_EVENTS Probable FlimKit Redirect July 10 2013
 2017126 || ET CURRENT_EVENTS FlimKit Landing July 10 2013
 2017127 || ET INFO JJEncode Encoded Script
-2017128 || ET TROJAN Expiro Trojan Check-in
+2017128 || ET TROJAN W32.Berbew Check-in
 2017129 || ET WEB_CLIENT Potential Internet Explorer Use After Free CVE-2013-3163 || url,blogs.technet.com/b/srd/archive/2013/07/10/running-in-the-wild-not-for-so-long.aspx || cve,2013-3163
 2017130 || ET WEB_CLIENT Potential Internet Explorer Use After Free CVE-2013-3163 2 || url,blogs.technet.com/b/srd/archive/2013/07/10/running-in-the-wild-not-for-so-long.aspx || cve,2013-3163
 2017131 || ET CURRENT_EVENTS Potential Internet Explorer Use After Free CVE-2013-3163 Exploit URI Struct 1 || url,blogs.technet.com/b/srd/archive/2013/07/10/running-in-the-wild-not-for-so-long.aspx
@@ -16422,7 +16422,7 @@
 2019398 || ET CURRENT_EVENTS Possible SandWorm INF Download (SMB)
 2019399 || ET CURRENT_EVENTS Possible SandWorm INF Download (SMB UNICODE)
 2019400 || ET TROJAN Possible Bedep Connectivity Check
-2019401 || ET POLICY Vulnerable Java Version 1.8.x Detected || url,www.oracle.com/technetwork/java/javase/documentation/index.html
+2019401 || ET POLICY Vulnerable Java Version 1.8.x Detected || url,www.oracle.com/technetwork/java/javase/8u-relnotes-2225394.html
 2019402 || ET EXPLOIT Possible CVE-2014-6271 malicious DNS response || url,packetstormsecurity.com/files/128650 || cve,2014-6271
 2019403 || ET EXPLOIT Possible CVE-2014-6271 exploit attempt via malicious DNS || url,packetstormsecurity.com/files/128650 || cve,2014-6271
 2019404 || ET DOS Potential Tsunami SYN Flood Denial Of Service Attempt || url,security.radware.com/uploadedFiles/Resources_and_Content/Threat/TsunamiSYNFloodAttack.pdf
@@ -18626,7 +18626,7 @@
 2021694 || ET DELETED Job314/Neutrino Reboot EK Payload Aug 19 2015
 2021695 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Gozi CnC) || url,sslbl.abuse.ch
 2021696 || ET CURRENT_EVENTS Possible TDS Redirecting to EK Aug 19 2015
-2021697 || ET TROJAN EXE Download Request To Wordpress Folder Likely Malicious
+2021697 || ET TROJAN EXE Download Request To Wordpress Folder Likely Malicious || md5,adabe1b995e6633dee19fdd2fdc4957a
 2021698 || ET CURRENT_EVENTS Possible Magnitude EK Landing URI Struct Aug 21 2015
 2021699 || ET CURRENT_EVENTS Magnitude EK Landing Aug 21 2015
 2021700 || ET MALWARE PUA Boxore User-Agent || md5,5cb2e8a9b6935f228623c69f1b17669d
@@ -18676,7 +18676,7 @@
 2021744 || ET TROJAN Win32/Reconyc.equo Checkin || md5,32c17edee5b29e41f31eda05e78b2241
 2021745 || ET TROJAN PredatorPain Keylogger FTP Activity || md5,e5ddca929924e4f34cb18692f09ac424 || url,malwareconfig.com/stats/PredatorPain
 2021746 || ET CURRENT_EVENTS Evil Redirector Leading to EK September 04 2015 || url,blog.sucuri.net/2015/12/evolution-of-pseudo-darkleech.html
-2021747 || ET TROJAN Win32.Spy/TVRat/Shade Ransomware Checkin || url,damballa.com/tvspy-threat-actor-group-reappears/ || url,www.symantec.com/security_response/writeup.jsp?docid=2003-082915-1318-99
+2021747 || ET TROJAN Win32.Spy/TVRat Checkin || url,damballa.com/tvspy-threat-actor-group-reappears/ || url,www.symantec.com/security_response/writeup.jsp?docid=2003-082915-1318-99
 2021748 || ET TROJAN Win32/Boaxxe.BR CnC Beacon || md5,ec38ae7c35be4d7f8103bf1db692d2f8
 2021749 || ET CURRENT_EVENTS Possible Upatre/Dyre/Kegotip SSL Cert Sept 8 2015 || url,us-cert.gov/ncas/alerts/TA14-300A || md5,52faadf69c492e5bea1b3ad77fd7e8b1
 2021750 || ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (TorrentLocker CnC) || url,sslbl.abuse.ch
@@ -19159,7 +19159,7 @@
 2022236 || ET TROJAN EncryptorRaas .onion Domain (75nzutdjjtnpgscz)
 2022237 || ET TROJAN TeslaCrypt/AlphaCrypt Variant .onion Domain
 2022238 || ET TROJAN TeslaCrypt/AlphaCrypt Variant .onion Domain
-2022239 || ET TROJAN EXE Download Request To Wordpress Folder Likely Malicious || md5,1828f7090d0ad2844d3d665d2f41f911
+2022239 || ET DELETED EXE Download Request To Wordpress Folder Likely Malicious || md5,1828f7090d0ad2844d3d665d2f41f911
 2022240 || ET SCAN Possible Scanning for Vulnerable JBoss || url,blog.imperva.com/2015/12/zero-day-attack-strikes-again-java-zero-day-vulnerability-cve-2015-4852-tracked-by-imperva.html
 2022242 || ET CURRENT_EVENTS Evil Redirector Leading to EK Dec 09
 2022243 || ET SCAN COMMIX Command injection scan attempt || url,github.com/stasinopoulos/commix/blob/master/README.md
@@ -19560,7 +19560,7 @@
 2022644 || ET POLICY DNS Query to .onion proxy Domain (torgate.es) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
 2022645 || ET POLICY DNS Query to .onion proxy Domain (tormaster.fr) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
 2022646 || ET POLICY DNS Query to .onion proxy Domain (torgateway.li) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
-2022647 || ET TROJAN Cryptolocker Payment Page (3qbyaoohkcqkzrz6)
+2022647 || ET TROJAN Cryptolocker Payment Domain (3qbyaoohkcqkzrz6)
 2022648 || ET CURRENT_EVENTS Possible Fake AV Phone Scam Long Domain Mar 23
 2022649 || ET CURRENT_EVENTS Fake AV Phone Scam Mar 23
 2022650 || ET CURRENT_EVENTS W32/Dridex Binary Download Mar 23 2016 || md5,2f32bf996e093d5a4107d6daa6c51ec4
@@ -22187,7 +22187,7 @@
 2025311 || ET CURRENT_EVENTS Yahoo Account Verification Phishing Landing 2018-02-05
 2025312 || ET CURRENT_EVENTS Google/Adobe Shared Document Phishing Landing 2018-02-05
 2025313 || ET CURRENT_EVENTS Orange Phishing Landing 2018-02-05 (FR)
-2025314 || ET POLICY Vulnerable Java Version 9.0.x Detected || url,www.oracle.com/technetwork/java/javase/documentation/index.html || url,javatester.org/version.html
+2025314 || ET POLICY Vulnerable Java Version 9.0.x Detected || url,www.oracle.com/technetwork/java/javase/documentation/9u-relnotes-3704429.html
 2025315 || ET POLICY Possible Windows Binary Observed in SSL/TLS Certificate || url,www.fidelissecurity.com/threatgeek/2018/02/exposing-x509-vulnerabilities
 2025316 || ET CURRENT_EVENTS Office 365 Phishing Landing 2018-02-06
 2025319 || ET POLICY [Fidelis] Abnormal x509v3 SubjectKeyIdentifier extension || url,www.fidelissecurity.com/threatgeek/2018/02/exposing-x509-vulnerabilities
@@ -22347,7 +22347,7 @@
 2025473 || ET CURRENT_EVENTS Wells Fargo Phishing Landing 2018-04-09
 2025474 || ET CURRENT_EVENTS DHL Phishing Landing 2018-04-09
 2025475 || ET CURRENT_EVENTS Chase Phishing Landing 2018-04-09
-2025476 || ET CURRENT_EVENTS Docusign Phishing Landing 2018-04-09
+2025476 || ET CURRENT_EVENTS [eSentire] Docusign Phishing Landing 2018-04-09
 2025477 || ET CURRENT_EVENTS s0m3 Phishing Landing 2018-04-09
 2025478 || ET CURRENT_EVENTS Paypal Phishing Landing 2018-04-09
 2025479 || ET CURRENT_EVENTS Facebook Phishing Landing 2018-04-09
@@ -22389,7 +22389,7 @@
 2025515 || ET CURRENT_EVENTS PDF Cloud Phishing Landing 2018-04-19
 2025516 || ET CURRENT_EVENTS Bank of America Phishing Landing 2018-04-19
 2025517 || ET CURRENT_EVENTS Dropbox 000webhost Phishing Landing 2018-04-19
-2025518 || ET POLICY Vulnerable Java Version 10.0.x Detected || url,www.oracle.com/technetwork/java/javase/documentation/index.html || url,javatester.org/version.html
+2025518 || ET POLICY Vulnerable Java Version 10.0.x Detected || url,www.oracle.com/technetwork/java/javase/10u-relnotes-4108739.html
 2025519 || ET INFO Cisco Smart Install Protocol Observed || url,www.us-cert.gov/ncas/alerts/TA18-106A
 2025520 || ET EXPLOIT Cisco Smart Install Exploitation Tool - Update Ios and Execute || url,github.com/Sab0tag3d/SIET || url,www.us-cert.gov/ncas/alerts/TA18-106A
 2025521 || ET EXPLOIT Cisco Smart Install Exploitation Tool - ChangeConfig || url,github.com/Sab0tag3d/SIET || url,www.us-cert.gov/ncas/alerts/TA18-106A
@@ -22467,6 +22467,299 @@
 2025593 || ET WEB_SERVER Weevely PHP backdoor detected (passthru() function used) M2 || url,bechtsoudis.com/security/put-weevely-on-the-your-nids-radar
 2025594 || ET WEB_SERVER Weevely PHP backdoor detected (passthru() function used) M3 || url,bechtsoudis.com/security/put-weevely-on-the-your-nids-radar
 2025595 || ET TROJAN [PTsecurity] Donut Ransomware CnC Checkin
+2025596 || ET TROJAN BackSwap Trojan C2 Domain Observed (debasuin .nl in DNS Lookup) || url,www.cert.pl/en/news/single/backswap-malware-analysis
+2025597 || ET TROJAN BackSwap Trojan C2 Domain Observed (debasuin .nl in TLS SNI) || url,www.cert.pl/en/news/single/backswap-malware-analysis
+2025598 || ET TROJAN Win32/AutoIt.NU Miner Dropper CnC Checkin || md5,cd7a49513771efd9d4de873956ef8af5
+2025599 || ET TROJAN Win32/Autophyte.F C2 Domain (tpddata .com in DNS Lookup) || url,sfkino.tistory.com/60
+2025600 || ET TROJAN Win32/Autophyte.F C2 Domain (tpddata .com in TLS SNI) || url,sfkino.tistory.com/60
+2025601 || ET TROJAN Win32/Autophyte.F C2 Domain (www .anlway .com in DNS Lookup) || url,sfkino.tistory.com/60
+2025602 || ET TROJAN Win32/Autophyte.F C2 Domain (www .anlway .com in TLS SNI) || url,sfkino.tistory.com/60
+2025603 || ET TROJAN Win32/Autophyte.F C2 Domain (www .ap8898 .com in DNS Lookup) || url,sfkino.tistory.com/60
+2025604 || ET TROJAN Win32/Autophyte.F C2 Domain (www .ap8898 .com in TLS SNI) || url,sfkino.tistory.com/60
+2025605 || ET TROJAN Win32/Autophyte.F C2 Domain (www .apshenyihl .com in DNS Lookup) || url,sfkino.tistory.com/60
+2025606 || ET TROJAN Win32/Autophyte.F C2 Domain (www .apshenyihl .com in TLS SNI) || url,sfkino.tistory.com/60
+2025607 || ET CURRENT_EVENTS Santander Phishing Landing
+2025608 || ET CURRENT_EVENTS Santander Phishing Landing
+2025609 || ET CURRENT_EVENTS Microsoft Live Phishing Landing
+2025610 || ET CURRENT_EVENTS Adobe PDF Online Phishing Landing
+2025611 || ET CURRENT_EVENTS Banque et Assurances Phishing Landing
+2025612 || ET CURRENT_EVENTS iTunes Connect Phishing Landing
+2025613 || ET CURRENT_EVENTS Facebook Phishing Landing
+2025614 || ET CURRENT_EVENTS Microsoft Account Phishing Landing
+2025615 || ET CURRENT_EVENTS Paypal Phishing Landing
+2025616 || ET CURRENT_EVENTS Assurance Maladie Phishing Landing
+2025617 || ET CURRENT_EVENTS Adobe Phishing Landing
+2025618 || ET CURRENT_EVENTS Capital One Phishing Landing
+2025619 || ET CURRENT_EVENTS US Bank Phishing Landing
+2025620 || ET CURRENT_EVENTS American Express Phishing Landing
+2025621 || ET CURRENT_EVENTS HM Revenue Phishing Landing
+2025622 || ET CURRENT_EVENTS Generic Phishing Kit Landing
+2025623 || ET CURRENT_EVENTS Office 365 Phishing Landing
+2025624 || ET CURRENT_EVENTS [eSentire] Wells Fargo Phishing Landing 2018-06-20
+2025625 || ET CURRENT_EVENTS [eSentire] OneDrive Phishing Landing 2018-06-15
+2025626 || ET TROJAN [eSentire] VBS Retrieving Malicious Payload || md5,aa56a1de9b91446c66d53f12f797bef5
+2025627 || ET INFO [eSentire] Possible Kali Linux Updates
+2025628 || ET CURRENT_EVENTS [eSentire] Successful Generic Phish 2018-06-15
+2025629 || ET CURRENT_EVENTS [eSentire] Successful Personalized Phish 2018-06-15
+2025630 || ET CURRENT_EVENTS Successful Generic Phish 2018-06-27 (set)
+2025631 || ET TROJAN [PTsecurity] Paradise Ransomware Check-in
+2025632 || ET CURRENT_EVENTS Successful Generic Phish (set) 2018-06-29
+2025633 || ET TROJAN [PTsecurity] Win32/SpyAgent.Raptor (realtime-spy) CnC activity 1
+2025634 || ET TROJAN [PTsecurity] Win32/SpyAgent.Raptor (realtime-spy) CnC activity 2
+2025635 || ET TROJAN [eSentire] Cobalt Strike Beacon
+2025636 || ET TROJAN Cobalt Strike Exfiltration
+2025637 || ET TROJAN Remcos RAT Checkin 23 || md5,f4f2425e9735f92cc9f75711aa8cb210
+2025638 || ET TROJAN [eSentire] Win32/GandCrab v4 Ransomware CnC Activity
+2025639 || ET MOBILE_MALWARE Android/Spy.Agent.AON / Glancelove DNS Lookup 1 || url,www.clearskysec.com/glancelove/
+2025640 || ET MOBILE_MALWARE Android/Spy.Agent.AON / Glancelove DNS Lookup 2 || url,www.clearskysec.com/glancelove/
+2025641 || ET MOBILE_MALWARE Android/Spy.Agent.AON / Glancelove DNS Lookup 3 || url,www.clearskysec.com/glancelove/
+2025642 || ET MOBILE_MALWARE Android/Spy.Agent.AON / Glancelove DNS Lookup 4 || url,www.clearskysec.com/glancelove/
+2025643 || ET MOBILE_MALWARE Android/Spy.Agent.AON / Glancelove DNS Lookup 5 || url,www.clearskysec.com/glancelove/
+2025644 || ET TROJAN Possible Metasploit Payload Common Construct Bind_API (from server)
+2025645 || ET MALWARE [eSentire] Win32/Adware.Adposhel.lgvk CnC Checkin || md5,e7c2c1b796dad6210165110b7e8cda7d
+2025646 || ET WEB_SPECIFIC_APPS [eSentire] Drupalgeddon2 <8.3.9 <8.4.6 <8.5.1 RCE Through Registration Form (CVE-2018-7600) || url,research.checkpoint.com/uncovering-drupalgeddon-2 || cve,2018-7600
+2025647 || ET CURRENT_EVENTS [eSentire] Fake Flash Update 2018-07-09
+2025648 || ET CURRENT_EVENTS [eSentire] Adobe Phishing Landing 2018-07-04
+2025649 || ET EXPLOIT Possible ETERNALBLUE MSF Probe MS17-010 || url,github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/smb/smb_ms17_010.rb
+2025650 || ET EXPLOIT Possible ETERNALBLUE MSF Probe Vulnerable System Response MS17-010 || url,github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/smb/smb_ms17_010.rb
+2025651 || ET TROJAN [eSentire] Unknown Banker CnC Command (DOWNLOAD) || md5,f45991556122b07d501fa995bd4e74a7
+2025652 || ET TROJAN [eSentire] Unknown Banker CnC Checkin || md5,f45991556122b07d501fa995bd4e74a7
+2025653 || ET CURRENT_EVENTS Possible Chalbhai (Multibrand) Phishing Landing 2018-05-10
+2025654 || ET CURRENT_EVENTS Chalbhai Phishing Landing Feb 18 2016
+2025655 || ET CURRENT_EVENTS Chalbhai Phishing Landing Oct 23 2017
+2025656 || ET CURRENT_EVENTS AES Crypto Observed in Javascript - Possible Phishing Landing
+2025657 || ET CURRENT_EVENTS AES Crypto Observed in Javascript - Possible Phishing Landing M1 Dec 28 2015
+2025658 || ET CURRENT_EVENTS Apple Phishing Landing M1 Feb 13 2017
+2025659 || ET INFO Suspicious Dropbox Page - Possible Phishing Landing
+2025660 || ET CURRENT_EVENTS Paypal Phishing Landing Jun 28 2017
+2025661 || ET CURRENT_EVENTS Dropbox Phishing Landing May 31 2017
+2025662 || ET CURRENT_EVENTS Docusign Phishing Landing Mar 08 2017
+2025663 || ET CURRENT_EVENTS Generic Financial Phish Landing 2017-12-21
+2025664 || ET CURRENT_EVENTS Microsoft Live Email Account Phishing Landing Mar 16 2017
+2025665 || ET CURRENT_EVENTS Generic Credential Phishing Landing Aug 11 2015
+2025666 || ET CURRENT_EVENTS Bank of America Phishing Landing Aug 19 2015
+2025667 || ET CURRENT_EVENTS Apple Phishing Landing M2 Feb 13 2017
+2025668 || ET CURRENT_EVENTS Stripe Phishing Landing Dec 09 2016
+2025669 || ET INFO Suspicious Google Docs Page - Possible Phishing Landing
+2025670 || ET CURRENT_EVENTS Wells Fargo Mobile Phishing Landing Aug 1
+2025671 || ET CURRENT_EVENTS Suspicious Wordpress Redirect - Possible Phishing Landing Jan 7 2016
+2025672 || ET CURRENT_EVENTS Shared Document Phishing Landing Nov 16 2016
+2025673 || ET CURRENT_EVENTS Possible Office 365 Phishing Landing Aug 24 2016
+2025674 || ET CURRENT_EVENTS Possible Chase Phishing Landing - Title over non SSL
+2025675 || ET CURRENT_EVENTS Microsoft Live External Link Phishing Landing M2 Feb 14 2017
+2025676 || ET CURRENT_EVENTS Mailbox Update Phishing Landing M2 May 16
+2025677 || ET CURRENT_EVENTS Mailbox Update Phishing Landing M1 May 16
+2025678 || ET CURRENT_EVENTS Mailbox Shutdown Phishing Landing 2017-12-11
+2025679 || ET CURRENT_EVENTS INTERAC Payment Multibank Phishing Landing Mar 14 2017
+2025680 || ET CURRENT_EVENTS Google Drive Phishing Landing Nov 6 2015 M2
+2025681 || ET CURRENT_EVENTS Google Drive Phishing Landing Nov 6 2015 M1
+2025682 || ET CURRENT_EVENTS Google Drive Phishing Landing Jul 24 2015
+2025683 || ET CURRENT_EVENTS Google Drive Phishing Landing Jul 10 2015
+2025684 || ET CURRENT_EVENTS Google Drive Phish Landing Sept 1 2016
+2025685 || ET CURRENT_EVENTS Generic Phishing Landing 2018-01-12
+2025686 || ET CURRENT_EVENTS Excel/Adobe Online Phishing Landing Nov 25 2015
+2025687 || ET CURRENT_EVENTS Email Settings Error Phishing Landing Nov 16 2016
+2025688 || ET CURRENT_EVENTS Dropbox Shared Document Phishing Landing Feb 21 2017
+2025689 || ET CURRENT_EVENTS Dropbox Phishing Landing Feb 27 2017
+2025690 || ET CURRENT_EVENTS DHL Phish Landing Sept 14 2015
+2025691 || ET CURRENT_EVENTS Chase Mobile Phishing Landing M2
+2025692 || ET CURRENT_EVENTS Chase Account Phish Landing Oct 22
+2025693 || ET CURRENT_EVENTS Apple Phishing Landing Nov 10 2017
+2025694 || ET CURRENT_EVENTS Adobe Online Document Phishing Landing M1 Mar 25 2017
+2025695 || ET SHELLCODE Execve(/bin/sh) Shellcode
+2025696 || ET CURRENT_EVENTS Suspicious Wordpress Redirect - Possible Phishing Landing (set) Jan 7
+2025697 || ET TROJAN Rostpay Downloader User-Agent || md5,6887e8e2fb391a1ca84f192efd5c8331
+2025698 || ET CURRENT_EVENTS Bank of America Phishing Landing
+2025699 || ET POLICY SMB Executable File Transfer
+2025700 || ET POLICY SMB NT Create AndX Request For an Executable File
+2025701 || ET POLICY SMB2 NT Create AndX Request For an Executable File
+2025702 || ET POLICY SMB NT Create AndX Request For an Executable File In a Temp Directory
+2025703 || ET POLICY SMB2 NT Create AndX Request For an Executable File In a Temp Directory
+2025704 || ET POLICY SMB NT Create AndX Request For a Powershell .ps1 File
+2025705 || ET POLICY SMB2 NT Create AndX Request For a Powershell .ps1 File
+2025706 || ET POLICY SMB NT Create AndX Request For a .bat File
+2025707 || ET POLICY SMB2 NT Create AndX Request For a .bat File
+2025708 || ET POLICY SMB NT Create AndX Request For a DLL File
+2025709 || ET POLICY SMB2 NT Create AndX Request For a DLL File - Possible Lateral Movement
+2025710 || ET POLICY SMB NT Create AndX Request For a .sys File - Possible Lateral Movement
+2025711 || ET POLICY SMB2 NT Create AndX Request For a .sys File - Possible Lateral Movement
+2025712 || ET POLICY SMB Remote AT Scheduled Job Create Request - Possible Lateral Movement
+2025713 || ET POLICY SMB2 Remote AT Scheduled Job Create Request
+2025714 || ET POLICY SMB Remote AT Scheduled Job Pipe Creation
+2025715 || ET CURRENT_EVENTS Fake Adobe Software Update Landing || url,www.malware-traffic-analysis.net/2018/07/05/index.html
+2025716 || ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 Inbound Web Servers Likely Command Execution 1
+2025717 || ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 Inbound Web Servers Likely Command Execution 2
+2025718 || ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 Inbound Web Servers Likely Command Execution 3
+2025719 || ET POLICY Powershell Activity Over SMB - Likely Lateral Movement
+2025720 || ET POLICY Powershell Command With Hidden Window Argument Over SMB - Likely Lateral Movement
+2025721 || ET POLICY Powershell Command With Encoded Argument Over SMB - Likely Lateral Movement
+2025722 || ET POLICY Powershell Command With No Profile Argument Over SMB - Likely Lateral Movement
+2025723 || ET POLICY Powershell Command With Execution Bypass Argument Over SMB - Likely Lateral Movement
+2025724 || ET POLICY Powershell Command With NonInteractive Argument Over SMB - Likely Lateral Movement
+2025725 || ET POLICY RunDll Request Over SMB - Likely Lateral Movement
+2025726 || ET POLICY WMIC WMI Request Over SMB - Likely Lateral Movement
+2025727 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM.html
+2025728 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 2 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM.html
+2025729 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 3 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM.html
+2025730 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 4 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM.html
+2025731 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 5 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM.html
+2025732 || ET WEB_SPECIFIC_APPS ELF file magic encoded ASCII Inbound Web Servers Likely Command Execution 4
+2025733 || ET EXPLOIT phpLDAPadmin LDAP Injection
+2025734 || ET EXPLOIT phpMyAdmin 4.8.1 - Local File Inclusion
+2025735 || ET EXPLOIT TP-Link Technologies TL-WA850RE Wi-Fi Range Extender - Command Execution || url,exploit-db.com/exploits/44912/
+2025736 || ET EXPLOIT AsusWRT RT-AC750GF Cross-Site Request Forgery || url,www.exploit-db.com/exploits/44937/
+2025737 || ET EXPLOIT Ecessa WANWorx WVR-30 Cross-Site Request Forgery
+2025738 || ET WEB_SPECIFIC_APPS WordPress Plugin iThemes Security SQL Injection
+2025739 || ET EXPLOIT Intex Router N-150 Cross-Site Request Forgery
+2025740 || ET WEB_SPECIFIC_APPS Apache CouchDB Remote Code Execution 1 || cve,2017-12635
+2025741 || ET WEB_SPECIFIC_APPS Apache CouchDB Remote Code Execution 2 || cve,2017-12636
+2025742 || ET WEB_SPECIFIC_APPS Apache CouchDB Remote Code Execution 3 || cve,2017-12636
+2025743 || ET WEB_SPECIFIC_APPS Apache CouchDB Remote Code Execution 4 || cve,2017-12636
+2025744 || ET WEB_SPECIFIC_APPS Joomla Component Ek rishta 2.10 - SQL Injection 1 || url,www.exploit-db.com/exploits/44869/ || cve,2018-12254
+2025745 || ET WEB_SPECIFIC_APPS Joomla Component Ek rishta 2.10 - SQL Injection 2 || url,www.exploit-db.com/exploits/44869/
+2025746 || ET WEB_SPECIFIC_APPS Joomla Component Ek rishta 2.10 - SQL Injection 3 || url,www.exploit-db.com/exploits/44869/
+2025747 || ET WEB_SPECIFIC_APPS WordPress Plugin Pie Register SQL Injection || url,www.exploit-db.com/exploits/44867/
+2025748 || ET WEB_SPECIFIC_APPS WordPress Contact Form Maker Plugin - SQL Injection 1 || url,www.exploit-db.com/exploits/44854/
+2025749 || ET WEB_SPECIFIC_APPS WordPress Contact Form Maker Plugin - SQL Injection 2 || url,www.exploit-db.com/exploits/44854/
+2025750 || ET EXPLOIT TP-Link TL-WR840N/TL-WR841N - Authentication Bypass (Add Port Forwarding) || url,exploit-db.com/exploits/44781/
+2025751 || ET EXPLOIT TP-Link TL-WR840N/TL-WR841N - Authentication Bypass (DMZ enable and Disable) || url,exploit-db.com/exploits/44781/
+2025752 || ET EXPLOIT TP-Link TL-WR840N/TL-WR841N - Authentication Bypass (Enable Guest Network) || url,exploit-db.com/exploits/44781/
+2025753 || ET EXPLOIT TP-Link TL-WR840N/TL-WR841N - Authentication Bypass (GET conf.bin) || url,exploit-db.com/exploits/44781/
+2025754 || ET EXPLOIT TP-Link TL-WR840N/TL-WR841N - Authentication Bypass (Reboot Router) || url,exploit-db.com/exploits/44781/
+2025755 || ET EXPLOIT TP-Link TL-WR840N/TL-WR841N - Authentication Bypass (WiFi Password Change) || url,exploit-db.com/exploits/44781/
+2025756 || ET EXPLOIT D-Link DSL-2750B - OS Command Injection || url,exploit-db.com/exploits/44760/
+2025757 || ET WEB_SPECIFIC_APPS Wordpress Arbitrary File Deletion 1 || url,exploit-db.com/exploits/44949/
+2025758 || ET WEB_SPECIFIC_APPS Wordpress Arbitrary File Deletion 2 || url,exploit-db.com/exploits/44949/
+2025759 || ET WEB_SPECIFIC_APPS Blind Server-Side Request Forgery || url,exploit-db.com/raw/44945/
+2025760 || ET SCAN HP Enterprise VAN SDN Controller || url,exploit-db.com/exploits/44951/
+2025761 || ET EXPLOIT HP Enterprise VAN SDN Controller Exec Backdoor || url,exploit-db.com/exploits/44951/
+2025762 || ET EXPLOIT HP Enterprise VAN SDN Controller Install Backdoor || url,exploit-db.com/exploits/44951/
+2025763 || ET EXPLOIT HP Enterprise VAN SDN Controller Upload Backdoor || url,exploit-db.com/exploits/44951/
+2025764 || ET EXPLOIT Cisco Adaptive Security Appliance - Path Traversal || cve,2018-0296 || url,exploit-db.com/exploits/44956/
+2025765 || ET EXPLOIT DynoRoot DHCP - Client Command Injection || cve,2018-1111 || url,exploit-db.com/exploits/44652/
+2025766 || ET EXPLOIT CloudMe Sync Buffer Overflow || cve,2018-6892 || url,exploit-db.com/exploits/44784/
+2025767 || ET EXPLOIT VMware NSX SD-WAN Command Injection || cve,2018-6961 || url,exploit-db.com/exploits/44959/
+2025768 || ET EXPLOIT VMware NSX SD-WAN Command Injection 2 || cve,2018-6961 || url,exploit-db.com/exploits/44959/
+2025769 || ET EXPLOIT Geutebruck Remote Command Execution || cve,2018-7520 || url,exploit-db.com/exploits/44957/
+2025770 || ET WEB_SPECIFIC_APPS Dolibarr ERP CRM PHP Code Injection || url,exploit-db.com/exploits/44964/
+2025771 || ET WEB_SPECIFIC_APPS DAMICMS Cross-Site Request Forgery (Add Admin) || url,exploit-db.com/exploits/44960/
+2025772 || ET EXPLOIT Nagios XI SQL Injection || url,exploit-db.com/exploits/44969/ || cve,2018-8736 || cve,2018-8735 || cve,2018-8734 || url,2018-8733
+2025773 || ET EXPLOIT Nagios XI Remote Code Execution 2 || url,exploit-db.com/exploits/44969/ || cve,2018-8736 || cve,2018-8735 || cve,2018-8734 || url,2018-8733
+2025774 || ET EXPLOIT Nagios XI Remote Code Execution || url,exploit-db.com/exploits/44969/ || cve,2018-8736 || cve,2018-8735 || cve,2018-8734 || url,2018-8733
+2025775 || ET EXPLOIT Nagios XI SQL Injection 2 || url,exploit-db.com/exploits/44969/ || cve,2018-8736 || cve,2018-8735 || cve,2018-8734 || url,2018-8733
+2025776 || ET EXPLOIT Nagios XI Remote Code Execution 3 || url,exploit-db.com/exploits/44969/ || cve,2018-8736 || cve,2018-8735 || cve,2018-8734 || url,2018-8733
+2025777 || ET EXPLOIT Nagios XI Set DB User Root || url,exploit-db.com/exploits/44969/ || cve,2018-8736 || cve,2018-8735 || cve,2018-8734 || url,2018-8733
+2025778 || ET EXPLOIT Nagios XI Adding Administrative User || url,exploit-db.com/exploits/44969/ || cve,2018-8736 || cve,2018-8735 || cve,2018-8734 || url,2018-8733
+2025779 || ET EXPLOIT FTPShell client Stack Buffer Overflow || url,exploit-db.com/exploits/44968/ || cve,2018-7573 || cve,2018-8735 || cve,2018-8734 || url,2018-8733
+2025780 || ET SCAN ntop-ng Authentication Bypass via Session ID Guessing || url,exploit-db.com/exploits/44973/ || cve,2018-12520
+2025781 || ET EXPLOIT Possible ModSecurity 3.0.0 Cross-Site Scripting || url,exploit-db.com/exploits/44970/ || cve,2018-13065
+2025782 || ET WEB_SPECIFIC_APPS CMS Made Simple Remote Code Execution || url,exploit-db.com/exploits/44977/ || cve,2018-1000094
+2025783 || ET WEB_SPECIFIC_APPS Online Trade - Information Disclosure || url,exploit-db.com/exploits/44977/ || cve,2018-12905
+2025784 || ET WEB_SPECIFIC_APPS ShopNx - Arbitrary File Upload || url,exploit-db.com/exploits/44978/ || cve,2018-12519
+2025785 || ET EXPLOIT ADB Broadband Authorization Bypass || url,exploit-db.com/exploits/44982/ || cve,2018-13109
+2025786 || ET WEB_SPECIFIC_APPS SoftExpert Excellence Suite 2.0 SQL Injection || url,exploit-db.com/exploits/44981/ || cve,2018-8736
+2025787 || ET WEB_SPECIFIC_APPS ManageEngine Exchange Reporter Plus Remote Code Execution || url,exploit-db.com/exploits/44975/
+2025788 || ET EXPLOIT Oracle Weblogic Server Deserialization Remote Command Execution || cve,2018-2628 || url,exploit-db.com/exploits/44553/
+2025789 || ET WEB_SPECIFIC_APPS Airties AIR5444TT - Cross-Site Scripting || cve,2018-8738 || url,exploit-db.com/exploits/44986/
+2025790 || ET NETBIOS PolarisOffice Insecure Library Loading - SMB ASCII || cve,2018-12589 || url, exploit-db.com/exploits/44985/
+2025791 || ET NETBIOS PolarisOffice Insecure Library Loading - SMB Unicode || cve,2018-12589 || url, exploit-db.com/exploits/44985/
+2025792 || ET WEB_CLIENT PolarisOffice Insecure Library Loading || cve,2018-12589
+2025793 || ET EXPLOIT Exim Internet Mailer Remote Code Execution || url,exploit-db.com/exploits/44571/ || cve,2018-6789
+2025794 || ET EXPLOIT xdebug OS Command Execution  || url,exploit-db.com/exploits/44568/
+2025795 || ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 1
+2025796 || ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 2
+2025797 || ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 3
+2025798 || ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 4
+2025799 || ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 5
+2025800 || ET EXPLOIT Generic system shell command to php base64 encoded Remote Code Execution 6
+2025801 || ET EXPLOIT file_put_contents php base64 encoded Remote Code Execution 1
+2025802 || ET EXPLOIT file_put_contents php base64 encoded Remote Code Execution 2
+2025803 || ET EXPLOIT file_put_contents php base64 encoded Remote Code Execution 3
+2025804 || ET EXPLOIT bin bash base64 encoded Remote Code Execution 1
+2025805 || ET EXPLOIT bin bash base64 encoded Remote Code Execution 2
+2025806 || ET EXPLOIT bin bash base64 encoded Remote Code Execution 3
+2025807 || ET EXPLOIT php script base64 encoded Remote Code Execution 1
+2025808 || ET EXPLOIT php script base64 encoded Remote Code Execution 2
+2025809 || ET EXPLOIT php script base64 encoded Remote Code Execution 3
+2025810 || ET EXPLOIT php script double base64 encoded Remote Code Execution 1
+2025811 || ET EXPLOIT php script double base64 encoded Remote Code Execution 2
+2025812 || ET EXPLOIT php script double base64 encoded Remote Code Execution 3
+2025813 || ET EXPLOIT php script double base64 encoded Remote Code Execution 4
+2025814 || ET EXPLOIT php script double base64 encoded Remote Code Execution 5
+2025815 || ET EXPLOIT php script double base64 encoded Remote Code Execution 6
+2025816 || ET EXPLOIT php script double base64 encoded Remote Code Execution 7
+2025817 || ET EXPLOIT php script double base64 encoded Remote Code Execution 8
+2025818 || ET EXPLOIT php script double base64 encoded Remote Code Execution 9
+2025819 || ET WEB_SPECIFIC_APPS Elektronischer Leitz-Ordner 10 - SQL Injection || url,exploit-db.com/exploits/44999/
+2025820 || ET WEB_SPECIFIC_APPS GitList Argument Injection || url,exploit-db.com/exploits/44993/
+2025821 || ET EXPLOIT HID VertX and Edge door controllers command_blink_on Remote Command Execution || url,exploit-db.com/exploits/44992/
+2025822 || ET SCAN HID VertX and Edge door controllers discover || url,exploit-db.com/exploits/44992/
+2025823 || ET EXPLOIT D-Link DIR601 2.02 Credential Disclosure || url,exploit-db.com/exploits/45002/
+2025824 || ET NETBIOS Microsoft Windows RRAS SMB Remote Code Execution || url,exploit-db.com/exploits/44616/ || cve,2017-11885
+2025825 || ET WEB_SPECIFIC_APPS Dicoogle PACS 2.5.0 - Directory Traversal || url,exploit-db.com/exploits/45007/
+2025826 || ET EXPLOIT IBM QRadar SIEM Unauthenticated Remote Code Execution || url,exploit-db.com/exploits/45005/
+2025827 || ET WEB_SPECIFIC_APPS cmd powershell base64 encoded to Web Server 1
+2025828 || ET WEB_SPECIFIC_APPS cmd powershell base64 encoded to Web Server 2
+2025829 || ET WEB_SPECIFIC_APPS cmd powershell base64 encoded to Web Server 3
+2025830 || ET WEB_SPECIFIC_APPS GitStack - Unsanitized Argument Remote Code Execution || url,exploit-db.com/exploits/44356/ || cve,2018-5955
+2025831 || ET CURRENT_EVENTS Tech Support Scam Landing 2018-07-18
+2025832 || ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 UTF-8 Inbound Web Servers Likely Command Execution 5
+2025833 || ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 UTF-8 Inbound Web Servers Likely Command Execution 6
+2025834 || ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 UTF-8 Inbound Web Servers Likely Command Execution 7
+2025835 || ET EXPLOIT SAP NetWeaver AS JAVA CRM - Log injection Remote Command Execution || cve,2018-2380 || url,exploit-db.com/exploits/44292/
+2025836 || ET EXPLOIT Adobe Coldfusion BlazeDS Java Object Deserialization Remote Code Execution || cve,2017-3066 || url,exploit-db.com/exploits/43993/
+2025837 || ET EXPLOIT Oracle WebLogic - wls-wsat Component Deserialization Remote Code Execution Unix || url,exploit-db.com/exploits/43924/
+2025838 || ET EXPLOIT Oracle WebLogic - wls-wsat Component Deserialization Remote Code Execution Windows || url,exploit-db.com/exploits/43924/
+2025839 || ET WEB_SPECIFIC_APPS WordPress Plugin Job Manager Stored Cross-Site Scripting || url,exploit-db.com/exploits/45031/
+2025840 || ET WEB_SPECIFIC_APPS Hadoop YARN ResourceManager Unauthenticated Command Execution || url,exploit-db.com/exploits/45025/
+2025841 || ET WEB_SPECIFIC_APPS Fortify Software Security Center XML External Entity Injection 1 || cve,2018-12463 || url,exploit-db.com/exploits/45027/
+2025842 || ET WEB_SPECIFIC_APPS Fortify Software Security Center XML External Entity Injection 2 || cve,2018-12463 || url,exploit-db.com/exploits/45027/
+2025843 || ET WEB_SPECIFIC_APPS Fortify Software Security Center XML External Entity Injection 3 || cve,2018-12463 || url,exploit-db.com/exploits/45027/
+2025844 || ET WEB_SPECIFIC_APPS Fortify Software Security Center XML External Entity Injection 4 || cve,2018-12463 || url,exploit-db.com/exploits/45027/
+2025845 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Configuration Download || url,exploit-db.com/exploits/45036/
+2025846 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Configuration Download || url,exploit-db.com/exploits/45036/
+2025847 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Configuration Download || url,exploit-db.com/exploits/45036/
+2025848 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Service Stop || url,exploit-db.com/exploits/45036/
+2025849 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Process Kill || url,exploit-db.com/exploits/45036/
+2025850 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Service start || url,exploit-db.com/exploits/45036/
+2025851 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Service Enable || url,exploit-db.com/exploits/45036/
+2025852 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Change Admin Passwd || url,exploit-db.com/exploits/45036/
+2025853 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Add Admin Passwd || url,exploit-db.com/exploits/45036/
+2025854 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Add Root Htpasswd || url,exploit-db.com/exploits/45036/
+2025855 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Default Credentials || url,exploit-db.com/exploits/45036/
+2025856 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Crontab || url,exploit-db.com/exploits/45036/
+2025857 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Startup Script || url,exploit-db.com/exploits/45036/
+2025858 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Disable Firewall || url,exploit-db.com/exploits/45036/
+2025859 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Start the Microhard Sh (msshc) service || url,exploit-db.com/exploits/45036/
+2025860 || ET WEB_SPECIFIC_APPS Microhard Systems 3G/4G Cellular Ethernet and Serial Gateway - Auto-enable the Microhard Sh (msshc) service || url,exploit-db.com/exploits/45036/
+2025861 || ET EXPLOIT Nanopool Claymore Dual Miner Remote Code Execution Linux || cve,2018-1000049 || url,exploit-db.com/exploits/45044/
+2025862 || ET EXPLOIT Nanopool Claymore Dual Miner Remote Code Execution Windows || cve,2018-1000049 || url,exploit-db.com/exploits/45044/
+2025863 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2018-07-19
+2025864 || ET CURRENT_EVENTS Successful Generic Phish (set) 2018-07-19
+2025865 || ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 Hex Escape Inbound Web Servers Likely Command Execution 8
+2025866 || ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 Hex Escape Inbound Web Servers Likely Command Execution 9
+2025867 || ET WEB_SPECIFIC_APPS ELF file magic encoded Base64 Hex Escape Inbound Web Servers Likely Command Execution 10
+2025868 || ET WEB_SPECIFIC_APPS ELF file magic plain Inbound Web Servers Likely Command Execution 11
+2025869 || ET WEB_SPECIFIC_APPS ELF file magic plain Inbound Web Servers Likely Command Execution 12
+2025870 || ET CURRENT_EVENTS Badoo Phishing Landing 2018-07-19
+2025871 || ET CURRENT_EVENTS GitLab Phishing Landing 2018-07-19
+2025872 || ET CURRENT_EVENTS Fake 404 With Hidden Login Form
+2025873 || ET CURRENT_EVENTS Github Phishing Landing 2018-07-19
+2025874 || ET CURRENT_EVENTS Twitter Phishing Landing 2018-07-19
+2025875 || ET CURRENT_EVENTS Netflix Phishing Landing 2017-07-20
+2025876 || ET CURRENT_EVENTS LinkedIn Phishing Landing 2017-07-20
+2025877 || ET WEB_SPECIFIC_APPS XML External Entity Information Disclosure || url,owasp.org/index.php/XML_External_Entity_(XXE)_Processing
+2025878 || ET WEB_SPECIFIC_APPS XML External Entity Remote Code Execution || url,owasp.org/index.php/XML_External_Entity_(XXE)_Processing
+2025879 || ET ATTACK_RESPONSE passwd file Outbound from WEB SERVER Linux
+2025880 || ET CURRENT_EVENTS Volexity – JS Sniffer Data Theft Beacon Detected || url,www.volexity.com/blog/2018/07/19/js-sniffer-e-commerce-data-theft-made-easy/
+2025881 || ET CURRENT_EVENTS JS Sniffer Framework Sending to CnC || url,www.volexity.com/blog/2018/07/19/js-sniffer-e-commerce-data-theft-made-easy/
+2025882 || ET EXPLOIT MVPower DVR Shell UCE MSF Check || url,researchcenter.paloaltonetworks.com/2018/07/unit42-finds-new-mirai-gafgyt-iotlinux-botnet-campaigns/
+2025883 || ET EXPLOIT MVPower DVR Shell UCE || url,researchcenter.paloaltonetworks.com/2018/07/unit42-finds-new-mirai-gafgyt-iotlinux-botnet-campaigns/
+2025884 || ET EXPLOIT Multiple CCTV-DVR Vendors RCE || url,researchcenter.paloaltonetworks.com/2018/07/unit42-finds-new-mirai-gafgyt-iotlinux-botnet-campaigns/
+2025885 || ET TROJAN AZORult Variant.4 Checkin M2 || url,twitter.com/James_inthe_box/status/1020522733984100352?s=03 || md5,0ac55b5056364cdac63aaf05f9d7f654
+2025886 || ET CURRENT_EVENTS [eSentire] DHL Phish Landing July 24 2018
+2025887 || ET EXPLOIT Remote Command Execution via Android Debug Bridge || url,blog.trendmicro.com/trendlabs-security-intelligence/open-adb-ports-being-exploited-to-spread-possible-satori-variant-in-android-devices/
+2025888 || ET EXPLOIT Remote Command Execution via Android Debug Bridge 2 || url,blog.trendmicro.com/trendlabs-security-intelligence/open-adb-ports-being-exploited-to-spread-possible-satori-variant-in-android-devices/
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -24851,6 +25144,8 @@
 2404697 || ET CNC Ransomware Tracker Reported CnC Server UDP group 149 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404698 || ET CNC Ransomware Tracker Reported CnC Server TCP group 150 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404699 || ET CNC Ransomware Tracker Reported CnC Server UDP group 150 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404700 || ET CNC Ransomware Tracker Reported CnC Server TCP group 151 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404701 || ET CNC Ransomware Tracker Reported CnC Server UDP group 151 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405000 || ET CNC Shadowserver Reported CnC Server Port 80 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405001 || ET CNC Shadowserver Reported CnC Server Port 81 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405002 || ET CNC Shadowserver Reported CnC Server Port 443 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -25077,6 +25372,12 @@
 2520163 || ET TOR Known Tor Exit Node UDP Traffic group 82 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520164 || ET TOR Known Tor Exit Node TCP Traffic group 83 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520165 || ET TOR Known Tor Exit Node UDP Traffic group 83 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520166 || ET TOR Known Tor Exit Node TCP Traffic group 84 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520167 || ET TOR Known Tor Exit Node UDP Traffic group 84 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520168 || ET TOR Known Tor Exit Node TCP Traffic group 85 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520169 || ET TOR Known Tor Exit Node UDP Traffic group 85 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520170 || ET TOR Known Tor Exit Node TCP Traffic group 86 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520171 || ET TOR Known Tor Exit Node UDP Traffic group 86 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522001 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26477,3 +26778,7 @@
 2523397 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 699 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523398 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 700 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523399 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 700 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523400 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 701 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523401 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 701 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523402 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 702 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523403 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 702 || url,doc.emergingthreats.net/bin/view/Main/TorRules
