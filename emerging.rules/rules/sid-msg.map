@@ -6747,11 +6747,11 @@
 2008977 || ET TROJAN Vundo Variant reporting to Controller via HTTP (2) || url,doc.emergingthreats.net/2008977
 2008983 || ET USER_AGENTS Suspicious User Agent (BlackSun) || url,doc.emergingthreats.net/bin/view/Main/2008983 || url,www.bitdefender.com/VIRUS-1000328-en--Trojan.Pws.Wow.NCY.html
 2008984 || ET TROJAN Trojan-GameThief.Win32.OnLineGames infection report || url,doc.emergingthreats.net/2008984
-2008985 || ET POLICY Internal Host Retrieving External IP via whatismyip.com Automation Page - Possible Infection || url,doc.emergingthreats.net/2008985
-2008986 || ET POLICY Internal Host Retrieving External IP via whatismyip.com - Possible Infection
-2008987 || ET POLICY Internal Host Retrieving External IP via showip.net - Possible Infection || url,doc.emergingthreats.net/2008987
-2008988 || ET POLICY Internal Host Retrieving External IP via cmyip.com - Possible Infection || url,doc.emergingthreats.net/2008988
-2008989 || ET POLICY Internal Host Retrieving External IP via showmyip.com - Possible Infection || url,doc.emergingthreats.net/2008989
+2008985 || ET POLICY IP Check whatismyip.com Automation Page || url,doc.emergingthreats.net/2008985
+2008986 || ET POLICY IP Check Domain (whatismyip in HTTP Host)
+2008987 || ET POLICY IP Check Domain (showip in HTTP Host) || url,doc.emergingthreats.net/2008987
+2008988 || ET POLICY IP Check Domain (cmyip.com in HTTP Host) || url,doc.emergingthreats.net/2008988
+2008989 || ET POLICY IP Check Domain (showmyip in HTTP Host) || url,doc.emergingthreats.net/2008989
 2008992 || ET WEB_SPECIFIC_APPS phpAddEdit editform parameter Local File Inclusion || url,doc.emergingthreats.net/2008992 || bugtraq,32774 || url,milw0rm.com/exploits/7417
 2008993 || ET ACTIVEX Microsoft Visual Basic Common AVI ActiveX Control File Parsing Buffer Overflow || url,doc.emergingthreats.net/2008993 || bugtraq,32613 || url,www.milw0rm.com/exploits/7431
 2008994 || ET WEB_SPECIFIC_APPS Multiple Membership Script id parameter SQL injection || url,doc.emergingthreats.net/2008994 || url,milw0rm.com/exploits/7346 || url,secunia.com/advisories/33019/
@@ -6777,7 +6777,7 @@
 2009017 || ET WEB_SPECIFIC_APPS WebPhotoPro rubrika.php idr Parameter SQL Injection || url,doc.emergingthreats.net/2009017 || url,packetstormsecurity.org/0808-exploits/webphotopro-sql.txt || bugtraq,32829
 2009018 || ET WEB_SPECIFIC_APPS Text Lines Rearrange Script filename parameter File Disclosure || url,doc.emergingthreats.net/2009018 || url,milw0rm.com/exploits/7542 || url,securityfocus.com/bid/32968
 2009019 || ET TROJAN VMProtect Demo version Packed Binary - Likely Hostile || url,doc.emergingthreats.net/2009019 || url,www.packetninjas.net || url,www.vmprotect.ru
-2009020 || ET POLICY Internal Host Retrieving External IP via ipchicken.com - Possible Infection || url,doc.emergingthreats.net/2009020
+2009020 || ET POLICY IP Check Domain (whatismyip in HTTP Host) || url,doc.emergingthreats.net/2009020
 2009021 || ET MALWARE User-Agent (IE_6.0) || url,doc.emergingthreats.net/bin/view/Main/2009021
 2009022 || ET TROJAN Zlob User Agent (securityinternet) || url,doc.emergingthreats.net/2009022 || url,www.bitdefender.com/VIRUS-1000328-en--Trojan.Pws.Wow.NCY.html
 2009024 || ET TROJAN Downadup/Conficker A or B Worm reporting || url,doc.emergingthreats.net/bin/view/Main/2009024 || url,www.f-secure.com/weblog/archives/00001584.html
@@ -10009,7 +10009,7 @@
 2012688 || ET DELETED Potential Blackhole Exploit Pack landing || url,krebsonsecurity.com/2010/10/java-a-gift-to-exploit-pack-makers/
 2012689 || ET POLICY LoJack asset recovery/tracking - not malicious || url,www.absolute.com/en/lojackforlaptops/home.aspx
 2012690 || ET ATTACK_RESPONSE Windows 7 CMD Shell from Local System
-2012691 || ET POLICY Internal Host visiting Showmyipaddress.com - Possible Trojan
+2012691 || ET DELETED IP Check Domain (showmyipaddress.com in HTTP Host)
 2012692 || ET POLICY Microsoft user-agent automated process response to automated request
 2012693 || ET MALWARE overtls.com adware request
 2012694 || ET POLICY request to .xxx TLD || url,en.wikipedia.org/wiki/.xxx
@@ -14486,7 +14486,7 @@
 2017395 || ET TROJAN Likely Bot Nick in IRC ([country|so version|CPU])
 2017396 || ET DELETED CoolEK Landing Aug 29 2013
 2017397 || ET DELETED Apple CoreText Exploit Specific string || url,techcrunch.com/2013/08/29/bug-in-apples-coretext-allows-specific-string-of-characters-to-crash-ios-6-os-x-10-8-apps/
-2017398 || ET POLICY Internal Host Retrieving External IP via icanhazip.com - Possible Infection
+2017398 || ET POLICY IP Check Domain (icanhazip. com in HTTP Host)
 2017399 || ET WEB_SERVER WebShell Generic eval of base64_decode
 2017400 || ET WEB_SERVER WebShell Generic eval of gzinflate
 2017401 || ET WEB_SERVER WebShell Generic eval of str_rot13
@@ -21001,7 +21001,7 @@
 2024105 || ET TROJAN Win32/Teslacrypt Ransomware .onion domain (2kjb7.net) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
 2024106 || ET TROJAN Win32/Teslacrypt Ransomware .onion domain (7tno4hib47vlep5o) || md5,9377710d4787d1a9ee1c724dce8bf13a
 2024107 || ET WEB_SERVER Microsoft IIS Remote Code Execution (CVE-2017-7269) || url,github.com/edwardz246003/IIS_exploit/blob/master/exploit.py
-2024108 || ET TROJAN KHRAT DragonOK DNS Lookup (inter-ctrip .com) || url,blogs.forcepoint.com/security-labs/trojanized-adobe-installer-used-install-dragonok’s-new-custom-backdoor
+2024108 || ET TROJAN KHRAT DragonOK DNS Lookup (inter-ctrip .com) || url,www.forcepoint.com/blog/security-labs/trojanized-adobe-installer-used-install-dragonok%E2%80%99s-new-custom-backdoor
 2024109 || ET CURRENT_EVENTS Possible Malicious Macro DL BIN March 2017 || md5,ad575f6795526f2ee5e730f76a3b5346
 2024110 || ET TROJAN DeepEnd Research Ransomware CrypMIC Payment Onion Domain || url,www.deependresearch.org/2017/01/threat-intel-ransomware-payment-sites.html
 2024111 || ET TROJAN DeepEnd Research Ransomware CrypMIC Payment Onion Domain || url,www.deependresearch.org/2017/01/threat-intel-ransomware-payment-sites.html
@@ -22751,7 +22751,7 @@
 2025877 || ET WEB_SPECIFIC_APPS XML External Entity Information Disclosure || url,owasp.org/index.php/XML_External_Entity_(XXE)_Processing
 2025878 || ET WEB_SPECIFIC_APPS XML External Entity Remote Code Execution || url,owasp.org/index.php/XML_External_Entity_(XXE)_Processing
 2025879 || ET ATTACK_RESPONSE passwd file Outbound from WEB SERVER Linux
-2025880 || ET CURRENT_EVENTS Volexity – JS Sniffer Data Theft Beacon Detected || url,www.volexity.com/blog/2018/07/19/js-sniffer-e-commerce-data-theft-made-easy/
+2025880 || ET CURRENT_EVENTS Volexity - JS Sniffer Data Theft Beacon Detected || url,www.volexity.com/blog/2018/07/19/js-sniffer-e-commerce-data-theft-made-easy/
 2025881 || ET CURRENT_EVENTS JS Sniffer Framework Sending to CnC || url,www.volexity.com/blog/2018/07/19/js-sniffer-e-commerce-data-theft-made-easy/
 2025882 || ET EXPLOIT MVPower DVR Shell UCE MSF Check || url,researchcenter.paloaltonetworks.com/2018/07/unit42-finds-new-mirai-gafgyt-iotlinux-botnet-campaigns/
 2025883 || ET EXPLOIT MVPower DVR Shell UCE || url,researchcenter.paloaltonetworks.com/2018/07/unit42-finds-new-mirai-gafgyt-iotlinux-botnet-campaigns/
@@ -22760,6 +22760,88 @@
 2025886 || ET CURRENT_EVENTS [eSentire] DHL Phish Landing July 24 2018
 2025887 || ET EXPLOIT Remote Command Execution via Android Debug Bridge || url,blog.trendmicro.com/trendlabs-security-intelligence/open-adb-ports-being-exploited-to-spread-possible-satori-variant-in-android-devices/
 2025888 || ET EXPLOIT Remote Command Execution via Android Debug Bridge 2 || url,blog.trendmicro.com/trendlabs-security-intelligence/open-adb-ports-being-exploited-to-spread-possible-satori-variant-in-android-devices/
+2025889 || ET USER_AGENTS VPNFilter Related UA (Gemini/2.0) || url,twitter.com/m0rb/status/1021626709307805696
+2025890 || ET USER_AGENTS VPNFilter Related UA (Hakai/2.0) || url,twitter.com/m0rb/status/1021626709307805696
+2025891 || ET TROJAN OilRig QUADAGENT CnC Domain in SNI || url,researchcenter.paloaltonetworks.com/2018/07/unit42-oilrig-targets-technology-service-provider-government-agency-quadagent/ || md5,d51c2ffce844d42bab2f2c3131e3dbd4
+2025892 || ET TROJAN Observed Malicious SSL Cert (OilRig QUADAGENT CnC) || url,researchcenter.paloaltonetworks.com/2018/07/unit42-oilrig-targets-technology-service-provider-government-agency-quadagent/ || md5,d51c2ffce844d42bab2f2c3131e3dbd4
+2025893 || ET CURRENT_EVENTS [eSentire] Successful 163 Webmail Phish 2018-07-25
+2025894 || ET TROJAN OilRig QUADAGENT DNS Tunneling || url,researchcenter.paloaltonetworks.com/2018/07/unit42-oilrig-targets-technology-service-provider-government-agency-quadagent/ || md5,d51c2ffce844d42bab2f2c3131e3dbd4
+2025895 || ET MOBILE_MALWARE Android Golden Rat Checkin || md5,6296586cf9a59b25d1b8ab3eeb0c2a33 || url,csecybsec.com/download/zlab/20180723_CSE_APT27_Syria_v1.pdf
+2025896 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 6 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025897 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 7 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025898 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 8 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025899 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 9 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025900 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 10 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025901 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 11 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025902 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 12 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025903 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 13 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025904 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 14 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025905 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 15 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025906 || ET MOBILE_MALWARE iOS/Bahamut DNS Lookup 16 || url,blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html
+2025907 || ET EXPLOIT Oracle WebLogic Unrestricted File Upload (CVE-2018-2894) || cve,2018-2894 || url,github.com/LandGrey/CVE-2018-2894/blob/master/CVE-2018-2894.py
+2025908 || ET CURRENT_EVENTS Tech Support Phone Scam Landing 2017-07-26
+2025909 || ET CURRENT_EVENTS Tech Support Phone Scam Landing 2017-07-26
+2025910 || ET CURRENT_EVENTS Tech Support Phone Scam Landing 2017-07-26
+2025911 || ET CURRENT_EVENTS Underminer EK IE Exploit
+2025912 || ET CURRENT_EVENTS Possible Malvertising Redirect to EK M1
+2025914 || ET CURRENT_EVENTS Underminer EK Flash Exploit
+2025915 || ET CURRENT_EVENTS Underminer EK Flash Check
+2025916 || ET CURRENT_EVENTS Possible Underminer EK Landing
+2025917 || ET WEB_SPECIFIC_APPS Modx Revolution < 2.6.4 phpthumb.php RCE Attempt || url,exploit-db.com/exploits/45055/
+2025918 || ET TROJAN Observed Malicious SSL Cert (Micropsia CnC Domain) || url,docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc || md5,738b3370230bd3168a97a7171d17ed64
+2025919 || ET CURRENT_EVENTS Paypal Phishing Landing 2018-07-30
+2025920 || ET POLICY IP Check Domain (showmyipaddress .com in HTTP Host)
+2025921 || ET TROJAN [eSentire] Remcos RAT Checkin 24 || md5,98202283d7752779abd092665e80af71
+2025922 || ET TROJAN Win32/Bisonal CnC Checkin || url,researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/ || md5,CC71620DE7216B186DA2C9BA06703613
+2025923 || ET TROJAN Win32/Bisonal RC4 Encrypted 8 Byte Static CnC Checkin || url,researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/ || md5,CC71620DE7216B186DA2C9BA06703613
+2025924 || ET TROJAN Win32/Bisonal DNS Lookup 1 || url,researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/ || md5,CC71620DE7216B186DA2C9BA06703613
+2025925 || ET TROJAN Win32/Bisonal DNS Lookup 2 || url,researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/ || md5,CC71620DE7216B186DA2C9BA06703613
+2025926 || ET TROJAN Win32/Bisonal DNS Lookup 3 || url,researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/ || md5,CC71620DE7216B186DA2C9BA06703613
+2025927 || ET TROJAN Win32/Bisonal DNS Lookup 4 || url,researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/ || md5,CC71620DE7216B186DA2C9BA06703613
+2025928 || ET TROJAN Win32/Bisonal DNS Lookup 5 || url,researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/ || md5,CC71620DE7216B186DA2C9BA06703613
+2025929 || ET WEB_SPECIFIC_APPS Oracle WebLogic Deserialization  (CVE-2018-2893) || url,github.com/pyn3rd/CVE-2018-2893 || cve,2018-2893
+2025930 || ET WEB_SPECIFIC_APPS Modx Revolution RCE (CVE-2018-1000207) || url,www.exploit-db.com/exploits/45055 || cve,2018-1000207
+2025931 || ET TROJAN Aurora Ransomware CnC Checkin || md5,2409c058a86cd8743abb10a5735ef487
+2025932 || ET CURRENT_EVENTS Successful Generic Phish (set) 2018-08-01
+2025933 || ET MOBILE_MALWARE NSO Related Domain 1 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025934 || ET MOBILE_MALWARE NSO Related Domain 2 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025935 || ET MOBILE_MALWARE NSO Related Domain 3 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025936 || ET MOBILE_MALWARE NSO Related Domain 4 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025937 || ET MOBILE_MALWARE NSO Related Domain 5 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025938 || ET MOBILE_MALWARE NSO Related Domain 6 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025939 || ET MOBILE_MALWARE NSO Related Domain 7 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025940 || ET MOBILE_MALWARE NSO Related Domain 8 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025941 || ET MOBILE_MALWARE NSO Related Domain 9 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025942 || ET MOBILE_MALWARE NSO Related Domain 10 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025943 || ET MOBILE_MALWARE NSO Related Domain 11 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025944 || ET MOBILE_MALWARE NSO Related Domain 12 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025945 || ET MOBILE_MALWARE NSO Related Domain 13 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025946 || ET MOBILE_MALWARE NSO Related Domain 14 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025947 || ET MOBILE_MALWARE NSO Related Domain 15 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025948 || ET MOBILE_MALWARE NSO Related Domain 16 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025949 || ET MOBILE_MALWARE NSO Related Domain 17 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025950 || ET MOBILE_MALWARE NSO Related Domain 18 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025951 || ET MOBILE_MALWARE NSO Related Domain 19 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025952 || ET MOBILE_MALWARE NSO Related Domain 20 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025953 || ET MOBILE_MALWARE NSO Related Domain 21 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025954 || ET MOBILE_MALWARE NSO Related Domain 22 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025955 || ET MOBILE_MALWARE NSO Related Domain 24 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025956 || ET MOBILE_MALWARE NSO Related Domain 25 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025957 || ET MOBILE_MALWARE NSO Related Domain 26 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025958 || ET MOBILE_MALWARE NSO Related Domain 27 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025959 || ET MOBILE_MALWARE NSO Related Domain 28 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025960 || ET MOBILE_MALWARE NSO Related Domain 29 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025961 || ET MOBILE_MALWARE NSO Related Domain 30 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025962 || ET MOBILE_MALWARE NSO Related Domain 31 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025963 || ET MOBILE_MALWARE NSO Related Domain 32 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025964 || ET MOBILE_MALWARE NSO Related Domain 33 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025965 || ET MOBILE_MALWARE NSO Related Domain 34 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025966 || ET MOBILE_MALWARE NSO Related Domain 35 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025967 || ET MOBILE_MALWARE NSO Related Domain 36 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025968 || ET MOBILE_MALWARE NSO Related Domain 37 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025969 || ET MOBILE_MALWARE NSO Related Domain 38 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025970 || ET MOBILE_MALWARE NSO Related Domain 39 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025971 || ET MOBILE_MALWARE NSO Related Domain 40 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -24483,7 +24565,6 @@
 2400030 || ET DROP Spamhaus DROP Listed Traffic Inbound group 31 || url,www.spamhaus.org/drop/drop.lasso
 2400031 || ET DROP Spamhaus DROP Listed Traffic Inbound group 32 || url,www.spamhaus.org/drop/drop.lasso
 2400032 || ET DROP Spamhaus DROP Listed Traffic Inbound group 33 || url,www.spamhaus.org/drop/drop.lasso
-2400033 || ET DROP Spamhaus DROP Listed Traffic Inbound group 34 || url,www.spamhaus.org/drop/drop.lasso
 2402000 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
 2402001 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
 2403300 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 1 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
@@ -25146,6 +25227,14 @@
 2404699 || ET CNC Ransomware Tracker Reported CnC Server UDP group 150 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404700 || ET CNC Ransomware Tracker Reported CnC Server TCP group 151 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404701 || ET CNC Ransomware Tracker Reported CnC Server UDP group 151 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404702 || ET CNC Ransomware Tracker Reported CnC Server TCP group 152 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404703 || ET CNC Ransomware Tracker Reported CnC Server UDP group 152 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404704 || ET CNC Ransomware Tracker Reported CnC Server TCP group 153 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404705 || ET CNC Ransomware Tracker Reported CnC Server UDP group 153 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404706 || ET CNC Ransomware Tracker Reported CnC Server TCP group 154 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404707 || ET CNC Ransomware Tracker Reported CnC Server UDP group 154 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404708 || ET CNC Ransomware Tracker Reported CnC Server TCP group 155 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404709 || ET CNC Ransomware Tracker Reported CnC Server UDP group 155 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405000 || ET CNC Shadowserver Reported CnC Server Port 80 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405001 || ET CNC Shadowserver Reported CnC Server Port 81 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405002 || ET CNC Shadowserver Reported CnC Server Port 443 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -25366,18 +25455,6 @@
 2520157 || ET TOR Known Tor Exit Node UDP Traffic group 79 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520158 || ET TOR Known Tor Exit Node TCP Traffic group 80 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520159 || ET TOR Known Tor Exit Node UDP Traffic group 80 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520160 || ET TOR Known Tor Exit Node TCP Traffic group 81 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520161 || ET TOR Known Tor Exit Node UDP Traffic group 81 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520162 || ET TOR Known Tor Exit Node TCP Traffic group 82 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520163 || ET TOR Known Tor Exit Node UDP Traffic group 82 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520164 || ET TOR Known Tor Exit Node TCP Traffic group 83 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520165 || ET TOR Known Tor Exit Node UDP Traffic group 83 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520166 || ET TOR Known Tor Exit Node TCP Traffic group 84 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520167 || ET TOR Known Tor Exit Node UDP Traffic group 84 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520168 || ET TOR Known Tor Exit Node TCP Traffic group 85 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520169 || ET TOR Known Tor Exit Node UDP Traffic group 85 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520170 || ET TOR Known Tor Exit Node TCP Traffic group 86 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520171 || ET TOR Known Tor Exit Node UDP Traffic group 86 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522001 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26782,3 +26859,11 @@
 2523401 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 701 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523402 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 702 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523403 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 702 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523404 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 703 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523405 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 703 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523406 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 704 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523407 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 704 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523408 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 705 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523409 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 705 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523410 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 706 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523411 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 706 || url,doc.emergingthreats.net/bin/view/Main/TorRules
