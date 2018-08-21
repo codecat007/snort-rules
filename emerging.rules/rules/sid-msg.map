@@ -5768,7 +5768,7 @@
 2007810 || ET USER_AGENTS Cashpoint.com Related checkin User-Agent (okcpmgr) || url,doc.emergingthreats.net/2007810
 2007811 || ET TROJAN Metajuan trojan checkin || url,doc.emergingthreats.net/2007811 || url,www.symantec.com/security_response/writeup.jsp?docid=2007-030112-0714-99
 2007820 || ET MALWARE Rabio Spyware/Adware Initial Registration || url,doc.emergingthreats.net/bin/view/Main/2007820 || url,www.rabio.com || url,www.spywareguide.com/product_show.php?id=3770
-2007821 || ET MALWARE Rabio.com Related Adware/Spyware User-Agent (HTTP_CONNECT_2) || url,doc.emergingthreats.net/bin/view/Main/2007821
+2007821 || ET USER_AGENTS Suspicious User-Agent (HTTP_CONNECT_) || url,doc.emergingthreats.net/bin/view/Main/2007821
 2007822 || ET TROJAN Densmail.com Related Trojan Checkin || url,doc.emergingthreats.net/2007822
 2007823 || ET DELETED Banker.OT Checkin || url,doc.emergingthreats.net/2007823
 2007824 || ET USER_AGENTS Banker.anv Generally Suspicious User-Agent (CustomExchangeBrowser) || url,doc.emergingthreats.net/2007824
@@ -13514,7 +13514,7 @@
 2016390 || ET WEB_SPECIFIC_APPS Glossword gw_admin.php Cross Site Scripting Attempt || url,packetstormsecurity.com/files/120045/Glossword-1.8.12-XSS-CSRF-Shell-Upload-Database-Disclosure.html
 2016391 || ET CURRENT_EVENTS Adobe Flash Zero Day LadyBoyle Infection Campaign || cve,2013-0633 || cve,2013-0633 || url,www.adobe.com/go/apsb13-04 || url,blog.fireeye.com/research/2013/02/lady-boyle-comes-to-town-with-a-new-exploit.html || md5,2568615875525003688839cb8950aeae || md5,3de314089db35af9baaeefc598f09b23
 2016393 || ET CURRENT_EVENTS Impact Exploit Kit Landing Page
-2016394 || ET INFO Adobe Flash Uncompressed
+2016394 || ET INFO Adobe Flash Uncompressed in HTTP Flowbit Set
 2016395 || ET WEB_CLIENT Microsoft OLE Compound File With Flash
 2016396 || ET CURRENT_EVENTS Exploit Specific Uncompressed Flash CVE-2013-0634
 2016397 || ET CURRENT_EVENTS Exploit Specific Uncompressed Flash Inside of OLE CVE-2013-0634
@@ -16942,7 +16942,7 @@
 2019932 || ET TROJAN Trojan/Win32.Espy Report via SMTP || md5,1a9a06b11aa537734931f8098bae6b00
 2019933 || ET TROJAN Trojan/Downloader.Fosniw.sap Reporting via SMTP || md5,e36469241764b8c954a700146ca4c43f
 2019934 || ET TROJAN DNS query for Known OphionLocker Domain || md5,e17da8702b71dfb0ee94dbc9e22eed8d || url,f-secure.com/weblog/archives/00002777.html
-2019935 || ET TROJAN AutoIt Downloading EXE - Likely Malicious
+2019935 || ET INFO AutoIt User Agent Downloading EXE
 2019936 || ET CURRENT_EVENTS Win32/Spy.Zbot.ACB SSL Cert Dec 15 2014 || md5,d271218da70d0bceb69c477e7d13dcc8
 2019937 || ET TROJAN SpamBanker message || url,tools.cisco.com/security/center/viewThreatOutbreakAlert.x?alertId=36677
 2019938 || ET TROJAN Infostealer.Bancos Sending Stolen info SMTP || md5,f71c41b816eadf221e188f6618798969
@@ -22520,8 +22520,8 @@
 2025646 || ET WEB_SPECIFIC_APPS [eSentire] Drupalgeddon2 <8.3.9 <8.4.6 <8.5.1 RCE Through Registration Form (CVE-2018-7600) || url,research.checkpoint.com/uncovering-drupalgeddon-2 || cve,2018-7600
 2025647 || ET CURRENT_EVENTS [eSentire] Fake Flash Update 2018-07-09
 2025648 || ET CURRENT_EVENTS [eSentire] Adobe Phishing Landing 2018-07-04
-2025649 || ET EXPLOIT Possible ETERNALBLUE MSF Probe MS17-010 || url,github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/smb/smb_ms17_010.rb
-2025650 || ET EXPLOIT Possible ETERNALBLUE MSF Probe Vulnerable System Response MS17-010 || url,github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/smb/smb_ms17_010.rb
+2025649 || ET EXPLOIT Possible ETERNALBLUE Probe MS17-010 (MSF style) || url,github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/smb/smb_ms17_010.rb
+2025650 || ET EXPLOIT ETERNALBLUE Probe Vulnerable System Response MS17-010 || url,github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/smb/smb_ms17_010.rb
 2025651 || ET TROJAN [eSentire] Unknown Banker CnC Command (DOWNLOAD) || md5,f45991556122b07d501fa995bd4e74a7
 2025652 || ET TROJAN [eSentire] Unknown Banker CnC Checkin || md5,f45991556122b07d501fa995bd4e74a7
 2025653 || ET CURRENT_EVENTS Possible Chalbhai (Multibrand) Phishing Landing 2018-05-10
@@ -22842,6 +22842,37 @@
 2025969 || ET MOBILE_MALWARE NSO Related Domain 38 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
 2025970 || ET MOBILE_MALWARE NSO Related Domain 39 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
 2025971 || ET MOBILE_MALWARE NSO Related Domain 40 || url,www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/
+2025972 || ET EXPLOIT Mikrotik Winbox RCE Attempt || url,www.helpnetsecurity.com/2018/08/03/mikrotik-cryptojacking-campaign || url,github.com/mrmtwoj/0day-mikrotik
+2025973 || ET CURRENT_EVENTS Christian Mingle Phishing Landing 2018-08-07
+2025974 || ET CURRENT_EVENTS Microsoft Account Phishing Landing 2018-08-07
+2025975 || ET CURRENT_EVENTS Paypal Phishing Landing 2018-08-07
+2025976 || ET CURRENT_EVENTS Free Mobile Phishing Landing 2018-08-07
+2025977 || ET CURRENT_EVENTS Adobe Phishing Landing 2018-08-07
+2025978 || ET CURRENT_EVENTS Microsoft Ajax Phishing Landing 2018-08-07
+2025979 || ET CURRENT_EVENTS Alibaba Phishing Landing 2018-08-07
+2025980 || ET POLICY TRR DNS over HTTPS detected || url,tools.ietf.org/html/draft-ietf-doh-dns-over-https-02
+2025981 || ET CURRENT_EVENTS Microsoft Phishing Landing 2018-08-07
+2025982 || ET TROJAN MSIL/Eredel Stealer CnC Checkin || md5,4b5e27e843e1b26aedec66f9e87c9960
+2025983 || ET EXPLOIT SMB Null Pointer Dereference PoC Inbound (CVE-2018-0833) || cve,2018-0833 || url,krbtgt.pw/smbv3-null-pointer-dereference-vulnerability/
+2025984 || ET TROJAN [eSentire] Remcos RAT Checkin 25 || md5,41c292b0cb2a4662381635a3316226f4
+2025985 || ET INFO Adobe PDX in HTTP Flowbit Set
+2025986 || ET INFO MP3 with ID3 in HTTP Flowbit Set
+2025987 || ET MOBILE_MALWARE Trojan-Spy.AndroidOS.CrazyMango.a Checkin || url,drive.google.com/file/d/1WJCXG2SIkVwPEw5dlAE5U__OfDB88zD0/view || md5,cc56d261cbf0ecddcdc70de85af138d1
+2025988 || ET MOBILE_MALWARE Trojan-Spy.AndroidOS.CrazyMango.a CnC Beacon || url,drive.google.com/file/d/1WJCXG2SIkVwPEw5dlAE5U__OfDB88zD0/view || md5,cc56d261cbf0ecddcdc70de85af138d1
+2025989 || ET MOBILE_MALWARE Trojan-Spy.AndroidOS.CrazyMango.a Checkin 2 || url,drive.google.com/file/d/1WJCXG2SIkVwPEw5dlAE5U__OfDB88zD0/view || md5,b603017bbcee17a76f5b0ee478d2d935
+2025990 || ET TROJAN SSL Cert Associated with Lazarus Downloader (JEUSD) || url,blogs.360.cn/blog/apt-c-26/ || md5,5509ee41b79c5d82e96038993f0bf3fa
+2025991 || ET TROJAN Lazarus Downloader (JEUSD) CnC Beacon || md5,5509ee41b79c5d82e96038993f0bf3fa || url,blogs.360.cn/blog/apt-c-26/
+2025992 || ET EXPLOIT Possible ETERNALBLUE Probe MS17-010 (Generic Flags) || url,github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/smb/smb_ms17_010.rb
+2025993 || ET TROJAN Sharik/Smoke CnC Beacon 11 || md5,d110be58537aa8420a9c25f4879ca77b
+2025994 || ET TROJAN [PTsecurity] Win32/Spy.Agent.PMJ (MICROPSIA)
+2025995 || ET TROJAN Observed Malicious SSL Cert (Panda Banker C2) || url,www.vkremez.com/2018/08/lets-learn-dissecting-panda-banker.html
+2025996 || ET TROJAN Observed Malicious SSL Cert (Panda Banker Injects) || url,www.vkremez.com/2018/08/lets-learn-dissecting-panda-banker.html
+2025997 || ET TROJAN Panda Banker C2 Domain (uiaoduiiej .chimkent .su in DNS Lookup) || url,www.vkremez.com/2018/08/lets-learn-dissecting-panda-banker.html
+2025998 || ET TROJAN Panda Banker C2 Domain (uiaoduiiej .chimkent .su in TLS SNI) || url,www.vkremez.com/2018/08/lets-learn-dissecting-panda-banker.html
+2025999 || ET TROJAN Panda Banker Injects Domain (urimchi3dt4 .website in DNS Lookup) || url,www.vkremez.com/2018/08/lets-learn-dissecting-panda-banker.html
+2026000 || ET TROJAN Panda Banker Injects Domain (urimchi3dt4 .website in TLS SNI) || url,www.vkremez.com/2018/08/lets-learn-dissecting-panda-banker.html
+2026001 || ET TROJAN [PTsecurity] Tinba (Banking Trojan) HTTP Header
+2026002 || ET TROJAN [PTsecurity] Tinba (Banking Trojan) Check-in || md5,be312fdb94f3a3c783332ea91ef00ebd
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -25235,6 +25266,12 @@
 2404707 || ET CNC Ransomware Tracker Reported CnC Server UDP group 154 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404708 || ET CNC Ransomware Tracker Reported CnC Server TCP group 155 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404709 || ET CNC Ransomware Tracker Reported CnC Server UDP group 155 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404710 || ET CNC Ransomware Tracker Reported CnC Server TCP group 156 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404711 || ET CNC Ransomware Tracker Reported CnC Server UDP group 156 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404712 || ET CNC Ransomware Tracker Reported CnC Server TCP group 157 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404713 || ET CNC Ransomware Tracker Reported CnC Server UDP group 157 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404714 || ET CNC Ransomware Tracker Reported CnC Server TCP group 158 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404715 || ET CNC Ransomware Tracker Reported CnC Server UDP group 158 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405000 || ET CNC Shadowserver Reported CnC Server Port 80 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405001 || ET CNC Shadowserver Reported CnC Server Port 81 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405002 || ET CNC Shadowserver Reported CnC Server Port 443 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -25295,6 +25332,12 @@
 2500039 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 20 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500040 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 21 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500041 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 21 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500042 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 22 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500043 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 22 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500044 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 23 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500045 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 23 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500046 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 24 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500047 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 24 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520001 || ET TOR Known Tor Exit Node UDP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520002 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26841,29 +26884,3 @@
 2523383 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 692 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523384 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 693 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523385 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 693 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523386 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 694 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523387 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 694 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523388 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 695 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523389 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 695 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523390 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 696 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523391 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 696 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523392 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 697 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523393 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 697 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523394 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 698 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523395 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 698 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523396 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 699 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523397 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 699 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523398 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 700 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523399 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 700 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523400 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 701 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523401 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 701 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523402 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 702 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523403 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 702 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523404 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 703 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523405 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 703 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523406 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 704 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523407 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 704 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523408 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 705 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523409 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 705 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523410 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 706 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523411 || ET TOR Known Tor Relay/Router (Not Exit) Node UDP Traffic group 706 || url,doc.emergingthreats.net/bin/view/Main/TorRules

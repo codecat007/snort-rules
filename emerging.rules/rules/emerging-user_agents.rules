@@ -38,6 +38,8 @@
 
 # This Ruleset is EmergingThreats Open optimized for snort-2.9.0-enhanced.
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS Suspicious User-Agent (HTTP_CONNECT_)"; flow:established,to_server; content:"User-Agent|3a| HTTP_Connect_"; http_header; metadata: former_category USER_AGENTS; reference:url,doc.emergingthreats.net/bin/view/Main/2007821; classtype:bad-unknown; sid:2007821; rev:5; metadata:attack_target Client_Endpoint, deployment Perimeter, tag Spyware_User_Agent, signature_severity Minor, created_at 2010_07_30, updated_at 2018_08_15;)
+
 #alert tcp $HOME_NET any -> $EXTERNAL_NET 1024:65535 (msg:"ET USER_AGENTS Likely Spambot Web-based Control Traffic"; flow: to_server,established; content:"User-Agent|3a| Godzilla"; nocase; reference:url,doc.emergingthreats.net/bin/view/Main/2001711; classtype:trojan-activity; sid:2001711; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
 #alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS 2search.org User Agent (2search)"; flow:to_server,established; content:"User-Agent|3a| "; http_header; content:"2search"; fast_pattern; within:150; http_header; pcre:"/^User-Agent\x3a\x20[^\r\n]+?2search/Hmi"; reference:url,doc.emergingthreats.net/2003335; classtype:trojan-activity; sid:2003335; rev:18; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
