@@ -22509,7 +22509,7 @@
 2025635 || ET TROJAN [eSentire] Cobalt Strike Beacon
 2025636 || ET TROJAN Cobalt Strike Exfiltration
 2025637 || ET TROJAN Remcos RAT Checkin 23 || md5,f4f2425e9735f92cc9f75711aa8cb210
-2025638 || ET TROJAN [eSentire] Win32/GandCrab v4 Ransomware CnC Activity
+2025638 || ET TROJAN [eSentire] Win32/GandCrab v4/5 Ransomware CnC Activity
 2025639 || ET MOBILE_MALWARE Android/Spy.Agent.AON / Glancelove DNS Lookup 1 || url,www.clearskysec.com/glancelove/
 2025640 || ET MOBILE_MALWARE Android/Spy.Agent.AON / Glancelove DNS Lookup 2 || url,www.clearskysec.com/glancelove/
 2025641 || ET MOBILE_MALWARE Android/Spy.Agent.AON / Glancelove DNS Lookup 3 || url,www.clearskysec.com/glancelove/
@@ -22985,6 +22985,307 @@
 2026112 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Exfil) || url,bleepingcomputer.com/news/security/feedify-hacked-with-magecart-information-stealing-script
 2026113 || ET TROJAN [PTsecurity] Win32/Ramnit Stage 0 Communicating with CnC || url,research.checkpoint.com/ramnits-network-proxy-servers/ || md5,20148e48668cb5e0b22d437ee0443cfe
 2026114 || ET MALWARE Luxsoft Win32/ICLoader User-Agent
+2026115 || ET MOBILE_MALWARE Android APT-C-23 (1jve .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026116 || ET MOBILE_MALWARE Android APT-C-23 (1jve .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026117 || ET MOBILE_MALWARE Android APT-C-23 (clarke-taylor .life in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026118 || ET MOBILE_MALWARE Android APT-C-23 (clarke-taylor .life in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026119 || ET MOBILE_MALWARE Android APT-C-23 (hcttmail .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026120 || ET MOBILE_MALWARE Android APT-C-23 (hcttmail .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026121 || ET MOBILE_MALWARE Android APT-C-23 (mail-presidency .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026122 || ET MOBILE_MALWARE Android APT-C-23 (mail-presidency .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026123 || ET MOBILE_MALWARE Android APT-C-23 (aamir-khan .site in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026124 || ET MOBILE_MALWARE Android APT-C-23 (aamir-khan .site in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026125 || ET MOBILE_MALWARE Android APT-C-23 (daario-naharis .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026126 || ET MOBILE_MALWARE Android APT-C-23 (daario-naharis .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026127 || ET MOBILE_MALWARE Android APT-C-23 (help-live .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026128 || ET MOBILE_MALWARE Android APT-C-23 (help-live .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026129 || ET MOBILE_MALWARE Android APT-C-23 (margaery-tyrell .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026130 || ET MOBILE_MALWARE Android APT-C-23 (margaery-tyrell .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026131 || ET MOBILE_MALWARE Android APT-C-23 (accaunts-googlc .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026132 || ET MOBILE_MALWARE Android APT-C-23 (accaunts-googlc .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026133 || ET MOBILE_MALWARE Android APT-C-23 (dachfunny .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026134 || ET MOBILE_MALWARE Android APT-C-23 (dachfunny .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026135 || ET MOBILE_MALWARE Android APT-C-23 (help-sec .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026136 || ET MOBILE_MALWARE Android APT-C-23 (help-sec .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026137 || ET MOBILE_MALWARE Android APT-C-23 (maria-bouchard .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026138 || ET MOBILE_MALWARE Android APT-C-23 (maria-bouchard .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026139 || ET MOBILE_MALWARE Android APT-C-23 (account-gocgle .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026140 || ET MOBILE_MALWARE Android APT-C-23 (account-gocgle .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026141 || ET MOBILE_MALWARE Android APT-C-23 (dachfunny .us in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026142 || ET MOBILE_MALWARE Android APT-C-23 (dachfunny .us in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026143 || ET MOBILE_MALWARE Android APT-C-23 (heyapp .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026144 || ET MOBILE_MALWARE Android APT-C-23 (heyapp .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026145 || ET MOBILE_MALWARE Android APT-C-23 (marklavi .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026146 || ET MOBILE_MALWARE Android APT-C-23 (marklavi .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026147 || ET MOBILE_MALWARE Android APT-C-23 (account-googlc .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026148 || ET MOBILE_MALWARE Android APT-C-23 (account-googlc .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026149 || ET MOBILE_MALWARE Android APT-C-23 (dardash .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026150 || ET MOBILE_MALWARE Android APT-C-23 (dardash .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026151 || ET MOBILE_MALWARE Android APT-C-23 (hitmesanjjoy .pro in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026152 || ET MOBILE_MALWARE Android APT-C-23 (hitmesanjjoy .pro in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026153 || ET MOBILE_MALWARE Android APT-C-23 (mary-crawley .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026154 || ET MOBILE_MALWARE Android APT-C-23 (mary-crawley .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026155 || ET MOBILE_MALWARE Android APT-C-23 (accountforuser .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026156 || ET MOBILE_MALWARE Android APT-C-23 (accountforuser .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026157 || ET MOBILE_MALWARE Android APT-C-23 (dardash .fun in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026158 || ET MOBILE_MALWARE Android APT-C-23 (dardash .fun in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026159 || ET MOBILE_MALWARE Android APT-C-23 (hoopoechat .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026160 || ET MOBILE_MALWARE Android APT-C-23 (hoopoechat .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026161 || ET MOBILE_MALWARE Android APT-C-23 (masuka .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026162 || ET MOBILE_MALWARE Android APT-C-23 (masuka .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026163 || ET MOBILE_MALWARE Android APT-C-23 (accountforusers .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026164 || ET MOBILE_MALWARE Android APT-C-23 (accountforusers .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026165 || ET MOBILE_MALWARE Android APT-C-23 (dardash .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026166 || ET MOBILE_MALWARE Android APT-C-23 (dardash .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026167 || ET MOBILE_MALWARE Android APT-C-23 (hotimael .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026168 || ET MOBILE_MALWARE Android APT-C-23 (hotimael .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026169 || ET MOBILE_MALWARE Android APT-C-23 (matthew-stevens .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026170 || ET MOBILE_MALWARE Android APT-C-23 (matthew-stevens .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026171 || ET MOBILE_MALWARE Android APT-C-23 (accounts-gocgle .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026172 || ET MOBILE_MALWARE Android APT-C-23 (accounts-gocgle .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026173 || ET MOBILE_MALWARE Android APT-C-23 (dardash .live in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026174 || ET MOBILE_MALWARE Android APT-C-23 (dardash .live in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026175 || ET MOBILE_MALWARE Android APT-C-23 (hotmailme .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026176 || ET MOBILE_MALWARE Android APT-C-23 (hotmailme .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026177 || ET MOBILE_MALWARE Android APT-C-23 (mauricefischer .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026178 || ET MOBILE_MALWARE Android APT-C-23 (mauricefischer .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026179 || ET MOBILE_MALWARE Android APT-C-23 (accounts-googlc .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026180 || ET MOBILE_MALWARE Android APT-C-23 (accounts-googlc .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026181 || ET MOBILE_MALWARE Android APT-C-23 (david-mclean .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026182 || ET MOBILE_MALWARE Android APT-C-23 (david-mclean .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026183 || ET MOBILE_MALWARE Android APT-C-23 (italk-chat .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026184 || ET MOBILE_MALWARE Android APT-C-23 (italk-chat .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026185 || ET MOBILE_MALWARE Android APT-C-23 (max-eleanor .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026186 || ET MOBILE_MALWARE Android APT-C-23 (max-eleanor .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026187 || ET MOBILE_MALWARE Android APT-C-23 (accountusers .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026188 || ET MOBILE_MALWARE Android APT-C-23 (accountusers .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026189 || ET MOBILE_MALWARE Android APT-C-23 (david-moris .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026190 || ET MOBILE_MALWARE Android APT-C-23 (david-moris .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026191 || ET MOBILE_MALWARE Android APT-C-23 (italk-chat .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026192 || ET MOBILE_MALWARE Android APT-C-23 (italk-chat .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026193 || ET MOBILE_MALWARE Android APT-C-23 (max-mayfield .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026194 || ET MOBILE_MALWARE Android APT-C-23 (max-mayfield .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026195 || ET MOBILE_MALWARE Android APT-C-23 (accuant-googlc .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026196 || ET MOBILE_MALWARE Android APT-C-23 (accuant-googlc .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026197 || ET MOBILE_MALWARE Android APT-C-23 (davina-claire .xyz in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026198 || ET MOBILE_MALWARE Android APT-C-23 (davina-claire .xyz in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026199 || ET MOBILE_MALWARE Android APT-C-23 (jack-wagner .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026200 || ET MOBILE_MALWARE Android APT-C-23 (jack-wagner .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026201 || ET MOBILE_MALWARE Android APT-C-23 (maxlight .us in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026202 || ET MOBILE_MALWARE Android APT-C-23 (maxlight .us in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026203 || ET MOBILE_MALWARE Android APT-C-23 (activedardash .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026204 || ET MOBILE_MALWARE Android APT-C-23 (activedardash .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026205 || ET MOBILE_MALWARE Android APT-C-23 (davos-seaworth .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026206 || ET MOBILE_MALWARE Android APT-C-23 (davos-seaworth .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026207 || ET MOBILE_MALWARE Android APT-C-23 (james-charles .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026208 || ET MOBILE_MALWARE Android APT-C-23 (james-charles .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026209 || ET MOBILE_MALWARE Android APT-C-23 (mediauploader .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026210 || ET MOBILE_MALWARE Android APT-C-23 (mediauploader .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026211 || ET MOBILE_MALWARE Android APT-C-23 (alain .ps in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026212 || ET MOBILE_MALWARE Android APT-C-23 (alain .ps in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026213 || ET MOBILE_MALWARE Android APT-C-23 (debra-morgan .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026214 || ET MOBILE_MALWARE Android APT-C-23 (debra-morgan .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026215 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Exfil Domain) || url,www.riskiq.com/blog/labs/magecart-newegg
+2026216 || ET POLICY External IP Lookup Domain (up .jkc8 .com) || md5,5a7526db56f812e62302912a1c20edd2
+2026217 || ET MOBILE_MALWARE Android APT-C-23 (jimmykudo .online in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026218 || ET MOBILE_MALWARE Android APT-C-23 (jimmykudo .online in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026219 || ET MOBILE_MALWARE Android APT-C-23 (meet-me .chat in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026220 || ET MOBILE_MALWARE Android APT-C-23 (meet-me .chat in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026221 || ET MOBILE_MALWARE Android APT-C-23 (alisonparker .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026222 || ET MOBILE_MALWARE Android APT-C-23 (alisonparker .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026223 || ET MOBILE_MALWARE Android APT-C-23 (donna-paulsen .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026224 || ET MOBILE_MALWARE Android APT-C-23 (donna-paulsen .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026225 || ET MOBILE_MALWARE Android APT-C-23 (android-settings .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026226 || ET MOBILE_MALWARE Android APT-C-23 (android-settings .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026227 || ET MOBILE_MALWARE Android APT-C-23 (easyshow .fun in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026228 || ET MOBILE_MALWARE Android APT-C-23 (easyshow .fun in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026229 || ET MOBILE_MALWARE Android APT-C-23 (jon-snow .pro in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026230 || ET MOBILE_MALWARE Android APT-C-23 (jon-snow .pro in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026231 || ET MOBILE_MALWARE Android APT-C-23 (men-ana .fun in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026232 || ET MOBILE_MALWARE Android APT-C-23 (men-ana .fun in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026233 || ET MOBILE_MALWARE Android APT-C-23 (apkapps .pro in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026234 || ET MOBILE_MALWARE Android APT-C-23 (apkapps .pro in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026235 || ET MOBILE_MALWARE Android APT-C-23 (eleanor-guthrie .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026236 || ET MOBILE_MALWARE Android APT-C-23 (eleanor-guthrie .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026237 || ET MOBILE_MALWARE Android APT-C-23 (jorah-mormont .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026238 || ET MOBILE_MALWARE Android APT-C-23 (jorah-mormont .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026239 || ET MOBILE_MALWARE Android APT-C-23 (michael-keaton .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026240 || ET MOBILE_MALWARE Android APT-C-23 (michael-keaton .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026241 || ET MOBILE_MALWARE Android APT-C-23 (apkapps .site in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026242 || ET MOBILE_MALWARE Android APT-C-23 (apkapps .site in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026243 || ET MOBILE_MALWARE Android APT-C-23 (eleanorguthrie .site in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026244 || ET MOBILE_MALWARE Android APT-C-23 (eleanorguthrie .site in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026245 || ET MOBILE_MALWARE Android APT-C-23 (joycebyers .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026246 || ET MOBILE_MALWARE Android APT-C-23 (joycebyers .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026247 || ET MOBILE_MALWARE Android APT-C-23 (miranda-barlow .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026248 || ET MOBILE_MALWARE Android APT-C-23 (miranda-barlow .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026249 || ET MOBILE_MALWARE Android APT-C-23 (appchecker .us in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026250 || ET MOBILE_MALWARE Android APT-C-23 (appchecker .us in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026251 || ET MOBILE_MALWARE Android APT-C-23 (engin-altan .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026252 || ET MOBILE_MALWARE Android APT-C-23 (engin-altan .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026253 || ET MOBILE_MALWARE Android APT-C-23 (juana .fun in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026254 || ET MOBILE_MALWARE Android APT-C-23 (juana .fun in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026255 || ET MOBILE_MALWARE Android APT-C-23 (miwakosato .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026256 || ET MOBILE_MALWARE Android APT-C-23 (miwakosato .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026257 || ET MOBILE_MALWARE Android APT-C-23 (appuree .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026258 || ET MOBILE_MALWARE Android APT-C-23 (appuree .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026259 || ET MOBILE_MALWARE Android APT-C-23 (esofiezo .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026260 || ET MOBILE_MALWARE Android APT-C-23 (esofiezo .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026261 || ET MOBILE_MALWARE Android APT-C-23 (kaniel-outis .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026262 || ET MOBILE_MALWARE Android APT-C-23 (kaniel-outis .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026263 || ET MOBILE_MALWARE Android APT-C-23 (mofa-help .site in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026264 || ET MOBILE_MALWARE Android APT-C-23 (mofa-help .site in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026265 || ET MOBILE_MALWARE Android APT-C-23 (arthursaito .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026266 || ET MOBILE_MALWARE Android APT-C-23 (arthursaito .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026267 || ET MOBILE_MALWARE Android APT-C-23 (everyservices .space in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026268 || ET MOBILE_MALWARE Android APT-C-23 (everyservices .space in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026269 || ET MOBILE_MALWARE Android APT-C-23 (karenwheeler .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026270 || ET MOBILE_MALWARE Android APT-C-23 (karenwheeler .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026271 || ET MOBILE_MALWARE Android APT-C-23 (moneymotion .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026272 || ET MOBILE_MALWARE Android APT-C-23 (moneymotion .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026273 || ET MOBILE_MALWARE Android APT-C-23 (aryastark .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026274 || ET MOBILE_MALWARE Android APT-C-23 (aryastark .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026275 || ET MOBILE_MALWARE Android APT-C-23 (exvsnomy .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026276 || ET MOBILE_MALWARE Android APT-C-23 (exvsnomy .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026277 || ET MOBILE_MALWARE Android APT-C-23 (kate-austen .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026278 || ET MOBILE_MALWARE Android APT-C-23 (kate-austen .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026279 || ET MOBILE_MALWARE Android APT-C-23 (myboon .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026280 || ET MOBILE_MALWARE Android APT-C-23 (myboon .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026281 || ET MOBILE_MALWARE Android APT-C-23 (aslaug-sigurd .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026282 || ET MOBILE_MALWARE Android APT-C-23 (aslaug-sigurd .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026283 || ET MOBILE_MALWARE Android APT-C-23 (ezofiezo .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026284 || ET MOBILE_MALWARE Android APT-C-23 (ezofiezo .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026285 || ET MOBILE_MALWARE Android APT-C-23 (katesacker .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026286 || ET MOBILE_MALWARE Android APT-C-23 (katesacker .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026287 || ET MOBILE_MALWARE Android APT-C-23 (mygift .site in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026288 || ET MOBILE_MALWARE Android APT-C-23 (mygift .site in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026289 || ET MOBILE_MALWARE Android APT-C-23 (assets-acc .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026290 || ET MOBILE_MALWARE Android APT-C-23 (assets-acc .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026291 || ET MOBILE_MALWARE Android APT-C-23 (face-book-support .email in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026292 || ET MOBILE_MALWARE Android APT-C-23 (face-book-support .email in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026293 || ET MOBILE_MALWARE Android APT-C-23 (katie .party in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026294 || ET MOBILE_MALWARE Android APT-C-23 (katie .party in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026295 || ET MOBILE_MALWARE Android APT-C-23 (mygift .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026296 || ET MOBILE_MALWARE Android APT-C-23 (mygift .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026297 || ET MOBILE_MALWARE Android APT-C-23 (bbc-learning .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026298 || ET MOBILE_MALWARE Android APT-C-23 (bbc-learning .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026299 || ET MOBILE_MALWARE Android APT-C-23 (fasebcck .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026300 || ET MOBILE_MALWARE Android APT-C-23 (fasebcck .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026301 || ET MOBILE_MALWARE Android APT-C-23 (kik-com .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026302 || ET MOBILE_MALWARE Android APT-C-23 (kik-com .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026303 || ET MOBILE_MALWARE Android APT-C-23 (namybotter .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026304 || ET MOBILE_MALWARE Android APT-C-23 (namybotter .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026305 || ET MOBILE_MALWARE Android APT-C-23 (bellamy-bob .life in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026306 || ET MOBILE_MALWARE Android APT-C-23 (bellamy-bob .life in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026307 || ET MOBILE_MALWARE Android APT-C-23 (fasebock .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026308 || ET MOBILE_MALWARE Android APT-C-23 (fasebock .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026309 || ET MOBILE_MALWARE Android APT-C-23 (kristy-milligan .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026310 || ET MOBILE_MALWARE Android APT-C-23 (kristy-milligan .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026311 || ET MOBILE_MALWARE Android APT-C-23 (namyyeatop .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026312 || ET MOBILE_MALWARE Android APT-C-23 (namyyeatop .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026313 || ET MOBILE_MALWARE Android APT-C-23 (bestbitloly .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026314 || ET MOBILE_MALWARE Android APT-C-23 (bestbitloly .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026315 || ET MOBILE_MALWARE Android APT-C-23 (fasebook .cam in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026316 || ET MOBILE_MALWARE Android APT-C-23 (fasebook .cam in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026317 || ET MOBILE_MALWARE Android APT-C-23 (lagertha-lothbrok .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026318 || ET MOBILE_MALWARE Android APT-C-23 (lagertha-lothbrok .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026319 || ET MOBILE_MALWARE Android APT-C-23 (natemunson .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026320 || ET MOBILE_MALWARE Android APT-C-23 (natemunson .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026321 || ET MOBILE_MALWARE Android APT-C-23 (billy-bones .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026322 || ET MOBILE_MALWARE Android APT-C-23 (billy-bones .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026323 || ET TROJAN Fbot Blockchain Based CnC DNS Lookup (musl .lib) || url,blog.netlab.360.com/threat-alert-a-new-worm-fbot-cleaning-adbminer-is-using-a-blockchain-based-dns-en/
+2026324 || ET TROJAN Fbot/Satori CnC DNS Lookup (ukrainianhorseriding .com) || url,blog.netlab.360.com/threat-alert-a-new-worm-fbot-cleaning-adbminer-is-using-a-blockchain-based-dns-en/
+2026325 || ET TROJAN Fbot/Satori CnC DNS Lookup (rippr .cc) || url,blog.netlab.360.com/threat-alert-a-new-worm-fbot-cleaning-adbminer-is-using-a-blockchain-based-dns-en/
+2026326 || ET TROJAN Xbash CnC DNS Lookup (censys .xyz) || url,researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/
+2026327 || ET TROJAN Xbash CnC DNS Lookup (leakingprivacy .tk) || url,researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/
+2026328 || ET TROJAN Xbash CnC DNS Lookup (realnewstime .xyz) || url,researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/
+2026329 || ET TROJAN Xbash CnC DNS Lookup (scanaan .tk) || url,researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/
+2026330 || ET TROJAN Xbash CnC DNS Lookup (blockbitcoin .com) || url,researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/
+2026331 || ET TROJAN HTML/Xbash Hex Encoded PowerShell Args Inbound - Stage 1 || md5,3b5baecd61190e12a526c51d5ecccbbe || url,researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/
+2026332 || ET TROJAN HTML/Xbash Hex Encoded WScript.Shell Inbound - Stage 1 || md5,3b5baecd61190e12a526c51d5ecccbbe || url,researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/
+2026333 || ET TROJAN HTML/Xbash Hex Encoded PS WebClient Object Inbound - Stage 1 || md5,3b5baecd61190e12a526c51d5ecccbbe || url,researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/
+2026334 || ET TROJAN Xbash CnC DNS Lookup (vfk2k5s5tfjr27tz .tk) || url,researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/
+2026335 || ET TROJAN Xbash CnC DNS Lookup (3g2upl4pq6kufc4m .tk) || url,researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/
+2026336 || ET WEB_SERVER JSP.SJavaWebManage WebShell Access || md5,91eaca79943c972cb2ca7ee0e462922c
+2026337 || ET WEB_SERVER JSP.SJavaWebManage WebShell Pass 20-09-2018 1 || md5,91eaca79943c972cb2ca7ee0e462922c
+2026338 || ET WEB_SERVER JSP.SJavaWebManage WebShell Pass 20-09-2018 2 || md5,91eaca79943c972cb2ca7ee0e462922c
+2026339 || ET MOBILE_MALWARE Android APT-C-23 (fasebookvideo .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026340 || ET MOBILE_MALWARE Android APT-C-23 (fasebookvideo .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026341 || ET MOBILE_MALWARE Android APT-C-23 (leonard-kim .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026342 || ET MOBILE_MALWARE Android APT-C-23 (leonard-kim .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026343 || ET MOBILE_MALWARE Android APT-C-23 (new .filetea .me in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026344 || ET MOBILE_MALWARE Android APT-C-23 (new .filetea .me in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026345 || ET MOBILE_MALWARE Android APT-C-23 (bitgames .world in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026346 || ET MOBILE_MALWARE Android APT-C-23 (bitgames .world in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026347 || ET MOBILE_MALWARE Android APT-C-23 (fatehmedia .site in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026348 || ET MOBILE_MALWARE Android APT-C-23 (fatehmedia .site in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026349 || ET MOBILE_MALWARE Android APT-C-23 (leslie-barnes .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026350 || ET MOBILE_MALWARE Android APT-C-23 (leslie-barnes .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026351 || ET MOBILE_MALWARE Android APT-C-23 (nightchat .fun in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026352 || ET MOBILE_MALWARE Android APT-C-23 (nightchat .fun in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026353 || ET MOBILE_MALWARE Android APT-C-23 (black-honey .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026354 || ET MOBILE_MALWARE Android APT-C-23 (black-honey .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026355 || ET MOBILE_MALWARE Android APT-C-23 (firesky .site in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026356 || ET MOBILE_MALWARE Android APT-C-23 (firesky .site in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026357 || ET MOBILE_MALWARE Android APT-C-23 (lets-see .site in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026358 || ET MOBILE_MALWARE Android APT-C-23 (lets-see .site in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026359 || ET MOBILE_MALWARE Android APT-C-23 (nightchat .live in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026360 || ET CURRENT_EVENTS Successful Generic Phish (set) 2018-09-21
+2026361 || ET TROJAN MS_D0wnl0ad3r Screenshot Upload || md5,f40248a592ed711d95eb8b48b31a1ed8
+2026362 || ET CURRENT_EVENTS Successful Generic Phish (set) 2018-09-24
+2026363 || ET TROJAN MS_D0wnl0ad3r Checkin
+2026364 || ET MOBILE_MALWARE Android APT-C-23 (nightchat .live in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026365 || ET MOBILE_MALWARE Android APT-C-23 (bob-turco .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026366 || ET MOBILE_MALWARE Android APT-C-23 (bob-turco .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026367 || ET MOBILE_MALWARE Android APT-C-23 (flirtymania .fun in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026368 || ET MOBILE_MALWARE Android APT-C-23 (flirtymania .fun in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026369 || ET MOBILE_MALWARE Android APT-C-23 (lexi-branson .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026370 || ET MOBILE_MALWARE Android APT-C-23 (lexi-branson .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026371 || ET MOBILE_MALWARE Android APT-C-23 (nissour-beton .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026372 || ET MOBILE_MALWARE Android APT-C-23 (nissour-beton .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026373 || ET MOBILE_MALWARE Android APT-C-23 (buymicrosft .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026374 || ET MOBILE_MALWARE Android APT-C-23 (buymicrosft .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026375 || ET MOBILE_MALWARE Android APT-C-23 (freya .miranda-barlow .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026376 || ET MOBILE_MALWARE Android APT-C-23 (freya .miranda-barlow .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026377 || ET MOBILE_MALWARE Android APT-C-23 (lincoln-blake .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026378 || ET MOBILE_MALWARE Android APT-C-23 (lincoln-blake .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026379 || ET MOBILE_MALWARE Android APT-C-23 (octavia-blake .world in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026380 || ET MOBILE_MALWARE Android APT-C-23 (octavia-blake .world in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026381 || ET MOBILE_MALWARE Android APT-C-23 (camilleoconnell .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026382 || ET MOBILE_MALWARE Android APT-C-23 (camilleoconnell .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026383 || ET MOBILE_MALWARE Android APT-C-23 (geny-wise .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026384 || ET MOBILE_MALWARE Android APT-C-23 (geny-wise .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026385 || ET MOBILE_MALWARE Android APT-C-23 (lindamullins .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026386 || ET MOBILE_MALWARE Android APT-C-23 (lindamullins .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026387 || ET MOBILE_MALWARE Android APT-C-23 (olivia-hartman .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026388 || ET MOBILE_MALWARE Android APT-C-23 (olivia-hartman .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026389 || ET MOBILE_MALWARE Android APT-C-23 (caroline-nina .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026390 || ET MOBILE_MALWARE Android APT-C-23 (caroline-nina .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026391 || ET MOBILE_MALWARE Android APT-C-23 (gmailservice .us in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026392 || ET MOBILE_MALWARE Android APT-C-23 (gmailservice .us in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026393 || ET MOBILE_MALWARE Android APT-C-23 (liz-keen .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026394 || ET MOBILE_MALWARE Android APT-C-23 (liz-keen .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026395 || ET MOBILE_MALWARE Android APT-C-23 (oriential .website in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026396 || ET MOBILE_MALWARE Android APT-C-23 (oriential .website in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026397 || ET MOBILE_MALWARE Android APT-C-23 (cassy-gray .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026398 || ET MOBILE_MALWARE Android APT-C-23 (cassy-gray .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026399 || ET MOBILE_MALWARE Android APT-C-23 (graceygretchen .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026400 || ET MOBILE_MALWARE Android APT-C-23 (graceygretchen .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026401 || ET MOBILE_MALWARE Android APT-C-23 (login-yohoo .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026402 || ET MOBILE_MALWARE Android APT-C-23 (login-yohoo .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026403 || ET MOBILE_MALWARE Android APT-C-23 (ososezo .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026404 || ET MOBILE_MALWARE Android APT-C-23 (ososezo .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026405 || ET MOBILE_MALWARE Android APT-C-23 (cecilia-dobrev .com in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026406 || ET MOBILE_MALWARE Android APT-C-23 (cecilia-dobrev .com in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026407 || ET MOBILE_MALWARE Android APT-C-23 (hareyupnow .club in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026408 || ET MOBILE_MALWARE Android APT-C-23 (hareyupnow .club in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026409 || ET MOBILE_MALWARE Android APT-C-23 (lord-varys .info in DNS Lookup) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026410 || ET MOBILE_MALWARE Android APT-C-23 (lord-varys .info in TLS SNI) || url,www.symantec.com/blogs/expert-perspectives/ongoing-android-malware-campaign-targets-palestinians-part-2
+2026411 || ET WEB_CLIENT VBscript UAF (CVE-2018-8373) || url,blog.trendmicro.com/trendlabs-security-intelligence/new-cve-2018-8373-exploit-spotted-in-the-wild/ || cve,2018-8373
+2026412 || ET CURRENT_EVENTS Successful Generic Phish (set) 2018-09-26
+2026413 || ET INFO Possible System Enumeration via WMI Queries (AntiVirusProduct) || md5,11f792cc617cf5c08603d4da829a1fa9
+2026414 || ET INFO Possible System Enumeration via WMI Queries (AntiSpywareProduct) || md5,11f792cc617cf5c08603d4da829a1fa9
+2026415 || ET INFO Possible System Enumeration via WMI Queries (FirewallProduct) || md5,11f792cc617cf5c08603d4da829a1fa9
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -24974,8 +25275,6 @@
 2404061 || ET CNC Shadowserver Reported CnC Server UDP group 31 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404062 || ET CNC Shadowserver Reported CnC Server TCP group 32 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404063 || ET CNC Shadowserver Reported CnC Server UDP group 32 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404064 || ET CNC Shadowserver Reported CnC Server TCP group 33 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404065 || ET CNC Shadowserver Reported CnC Server UDP group 33 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404150 || ET CNC Zeus Tracker Reported CnC Server TCP group 1 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404151 || ET CNC Zeus Tracker Reported CnC Server UDP group 1 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404152 || ET CNC Zeus Tracker Reported CnC Server TCP group 2 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -25391,20 +25690,19 @@
 2405002 || ET CNC Shadowserver Reported CnC Server Port 443 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405003 || ET CNC Shadowserver Reported CnC Server Port 1337 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405004 || ET CNC Shadowserver Reported CnC Server Port 2319 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405005 || ET CNC Shadowserver Reported CnC Server Port 3211 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405006 || ET CNC Shadowserver Reported CnC Server Port 4042 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405007 || ET CNC Shadowserver Reported CnC Server Port 4244 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405008 || ET CNC Shadowserver Reported CnC Server Port 6556 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405009 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405010 || ET CNC Shadowserver Reported CnC Server Port 6668 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405011 || ET CNC Shadowserver Reported CnC Server Port 6768 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405012 || ET CNC Shadowserver Reported CnC Server Port 7000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405013 || ET CNC Shadowserver Reported CnC Server Port 8585 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405014 || ET CNC Shadowserver Reported CnC Server Port 9000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405015 || ET CNC Shadowserver Reported CnC Server Port 10324 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405016 || ET CNC Shadowserver Reported CnC Server Port 11830 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405017 || ET CNC Shadowserver Reported CnC Server Port 13001 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405018 || ET CNC Shadowserver Reported CnC Server Port 33333 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405005 || ET CNC Shadowserver Reported CnC Server Port 4042 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405006 || ET CNC Shadowserver Reported CnC Server Port 4244 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405007 || ET CNC Shadowserver Reported CnC Server Port 6556 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405008 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405009 || ET CNC Shadowserver Reported CnC Server Port 6668 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405010 || ET CNC Shadowserver Reported CnC Server Port 6768 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405011 || ET CNC Shadowserver Reported CnC Server Port 7000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405012 || ET CNC Shadowserver Reported CnC Server Port 8585 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405013 || ET CNC Shadowserver Reported CnC Server Port 9000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405014 || ET CNC Shadowserver Reported CnC Server Port 10324 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405015 || ET CNC Shadowserver Reported CnC Server Port 11830 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405016 || ET CNC Shadowserver Reported CnC Server Port 13001 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405017 || ET CNC Shadowserver Reported CnC Server Port 33333 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2500000 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 1 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500001 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 1 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500002 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 2 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
@@ -25445,10 +25743,6 @@
 2500037 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 19 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500038 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 20 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500039 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 20 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500040 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 21 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500041 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 21 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500042 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 22 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500043 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 22 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520002 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520004 || ET TOR Known Tor Exit Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -25527,6 +25821,8 @@
 2520150 || ET TOR Known Tor Exit Node TCP Traffic group 76 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520152 || ET TOR Known Tor Exit Node TCP Traffic group 77 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520154 || ET TOR Known Tor Exit Node TCP Traffic group 78 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520156 || ET TOR Known Tor Exit Node TCP Traffic group 79 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520158 || ET TOR Known Tor Exit Node TCP Traffic group 80 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522004 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26220,3 +26516,10 @@
 2523380 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 691 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523382 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 692 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523384 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 693 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523386 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 694 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523388 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 695 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523390 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 696 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523392 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 697 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523394 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 698 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523396 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 699 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523398 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 700 || url,doc.emergingthreats.net/bin/view/Main/TorRules
