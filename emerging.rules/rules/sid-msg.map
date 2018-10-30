@@ -22367,7 +22367,7 @@
 2025493 || ET MALWARE Observed Win32/Foniad Domain (suggedin .info in TLS SNI) || url,www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=BrowserModifier:Win32/Foniad
 2025494 || ET WEB_SPECIFIC_APPS [PT OPEN] Drupalgeddon2 <8.3.9 <8.4.6 <8.5.1 RCE Through Registration Form (CVE-2018-7600) || url,research.checkpoint.com/uncovering-drupalgeddon-2 || cve,2018-7600
 2025495 || ET INFO Possible EXE Download From Suspicious TLD (.men) - set || url,www.spamhaus.org/statistics/tlds/
-2025496 || ET TROJAN Observed GandCrab Payment Domain (gandcrab2pie73et in DNS Lookup)
+2025496 || ET TROJAN Observed GandCrab Payment Domain (gandcrab in DNS Lookup)
 2025497 || ET INFO Possible EXE Download From Suspicious TLD (.webcam) - set || url,www.spamhaus.org/statistics/tlds/
 2025498 || ET INFO Possible EXE Download From Suspicious TLD (.yokohama) - set || url,www.spamhaus.org/statistics/tlds/
 2025499 || ET INFO Possible EXE Download From Suspicious TLD (.tokyo) - set || url,www.spamhaus.org/statistics/tlds/
@@ -23381,6 +23381,55 @@
 2026511 || ET TROJAN [PTsecurity] Remcos RAT Checkin 71 || md5,24bf188785e18db8fcb7dfa50363b3f5
 2026512 || ET TROJAN [PTsecurity] Remcos RAT Checkin 72 || md5,98a010ad867f4c36730cc6a87c94528c
 2026513 || ET TROJAN [PTsecurity] Remcos RAT Checkin 73 || md5,9e31ee4bb378d3cf6f80f9f30e9f810f
+2026514 || ET TROJAN XLS.Unk DDE rar Drop Attempt (.live) || md5,63b070b222d170ef4cc35ad94d42a088
+2026515 || ET INFO Suspicious Redirect to Download EXE from Bitbucket
+2026516 || ET CURRENT_EVENTS Possible Successful Phish - Generic Credential POST to Ngrok.io
+2026517 || ET TROJAN Locky CnC Checkin || md5,40ebefdec6870263827ce6425702e785
+2026518 || ET CURRENT_EVENTS Successful Generic Phish (set) 2018-10-18
+2026519 || ET USER_AGENTS Suspicious User-Agent (Windows XP)
+2026520 || ET USER_AGENTS Suspicious User-Agent (Windows 8)
+2026521 || ET USER_AGENTS Suspicious User-Agent (Windows 10)
+2026522 || ET USER_AGENTS Suspicious User-Agent (Windows 7)
+2026523 || ET TROJAN ELF/Chacha.DDoS/Xor.DDoS Stage 2 CnC Checkin || url,www.welivesecurity.com/2018/10/18/new-linux-chachaddos-malware-distributed-servers-vestacp-installed/
+2026524 || ET TROJAN Win32/BlackCarat Response from CnC || url,www.virusbulletin.com/uploads/pdf/conference_slides/2018/AncelKuprins-VB2018-WolfSheep.pdf || md5,514AB639CD556CEBD78107B4A68A202A
+2026525 || ET TROJAN Win32/BlackCarat XORed (0x77) CnC Checkin || url,www.virusbulletin.com/uploads/pdf/conference_slides/2018/AncelKuprins-VB2018-WolfSheep.pdf || md5,514AB639CD556CEBD78107B4A68A202A
+2026526 || ET POLICY Potentially Vulnerable LibSSH Server Observed - Possible Authentication Bypass (CVE-2018-10933) || cve,2018-10933 || url,github.com/blacknbunny/libSSH-Authentication-Bypass || url,www.libssh.org/security/advisories/CVE-2018-10933.txt
+2026527 || ET TROJAN Zebrocy Backdoor CnC Activity || md5,961e79a33f432ea96d2c8bf9eb010006
+2026528 || ET TROJAN Win32/Banload.Downloader Variant CnC Check-in || md5,3d7436bcf635a7e56a785c9d26ed3767
+2026529 || ET CURRENT_EVENTS Successful Fedex/DHL Phish (set) 2018-10-22
+2026530 || ET CURRENT_EVENTS Successful Generic Phish (set) 2018-10-22
+2026531 || ET WEB_CLIENT IE Double Free (CVE-2018-8460) || cve,2018-8460
+2026532 || ET CURRENT_EVENTS Possible Successful Generic Phish to .ml Domain 2018-10-23
+2026533 || ET CURRENT_EVENTS Possible Successful Generic Phish to .cf Domain 2018-10-23
+2026534 || ET CURRENT_EVENTS Possible Successful Generic Phish to .ga Domain 2018-10-23
+2026535 || ET CURRENT_EVENTS Possible Successful Generic Phish to .gq Domain 2018-10-23
+2026536 || ET CURRENT_EVENTS Possible Successful Generic Phish to .gqn Domain 2018-10-23
+2026537 || ET POLICY Suspicious EXE Download Content-Type image/jpeg
+2026539 || ET TROJAN Possible APT28 DOC Uploader SSL/TLS Certificate Observed || md5,9b10685b774a783eabfecdb6119a8aa3
+2026541 || ET TROJAN Octopus Malware Initial Connectivity Check || url,securelist.com/octopus-infested-seas-of-central-asia/88200/ || md5,d8c8f2bf85796014feb06be41b99ca76 || md5,1610cddb80d1be5d711feb46610f8a77
+2026542 || ET TROJAN Octopus Malware CnC Server Request || url,securelist.com/octopus-infested-seas-of-central-asia/88200/ || md5,d8c8f2bf85796014feb06be41b99ca76 || md5,1610cddb80d1be5d711feb46610f8a77
+2026543 || ET TROJAN Octopus Malware CnC Server Connectivity Check || url,securelist.com/octopus-infested-seas-of-central-asia/88200/ || md5,d8c8f2bf85796014feb06be41b99ca76 || md5,1610cddb80d1be5d711feb46610f8a77
+2026544 || ET TROJAN Octopus Malware CnC Activity || url,securelist.com/octopus-infested-seas-of-central-asia/88200/ || md5,d8c8f2bf85796014feb06be41b99ca76 || md5,1610cddb80d1be5d711feb46610f8a77
+2026545 || ET TROJAN Sidewinder Stage 2 VBS Downloader Reporting Successful Infection || url,medium.com/@Sebdraven/apt-sidewinder-changes-theirs-ttps-to-install-their-backdoor-f92604a2739 || md5,dfad7d4a7ecb2eed6d69abfbfb5f94c9
+2026546 || ET TROJAN MICROPSIA CnC Domain Observed in SNI (samwinchester .club) || url,twitter.com/ClearskySec/status/1054722167433297920 || md5,6eff53e85a9ce9f1d99c812270093581
+2026547 || ET TROJAN MICROPSIA HTTP Failover CnC Checkin || url,twitter.com/ClearskySec/status/1054722167433297920 || md5,6eff53e85a9ce9f1d99c812270093581
+2026548 || ET TROJAN MICROPSIA HTTP Failover Response M1 || url,twitter.com/ClearskySec/status/1054722167433297920 || md5,6eff53e85a9ce9f1d99c812270093581
+2026549 || ET TROJAN MICROPSIA HTTP Failover Response M2 || url,twitter.com/ClearskySec/status/1054722167433297920 || md5,6eff53e85a9ce9f1d99c812270093581
+2026550 || ET TROJAN MICROPSIA Sending JPG Screenshot to CnC with .his Extension || url,twitter.com/ClearskySec/status/1054722167433297920 || md5,6eff53e85a9ce9f1d99c812270093581
+2026551 || ET TROJAN MICROPSIA HTTP Failover Reporting Infected System Information and RAT Version || url,twitter.com/ClearskySec/status/1054722167433297920 || md5,6eff53e85a9ce9f1d99c812270093581
+2026552 || ET WEB_SERVER Possible jQuery File Upload Attempt || cve,2018-9206 || url,github.com/lcashdol/Exploits/tree/master/CVE-2018-9206
+2026553 || ET CURRENT_EVENTS Successful Generic Phish to zap-webspace.com Webhost 2018-10-25
+2026554 || ET CURRENT_EVENTS Successful Cryptocurrency Exchange Phish (set) 2018-10-25
+2026555 || ET TROJAN Sharik/Smoke CnC Beacon 12 || md5,6ccf5004f5bd1ffd26a428961a4baf6e
+2026556 || ET TROJAN Sharik/Smoke Fake 404 Response with Payload Location || md5,6ccf5004f5bd1ffd26a428961a4baf6e
+2026557 || ET TROJAN Win32/Agent.AAAI - Possible DNS Tunneling/CnC || md5,c00c9f6ebf2979292d524acff19dd306
+2026558 || ET USER_AGENTS Suspicious UA Observed (IEhook) || md5,f0483493bcb352bd2f474b52f3b2f273
+2026559 || ET TROJAN TrueBot/Silence.Downloader CnC Checkin || md5,c2a00949ddacfed9ed2ef83a8cb44780
+2026560 || ET TROJAN TrueBot/Silence.Downloader Keep-Alive || md5,c2a00949ddacfed9ed2ef83a8cb44780
+2026561 || ET POLICY External Host Creating Docker Container || url,blog.trendmicro.com/trendlabs-security-intelligence/misconfigured-container-abused-to-deliver-cryptocurrency-mining-malware/
+2026562 || ET TROJAN MSIL/KeyRedirEx Banker Requesting Redirect/Inject List || url,otx.alienvault.com/pulse/5bd339328f32ad2db2e03f1a || md5,ec33cc6cb625197587410840bce5983b
+2026563 || ET TROJAN MSIL/KeyRedirEx Banker Receiving Redirect/Inject List || url,otx.alienvault.com/pulse/5bd339328f32ad2db2e03f1a || md5,ec33cc6cb625197587410840bce5983b
+2026564 || ET TROJAN MSIL/KeyRedirEx Banker Receiving Exit Instruction || url,otx.alienvault.com/pulse/5bd339328f32ad2db2e03f1a || md5,ec33cc6cb625197587410840bce5983b
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -25103,209 +25152,208 @@
 2400029 || ET DROP Spamhaus DROP Listed Traffic Inbound group 30 || url,www.spamhaus.org/drop/drop.lasso
 2400030 || ET DROP Spamhaus DROP Listed Traffic Inbound group 31 || url,www.spamhaus.org/drop/drop.lasso
 2400031 || ET DROP Spamhaus DROP Listed Traffic Inbound group 32 || url,www.spamhaus.org/drop/drop.lasso
-2400032 || ET DROP Spamhaus DROP Listed Traffic Inbound group 33 || url,www.spamhaus.org/drop/drop.lasso
 2402000 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
 2402001 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
-2403300 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 1 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403301 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 1 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403302 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 2 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403303 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 2 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403304 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 3 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403305 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 3 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403306 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 4 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403307 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 4 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403308 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 5 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403309 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 5 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403310 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 6 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403311 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 6 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403312 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 7 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403313 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 7 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403314 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 8 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403315 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 8 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403316 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 9 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403317 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 9 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403318 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 10 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403319 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 10 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403320 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 11 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403321 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 11 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403322 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 12 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403323 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 12 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403324 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 13 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403325 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 13 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403326 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 14 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403327 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 14 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403328 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 15 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403329 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 15 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403330 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 16 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403331 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 16 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403332 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 17 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403333 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 17 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403334 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 18 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403335 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 18 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403336 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 19 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403337 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 19 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403338 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 20 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403339 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 20 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403340 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 21 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403341 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 21 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403342 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 22 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403343 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 22 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403344 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 23 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403345 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 23 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403346 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 24 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403347 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 24 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403348 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 25 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403349 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 25 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403350 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 26 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403351 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 26 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403352 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 27 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403353 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 27 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403354 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 28 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403355 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 28 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403356 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 29 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403357 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 29 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403358 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 30 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403359 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 30 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403360 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 31 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403361 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 31 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403362 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 32 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403363 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 32 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403364 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 33 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403365 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 33 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403366 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 34 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403367 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 34 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403368 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 35 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403369 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 35 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403370 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 36 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403371 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 36 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403372 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 37 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403373 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 37 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403374 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 38 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403375 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 38 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403376 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 39 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403377 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 39 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403378 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 40 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403379 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 40 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403380 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 41 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403381 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 41 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403382 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 42 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403383 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 42 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403384 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 43 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403385 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 43 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403386 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 44 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403387 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 44 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403388 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 45 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403389 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 45 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403390 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 46 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403391 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 46 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403392 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 47 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403393 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 47 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403394 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 48 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403395 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 48 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403396 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 49 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403397 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 49 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403398 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 50 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403399 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 50 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403400 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 51 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403401 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 51 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403402 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 52 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403403 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 52 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403404 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 53 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403405 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 53 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403406 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 54 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403407 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 54 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403408 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 55 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403409 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 55 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403410 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 56 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403411 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 56 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403412 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 57 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403413 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 57 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403414 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 58 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403415 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 58 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403416 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 59 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403417 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 59 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403418 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 60 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403419 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 60 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403420 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 61 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403421 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 61 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403422 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 62 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403423 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 62 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403424 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 63 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403425 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 63 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403426 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 64 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403427 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 64 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403428 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 65 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403429 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 65 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403430 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 66 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403431 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 66 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403432 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 67 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403433 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 67 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403434 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 68 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403435 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 68 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403436 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 69 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403437 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 69 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403438 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 70 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403439 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 70 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403440 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 71 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403441 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 71 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403442 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 72 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403443 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 72 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403444 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 73 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403445 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 73 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403446 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 74 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403447 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 74 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403448 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 75 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403449 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 75 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403450 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 76 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403451 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 76 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403452 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 77 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403453 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 77 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403454 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 78 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403455 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 78 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403456 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 79 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403457 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 79 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403458 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 80 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403459 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 80 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403460 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 81 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403461 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 81 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403462 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 82 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403463 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 82 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403464 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 83 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403465 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 83 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403466 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 84 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403467 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 84 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403468 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 85 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403469 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 85 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403470 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 86 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403471 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 86 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403472 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 87 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403473 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 87 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403474 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 88 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403475 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 88 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403476 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 89 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403477 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 89 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403478 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 90 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403479 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 90 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403480 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 91 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403481 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 91 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403482 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 92 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403483 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 92 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403484 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 93 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403485 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 93 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403486 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 94 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403487 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 94 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403488 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 95 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403489 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 95 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403490 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 96 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403491 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 96 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403492 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 97 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403493 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 97 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403494 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 98 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403495 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 98 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403496 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 99 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403497 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 99 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403498 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 100 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
-2403499 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 100 || url,www.networkcloaking.com/cins || url,www.cinsscore.com
+2403300 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 1 || url,www.cinsscore.com
+2403301 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 1 || url,www.cinsscore.com
+2403302 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 2 || url,www.cinsscore.com
+2403303 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 2 || url,www.cinsscore.com
+2403304 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 3 || url,www.cinsscore.com
+2403305 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 3 || url,www.cinsscore.com
+2403306 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 4 || url,www.cinsscore.com
+2403307 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 4 || url,www.cinsscore.com
+2403308 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 5 || url,www.cinsscore.com
+2403309 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 5 || url,www.cinsscore.com
+2403310 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 6 || url,www.cinsscore.com
+2403311 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 6 || url,www.cinsscore.com
+2403312 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 7 || url,www.cinsscore.com
+2403313 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 7 || url,www.cinsscore.com
+2403314 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 8 || url,www.cinsscore.com
+2403315 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 8 || url,www.cinsscore.com
+2403316 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 9 || url,www.cinsscore.com
+2403317 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 9 || url,www.cinsscore.com
+2403318 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 10 || url,www.cinsscore.com
+2403319 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 10 || url,www.cinsscore.com
+2403320 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 11 || url,www.cinsscore.com
+2403321 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 11 || url,www.cinsscore.com
+2403322 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 12 || url,www.cinsscore.com
+2403323 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 12 || url,www.cinsscore.com
+2403324 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 13 || url,www.cinsscore.com
+2403325 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 13 || url,www.cinsscore.com
+2403326 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 14 || url,www.cinsscore.com
+2403327 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 14 || url,www.cinsscore.com
+2403328 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 15 || url,www.cinsscore.com
+2403329 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 15 || url,www.cinsscore.com
+2403330 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 16 || url,www.cinsscore.com
+2403331 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 16 || url,www.cinsscore.com
+2403332 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 17 || url,www.cinsscore.com
+2403333 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 17 || url,www.cinsscore.com
+2403334 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 18 || url,www.cinsscore.com
+2403335 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 18 || url,www.cinsscore.com
+2403336 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 19 || url,www.cinsscore.com
+2403337 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 19 || url,www.cinsscore.com
+2403338 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 20 || url,www.cinsscore.com
+2403339 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 20 || url,www.cinsscore.com
+2403340 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 21 || url,www.cinsscore.com
+2403341 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 21 || url,www.cinsscore.com
+2403342 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 22 || url,www.cinsscore.com
+2403343 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 22 || url,www.cinsscore.com
+2403344 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 23 || url,www.cinsscore.com
+2403345 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 23 || url,www.cinsscore.com
+2403346 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 24 || url,www.cinsscore.com
+2403347 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 24 || url,www.cinsscore.com
+2403348 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 25 || url,www.cinsscore.com
+2403349 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 25 || url,www.cinsscore.com
+2403350 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 26 || url,www.cinsscore.com
+2403351 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 26 || url,www.cinsscore.com
+2403352 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 27 || url,www.cinsscore.com
+2403353 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 27 || url,www.cinsscore.com
+2403354 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 28 || url,www.cinsscore.com
+2403355 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 28 || url,www.cinsscore.com
+2403356 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 29 || url,www.cinsscore.com
+2403357 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 29 || url,www.cinsscore.com
+2403358 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 30 || url,www.cinsscore.com
+2403359 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 30 || url,www.cinsscore.com
+2403360 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 31 || url,www.cinsscore.com
+2403361 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 31 || url,www.cinsscore.com
+2403362 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 32 || url,www.cinsscore.com
+2403363 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 32 || url,www.cinsscore.com
+2403364 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 33 || url,www.cinsscore.com
+2403365 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 33 || url,www.cinsscore.com
+2403366 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 34 || url,www.cinsscore.com
+2403367 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 34 || url,www.cinsscore.com
+2403368 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 35 || url,www.cinsscore.com
+2403369 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 35 || url,www.cinsscore.com
+2403370 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 36 || url,www.cinsscore.com
+2403371 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 36 || url,www.cinsscore.com
+2403372 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 37 || url,www.cinsscore.com
+2403373 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 37 || url,www.cinsscore.com
+2403374 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 38 || url,www.cinsscore.com
+2403375 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 38 || url,www.cinsscore.com
+2403376 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 39 || url,www.cinsscore.com
+2403377 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 39 || url,www.cinsscore.com
+2403378 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 40 || url,www.cinsscore.com
+2403379 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 40 || url,www.cinsscore.com
+2403380 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 41 || url,www.cinsscore.com
+2403381 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 41 || url,www.cinsscore.com
+2403382 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 42 || url,www.cinsscore.com
+2403383 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 42 || url,www.cinsscore.com
+2403384 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 43 || url,www.cinsscore.com
+2403385 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 43 || url,www.cinsscore.com
+2403386 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 44 || url,www.cinsscore.com
+2403387 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 44 || url,www.cinsscore.com
+2403388 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 45 || url,www.cinsscore.com
+2403389 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 45 || url,www.cinsscore.com
+2403390 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 46 || url,www.cinsscore.com
+2403391 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 46 || url,www.cinsscore.com
+2403392 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 47 || url,www.cinsscore.com
+2403393 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 47 || url,www.cinsscore.com
+2403394 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 48 || url,www.cinsscore.com
+2403395 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 48 || url,www.cinsscore.com
+2403396 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 49 || url,www.cinsscore.com
+2403397 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 49 || url,www.cinsscore.com
+2403398 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 50 || url,www.cinsscore.com
+2403399 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 50 || url,www.cinsscore.com
+2403400 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 51 || url,www.cinsscore.com
+2403401 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 51 || url,www.cinsscore.com
+2403402 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 52 || url,www.cinsscore.com
+2403403 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 52 || url,www.cinsscore.com
+2403404 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 53 || url,www.cinsscore.com
+2403405 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 53 || url,www.cinsscore.com
+2403406 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 54 || url,www.cinsscore.com
+2403407 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 54 || url,www.cinsscore.com
+2403408 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 55 || url,www.cinsscore.com
+2403409 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 55 || url,www.cinsscore.com
+2403410 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 56 || url,www.cinsscore.com
+2403411 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 56 || url,www.cinsscore.com
+2403412 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 57 || url,www.cinsscore.com
+2403413 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 57 || url,www.cinsscore.com
+2403414 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 58 || url,www.cinsscore.com
+2403415 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 58 || url,www.cinsscore.com
+2403416 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 59 || url,www.cinsscore.com
+2403417 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 59 || url,www.cinsscore.com
+2403418 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 60 || url,www.cinsscore.com
+2403419 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 60 || url,www.cinsscore.com
+2403420 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 61 || url,www.cinsscore.com
+2403421 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 61 || url,www.cinsscore.com
+2403422 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 62 || url,www.cinsscore.com
+2403423 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 62 || url,www.cinsscore.com
+2403424 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 63 || url,www.cinsscore.com
+2403425 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 63 || url,www.cinsscore.com
+2403426 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 64 || url,www.cinsscore.com
+2403427 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 64 || url,www.cinsscore.com
+2403428 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 65 || url,www.cinsscore.com
+2403429 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 65 || url,www.cinsscore.com
+2403430 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 66 || url,www.cinsscore.com
+2403431 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 66 || url,www.cinsscore.com
+2403432 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 67 || url,www.cinsscore.com
+2403433 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 67 || url,www.cinsscore.com
+2403434 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 68 || url,www.cinsscore.com
+2403435 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 68 || url,www.cinsscore.com
+2403436 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 69 || url,www.cinsscore.com
+2403437 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 69 || url,www.cinsscore.com
+2403438 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 70 || url,www.cinsscore.com
+2403439 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 70 || url,www.cinsscore.com
+2403440 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 71 || url,www.cinsscore.com
+2403441 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 71 || url,www.cinsscore.com
+2403442 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 72 || url,www.cinsscore.com
+2403443 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 72 || url,www.cinsscore.com
+2403444 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 73 || url,www.cinsscore.com
+2403445 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 73 || url,www.cinsscore.com
+2403446 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 74 || url,www.cinsscore.com
+2403447 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 74 || url,www.cinsscore.com
+2403448 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 75 || url,www.cinsscore.com
+2403449 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 75 || url,www.cinsscore.com
+2403450 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 76 || url,www.cinsscore.com
+2403451 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 76 || url,www.cinsscore.com
+2403452 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 77 || url,www.cinsscore.com
+2403453 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 77 || url,www.cinsscore.com
+2403454 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 78 || url,www.cinsscore.com
+2403455 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 78 || url,www.cinsscore.com
+2403456 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 79 || url,www.cinsscore.com
+2403457 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 79 || url,www.cinsscore.com
+2403458 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 80 || url,www.cinsscore.com
+2403459 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 80 || url,www.cinsscore.com
+2403460 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 81 || url,www.cinsscore.com
+2403461 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 81 || url,www.cinsscore.com
+2403462 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 82 || url,www.cinsscore.com
+2403463 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 82 || url,www.cinsscore.com
+2403464 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 83 || url,www.cinsscore.com
+2403465 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 83 || url,www.cinsscore.com
+2403466 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 84 || url,www.cinsscore.com
+2403467 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 84 || url,www.cinsscore.com
+2403468 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 85 || url,www.cinsscore.com
+2403469 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 85 || url,www.cinsscore.com
+2403470 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 86 || url,www.cinsscore.com
+2403471 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 86 || url,www.cinsscore.com
+2403472 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 87 || url,www.cinsscore.com
+2403473 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 87 || url,www.cinsscore.com
+2403474 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 88 || url,www.cinsscore.com
+2403475 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 88 || url,www.cinsscore.com
+2403476 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 89 || url,www.cinsscore.com
+2403477 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 89 || url,www.cinsscore.com
+2403478 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 90 || url,www.cinsscore.com
+2403479 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 90 || url,www.cinsscore.com
+2403480 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 91 || url,www.cinsscore.com
+2403481 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 91 || url,www.cinsscore.com
+2403482 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 92 || url,www.cinsscore.com
+2403483 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 92 || url,www.cinsscore.com
+2403484 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 93 || url,www.cinsscore.com
+2403485 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 93 || url,www.cinsscore.com
+2403486 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 94 || url,www.cinsscore.com
+2403487 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 94 || url,www.cinsscore.com
+2403488 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 95 || url,www.cinsscore.com
+2403489 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 95 || url,www.cinsscore.com
+2403490 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 96 || url,www.cinsscore.com
+2403491 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 96 || url,www.cinsscore.com
+2403492 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 97 || url,www.cinsscore.com
+2403493 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 97 || url,www.cinsscore.com
+2403494 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 98 || url,www.cinsscore.com
+2403495 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 98 || url,www.cinsscore.com
+2403496 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 99 || url,www.cinsscore.com
+2403497 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 99 || url,www.cinsscore.com
+2403498 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 100 || url,www.cinsscore.com
+2403499 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 100 || url,www.cinsscore.com
 2404000 || ET CNC Shadowserver Reported CnC Server TCP group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404001 || ET CNC Shadowserver Reported CnC Server UDP group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404002 || ET CNC Shadowserver Reported CnC Server TCP group 2 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -25362,14 +25410,6 @@
 2404053 || ET CNC Shadowserver Reported CnC Server UDP group 27 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404054 || ET CNC Shadowserver Reported CnC Server TCP group 28 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404055 || ET CNC Shadowserver Reported CnC Server UDP group 28 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404056 || ET CNC Shadowserver Reported CnC Server TCP group 29 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404057 || ET CNC Shadowserver Reported CnC Server UDP group 29 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404058 || ET CNC Shadowserver Reported CnC Server TCP group 30 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404059 || ET CNC Shadowserver Reported CnC Server UDP group 30 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404060 || ET CNC Shadowserver Reported CnC Server TCP group 31 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404061 || ET CNC Shadowserver Reported CnC Server UDP group 31 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404062 || ET CNC Shadowserver Reported CnC Server TCP group 32 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404063 || ET CNC Shadowserver Reported CnC Server UDP group 32 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404150 || ET CNC Zeus Tracker Reported CnC Server TCP group 1 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404151 || ET CNC Zeus Tracker Reported CnC Server UDP group 1 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404152 || ET CNC Zeus Tracker Reported CnC Server TCP group 2 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -25854,8 +25894,6 @@
 2500049 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 25 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500050 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 26 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500051 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 26 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500052 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 27 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500053 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 27 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520002 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520004 || ET TOR Known Tor Exit Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -25932,9 +25970,6 @@
 2520146 || ET TOR Known Tor Exit Node TCP Traffic group 74 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520148 || ET TOR Known Tor Exit Node TCP Traffic group 75 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520150 || ET TOR Known Tor Exit Node TCP Traffic group 76 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520152 || ET TOR Known Tor Exit Node TCP Traffic group 77 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520154 || ET TOR Known Tor Exit Node TCP Traffic group 78 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520156 || ET TOR Known Tor Exit Node TCP Traffic group 79 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522004 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26626,9 +26661,3 @@
 2523376 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 689 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523378 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 690 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523380 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 691 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523382 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 692 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523384 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 693 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523386 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 694 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523388 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 695 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523390 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 696 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523392 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 697 || url,doc.emergingthreats.net/bin/view/Main/TorRules
