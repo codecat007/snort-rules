@@ -23453,6 +23453,53 @@
 2026585 || ET TROJAN JavaRAT Sending Screenshot || md5,9a33176dd80de6f49099a148a2df3491
 2026586 || ET TROJAN JavaRAT Requesting Screen Size || md5,9a33176dd80de6f49099a148a2df3491
 2026587 || ET TROJAN JavaRAT Requesting Screenshot || md5,9a33176dd80de6f49099a148a2df3491
+2026588 || ET TROJAN MSIL.Kraken.v2 HTTP Pattern || url,securingtomorrow.mcafee.com/mcafee-labs/fallout-exploit-kit-releases-the-kraken-ransomware-on-its-victims/ || md5,e1aee9ef64d71e0c9bb8eee9742efdef
+2026589 || ET TROJAN Observed Malicious SSL Cert (MageCart Group 1/2 CnC) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026590 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 1/2 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026591 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 3 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026592 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 3 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026593 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 4 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026594 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 4 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026595 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 4 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026596 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 4 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026597 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 4 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026598 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 4 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026599 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 4 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026600 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 4 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026601 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 4 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026602 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 4 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026603 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MageCart Group 5 Staging Domain) || url,go.flashpoint.com/docs/inside-magecart-by-Flashpoint-and-RiskIQ
+2026604 || ET WEB_CLIENT [Volex] Possible ColdFusion Unauthenticated Upload Attempt (CVE-2018-15961) || url,volexity.com/blog/2018/11/08/active-exploitation-of-newly-patched-coldfusion-vulnerability-cve-2018-15961/ || cve,2018-15961
+2026605 || ET WEB_CLIENT Attempted WordPress GDPR Plugin Privilege Escalation M1 (Enable Registration) || url,www.wordfence.com/blog/2018/11/trends-following-vulnerability-in-wp-gdpr-compliance-plugin/
+2026606 || ET WEB_CLIENT Attempted WordPress GDPR Plugin Privilege Escalation M2 (Set as Administrator) || url,www.wordfence.com/blog/2018/11/trends-following-vulnerability-in-wp-gdpr-compliance-plugin/
+2026607 || ET TROJAN ELF/Muhstik Bot Reporting Vulnerable Server to CnC || url,www.intezer.com/muhstik-botnet-reloaded-new-variants-targeting-phpmyadmin-servers/
+2026608 || ET TROJAN JunkMiner Downloader Communicating with CnC
+2026609 || ET TROJAN Operation Baby Coin syschk CnC Communication || url,blog.alyac.co.kr/1640
+2026610 || ET TROJAN ELF/Muhstik Scanner Module Activity || url,www.intezer.com/muhstik-botnet-reloaded-new-variants-targeting-phpmyadmin-servers/
+2026611 || ET TROJAN TEMP.Periscope APT Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2018-1113.pdf
+2026612 || ET TROJAN TEMP.Periscope APT Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2018-1113.pdf
+2026613 || ET TROJAN Mylobot Receiving XOR Encrypted Config (0xde) || url,www.netformation.com/our-pov/mylobot-continues-global-infections/
+2026614 || ET TROJAN Operation Mystery Baby syschk CnC Communication || url,blog.alyac.co.kr/m/1963
+2026615 || ET CURRENT_EVENTS Observed Malicious SSL Cert (Ursnif Inject Domain)
+2026616 || ET CURRENT_EVENTS Observed Malicious SSL Cert (HuadhServHelper CnC)
+2026617 || ET TROJAN APT29 Domain in DNS Lookup (pandorasong .com) || url,twitter.com/DrunkBinary/status/1063075530180886529
+2026618 || ET CURRENT_EVENTS Observed Malicious SSL Cert (APT29)
+2026619 || ET TROJAN Hades APT Downloader Attempting to Retrieve Stage 2 Payload || url,research.checkpoint.com/new-strain-of-olympic-destroyer-droppers/
+2026620 || ET TROJAN Hades APT Domain in DNS Lookup (findupdatems .com) || url,twitter.com/DrunkBinary/status/1063075530180886529
+2026621 || ET TROJAN JS.InfectedMikrotik Injects Domain Observed in DNS Lookup || url,blog.avast.com/mikrotik-routers-targeted-by-cryptomining-campaign-avast
+2026622 || ET TROJAN JS.InfectedMikrotik Injects Domain Observed in DNS Lookup || url,blog.avast.com/mikrotik-routers-targeted-by-cryptomining-campaign-avast
+2026623 || ET TROJAN JS.InfectedMikrotik Injects Domain Observed in DNS Lookup || url,blog.avast.com/mikrotik-routers-targeted-by-cryptomining-campaign-avast
+2026624 || ET TROJAN JS.InfectedMikrotik Injects Domain Observed in DNS Lookup || url,blog.avast.com/mikrotik-routers-targeted-by-cryptomining-campaign-avast
+2026625 || ET TROJAN JS.InfectedMikrotik Injects Domain Observed in DNS Lookup || url,blog.avast.com/mikrotik-routers-targeted-by-cryptomining-campaign-avast
+2026626 || ET TROJAN JS.InfectedMikrotik Injects Domain Observed in DNS Lookup || url,blog.avast.com/mikrotik-routers-targeted-by-cryptomining-campaign-avast
+2026627 || ET TROJAN JS.InfectedMikrotik Injects Domain Observed in TLS SNI || url,blog.avast.com/mikrotik-routers-targeted-by-cryptomining-campaign-avast
+2026628 || ET TROJAN JS.InfectedMikrotik Injects Domain Observed in DNS Lookup || url,blog.avast.com/mikrotik-routers-targeted-by-cryptomining-campaign-avast
+2026629 || ET TROJAN DarkGate CNC Checkin || url,blog.ensilo.com/darkgate-malware || md5,33aabffe4ece4d725e558e87d26a9b14
+2026630 || ET TROJAN DarkGate CnC Requesting Data Exfiltration from Bot || url,blog.ensilo.com/darkgate-malware || md5,33aabffe4ece4d725e558e87d26a9b14
+2026631 || ET TROJAN DarkGate Domain in DNS Lookup (akamai .la) || url,blog.ensilo.com/darkgate-malware
+2026632 || ET TROJAN DarkGate Domain in DNS Lookup (hardwarenet .cc) || url,blog.ensilo.com/darkgate-malware
+2026633 || ET TROJAN DarkGate Domain in DNS Lookup (awsamazon.cc) || url,blog.ensilo.com/darkgate-malware
+2026634 || ET TROJAN DarkGate Domain in DNS Lookup (battlenet .la) || url,blog.ensilo.com/darkgate-malware
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -25177,206 +25224,6 @@
 2400031 || ET DROP Spamhaus DROP Listed Traffic Inbound group 32 || url,www.spamhaus.org/drop/drop.lasso
 2402000 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
 2402001 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
-2403300 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 1 || url,www.cinsscore.com
-2403301 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 1 || url,www.cinsscore.com
-2403302 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 2 || url,www.cinsscore.com
-2403303 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 2 || url,www.cinsscore.com
-2403304 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 3 || url,www.cinsscore.com
-2403305 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 3 || url,www.cinsscore.com
-2403306 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 4 || url,www.cinsscore.com
-2403307 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 4 || url,www.cinsscore.com
-2403308 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 5 || url,www.cinsscore.com
-2403309 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 5 || url,www.cinsscore.com
-2403310 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 6 || url,www.cinsscore.com
-2403311 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 6 || url,www.cinsscore.com
-2403312 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 7 || url,www.cinsscore.com
-2403313 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 7 || url,www.cinsscore.com
-2403314 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 8 || url,www.cinsscore.com
-2403315 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 8 || url,www.cinsscore.com
-2403316 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 9 || url,www.cinsscore.com
-2403317 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 9 || url,www.cinsscore.com
-2403318 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 10 || url,www.cinsscore.com
-2403319 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 10 || url,www.cinsscore.com
-2403320 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 11 || url,www.cinsscore.com
-2403321 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 11 || url,www.cinsscore.com
-2403322 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 12 || url,www.cinsscore.com
-2403323 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 12 || url,www.cinsscore.com
-2403324 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 13 || url,www.cinsscore.com
-2403325 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 13 || url,www.cinsscore.com
-2403326 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 14 || url,www.cinsscore.com
-2403327 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 14 || url,www.cinsscore.com
-2403328 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 15 || url,www.cinsscore.com
-2403329 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 15 || url,www.cinsscore.com
-2403330 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 16 || url,www.cinsscore.com
-2403331 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 16 || url,www.cinsscore.com
-2403332 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 17 || url,www.cinsscore.com
-2403333 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 17 || url,www.cinsscore.com
-2403334 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 18 || url,www.cinsscore.com
-2403335 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 18 || url,www.cinsscore.com
-2403336 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 19 || url,www.cinsscore.com
-2403337 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 19 || url,www.cinsscore.com
-2403338 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 20 || url,www.cinsscore.com
-2403339 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 20 || url,www.cinsscore.com
-2403340 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 21 || url,www.cinsscore.com
-2403341 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 21 || url,www.cinsscore.com
-2403342 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 22 || url,www.cinsscore.com
-2403343 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 22 || url,www.cinsscore.com
-2403344 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 23 || url,www.cinsscore.com
-2403345 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 23 || url,www.cinsscore.com
-2403346 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 24 || url,www.cinsscore.com
-2403347 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 24 || url,www.cinsscore.com
-2403348 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 25 || url,www.cinsscore.com
-2403349 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 25 || url,www.cinsscore.com
-2403350 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 26 || url,www.cinsscore.com
-2403351 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 26 || url,www.cinsscore.com
-2403352 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 27 || url,www.cinsscore.com
-2403353 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 27 || url,www.cinsscore.com
-2403354 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 28 || url,www.cinsscore.com
-2403355 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 28 || url,www.cinsscore.com
-2403356 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 29 || url,www.cinsscore.com
-2403357 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 29 || url,www.cinsscore.com
-2403358 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 30 || url,www.cinsscore.com
-2403359 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 30 || url,www.cinsscore.com
-2403360 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 31 || url,www.cinsscore.com
-2403361 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 31 || url,www.cinsscore.com
-2403362 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 32 || url,www.cinsscore.com
-2403363 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 32 || url,www.cinsscore.com
-2403364 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 33 || url,www.cinsscore.com
-2403365 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 33 || url,www.cinsscore.com
-2403366 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 34 || url,www.cinsscore.com
-2403367 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 34 || url,www.cinsscore.com
-2403368 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 35 || url,www.cinsscore.com
-2403369 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 35 || url,www.cinsscore.com
-2403370 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 36 || url,www.cinsscore.com
-2403371 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 36 || url,www.cinsscore.com
-2403372 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 37 || url,www.cinsscore.com
-2403373 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 37 || url,www.cinsscore.com
-2403374 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 38 || url,www.cinsscore.com
-2403375 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 38 || url,www.cinsscore.com
-2403376 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 39 || url,www.cinsscore.com
-2403377 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 39 || url,www.cinsscore.com
-2403378 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 40 || url,www.cinsscore.com
-2403379 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 40 || url,www.cinsscore.com
-2403380 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 41 || url,www.cinsscore.com
-2403381 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 41 || url,www.cinsscore.com
-2403382 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 42 || url,www.cinsscore.com
-2403383 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 42 || url,www.cinsscore.com
-2403384 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 43 || url,www.cinsscore.com
-2403385 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 43 || url,www.cinsscore.com
-2403386 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 44 || url,www.cinsscore.com
-2403387 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 44 || url,www.cinsscore.com
-2403388 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 45 || url,www.cinsscore.com
-2403389 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 45 || url,www.cinsscore.com
-2403390 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 46 || url,www.cinsscore.com
-2403391 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 46 || url,www.cinsscore.com
-2403392 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 47 || url,www.cinsscore.com
-2403393 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 47 || url,www.cinsscore.com
-2403394 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 48 || url,www.cinsscore.com
-2403395 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 48 || url,www.cinsscore.com
-2403396 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 49 || url,www.cinsscore.com
-2403397 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 49 || url,www.cinsscore.com
-2403398 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 50 || url,www.cinsscore.com
-2403399 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 50 || url,www.cinsscore.com
-2403400 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 51 || url,www.cinsscore.com
-2403401 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 51 || url,www.cinsscore.com
-2403402 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 52 || url,www.cinsscore.com
-2403403 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 52 || url,www.cinsscore.com
-2403404 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 53 || url,www.cinsscore.com
-2403405 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 53 || url,www.cinsscore.com
-2403406 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 54 || url,www.cinsscore.com
-2403407 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 54 || url,www.cinsscore.com
-2403408 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 55 || url,www.cinsscore.com
-2403409 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 55 || url,www.cinsscore.com
-2403410 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 56 || url,www.cinsscore.com
-2403411 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 56 || url,www.cinsscore.com
-2403412 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 57 || url,www.cinsscore.com
-2403413 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 57 || url,www.cinsscore.com
-2403414 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 58 || url,www.cinsscore.com
-2403415 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 58 || url,www.cinsscore.com
-2403416 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 59 || url,www.cinsscore.com
-2403417 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 59 || url,www.cinsscore.com
-2403418 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 60 || url,www.cinsscore.com
-2403419 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 60 || url,www.cinsscore.com
-2403420 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 61 || url,www.cinsscore.com
-2403421 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 61 || url,www.cinsscore.com
-2403422 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 62 || url,www.cinsscore.com
-2403423 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 62 || url,www.cinsscore.com
-2403424 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 63 || url,www.cinsscore.com
-2403425 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 63 || url,www.cinsscore.com
-2403426 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 64 || url,www.cinsscore.com
-2403427 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 64 || url,www.cinsscore.com
-2403428 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 65 || url,www.cinsscore.com
-2403429 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 65 || url,www.cinsscore.com
-2403430 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 66 || url,www.cinsscore.com
-2403431 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 66 || url,www.cinsscore.com
-2403432 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 67 || url,www.cinsscore.com
-2403433 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 67 || url,www.cinsscore.com
-2403434 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 68 || url,www.cinsscore.com
-2403435 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 68 || url,www.cinsscore.com
-2403436 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 69 || url,www.cinsscore.com
-2403437 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 69 || url,www.cinsscore.com
-2403438 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 70 || url,www.cinsscore.com
-2403439 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 70 || url,www.cinsscore.com
-2403440 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 71 || url,www.cinsscore.com
-2403441 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 71 || url,www.cinsscore.com
-2403442 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 72 || url,www.cinsscore.com
-2403443 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 72 || url,www.cinsscore.com
-2403444 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 73 || url,www.cinsscore.com
-2403445 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 73 || url,www.cinsscore.com
-2403446 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 74 || url,www.cinsscore.com
-2403447 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 74 || url,www.cinsscore.com
-2403448 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 75 || url,www.cinsscore.com
-2403449 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 75 || url,www.cinsscore.com
-2403450 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 76 || url,www.cinsscore.com
-2403451 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 76 || url,www.cinsscore.com
-2403452 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 77 || url,www.cinsscore.com
-2403453 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 77 || url,www.cinsscore.com
-2403454 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 78 || url,www.cinsscore.com
-2403455 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 78 || url,www.cinsscore.com
-2403456 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 79 || url,www.cinsscore.com
-2403457 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 79 || url,www.cinsscore.com
-2403458 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 80 || url,www.cinsscore.com
-2403459 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 80 || url,www.cinsscore.com
-2403460 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 81 || url,www.cinsscore.com
-2403461 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 81 || url,www.cinsscore.com
-2403462 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 82 || url,www.cinsscore.com
-2403463 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 82 || url,www.cinsscore.com
-2403464 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 83 || url,www.cinsscore.com
-2403465 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 83 || url,www.cinsscore.com
-2403466 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 84 || url,www.cinsscore.com
-2403467 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 84 || url,www.cinsscore.com
-2403468 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 85 || url,www.cinsscore.com
-2403469 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 85 || url,www.cinsscore.com
-2403470 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 86 || url,www.cinsscore.com
-2403471 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 86 || url,www.cinsscore.com
-2403472 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 87 || url,www.cinsscore.com
-2403473 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 87 || url,www.cinsscore.com
-2403474 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 88 || url,www.cinsscore.com
-2403475 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 88 || url,www.cinsscore.com
-2403476 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 89 || url,www.cinsscore.com
-2403477 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 89 || url,www.cinsscore.com
-2403478 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 90 || url,www.cinsscore.com
-2403479 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 90 || url,www.cinsscore.com
-2403480 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 91 || url,www.cinsscore.com
-2403481 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 91 || url,www.cinsscore.com
-2403482 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 92 || url,www.cinsscore.com
-2403483 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 92 || url,www.cinsscore.com
-2403484 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 93 || url,www.cinsscore.com
-2403485 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 93 || url,www.cinsscore.com
-2403486 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 94 || url,www.cinsscore.com
-2403487 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 94 || url,www.cinsscore.com
-2403488 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 95 || url,www.cinsscore.com
-2403489 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 95 || url,www.cinsscore.com
-2403490 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 96 || url,www.cinsscore.com
-2403491 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 96 || url,www.cinsscore.com
-2403492 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 97 || url,www.cinsscore.com
-2403493 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 97 || url,www.cinsscore.com
-2403494 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 98 || url,www.cinsscore.com
-2403495 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 98 || url,www.cinsscore.com
-2403496 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 99 || url,www.cinsscore.com
-2403497 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 99 || url,www.cinsscore.com
-2403498 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 100 || url,www.cinsscore.com
-2403499 || ET CINS Active Threat Intelligence Poor Reputation IP UDP group 100 || url,www.cinsscore.com
 2404000 || ET CNC Shadowserver Reported CnC Server TCP group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404001 || ET CNC Shadowserver Reported CnC Server UDP group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404002 || ET CNC Shadowserver Reported CnC Server TCP group 2 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -25479,6 +25326,324 @@
 2404193 || ET CNC Zeus Tracker Reported CnC Server UDP group 22 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404194 || ET CNC Zeus Tracker Reported CnC Server TCP group 23 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404195 || ET CNC Zeus Tracker Reported CnC Server UDP group 23 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404400 || ET CNC Ransomware Tracker Reported CnC Server TCP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404401 || ET CNC Ransomware Tracker Reported CnC Server UDP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404402 || ET CNC Ransomware Tracker Reported CnC Server TCP group 2 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404403 || ET CNC Ransomware Tracker Reported CnC Server UDP group 2 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404404 || ET CNC Ransomware Tracker Reported CnC Server TCP group 3 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404405 || ET CNC Ransomware Tracker Reported CnC Server UDP group 3 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404406 || ET CNC Ransomware Tracker Reported CnC Server TCP group 4 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404407 || ET CNC Ransomware Tracker Reported CnC Server UDP group 4 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404408 || ET CNC Ransomware Tracker Reported CnC Server TCP group 5 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404409 || ET CNC Ransomware Tracker Reported CnC Server UDP group 5 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404410 || ET CNC Ransomware Tracker Reported CnC Server TCP group 6 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404411 || ET CNC Ransomware Tracker Reported CnC Server UDP group 6 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404412 || ET CNC Ransomware Tracker Reported CnC Server TCP group 7 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404413 || ET CNC Ransomware Tracker Reported CnC Server UDP group 7 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404414 || ET CNC Ransomware Tracker Reported CnC Server TCP group 8 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404415 || ET CNC Ransomware Tracker Reported CnC Server UDP group 8 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404416 || ET CNC Ransomware Tracker Reported CnC Server TCP group 9 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404417 || ET CNC Ransomware Tracker Reported CnC Server UDP group 9 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404418 || ET CNC Ransomware Tracker Reported CnC Server TCP group 10 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404419 || ET CNC Ransomware Tracker Reported CnC Server UDP group 10 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404420 || ET CNC Ransomware Tracker Reported CnC Server TCP group 11 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404421 || ET CNC Ransomware Tracker Reported CnC Server UDP group 11 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404422 || ET CNC Ransomware Tracker Reported CnC Server TCP group 12 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404423 || ET CNC Ransomware Tracker Reported CnC Server UDP group 12 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404424 || ET CNC Ransomware Tracker Reported CnC Server TCP group 13 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404425 || ET CNC Ransomware Tracker Reported CnC Server UDP group 13 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404426 || ET CNC Ransomware Tracker Reported CnC Server TCP group 14 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404427 || ET CNC Ransomware Tracker Reported CnC Server UDP group 14 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404428 || ET CNC Ransomware Tracker Reported CnC Server TCP group 15 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404429 || ET CNC Ransomware Tracker Reported CnC Server UDP group 15 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404430 || ET CNC Ransomware Tracker Reported CnC Server TCP group 16 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404431 || ET CNC Ransomware Tracker Reported CnC Server UDP group 16 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404432 || ET CNC Ransomware Tracker Reported CnC Server TCP group 17 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404433 || ET CNC Ransomware Tracker Reported CnC Server UDP group 17 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404434 || ET CNC Ransomware Tracker Reported CnC Server TCP group 18 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404435 || ET CNC Ransomware Tracker Reported CnC Server UDP group 18 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404436 || ET CNC Ransomware Tracker Reported CnC Server TCP group 19 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404437 || ET CNC Ransomware Tracker Reported CnC Server UDP group 19 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404438 || ET CNC Ransomware Tracker Reported CnC Server TCP group 20 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404439 || ET CNC Ransomware Tracker Reported CnC Server UDP group 20 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404440 || ET CNC Ransomware Tracker Reported CnC Server TCP group 21 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404441 || ET CNC Ransomware Tracker Reported CnC Server UDP group 21 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404442 || ET CNC Ransomware Tracker Reported CnC Server TCP group 22 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404443 || ET CNC Ransomware Tracker Reported CnC Server UDP group 22 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404444 || ET CNC Ransomware Tracker Reported CnC Server TCP group 23 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404445 || ET CNC Ransomware Tracker Reported CnC Server UDP group 23 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404446 || ET CNC Ransomware Tracker Reported CnC Server TCP group 24 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404447 || ET CNC Ransomware Tracker Reported CnC Server UDP group 24 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404448 || ET CNC Ransomware Tracker Reported CnC Server TCP group 25 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404449 || ET CNC Ransomware Tracker Reported CnC Server UDP group 25 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404450 || ET CNC Ransomware Tracker Reported CnC Server TCP group 26 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404451 || ET CNC Ransomware Tracker Reported CnC Server UDP group 26 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404452 || ET CNC Ransomware Tracker Reported CnC Server TCP group 27 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404453 || ET CNC Ransomware Tracker Reported CnC Server UDP group 27 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404454 || ET CNC Ransomware Tracker Reported CnC Server TCP group 28 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404455 || ET CNC Ransomware Tracker Reported CnC Server UDP group 28 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404456 || ET CNC Ransomware Tracker Reported CnC Server TCP group 29 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404457 || ET CNC Ransomware Tracker Reported CnC Server UDP group 29 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404458 || ET CNC Ransomware Tracker Reported CnC Server TCP group 30 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404459 || ET CNC Ransomware Tracker Reported CnC Server UDP group 30 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404460 || ET CNC Ransomware Tracker Reported CnC Server TCP group 31 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404461 || ET CNC Ransomware Tracker Reported CnC Server UDP group 31 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404462 || ET CNC Ransomware Tracker Reported CnC Server TCP group 32 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404463 || ET CNC Ransomware Tracker Reported CnC Server UDP group 32 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404464 || ET CNC Ransomware Tracker Reported CnC Server TCP group 33 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404465 || ET CNC Ransomware Tracker Reported CnC Server UDP group 33 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404466 || ET CNC Ransomware Tracker Reported CnC Server TCP group 34 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404467 || ET CNC Ransomware Tracker Reported CnC Server UDP group 34 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404468 || ET CNC Ransomware Tracker Reported CnC Server TCP group 35 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404469 || ET CNC Ransomware Tracker Reported CnC Server UDP group 35 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404470 || ET CNC Ransomware Tracker Reported CnC Server TCP group 36 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404471 || ET CNC Ransomware Tracker Reported CnC Server UDP group 36 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404472 || ET CNC Ransomware Tracker Reported CnC Server TCP group 37 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404473 || ET CNC Ransomware Tracker Reported CnC Server UDP group 37 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404474 || ET CNC Ransomware Tracker Reported CnC Server TCP group 38 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404475 || ET CNC Ransomware Tracker Reported CnC Server UDP group 38 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404476 || ET CNC Ransomware Tracker Reported CnC Server TCP group 39 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404477 || ET CNC Ransomware Tracker Reported CnC Server UDP group 39 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404478 || ET CNC Ransomware Tracker Reported CnC Server TCP group 40 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404479 || ET CNC Ransomware Tracker Reported CnC Server UDP group 40 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404480 || ET CNC Ransomware Tracker Reported CnC Server TCP group 41 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404481 || ET CNC Ransomware Tracker Reported CnC Server UDP group 41 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404482 || ET CNC Ransomware Tracker Reported CnC Server TCP group 42 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404483 || ET CNC Ransomware Tracker Reported CnC Server UDP group 42 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404484 || ET CNC Ransomware Tracker Reported CnC Server TCP group 43 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404485 || ET CNC Ransomware Tracker Reported CnC Server UDP group 43 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404486 || ET CNC Ransomware Tracker Reported CnC Server TCP group 44 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404487 || ET CNC Ransomware Tracker Reported CnC Server UDP group 44 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404488 || ET CNC Ransomware Tracker Reported CnC Server TCP group 45 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404489 || ET CNC Ransomware Tracker Reported CnC Server UDP group 45 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404490 || ET CNC Ransomware Tracker Reported CnC Server TCP group 46 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404491 || ET CNC Ransomware Tracker Reported CnC Server UDP group 46 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404492 || ET CNC Ransomware Tracker Reported CnC Server TCP group 47 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404493 || ET CNC Ransomware Tracker Reported CnC Server UDP group 47 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404494 || ET CNC Ransomware Tracker Reported CnC Server TCP group 48 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404495 || ET CNC Ransomware Tracker Reported CnC Server UDP group 48 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404496 || ET CNC Ransomware Tracker Reported CnC Server TCP group 49 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404497 || ET CNC Ransomware Tracker Reported CnC Server UDP group 49 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404498 || ET CNC Ransomware Tracker Reported CnC Server TCP group 50 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404499 || ET CNC Ransomware Tracker Reported CnC Server UDP group 50 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404500 || ET CNC Ransomware Tracker Reported CnC Server TCP group 51 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404501 || ET CNC Ransomware Tracker Reported CnC Server UDP group 51 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404502 || ET CNC Ransomware Tracker Reported CnC Server TCP group 52 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404503 || ET CNC Ransomware Tracker Reported CnC Server UDP group 52 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404504 || ET CNC Ransomware Tracker Reported CnC Server TCP group 53 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404505 || ET CNC Ransomware Tracker Reported CnC Server UDP group 53 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404506 || ET CNC Ransomware Tracker Reported CnC Server TCP group 54 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404507 || ET CNC Ransomware Tracker Reported CnC Server UDP group 54 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404508 || ET CNC Ransomware Tracker Reported CnC Server TCP group 55 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404509 || ET CNC Ransomware Tracker Reported CnC Server UDP group 55 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404510 || ET CNC Ransomware Tracker Reported CnC Server TCP group 56 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404511 || ET CNC Ransomware Tracker Reported CnC Server UDP group 56 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404512 || ET CNC Ransomware Tracker Reported CnC Server TCP group 57 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404513 || ET CNC Ransomware Tracker Reported CnC Server UDP group 57 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404514 || ET CNC Ransomware Tracker Reported CnC Server TCP group 58 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404515 || ET CNC Ransomware Tracker Reported CnC Server UDP group 58 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404516 || ET CNC Ransomware Tracker Reported CnC Server TCP group 59 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404517 || ET CNC Ransomware Tracker Reported CnC Server UDP group 59 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404518 || ET CNC Ransomware Tracker Reported CnC Server TCP group 60 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404519 || ET CNC Ransomware Tracker Reported CnC Server UDP group 60 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404520 || ET CNC Ransomware Tracker Reported CnC Server TCP group 61 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404521 || ET CNC Ransomware Tracker Reported CnC Server UDP group 61 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404522 || ET CNC Ransomware Tracker Reported CnC Server TCP group 62 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404523 || ET CNC Ransomware Tracker Reported CnC Server UDP group 62 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404524 || ET CNC Ransomware Tracker Reported CnC Server TCP group 63 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404525 || ET CNC Ransomware Tracker Reported CnC Server UDP group 63 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404526 || ET CNC Ransomware Tracker Reported CnC Server TCP group 64 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404527 || ET CNC Ransomware Tracker Reported CnC Server UDP group 64 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404528 || ET CNC Ransomware Tracker Reported CnC Server TCP group 65 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404529 || ET CNC Ransomware Tracker Reported CnC Server UDP group 65 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404530 || ET CNC Ransomware Tracker Reported CnC Server TCP group 66 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404531 || ET CNC Ransomware Tracker Reported CnC Server UDP group 66 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404532 || ET CNC Ransomware Tracker Reported CnC Server TCP group 67 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404533 || ET CNC Ransomware Tracker Reported CnC Server UDP group 67 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404534 || ET CNC Ransomware Tracker Reported CnC Server TCP group 68 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404535 || ET CNC Ransomware Tracker Reported CnC Server UDP group 68 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404536 || ET CNC Ransomware Tracker Reported CnC Server TCP group 69 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404537 || ET CNC Ransomware Tracker Reported CnC Server UDP group 69 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404538 || ET CNC Ransomware Tracker Reported CnC Server TCP group 70 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404539 || ET CNC Ransomware Tracker Reported CnC Server UDP group 70 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404540 || ET CNC Ransomware Tracker Reported CnC Server TCP group 71 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404541 || ET CNC Ransomware Tracker Reported CnC Server UDP group 71 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404542 || ET CNC Ransomware Tracker Reported CnC Server TCP group 72 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404543 || ET CNC Ransomware Tracker Reported CnC Server UDP group 72 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404544 || ET CNC Ransomware Tracker Reported CnC Server TCP group 73 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404545 || ET CNC Ransomware Tracker Reported CnC Server UDP group 73 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404546 || ET CNC Ransomware Tracker Reported CnC Server TCP group 74 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404547 || ET CNC Ransomware Tracker Reported CnC Server UDP group 74 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404548 || ET CNC Ransomware Tracker Reported CnC Server TCP group 75 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404549 || ET CNC Ransomware Tracker Reported CnC Server UDP group 75 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404550 || ET CNC Ransomware Tracker Reported CnC Server TCP group 76 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404551 || ET CNC Ransomware Tracker Reported CnC Server UDP group 76 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404552 || ET CNC Ransomware Tracker Reported CnC Server TCP group 77 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404553 || ET CNC Ransomware Tracker Reported CnC Server UDP group 77 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404554 || ET CNC Ransomware Tracker Reported CnC Server TCP group 78 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404555 || ET CNC Ransomware Tracker Reported CnC Server UDP group 78 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404556 || ET CNC Ransomware Tracker Reported CnC Server TCP group 79 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404557 || ET CNC Ransomware Tracker Reported CnC Server UDP group 79 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404558 || ET CNC Ransomware Tracker Reported CnC Server TCP group 80 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404559 || ET CNC Ransomware Tracker Reported CnC Server UDP group 80 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404560 || ET CNC Ransomware Tracker Reported CnC Server TCP group 81 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404561 || ET CNC Ransomware Tracker Reported CnC Server UDP group 81 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404562 || ET CNC Ransomware Tracker Reported CnC Server TCP group 82 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404563 || ET CNC Ransomware Tracker Reported CnC Server UDP group 82 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404564 || ET CNC Ransomware Tracker Reported CnC Server TCP group 83 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404565 || ET CNC Ransomware Tracker Reported CnC Server UDP group 83 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404566 || ET CNC Ransomware Tracker Reported CnC Server TCP group 84 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404567 || ET CNC Ransomware Tracker Reported CnC Server UDP group 84 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404568 || ET CNC Ransomware Tracker Reported CnC Server TCP group 85 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404569 || ET CNC Ransomware Tracker Reported CnC Server UDP group 85 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404570 || ET CNC Ransomware Tracker Reported CnC Server TCP group 86 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404571 || ET CNC Ransomware Tracker Reported CnC Server UDP group 86 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404572 || ET CNC Ransomware Tracker Reported CnC Server TCP group 87 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404573 || ET CNC Ransomware Tracker Reported CnC Server UDP group 87 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404574 || ET CNC Ransomware Tracker Reported CnC Server TCP group 88 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404575 || ET CNC Ransomware Tracker Reported CnC Server UDP group 88 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404576 || ET CNC Ransomware Tracker Reported CnC Server TCP group 89 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404577 || ET CNC Ransomware Tracker Reported CnC Server UDP group 89 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404578 || ET CNC Ransomware Tracker Reported CnC Server TCP group 90 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404579 || ET CNC Ransomware Tracker Reported CnC Server UDP group 90 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404580 || ET CNC Ransomware Tracker Reported CnC Server TCP group 91 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404581 || ET CNC Ransomware Tracker Reported CnC Server UDP group 91 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404582 || ET CNC Ransomware Tracker Reported CnC Server TCP group 92 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404583 || ET CNC Ransomware Tracker Reported CnC Server UDP group 92 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404584 || ET CNC Ransomware Tracker Reported CnC Server TCP group 93 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404585 || ET CNC Ransomware Tracker Reported CnC Server UDP group 93 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404586 || ET CNC Ransomware Tracker Reported CnC Server TCP group 94 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404587 || ET CNC Ransomware Tracker Reported CnC Server UDP group 94 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404588 || ET CNC Ransomware Tracker Reported CnC Server TCP group 95 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404589 || ET CNC Ransomware Tracker Reported CnC Server UDP group 95 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404590 || ET CNC Ransomware Tracker Reported CnC Server TCP group 96 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404591 || ET CNC Ransomware Tracker Reported CnC Server UDP group 96 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404592 || ET CNC Ransomware Tracker Reported CnC Server TCP group 97 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404593 || ET CNC Ransomware Tracker Reported CnC Server UDP group 97 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404594 || ET CNC Ransomware Tracker Reported CnC Server TCP group 98 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404595 || ET CNC Ransomware Tracker Reported CnC Server UDP group 98 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404596 || ET CNC Ransomware Tracker Reported CnC Server TCP group 99 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404597 || ET CNC Ransomware Tracker Reported CnC Server UDP group 99 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404598 || ET CNC Ransomware Tracker Reported CnC Server TCP group 100 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404599 || ET CNC Ransomware Tracker Reported CnC Server UDP group 100 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404600 || ET CNC Ransomware Tracker Reported CnC Server TCP group 101 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404601 || ET CNC Ransomware Tracker Reported CnC Server UDP group 101 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404602 || ET CNC Ransomware Tracker Reported CnC Server TCP group 102 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404603 || ET CNC Ransomware Tracker Reported CnC Server UDP group 102 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404604 || ET CNC Ransomware Tracker Reported CnC Server TCP group 103 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404605 || ET CNC Ransomware Tracker Reported CnC Server UDP group 103 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404606 || ET CNC Ransomware Tracker Reported CnC Server TCP group 104 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404607 || ET CNC Ransomware Tracker Reported CnC Server UDP group 104 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404608 || ET CNC Ransomware Tracker Reported CnC Server TCP group 105 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404609 || ET CNC Ransomware Tracker Reported CnC Server UDP group 105 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404610 || ET CNC Ransomware Tracker Reported CnC Server TCP group 106 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404611 || ET CNC Ransomware Tracker Reported CnC Server UDP group 106 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404612 || ET CNC Ransomware Tracker Reported CnC Server TCP group 107 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404613 || ET CNC Ransomware Tracker Reported CnC Server UDP group 107 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404614 || ET CNC Ransomware Tracker Reported CnC Server TCP group 108 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404615 || ET CNC Ransomware Tracker Reported CnC Server UDP group 108 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404616 || ET CNC Ransomware Tracker Reported CnC Server TCP group 109 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404617 || ET CNC Ransomware Tracker Reported CnC Server UDP group 109 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404618 || ET CNC Ransomware Tracker Reported CnC Server TCP group 110 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404619 || ET CNC Ransomware Tracker Reported CnC Server UDP group 110 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404620 || ET CNC Ransomware Tracker Reported CnC Server TCP group 111 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404621 || ET CNC Ransomware Tracker Reported CnC Server UDP group 111 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404622 || ET CNC Ransomware Tracker Reported CnC Server TCP group 112 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404623 || ET CNC Ransomware Tracker Reported CnC Server UDP group 112 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404624 || ET CNC Ransomware Tracker Reported CnC Server TCP group 113 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404625 || ET CNC Ransomware Tracker Reported CnC Server UDP group 113 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404626 || ET CNC Ransomware Tracker Reported CnC Server TCP group 114 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404627 || ET CNC Ransomware Tracker Reported CnC Server UDP group 114 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404628 || ET CNC Ransomware Tracker Reported CnC Server TCP group 115 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404629 || ET CNC Ransomware Tracker Reported CnC Server UDP group 115 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404630 || ET CNC Ransomware Tracker Reported CnC Server TCP group 116 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404631 || ET CNC Ransomware Tracker Reported CnC Server UDP group 116 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404632 || ET CNC Ransomware Tracker Reported CnC Server TCP group 117 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404633 || ET CNC Ransomware Tracker Reported CnC Server UDP group 117 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404634 || ET CNC Ransomware Tracker Reported CnC Server TCP group 118 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404635 || ET CNC Ransomware Tracker Reported CnC Server UDP group 118 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404636 || ET CNC Ransomware Tracker Reported CnC Server TCP group 119 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404637 || ET CNC Ransomware Tracker Reported CnC Server UDP group 119 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404638 || ET CNC Ransomware Tracker Reported CnC Server TCP group 120 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404639 || ET CNC Ransomware Tracker Reported CnC Server UDP group 120 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404640 || ET CNC Ransomware Tracker Reported CnC Server TCP group 121 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404641 || ET CNC Ransomware Tracker Reported CnC Server UDP group 121 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404642 || ET CNC Ransomware Tracker Reported CnC Server TCP group 122 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404643 || ET CNC Ransomware Tracker Reported CnC Server UDP group 122 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404644 || ET CNC Ransomware Tracker Reported CnC Server TCP group 123 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404645 || ET CNC Ransomware Tracker Reported CnC Server UDP group 123 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404646 || ET CNC Ransomware Tracker Reported CnC Server TCP group 124 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404647 || ET CNC Ransomware Tracker Reported CnC Server UDP group 124 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404648 || ET CNC Ransomware Tracker Reported CnC Server TCP group 125 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404649 || ET CNC Ransomware Tracker Reported CnC Server UDP group 125 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404650 || ET CNC Ransomware Tracker Reported CnC Server TCP group 126 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404651 || ET CNC Ransomware Tracker Reported CnC Server UDP group 126 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404652 || ET CNC Ransomware Tracker Reported CnC Server TCP group 127 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404653 || ET CNC Ransomware Tracker Reported CnC Server UDP group 127 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404654 || ET CNC Ransomware Tracker Reported CnC Server TCP group 128 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404655 || ET CNC Ransomware Tracker Reported CnC Server UDP group 128 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404656 || ET CNC Ransomware Tracker Reported CnC Server TCP group 129 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404657 || ET CNC Ransomware Tracker Reported CnC Server UDP group 129 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404658 || ET CNC Ransomware Tracker Reported CnC Server TCP group 130 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404659 || ET CNC Ransomware Tracker Reported CnC Server UDP group 130 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404660 || ET CNC Ransomware Tracker Reported CnC Server TCP group 131 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404661 || ET CNC Ransomware Tracker Reported CnC Server UDP group 131 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404662 || ET CNC Ransomware Tracker Reported CnC Server TCP group 132 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404663 || ET CNC Ransomware Tracker Reported CnC Server UDP group 132 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404664 || ET CNC Ransomware Tracker Reported CnC Server TCP group 133 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404665 || ET CNC Ransomware Tracker Reported CnC Server UDP group 133 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404666 || ET CNC Ransomware Tracker Reported CnC Server TCP group 134 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404667 || ET CNC Ransomware Tracker Reported CnC Server UDP group 134 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404668 || ET CNC Ransomware Tracker Reported CnC Server TCP group 135 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404669 || ET CNC Ransomware Tracker Reported CnC Server UDP group 135 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404670 || ET CNC Ransomware Tracker Reported CnC Server TCP group 136 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404671 || ET CNC Ransomware Tracker Reported CnC Server UDP group 136 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404672 || ET CNC Ransomware Tracker Reported CnC Server TCP group 137 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404673 || ET CNC Ransomware Tracker Reported CnC Server UDP group 137 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404674 || ET CNC Ransomware Tracker Reported CnC Server TCP group 138 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404675 || ET CNC Ransomware Tracker Reported CnC Server UDP group 138 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404676 || ET CNC Ransomware Tracker Reported CnC Server TCP group 139 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404677 || ET CNC Ransomware Tracker Reported CnC Server UDP group 139 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404678 || ET CNC Ransomware Tracker Reported CnC Server TCP group 140 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404679 || ET CNC Ransomware Tracker Reported CnC Server UDP group 140 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404680 || ET CNC Ransomware Tracker Reported CnC Server TCP group 141 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404681 || ET CNC Ransomware Tracker Reported CnC Server UDP group 141 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404682 || ET CNC Ransomware Tracker Reported CnC Server TCP group 142 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404683 || ET CNC Ransomware Tracker Reported CnC Server UDP group 142 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404684 || ET CNC Ransomware Tracker Reported CnC Server TCP group 143 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404685 || ET CNC Ransomware Tracker Reported CnC Server UDP group 143 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404686 || ET CNC Ransomware Tracker Reported CnC Server TCP group 144 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404687 || ET CNC Ransomware Tracker Reported CnC Server UDP group 144 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404688 || ET CNC Ransomware Tracker Reported CnC Server TCP group 145 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404689 || ET CNC Ransomware Tracker Reported CnC Server UDP group 145 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404690 || ET CNC Ransomware Tracker Reported CnC Server TCP group 146 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404691 || ET CNC Ransomware Tracker Reported CnC Server UDP group 146 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404692 || ET CNC Ransomware Tracker Reported CnC Server TCP group 147 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404693 || ET CNC Ransomware Tracker Reported CnC Server UDP group 147 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404694 || ET CNC Ransomware Tracker Reported CnC Server TCP group 148 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404695 || ET CNC Ransomware Tracker Reported CnC Server UDP group 148 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404696 || ET CNC Ransomware Tracker Reported CnC Server TCP group 149 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404697 || ET CNC Ransomware Tracker Reported CnC Server UDP group 149 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404698 || ET CNC Ransomware Tracker Reported CnC Server TCP group 150 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404699 || ET CNC Ransomware Tracker Reported CnC Server UDP group 150 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404700 || ET CNC Ransomware Tracker Reported CnC Server TCP group 151 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404701 || ET CNC Ransomware Tracker Reported CnC Server UDP group 151 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404702 || ET CNC Ransomware Tracker Reported CnC Server TCP group 152 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404703 || ET CNC Ransomware Tracker Reported CnC Server UDP group 152 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404704 || ET CNC Ransomware Tracker Reported CnC Server TCP group 153 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404705 || ET CNC Ransomware Tracker Reported CnC Server UDP group 153 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404706 || ET CNC Ransomware Tracker Reported CnC Server TCP group 154 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404707 || ET CNC Ransomware Tracker Reported CnC Server UDP group 154 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404708 || ET CNC Ransomware Tracker Reported CnC Server TCP group 155 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404709 || ET CNC Ransomware Tracker Reported CnC Server UDP group 155 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404710 || ET CNC Ransomware Tracker Reported CnC Server TCP group 156 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404711 || ET CNC Ransomware Tracker Reported CnC Server UDP group 156 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404712 || ET CNC Ransomware Tracker Reported CnC Server TCP group 157 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404713 || ET CNC Ransomware Tracker Reported CnC Server UDP group 157 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404714 || ET CNC Ransomware Tracker Reported CnC Server TCP group 158 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404715 || ET CNC Ransomware Tracker Reported CnC Server UDP group 158 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404716 || ET CNC Ransomware Tracker Reported CnC Server TCP group 159 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404717 || ET CNC Ransomware Tracker Reported CnC Server UDP group 159 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405000 || ET CNC Shadowserver Reported CnC Server Port 80 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405001 || ET CNC Shadowserver Reported CnC Server Port 81 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405002 || ET CNC Shadowserver Reported CnC Server Port 443 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -25531,14 +25696,81 @@
 2500031 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 16 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500032 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 17 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500033 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 17 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500034 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 18 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500035 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 18 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500036 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 19 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500037 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 19 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500038 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 20 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500039 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 20 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500040 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 21 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500041 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 21 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520002 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520004 || ET TOR Known Tor Exit Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520006 || ET TOR Known Tor Exit Node TCP Traffic group 4 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520008 || ET TOR Known Tor Exit Node TCP Traffic group 5 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520010 || ET TOR Known Tor Exit Node TCP Traffic group 6 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520012 || ET TOR Known Tor Exit Node TCP Traffic group 7 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520014 || ET TOR Known Tor Exit Node TCP Traffic group 8 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520016 || ET TOR Known Tor Exit Node TCP Traffic group 9 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520018 || ET TOR Known Tor Exit Node TCP Traffic group 10 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520020 || ET TOR Known Tor Exit Node TCP Traffic group 11 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520022 || ET TOR Known Tor Exit Node TCP Traffic group 12 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520024 || ET TOR Known Tor Exit Node TCP Traffic group 13 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520026 || ET TOR Known Tor Exit Node TCP Traffic group 14 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520028 || ET TOR Known Tor Exit Node TCP Traffic group 15 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520030 || ET TOR Known Tor Exit Node TCP Traffic group 16 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520032 || ET TOR Known Tor Exit Node TCP Traffic group 17 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520034 || ET TOR Known Tor Exit Node TCP Traffic group 18 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520036 || ET TOR Known Tor Exit Node TCP Traffic group 19 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520038 || ET TOR Known Tor Exit Node TCP Traffic group 20 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520040 || ET TOR Known Tor Exit Node TCP Traffic group 21 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520042 || ET TOR Known Tor Exit Node TCP Traffic group 22 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520044 || ET TOR Known Tor Exit Node TCP Traffic group 23 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520046 || ET TOR Known Tor Exit Node TCP Traffic group 24 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520048 || ET TOR Known Tor Exit Node TCP Traffic group 25 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520050 || ET TOR Known Tor Exit Node TCP Traffic group 26 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520052 || ET TOR Known Tor Exit Node TCP Traffic group 27 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520054 || ET TOR Known Tor Exit Node TCP Traffic group 28 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520056 || ET TOR Known Tor Exit Node TCP Traffic group 29 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520058 || ET TOR Known Tor Exit Node TCP Traffic group 30 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520060 || ET TOR Known Tor Exit Node TCP Traffic group 31 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520062 || ET TOR Known Tor Exit Node TCP Traffic group 32 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520064 || ET TOR Known Tor Exit Node TCP Traffic group 33 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520066 || ET TOR Known Tor Exit Node TCP Traffic group 34 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520068 || ET TOR Known Tor Exit Node TCP Traffic group 35 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520070 || ET TOR Known Tor Exit Node TCP Traffic group 36 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520072 || ET TOR Known Tor Exit Node TCP Traffic group 37 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520074 || ET TOR Known Tor Exit Node TCP Traffic group 38 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520076 || ET TOR Known Tor Exit Node TCP Traffic group 39 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520078 || ET TOR Known Tor Exit Node TCP Traffic group 40 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520080 || ET TOR Known Tor Exit Node TCP Traffic group 41 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520082 || ET TOR Known Tor Exit Node TCP Traffic group 42 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520084 || ET TOR Known Tor Exit Node TCP Traffic group 43 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520086 || ET TOR Known Tor Exit Node TCP Traffic group 44 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520088 || ET TOR Known Tor Exit Node TCP Traffic group 45 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520090 || ET TOR Known Tor Exit Node TCP Traffic group 46 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520092 || ET TOR Known Tor Exit Node TCP Traffic group 47 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520094 || ET TOR Known Tor Exit Node TCP Traffic group 48 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520096 || ET TOR Known Tor Exit Node TCP Traffic group 49 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520098 || ET TOR Known Tor Exit Node TCP Traffic group 50 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520100 || ET TOR Known Tor Exit Node TCP Traffic group 51 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520102 || ET TOR Known Tor Exit Node TCP Traffic group 52 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520104 || ET TOR Known Tor Exit Node TCP Traffic group 53 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520106 || ET TOR Known Tor Exit Node TCP Traffic group 54 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520108 || ET TOR Known Tor Exit Node TCP Traffic group 55 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520110 || ET TOR Known Tor Exit Node TCP Traffic group 56 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520112 || ET TOR Known Tor Exit Node TCP Traffic group 57 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520114 || ET TOR Known Tor Exit Node TCP Traffic group 58 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520116 || ET TOR Known Tor Exit Node TCP Traffic group 59 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520118 || ET TOR Known Tor Exit Node TCP Traffic group 60 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520120 || ET TOR Known Tor Exit Node TCP Traffic group 61 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520122 || ET TOR Known Tor Exit Node TCP Traffic group 62 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520124 || ET TOR Known Tor Exit Node TCP Traffic group 63 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520126 || ET TOR Known Tor Exit Node TCP Traffic group 64 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520128 || ET TOR Known Tor Exit Node TCP Traffic group 65 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520130 || ET TOR Known Tor Exit Node TCP Traffic group 66 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520132 || ET TOR Known Tor Exit Node TCP Traffic group 67 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520134 || ET TOR Known Tor Exit Node TCP Traffic group 68 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520136 || ET TOR Known Tor Exit Node TCP Traffic group 69 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520138 || ET TOR Known Tor Exit Node TCP Traffic group 70 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520140 || ET TOR Known Tor Exit Node TCP Traffic group 71 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520142 || ET TOR Known Tor Exit Node TCP Traffic group 72 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520144 || ET TOR Known Tor Exit Node TCP Traffic group 73 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520146 || ET TOR Known Tor Exit Node TCP Traffic group 74 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520148 || ET TOR Known Tor Exit Node TCP Traffic group 75 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522004 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26237,6 +26469,3 @@
 2523390 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 696 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523392 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 697 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523394 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 698 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523396 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 699 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523398 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 700 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523400 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 701 || url,doc.emergingthreats.net/bin/view/Main/TorRules
