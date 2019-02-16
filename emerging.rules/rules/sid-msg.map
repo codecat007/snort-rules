@@ -9583,7 +9583,7 @@
 2012249 || ET USER_AGENTS Suspicious Win32 User Agent
 2012250 || ET DELETED Unknown Web Backdoor Keep-Alive
 2012251 || ET DELETED Google Android Device HTTP Request
-2012252 || ET SHELLCODE Common 0a0a0a0a Heap Spray String || url,www.darkreading.com/security/vulnerabilities/221901428/index.html
+2012252 || ET SHELLCODE Common 0a0a0a0a Heap Spray String || url,www.darkreading.com/vulnerabilities---threats/heap-spraying-attackers-latest-weapon-of-choice/d/d-id/1132487
 2012253 || ET SHELLCODE Common %0a%0a%0a%0a Heap Spray String || url,www.darkreading.com/security/vulnerabilities/221901428/index.html
 2012254 || ET SHELLCODE Common %u0a0a%u0a0a UTF-16 Heap Spray String || url,www.darkreading.com/security/vulnerabilities/221901428/index.html
 2012255 || ET SHELLCODE Common %u0a%u0a%u0a%u0a UTF-8 Heap Spray String || url,www.darkreading.com/security/vulnerabilities/221901428/index.html
@@ -23711,6 +23711,55 @@
 2026861 || ET TROJAN Observed Malicious SSL Cert (BrushaLoader CnC) || md5,2bd9a6ea29182f5ec6acafe032fbeaab
 2026862 || ET TROJAN [PTsecurity] Remcos RAT Checkin 87 || md5,872fc6cc16b7ba7e2a74b03927d50e85
 2026863 || ET INFO Possible RTF File With Obfuscated Version Header
+2026864 || ET TROJAN Observed Malicious SSL Cert (Zepakab CnC) || url,blog.yoroi.company/research/sofacys-zepakab-downloader-spotted-in-the-wild/
+2026865 || ET TROJAN CoreDn CnC Checkin M1 || url,blog.talosintelligence.com/2019/01/fake-korean-job-posting.html
+2026866 || ET TROJAN CoreDn CnC Checkin M2 || url,blog.talosintelligence.com/2019/01/fake-korean-job-posting.html
+2026867 || ET POLICY Skypool Coin Mining Pool DNS Lookup || md5,2a0a5e1ed928eb01e322dd3680a13eba
+2026868 || ET POLICY Nimiq Miner Initiating Mining Session with Skypool || md5,2a0a5e1ed928eb01e322dd3680a13eba
+2026869 || ET TROJAN Observed Malicious SSL Cert (APT32 CnC) || url,unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/
+2026870 || ET TROJAN Observed Malicious SSL Cert (APT32 CnC) || url,unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/
+2026871 || ET TROJAN Observed Malicious SSL Cert (APT32 CnC) || url,unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/
+2026872 || ET TROJAN Observed Malicious SSL Cert (APT32 CnC) || url,unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/
+2026873 || ET TROJAN Observed Malicious SSL Cert (APT32 CnC) || url,unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/
+2026874 || ET TROJAN Observed Malicious SSL Cert (APT32 CnC) || url,unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/
+2026875 || ET TROJAN Observed Malicious SSL Cert (APT32 CnC) || url,unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/
+2026876 || ET USER_AGENTS Cayosin Botnet User-Agent Observed M1
+2026877 || ET USER_AGENTS Cayosin Botnet User-Agent Observed M2
+2026879 || ET POLICY Possible winexe over SMB - Possible Lateral Movement || url,attack.mitre.org/software/S0191/
+2026880 || ET USER_AGENTS AppControls.com User-Agent
+2026881 || ET USER_AGENTS AppControls.com User-Agent
+2026882 || ET POLICY Observed External IP Lookup SSL Cert
+2026883 || ET USER_AGENTS Peppy/KeeOIL Google User-Agent (google/dance) || url,www.malcrawler.com/team-simbaa-targets-indian-government-using-united-nations-military-observers-themed-malware-nicked-named-keeoil/
+2026884 || ET TROJAN Peppy/KeeOIL Google Connectivity Check || url,www.malcrawler.com/team-simbaa-targets-indian-government-using-united-nations-military-observers-themed-malware-nicked-named-keeoil/
+2026885 || ET USER_AGENTS Peppy/KeeOIL User-Agent (ekeoil) || url,www.malcrawler.com/team-simbaa-targets-indian-government-using-united-nations-military-observers-themed-malware-nicked-named-keeoil/
+2026886 || ET CURRENT_EVENTS Possible Successful Generic Phish to .icu Domain 2019-02-06
+2026887 || ET INFO HTTP POST Request to Suspicious *.icu domain
+2026891 || ET INFO Possible EXE Download From Suspicious TLD (.icu) - set || url,www.spamhaus.org/statistics/tlds/
+2026892 || ET POLICY External IP Address Lookup via iplocation.com
+2026893 || ET TROJAN Observed CDC Ransomware User-Agent
+2026894 || ET CURRENT_EVENTS Successful Generic .EDU.CO Phish (Legit Set)
+2026895 || ET CURRENT_EVENTS Successful Generic .EDU.BR Phish (Legit Set)
+2026896 || ET POLICY Known External IP Lookup Service Domain in SNI
+2026897 || ET POLICY IP Logger Redirect Domain in SNI
+2026898 || ET USER_AGENTS Suspicious User-Agent (SomeTimes) || md5,a86d4e17389a37bfc291f4a8da51a9b8
+2026899 || ET TROJAN Observed Malicious SSL Cert (BrushaLoader CnC)
+2026900 || ET TROJAN BrushaLoader CnC Domain in SNI
+2026901 || ET TROJAN Win32/Remcos RAT Checkin 84 || md5,12346b292b752af5ad924239eac02a09
+2026902 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2019-02-13
+2026903 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2019-02-13
+2026904 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2019-02-13
+2026905 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2019-02-13
+2026906 || ET TROJAN Possible Astaroth User-Agent Observed || url,www.cybereason.com/blog/information-stealing-malware-targeting-brazil-full-research || md5,589d2d33825a0329f61406f0af709469
+2026907 || ET MOBILE_MALWARE Android/Xnore Fake Facebook Login Credentials Collected
+2026908 || ET POLICY Suspicious SSN Parameter in HTTP POST - Possible Phishing
+2026909 || ET POLICY Suspicious CVV Parameter in HTTP POST - Possible Phishing
+2026910 || ET TROJAN OSX/Shlayer CnC Activity M1 || url,www.carbonblack.com/2019/02/12/tau-threat-intelligence-notification-new-macos-malware-variant-of-shlayer-osx-discovered/
+2026911 || ET TROJAN OSX/Shlayer CnC Activity M2 || url,www.carbonblack.com/2019/02/12/tau-threat-intelligence-notification-new-macos-malware-variant-of-shlayer-osx-discovered/
+2026912 || ET TROJAN OSX/Shlayer CnC Activity M3 || url,www.carbonblack.com/2019/02/12/tau-threat-intelligence-notification-new-macos-malware-variant-of-shlayer-osx-discovered/
+2026913 || ET TROJAN OSX/Shlayer CnC Activity M4 || url,www.carbonblack.com/2019/02/12/tau-threat-intelligence-notification-new-macos-malware-variant-of-shlayer-osx-discovered/
+2026914 || ET USER_AGENTS SFML User-Agent (libsfml-network)  || url,github.com/SFML
+2026915 || ET TROJAN Cayosin/Mirai CnC Domain in DNS Lookup || url,perchsecurity.com/perch-news/threat-report-sunday-february-3rd-2019/
+2026916 || ET TROJAN DirectsX CnC Checkin || url,public.gdatasoftware.com/Presse/Publikationen/Whitepaper/EN/GDATA_TooHash_CaseStudy_102014_EN_v1.pdf
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -25783,9 +25832,7 @@
 2404344 || ET CNC Feodo Tracker Reported CnC Server TCP group 23 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404345 || ET CNC Feodo Tracker Reported CnC Server UDP group 23 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404346 || ET CNC Feodo Tracker Reported CnC Server TCP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404347 || ET CNC Feodo Tracker Reported CnC Server UDP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404348 || ET CNC Feodo Tracker Reported CnC Server TCP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404349 || ET CNC Feodoo Tracker Reported CnC Server UDP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404347 || ET CNC Feodoo Tracker Reported CnC Server UDP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404400 || ET CNC Ransomware Tracker Reported CnC Server TCP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404401 || ET CNC Ransomware Tracker Reported CnC Server UDP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404402 || ET CNC Ransomware Tracker Reported CnC Server TCP group 2 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -26102,6 +26149,8 @@
 2404713 || ET CNC Ransomware Tracker Reported CnC Server UDP group 157 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404714 || ET CNC Ransomware Tracker Reported CnC Server TCP group 158 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404715 || ET CNC Ransomware Tracker Reported CnC Server UDP group 158 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404716 || ET CNC Ransomware Tracker Reported CnC Server TCP group 159 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404717 || ET CNC Ransomware Tracker Reported CnC Server UDP group 159 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405000 || ET CNC Shadowserver Reported CnC Server Port 80 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405001 || ET CNC Shadowserver Reported CnC Server Port 81 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405002 || ET CNC Shadowserver Reported CnC Server Port 443 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -26158,44 +26207,6 @@
 2500035 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 18 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500036 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 19 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500037 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 19 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500038 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 20 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500039 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 20 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500040 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 21 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500041 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 21 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500042 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 22 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500043 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 22 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500044 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 23 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500045 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 23 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500046 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 24 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500047 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 24 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500048 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 25 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500049 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 25 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500050 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 26 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500051 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 26 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500052 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 27 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500053 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 27 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500054 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 28 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500055 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 28 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500056 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 29 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500057 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 29 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500058 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 30 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500059 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 30 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500060 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 31 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500061 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 31 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500062 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 32 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500063 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 32 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500064 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 33 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500065 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 33 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500066 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 34 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500067 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 34 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500068 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 35 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500069 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 35 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500070 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 36 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500071 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 36 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500072 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 37 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500073 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 37 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500074 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 38 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500075 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 38 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520002 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520004 || ET TOR Known Tor Exit Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26276,6 +26287,7 @@
 2520154 || ET TOR Known Tor Exit Node TCP Traffic group 78 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520156 || ET TOR Known Tor Exit Node TCP Traffic group 79 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520158 || ET TOR Known Tor Exit Node TCP Traffic group 80 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520160 || ET TOR Known Tor Exit Node TCP Traffic group 81 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522004 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26987,3 +26999,19 @@
 2523416 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 709 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523418 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 710 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523420 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 711 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523422 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 712 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523424 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 713 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523426 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 714 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523428 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 715 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523430 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 716 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523432 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 717 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523434 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 718 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523436 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 719 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523438 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 720 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523440 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 721 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523442 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 722 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523444 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 723 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523446 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 724 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523448 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 725 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523450 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 726 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523452 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 727 || url,doc.emergingthreats.net/bin/view/Main/TorRules
