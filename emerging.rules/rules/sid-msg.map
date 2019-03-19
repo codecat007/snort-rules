@@ -16203,7 +16203,7 @@
 2019178 || ET CURRENT_EVENTS Possible Dyre SSL Cert Sept 16 2014 || md5,5dd6e69b1e9049f295e314b523679d98
 2019179 || ET TROJAN MSIL/Spy.RapidStealer.B Checkin || url,quequero.org/2014/09/win32-blackberrybbc-malware-analysis/ || md5,c14690b90459744a300a02f45b32168a
 2019180 || ET CURRENT_EVENTS Malvertising Leading to EK Aug 19 2014 M4
-2019181 || ET CURRENT_EVENTS Possible Android CVE-2014-6041 || url,1337day.com/exploit/22581
+2019181 || ET CURRENT_EVENTS Possible Android CVE-2014-6041 || url,blog.trendmicro.com/trendlabs-security-intelligence/same-origin-policy-bypass-vulnerability-has-wider-reach-than-thought/
 2019182 || ET WEB_SERVER HTTP POST Generic eval of base64_decode
 2019183 || ET CURRENT_EVENTS Fiesta EK Gate
 2019184 || ET CURRENT_EVENTS Fiesta EK Silverlight Based Redirect
@@ -17395,8 +17395,8 @@
 2020393 || ET WEB_CLIENT Possible Android RCE via XSS and Play Store XFO || url,github.com/rapid7/metasploit-framework/commit/7f2add2ce30f33e7787310d7abcb1781e8ea8f43 || cve,2014-6041 || url,1337day.com/exploit/22581
 2020395 || ET POLICY DNS Query to .onion proxy Domain (monsterbbc.com) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
 2020396 || ET TROJAN Win32/Rovnix.J Checkin 2 || md5,9471e926eda81b4f797b6cfe273e4e79
-2020397 || ET CURRENT_EVENTS Possible Android CVE-2014-6041 || url,blog.trendmicro.com/trendlabs-security-intelligence/same-origin-policy-bypass-vulnerability-has-wider-reach-than-thought/ || url,1337day.com/exploit/22581
-2020398 || ET CURRENT_EVENTS Possible Android CVE-2014-6041 || url,blog.trendmicro.com/trendlabs-security-intelligence/same-origin-policy-bypass-vulnerability-has-wider-reach-than-thought/ || url,1337day.com/exploit/22581
+2020397 || ET CURRENT_EVENTS Possible Android CVE-2014-6041 || url,blog.trendmicro.com/trendlabs-security-intelligence/same-origin-policy-bypass-vulnerability-has-wider-reach-than-thought/
+2020398 || ET CURRENT_EVENTS Possible Android CVE-2014-6041 || url,blog.trendmicro.com/trendlabs-security-intelligence/same-origin-policy-bypass-vulnerability-has-wider-reach-than-thought/
 2020399 || ET DELETED Angler EK Payload DL M2 Feb 06 2015
 2020400 || ET POLICY DNS Query to .onion proxy Domain (tostotor.com) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
 2020401 || ET POLICY DNS Query to .onion proxy Domain (trusteetor.com) || url,en.wikipedia.org/wiki/Tor_(anonymity_network)
@@ -23919,6 +23919,25 @@
 2027074 || ET CURRENT_EVENTS Spelevo EK Landing M3
 2027075 || ET CURRENT_EVENTS Spelevo EK Post-Compromise Data Dump
 2027076 || ET INFO Wget Request for Executable
+2027077 || ET TROJAN Win32/Retadup CnC Checkin M1 || url,blog.trendmicro.com/trendlabs-security-intelligence/monero-mining-retadup-worm-goes-polymorphic-gets-an-autohotkey-variant/
+2027078 || ET TROJAN Win32/Retadup CnC Checkin M2 || url,blog.trendmicro.com/trendlabs-security-intelligence/monero-mining-retadup-worm-goes-polymorphic-gets-an-autohotkey-variant/
+2027079 || ET TROJAN Win32/Retadup Success Response from CnC || url,blog.trendmicro.com/trendlabs-security-intelligence/monero-mining-retadup-worm-goes-polymorphic-gets-an-autohotkey-variant/
+2027080 || ET TROJAN Win32/PirateMatryoshka CnC DNS Query || url,securelist.com/piratebay-malware/89740/
+2027081 || ET CURRENT_EVENTS PirateBay Phish - Possibly PirateMatryoshka Related || url,securelist.com/piratebay-malware/89740/
+2027082 || ET TROJAN Observed Malicious SSL Cert (CobaltStrike CnC) || url,sslbl.abuse.ch/ssl-certificates/sha1/ddb59d8cc93688bbf4925c7d27462b70e53225cb/
+2027083 || ET TROJAN Win32/Termite Agent Implant CnC Checkin || md5,2820653437d5935d94fcb0c997d6f13c
+2027084 || ET TROJAN Win32/Termite Agent Implant Keep-Alive || md5,2820653437d5935d94fcb0c997d6f13c
+2027085 || ET TROJAN Possible Inbound PowerShell via Invoke-PSImage Stego || url,github.com/peewpw/Invoke-PSImage/blob/master/Invoke-PSImage.ps1
+2027086 || ET TROJAN Observed Malicious SSL Cert (Gozi CnC) || url,sslbl.abuse.ch/ssl-certificates/sha1/008d33ce2e5d3583d8ebb115f72b250975757018/
+2027087 || ET TROJAN Win32/Dorv Stealer Exfiltrating Data to CnC || url,twitter.com/wdsecurity/status/1105992405629583362 || md5,888864c2ea27babf978d5feda40b3b2f
+2027088 || ET TROJAN Win32/Dorv InfoStealer CnC DNS Query || url,twitter.com/wdsecurity/status/1105992405629583362 || md5,888864c2ea27babf978d5feda40b3b2f
+2027089 || ET EXPLOIT Possible LG SuperSign EZ CMS 2.5 RCE (CVE-2018-17173) || cve,2018-17173 || url,www.exploit-db.com/exploits/45448
+2027090 || ET EXPLOIT Possible WePresent WIPG1000 OS Command Injection
+2027091 || ET EXPLOIT Possible WePresent WIPG1000 File Inclusion
+2027092 || ET EXPLOIT Possible ZyXEL P660HN-T v1 RCE || url,seclists.org/fulldisclosure/2017/Jan/40
+2027093 || ET EXPLOIT Possible Netgear DGN2200 RCE (CVE-2017-6077) || cve,2017-6077 || url,www.exploit-db.com/exploits/41394
+2027094 || ET EXPLOIT Possible Netgear DGN2200 RCE (CVE-2017-6334) || cve,2017-6334 || url,www.exploit-db.com/exploits/41394
+2027095 || ET EXPLOIT Possible Linksys WAP54Gv3 Remote Debug Root Shell Exploitation Attempt || url,seclists.org/bugtraq/2010/Jun/93
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -25895,8 +25914,6 @@
 2404051 || ET CNC Shadowserver Reported CnC Server UDP group 26 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404052 || ET CNC Shadowserver Reported CnC Server TCP group 27 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404053 || ET CNC Shadowserver Reported CnC Server UDP group 27 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404054 || ET CNC Shadowserver Reported CnC Server TCP group 28 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404055 || ET CNC Shadowserver Reported CnC Server UDP group 28 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404150 || ET CNC Zeus Tracker Reported CnC Server TCP group 1 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404151 || ET CNC Zeus Tracker Reported CnC Server UDP group 1 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404152 || ET CNC Zeus Tracker Reported CnC Server TCP group 2 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -26473,6 +26490,8 @@
 2520158 || ET TOR Known Tor Exit Node TCP Traffic group 80 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520160 || ET TOR Known Tor Exit Node TCP Traffic group 81 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520162 || ET TOR Known Tor Exit Node TCP Traffic group 82 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520164 || ET TOR Known Tor Exit Node TCP Traffic group 83 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520166 || ET TOR Known Tor Exit Node TCP Traffic group 84 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522004 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -27212,3 +27231,8 @@
 2523472 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 737 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523474 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 738 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523476 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 739 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523478 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 740 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523480 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 741 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523482 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 742 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523484 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 743 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523486 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 744 || url,doc.emergingthreats.net/bin/view/Main/TorRules
