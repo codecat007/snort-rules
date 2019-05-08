@@ -126,6 +126,12 @@ static RuleReference *rule_CiscoIkeBof_refs[] =
 };
 
 /* metadata */
+/* metadata:policy max-detect-ips drop; */
+static RuleMetaData rule_CiscoIkeBof_policy0 =
+{
+   "policy max-detect-ips drop"
+};
+
 /* metadata:policy security-ips drop; */
 static RuleMetaData rule_CiscoIkeBof_policy1 = 
 {
@@ -134,6 +140,7 @@ static RuleMetaData rule_CiscoIkeBof_policy1 =
 
 static RuleMetaData *rule_CiscoIkeBof_metadata[] =
 {
+   &rule_CiscoIkeBof_policy0,
    &rule_CiscoIkeBof_policy1,
    NULL
 };
@@ -159,7 +166,7 @@ Rule rule37675 = {
    { 
       3,  /* genid */
       37675, /* sigid */
-      3, /* revision */
+      4, /* revision */
       "attempted-admin", /* classification */
       0,  /* hardcoded priority */
       "SERVER-OTHER Cisco IOS invalid IKE fragment length memory corruption or exhaustion attempt",     /* message */
