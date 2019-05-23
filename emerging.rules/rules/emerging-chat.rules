@@ -146,7 +146,7 @@ alert tcp $AIM_SERVERS any -> $HOME_NET any (msg:"GPL CHAT AIM receive message";
 
 alert tcp $HOME_NET any -> $AIM_SERVERS any (msg:"GPL CHAT AIM login"; flow:to_server,established; content:"*|02|"; depth:2; content:"|00 17 00 06|"; within:8; distance:4; classtype:policy-violation; sid:2101631; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HOME_NET any <> $EXTERNAL_NET 1863 (msg:"GPL CHAT MSN message"; flow:established; content:"MSG "; depth:4; content:"Content-Type|3A|"; nocase; content:"text/plain"; distance:1; classtype:policy-violation; sid:2100540; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
+#alert tcp $HOME_NET any <> $EXTERNAL_NET 1863 (msg:"GPL CHAT MSN message"; flow:established; content:"MSG "; depth:4; content:"Content-Type|3A|"; nocase; content:"text/plain"; distance:1; metadata: former_category CHAT; classtype:policy-violation; sid:2100540; rev:12; metadata:created_at 2010_09_23, updated_at 2019_05_21;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL CHAT ICQ access"; flow:to_server,established; content:"User-Agent|3A|ICQ"; classtype:policy-violation; sid:2100541; rev:12; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
