@@ -186,3 +186,5 @@ alert tcp $HOME_NET 25565 -> $EXTERNAL_NET any (msg:"ET GAMES MINECRAFT Server r
 
 #alert tcp $EXTERNAL_NET 6112 -> $HOME_NET !443 (msg:"ET GAMES Battle.net connection reset (possible IP-Ban)"; flow:to_client; flags:R,12; reference:url,doc.emergingthreats.net/bin/view/Main/2002117; classtype:policy-violation; sid:2002117; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
+alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET GAMES Wolfteam HileYapak Server Response"; flow:established,from_server; content:"200"; http_stat_code; content:"Temizleme Yapildi HileYapak"; fast_pattern; content:"Content-Type|3a 20|text/plain"; http_header; metadata: former_category GAMES; reference:md5,85cf4df17fcf04286fcbbdf9fbe11077; classtype:policy-violation; sid:2027417; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, deployment Perimeter, signature_severity Audit, created_at 2019_05_31, performance_impact Low, updated_at 2019_05_31;)
+
