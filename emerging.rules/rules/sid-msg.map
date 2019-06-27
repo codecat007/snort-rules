@@ -24311,6 +24311,82 @@
 2027487 || ET EXPLOIT Belkin Wemo Enabled Crock-Pot Unauthenticated Command Injection Outbound (CVE-2019-12780) || url,blogs.akamai.com/sitr/2019/06/latest-echobot-26-infection-vectors.html || md5,d6ebabf44849951d754ee2de15a24b92 || cve,CVE-2019-12780
 2027488 || ET EXPLOIT MiCasaVerde VeraLite - Remote Code Execution Outbound (CVE-2016-6255) || url,blogs.akamai.com/sitr/2019/06/latest-echobot-26-infection-vectors.html || md5,d6ebabf44849951d754ee2de15a24b92 || cve,CVE-2019-12780
 2027489 || ET EXPLOIT MiCasaVerde VeraLite - Remote Code Execution Inbound (CVE-2016-6255) || url,blogs.akamai.com/sitr/2019/06/latest-echobot-26-infection-vectors.html || md5,d6ebabf44849951d754ee2de15a24b92 || cve,CVE-2019-12780
+2027490 || ET MOBILE_MALWARE Android/Spy.Agent.ANA (androidsmedia .com in DNS Lookup) || url,blog.trendmicro.com/trendlabs-security-intelligence/mobile-cyberespionage-campaign-bouncing-golf-affects-middle-east/ || md5,81281261132fba4c8ec70322250965b7
+2027491 || ET MOBILE_MALWARE Android/Spy.Agent.ANA (androidssystem .com in DNS Lookup) || url,blog.trendmicro.com/trendlabs-security-intelligence/mobile-cyberespionage-campaign-bouncing-golf-affects-middle-east/ || md5,81281261132fba4c8ec70322250965b7
+2027492 || ET MOBILE_MALWARE Android/Spy.Agent.ANA (secandroid .com in DNS Lookup) || url,blog.trendmicro.com/trendlabs-security-intelligence/mobile-cyberespionage-campaign-bouncing-golf-affects-middle-east/ || md5,81281261132fba4c8ec70322250965b7
+2027493 || ET MOBILE_MALWARE Android/Spy.Agent.ANA (mediadownload .space in DNS Lookup) || url,blog.trendmicro.com/trendlabs-security-intelligence/mobile-cyberespionage-campaign-bouncing-golf-affects-middle-east/ || md5,81281261132fba4c8ec70322250965b7
+2027494 || ET MOBILE_MALWARE Android/Spy.Agent.ANA (mediamobilereg .com in DNS Lookup) || url,blog.trendmicro.com/trendlabs-security-intelligence/mobile-cyberespionage-campaign-bouncing-golf-affects-middle-east/ || md5,81281261132fba4c8ec70322250965b7
+2027495 || ET MOBILE_MALWARE Android/Spy.Agent.ANA (sharpion .org in DNS Lookup) || url,blog.trendmicro.com/trendlabs-security-intelligence/mobile-cyberespionage-campaign-bouncing-golf-affects-middle-east/ || md5,81281261132fba4c8ec70322250965b7
+2027496 || ET MOBILE_MALWARE Android/Spy.Agent.ANA (shileyfetwell .com in DNS Lookup) || url,blog.trendmicro.com/trendlabs-security-intelligence/mobile-cyberespionage-campaign-bouncing-golf-affects-middle-east/ || md5,81281261132fba4c8ec70322250965b7
+2027497 || ET TROJAN Danabot CnC Checkin || md5,7f5f7de558fd2ef2a195b3a507c11ff2
+2027498 || ET TROJAN Plurox CnC Domain in DNS Lookup
+2027499 || ET TROJAN Plurox CnC Domain in DNS Lookup
+2027500 || ET TROJAN Danabot UA Observed || md5,7f5f7de558fd2ef2a195b3a507c11ff2
+2027501 || ET TROJAN Observed Turla Domain (vision2030 .tk in TLS SNI) || url,www.symantec.com/blogs/threat-intelligence/waterbug-espionage-governments
+2027502 || ET TROJAN Turla DNS Lookup (vision2030 .cf) || url,www.symantec.com/blogs/threat-intelligence/waterbug-espionage-governments
+2027503 || ET USER_AGENTS Observed Suspicious UA (Hello, World)
+2027504 || ET USER_AGENTS Observed Suspicious UA (Hello-World)
+2027505 || ET TROJAN Observed Malicious UA (Skuxray) || md5,cc46f255297ef0366dd447bbcde841ac
+2027506 || ET TROJAN Win32/Plurox Backdoor CnC Checkin || url,securelist.com/plurox-modular-backdoor/91213/ || md5,c5b42399a6636de5014e2934ef08278f
+2027507 || ET TROJAN Linux.Ngioweb Stage 1 CnC Activity Client Request (set) || url,blog.netlab.360.com/an-analysis-of-linux-ngioweb-botnet-en/
+2027508 || ET TROJAN Linux.Ngioweb Stage 1 CnC Activity Server Response (WAIT) || url,blog.netlab.360.com/an-analysis-of-linux-ngioweb-botnet-en/
+2027509 || ET TROJAN Linux.Ngioweb Stage 1 CnC Activity Server Response (CONNECT) || url,blog.netlab.360.com/an-analysis-of-linux-ngioweb-botnet-en/
+2027510 || ET TROJAN Linux.Ngioweb Stage 1 CnC Activity Server Response (DISCONNECT) || url,blog.netlab.360.com/an-analysis-of-linux-ngioweb-botnet-en/
+2027511 || ET TROJAN Linux.Ngioweb Stage 1 CnC Activity Server Response (CERT) || url,blog.netlab.360.com/an-analysis-of-linux-ngioweb-botnet-en/
+2027512 || ET TROJAN Possible PowerShell Empire Activity Outbound
+2027513 || ET EXPLOIT FCM-MB40 Attempted Remote Command Execution as Root || url,xor.cat/2019/06/19/fortinet-forticam-vulns/
+2027514 || ET WEB_SERVER Observed FxCodeShell Web Shell Password
+2027515 || ET TROJAN HYDSEVEN VBS CnC Host Information Checkin || url,www.lac.co.jp/lacwatch/pdf/20190619_cecreport_sp.pdf || url,www.fireeye.com/blog/threat-research/2019/03/winrar-zero-day-abused-in-multiple-campaigns.html
+2027517 || ET EXPLOIT Tomcat File Upload Payload Request (CVE-2017-12615) || url,forums.juniper.net/t5/Threat-Research/Anatomy-of-the-Bulehero-Cryptomining-Botnet/ba-p/458787 || cve,2017-12615
+2027518 || ET EXPLOIT ThinkPHP Attempted Bypass and Payload Retrieval || url,forums.juniper.net/t5/Threat-Research/Anatomy-of-the-Bulehero-Cryptomining-Botnet/ba-p/458787
+2027519 || ET INFO Cloned EWE Telecom Page - Possible Phishing Landing
+2027520 || ET INFO Cloned La Banque Postale FR Page - Possible Phishing Landing
+2027521 || ET INFO Cloned ATB Bank Online Page - Possible Phishing Landing
+2027522 || ET INFO Cloned RBC Royal Bank Page - Possible Phishing Landing
+2027523 || ET INFO Cloned CIBC Bank Page - Possible Phishing Landing M1
+2027524 || ET INFO Cloned ABSA Bank Page - Possible Phishing Landing
+2027525 || ET INFO Cloned Instagram Page - Possible Phishing Landing M1
+2027526 || ET INFO Cloned Instagram Page - Possible Phishing Landing M2
+2027527 || ET INFO Cloned Spotify Page - Possible Phishing Landing
+2027528 || ET INFO Cloned ADP Page - Possible Phishing Landing
+2027529 || ET INFO Cloned Westpac Bank Page - Possible Phishing Landing
+2027530 || ET INFO Cloned Simplii Page - Possible Phishing Landing
+2027531 || ET INFO Cloned CIBC Bank Page - Possible Phishing Landing M2
+2027532 || ET INFO Cloned Chase Page - Possible Phishing Landing
+2027533 || ET INFO Cloned Scotiabank Page - Possible Phishing Landing
+2027534 || ET INFO Cloned Cox Page - Possible Phishing Landing M1
+2027535 || ET INFO Cloned Cox Page - Possible Phishing Landing M2
+2027536 || ET INFO Cloned Comcast / Xfinity Page - Possible Phishing Landing
+2027537 || ET INFO Cloned Telstra Page - Possible Phishing Landing
+2027538 || ET INFO Cloned Comcast / Xfinity Page - Possible Phishing Landing
+2027539 || ET INFO Cloned Itscom Page - Possible Phishing Landing
+2027540 || ET INFO Cloned Bank of America Page - Possible Phishing Landing M1
+2027541 || ET INFO Cloned Bank of America Page - Possible Phishing Landing M2
+2027542 || ET INFO Cloned Bank of America Page - Possible Phishing Landing M3
+2027543 || ET INFO Cloned Microsoft Office Apps Page - Possible Phishing Landing
+2027544 || ET INFO Cloned Telekom / Tmobile Page - Possible Phishing Landing
+2027545 || ET INFO Cloned Fidelity Page - Possible Phishing Landing
+2027546 || ET INFO Cloned Societe Generale FR Page - Possible Phishing Landing
+2027547 || ET INFO Cloned Impots Gouv FR Page - Possible Phishing Landing
+2027548 || ET INFO Cloned Godaddy Page - Possible Phishing Landing
+2027549 || ET INFO Cloned Dropbox Page - Possible Phishing Landing
+2027550 || ET INFO Cloned American Express Page - Possible Phishing Landing
+2027551 || ET INFO Cloned ABSA Bank Page - Possible Phishing Landing
+2027552 || ET INFO Cloned Match Dating Page - Possible Phishing Landing
+2027553 || ET INFO Cloned Telekom / Tmobile Page - Possible Phishing Landing
+2027554 || ET INFO Cloned South State Bank Page - Possible Phishing Landing
+2027555 || ET INFO Cloned Google Tools Page - Possible Phishing Landing
+2027556 || ET INFO Cloned Yahoo Page - Possible Phishing Landing
+2027557 || ET INFO Cloned Discover Page - Possible Phishing Landing
+2027558 || ET INFO Cloned Linkedin Page - Possible Phishing Landing
+2027559 || ET INFO Cloned NAB Page - Possible Phishing Landing
+2027560 || ET INFO Cloned Ziggo NL Page - Possible Phishing Landing
+2027561 || ET CURRENT_EVENTS Generic Miarroba Phishing Landing
+2027562 || ET INFO Possible Phishing Landing - Zeus365 Encoding
+2027563 || ET CURRENT_EVENTS Generic Goth Phishing Landing
+2027564 || ET TROJAN DonotGroup APT CnC Domain in DNS Lookup
+2027565 || ET USER_AGENTS Fake Mozilla User-Agent String Observed (M0zilla) || md5,c6c1292bf7dd1573b269afb203134b1d
+2027566 || ET MALWARE Win32/Agent.NDV Receiving Task Config File || md5,c6c1292bf7dd1573b269afb203134b1d
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -26874,6 +26950,34 @@
 2500077 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 39 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500078 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 40 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500079 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 40 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500080 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 41 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500081 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 41 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500082 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 42 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500083 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 42 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500084 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 43 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500085 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 43 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500086 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 44 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500087 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 44 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500088 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 45 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500089 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 45 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500090 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 46 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500091 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 46 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500092 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 47 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500093 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 47 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500094 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 48 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500095 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 48 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500096 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 49 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500097 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 49 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500098 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 50 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500099 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 50 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500100 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 51 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500101 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 51 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500102 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 52 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500103 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 52 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500104 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 53 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500105 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 53 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500106 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 54 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500107 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 54 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520002 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520004 || ET TOR Known Tor Exit Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -26961,9 +27065,6 @@
 2520168 || ET TOR Known Tor Exit Node TCP Traffic group 85 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520170 || ET TOR Known Tor Exit Node TCP Traffic group 86 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520172 || ET TOR Known Tor Exit Node TCP Traffic group 87 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520174 || ET TOR Known Tor Exit Node TCP Traffic group 88 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520176 || ET TOR Known Tor Exit Node TCP Traffic group 89 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520178 || ET TOR Known Tor Exit Node TCP Traffic group 90 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522004 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -27685,4 +27786,3 @@
 2523436 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 719 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523438 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 720 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523440 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 721 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2523442 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 722 || url,doc.emergingthreats.net/bin/view/Main/TorRules
