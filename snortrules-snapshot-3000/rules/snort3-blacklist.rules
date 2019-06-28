@@ -1,0 +1,24 @@
+# Copyright 2001-2012 Sourcefire Inc. All Rights Reserved.
+#
+# This file may contain proprietary rules that were created, tested and
+# certified by Sourcefire, Inc. (the "VRT Certified Rules") as well as
+# rules that were created by Sourcefire and other third parties and
+# distributed under the GNU General Public License (the "GPL Rules").  The
+# VRT Certified Rules contained in this file are the property of
+# Sourcefire, Inc. Copyright  Sourcefire, Inc. All Rights Reserved.
+# The GPL Rules created by Sourcefire, Inc. are the property of
+# Sourcefire, Inc. Copyright 2002- Sourcefire, Inc. All Rights
+# Reserved.  All other GPL Rules are owned and copyrighted by their
+# respective owners (please see www.snort.org/contributors for a list of
+# owners and their respective copyrights).  In order to determine what
+# rules are VRT Certified Rules or GPL Rules, please refer to the VRT
+# Certified Rules License Agreement.
+#
+#-----------------
+# BLACKLIST RULES
+#-----------------
+
+
+# fast_pattern's 'only' option has been deleted
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS ( msg:"MALWARE-CNC User-Agent known malicious user-agent string - Win.Trojan.Fareit"; flow:to_server,established; http_header; content:"User-Agent|3A| Mozilla/4.08 (Charon|3B| Inferno)",fast_pattern,nocase; metadata:impact_flag red,policy balanced-ips drop,policy max-detect-ips drop,policy security-ips drop; service:http; reference:url,www.virustotal.com/en/file/682fa75de9a2c11d5bdc9545ebc914af00921c807be5bb86296321bc55e08c86/analysis/; classtype:trojan-activity; sid:40066; rev:3; )
+
