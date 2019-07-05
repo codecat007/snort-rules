@@ -24387,6 +24387,128 @@
 2027564 || ET TROJAN DonotGroup APT CnC Domain in DNS Lookup
 2027565 || ET USER_AGENTS Fake Mozilla User-Agent String Observed (M0zilla) || md5,c6c1292bf7dd1573b269afb203134b1d
 2027566 || ET MALWARE Win32/Agent.NDV Receiving Task Config File || md5,c6c1292bf7dd1573b269afb203134b1d
+2027567 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup
+2027568 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup
+2027569 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup
+2027570 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup
+2027571 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup
+2027572 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup
+2027573 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup
+2027574 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup
+2027575 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027576 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027577 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027578 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027579 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027580 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027581 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027582 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027583 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027584 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027585 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027586 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027587 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027588 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027589 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027590 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027591 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027592 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027593 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027594 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027595 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027596 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027597 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027598 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027599 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027600 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027601 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027602 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027603 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027604 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027605 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027606 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027607 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027608 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027609 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027610 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027611 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027612 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027613 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027614 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027615 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027616 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027617 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027618 || ET TROJAN Gift Cardshark CnC Domain in DNS Lookup || url,www.riskiq.com/blog/external-threat-management/giftcard-sharks/
+2027619 || ET TROJAN Observed Malicious SSL Cert (Quasar CnC) || url,sslbl.abuse.ch/ssl-certificates/sha1/f87d2aff4148f98f014460ab709c77587ea1e430/
+2027620 || ET TROJAN Observed Malicious SSL Cert (Ursnif CnC)
+2027621 || ET INFO SSL/TLS Certificate Observed (Lucy Phishing Awareness Default Certificate) || url,lucysecurity.com || url,cdn.riskiq.com/wp-content/uploads/2019/06/Gift-Cardsharks-Intelligence-Report-2019-RiskIQ.pdf
+2027622 || ET TROJAN APT33 CnC Domain in DNS Lookup
+2027623 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027624 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027625 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027626 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027627 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027628 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027629 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027630 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027631 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027632 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027633 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027634 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027635 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027636 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027637 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027638 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027639 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027640 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027641 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027642 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027643 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027644 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027645 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027646 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027647 || ET TROJAN APT33 CnC Domain in DNS Lookup || url,go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf
+2027648 || ET USER_AGENTS Suspicious UA Observed (Ave, Caesar!)
+2027649 || ET USER_AGENTS Observed Suspicious UA (zwt)
+2027650 || ET USER_AGENTS Observed Suspicious UA (My Agent)
+2027651 || ET TROJAN Win32/Unk HeavensGate Loader CnC in DNS Lookup || url,blog.talosintelligence.com/2019/07/rats-and-stealers-rush-through-heavens.html
+2027652 || ET TROJAN Win32/Unk HeavensGate Loader CnC in DNS Lookup || url,blog.talosintelligence.com/2019/07/rats-and-stealers-rush-through-heavens.html
+2027653 || ET TROJAN Win32/Unk HeavensGate Loader CnC in DNS Lookup || url,blog.talosintelligence.com/2019/07/rats-and-stealers-rush-through-heavens.html
+2027654 || ET TROJAN APT32 CnC in DNS Lookup || url,threatvector.cylance.com/en_us/home/threat-spotlight-ratsnif-new-network-vermin-from-oceanlotus.html
+2027655 || ET TROJAN APT32 CnC in DNS Lookup || url,threatvector.cylance.com/en_us/home/threat-spotlight-ratsnif-new-network-vermin-from-oceanlotus.html
+2027656 || ET TROJAN APT32 Win32/Ratsnif POSTing Log Message to CnC || url,threatvector.cylance.com/en_us/home/threat-spotlight-ratsnif-new-network-vermin-from-oceanlotus.html
+2027657 || ET TROJAN APT32 Win32/Ratsnif Submitting Output of Command to CnC || url,threatvector.cylance.com/en_us/home/threat-spotlight-ratsnif-new-network-vermin-from-oceanlotus.html
+2027658 || ET TROJAN APT32 Win32/Ratsnif Requesting Command from CnC || url,threatvector.cylance.com/en_us/home/threat-spotlight-ratsnif-new-network-vermin-from-oceanlotus.html
+2027659 || ET TROJAN APT32 Win32/Ratsnif CnC Checkin || md5,516ad28f8fa161f086be7ca122351edf || url,threatvector.cylance.com/en_us/home/threat-spotlight-ratsnif-new-network-vermin-from-oceanlotus.html
+2027660 || ET TROJAN Win32/Remcos RAT Checkin 109 || url,research.checkpoint.com/operation-tripoli/
+2027661 || ET TROJAN Operation Tripoli Related CnC Checkin || url,research.checkpoint.com/operation-tripoli/
+2027662 || ET TROJAN Observed Godlua Backdoor Domain (helegedada .github .io in TLS SNI) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027663 || ET TROJAN Observed Godlua Backdoor Domain (dd .heheda .tk in TLS SNI) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027664 || ET TROJAN Observed Godlua Backdoor Domain (d .heheda .tk in TLS SNI) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027665 || ET TROJAN Observed Godlua Backdoor Domain (c .heheda .tk in TLS SNI) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027666 || ET TROJAN Observed Godlua Backdoor Domain (dd .cloudappconfig .com in TLS SNI) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027667 || ET TROJAN Observed Godlua Backdoor Domain (d .cloudappconfig .com in TLS SNI) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027668 || ET TROJAN Observed Godlua Backdoor Domain (c .cloudappconfig .com in TLS SNI) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027669 || ET TROJAN Observed Turla/APT34 CnC Domain Domain (dubaiexpo2020 .cf in TLS SNI) || md5,4079500faa93e32a2622e1593ad94738
+2027670 || ET TROJAN Observed Malicious SSL Cert (Turla/APT34 CnC Domain) || md5,2a8672b0fd29dc3b6f49935691b648bc
+2027671 || ET POLICY Cloudflare DNS Over HTTPS Certificate Inbound || url,developers.cloudflare.com/1.1.1.1/dns-over-https/request-structure/
+2027672 || ET TROJAN Godlua Backdoor Stage-3 Client Heartbeat (Jun 2019- Dec 2019) (set) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027673 || ET TROJAN Godlua Backdoor Stage-3 Client Heartbeat (Dec 2019- Jul 2020) (set) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027674 || ET TROJAN Godlua Backdoor Stage-3 Client Heartbeat (Jul 2020- Jan 2021) (set) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027675 || ET TROJAN Godlua Backdoor Stage-3 Server Heartbeat Reply (Jun 2019 - Sep 2020) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027676 || ET TROJAN Godlua Backdoor Stage-3 Server Heartbeat Reply (Sep 2020 - Nov 2023) || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027677 || ET TROJAN Godlua Backdoor Downloading Encrypted Lua || url,blog.netlab.360.com/an-analysis-of-godlua-backdoor-en/
+2027678 || ET TROJAN Known Malicious Server in DNS Lookup (updatecache .com)
+2027679 || ET CURRENT_EVENTS Successful France Ministry of Action and Public Accounts Phish 2019-07-04
+2027680 || ET CURRENT_EVENTS France Ministry of Action and Public Accounts Phish Landing
+2027681 || ET TROJAN MuddyWater Payload Sending Screenshot to CnC || url,mp.weixin.qq.com/s/ko5ct9mnW78pD_RRqEUSkg
+2027682 || ET TROJAN MuddyWater Payload Sending Command Output to CnC || url,mp.weixin.qq.com/s/ko5ct9mnW78pD_RRqEUSkg
+2027683 || ET TROJAN MuddyWater Payload Registering with CnC || url,mp.weixin.qq.com/s/ko5ct9mnW78pD_RRqEUSkg
+2027684 || ET TROJAN MuddyWater Payload Requesting Command from CnC || url,mp.weixin.qq.com/s/ko5ct9mnW78pD_RRqEUSkg
+2027685 || ET TROJAN MuddyWater Payload CnC Checkin || url,mp.weixin.qq.com/s/ko5ct9mnW78pD_RRqEUSkg
+2027686 || ET USER_AGENTS Suspicious Custom Firefox UA Observed (Firefox...)
+2027687 || ET TROJAN Observed Malicious SSL Cert (Ursnif CnC)
+2027688 || ET TROJAN Observed Malicious SSL Cert (Ursnif CnC)
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -26405,6 +26527,12 @@
 2404089 || ET CNC Shadowserver Reported CnC Server UDP group 45 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404090 || ET CNC Shadowserver Reported CnC Server TCP group 46 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404091 || ET CNC Shadowserver Reported CnC Server UDP group 46 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404092 || ET CNC Shadowserver Reported CnC Server TCP group 47 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404093 || ET CNC Shadowserver Reported CnC Server UDP group 47 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404094 || ET CNC Shadowserver Reported CnC Server TCP group 48 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404095 || ET CNC Shadowserver Reported CnC Server UDP group 48 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404096 || ET CNC Shadowserver Reported CnC Server TCP group 49 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404097 || ET CNC Shadowserver Reported CnC Server UDP group 49 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404150 || ET CNC Zeus Tracker Reported CnC Server TCP group 1 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404151 || ET CNC Zeus Tracker Reported CnC Server UDP group 1 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404152 || ET CNC Zeus Tracker Reported CnC Server TCP group 2 || url,zeustracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -26498,9 +26626,7 @@
 2404344 || ET CNC Feodo Tracker Reported CnC Server TCP group 23 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404345 || ET CNC Feodo Tracker Reported CnC Server UDP group 23 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404346 || ET CNC Feodo Tracker Reported CnC Server TCP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404347 || ET CNC Feodo Tracker Reported CnC Server UDP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404348 || ET CNC Feodo Tracker Reported CnC Server TCP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404349 || ET CNC Feodoo Tracker Reported CnC Server UDP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404347 || ET CNC Feodoo Tracker Reported CnC Server UDP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404400 || ET CNC Ransomware Tracker Reported CnC Server TCP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404401 || ET CNC Ransomware Tracker Reported CnC Server UDP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404402 || ET CNC Ransomware Tracker Reported CnC Server TCP group 2 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -26837,6 +26963,8 @@
 2404733 || ET CNC Ransomware Tracker Reported CnC Server UDP group 167 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404734 || ET CNC Ransomware Tracker Reported CnC Server TCP group 168 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404735 || ET CNC Ransomware Tracker Reported CnC Server UDP group 168 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404736 || ET CNC Ransomware Tracker Reported CnC Server TCP group 169 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404737 || ET CNC Ransomware Tracker Reported CnC Server UDP group 169 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405000 || ET CNC Shadowserver Reported CnC Server Port 80 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405001 || ET CNC Shadowserver Reported CnC Server Port 81 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405002 || ET CNC Shadowserver Reported CnC Server Port 443 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -26844,32 +26972,37 @@
 2405004 || ET CNC Shadowserver Reported CnC Server Port 1587 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405005 || ET CNC Shadowserver Reported CnC Server Port 1598 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2405006 || ET CNC Shadowserver Reported CnC Server Port 1863 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405007 || ET CNC Shadowserver Reported CnC Server Port 1888 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405008 || ET CNC Shadowserver Reported CnC Server Port 2319 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405009 || ET CNC Shadowserver Reported CnC Server Port 3030 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405010 || ET CNC Shadowserver Reported CnC Server Port 3159 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405011 || ET CNC Shadowserver Reported CnC Server Port 3705 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405012 || ET CNC Shadowserver Reported CnC Server Port 4042 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405013 || ET CNC Shadowserver Reported CnC Server Port 4244 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405014 || ET CNC Shadowserver Reported CnC Server Port 5505 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405015 || ET CNC Shadowserver Reported CnC Server Port 6556 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405016 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405017 || ET CNC Shadowserver Reported CnC Server Port 6668 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405018 || ET CNC Shadowserver Reported CnC Server Port 6768 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405019 || ET CNC Shadowserver Reported CnC Server Port 6900 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405020 || ET CNC Shadowserver Reported CnC Server Port 7000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405021 || ET CNC Shadowserver Reported CnC Server Port 7890 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405022 || ET CNC Shadowserver Reported CnC Server Port 8000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405023 || ET CNC Shadowserver Reported CnC Server Port 8067 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405024 || ET CNC Shadowserver Reported CnC Server Port 8585 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405025 || ET CNC Shadowserver Reported CnC Server Port 8782 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405026 || ET CNC Shadowserver Reported CnC Server Port 9000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405027 || ET CNC Shadowserver Reported CnC Server Port 10324 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405028 || ET CNC Shadowserver Reported CnC Server Port 11830 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405029 || ET CNC Shadowserver Reported CnC Server Port 13001 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405030 || ET CNC Shadowserver Reported CnC Server Port 26745 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405031 || ET CNC Shadowserver Reported CnC Server Port 33333 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2405032 || ET CNC Shadowserver Reported CnC Server Port 51987 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405007 || ET CNC Shadowserver Reported CnC Server Port 1875 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405008 || ET CNC Shadowserver Reported CnC Server Port 1888 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405009 || ET CNC Shadowserver Reported CnC Server Port 2319 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405010 || ET CNC Shadowserver Reported CnC Server Port 2525 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405011 || ET CNC Shadowserver Reported CnC Server Port 3030 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405012 || ET CNC Shadowserver Reported CnC Server Port 3159 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405013 || ET CNC Shadowserver Reported CnC Server Port 3211 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405014 || ET CNC Shadowserver Reported CnC Server Port 3705 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405015 || ET CNC Shadowserver Reported CnC Server Port 4042 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405016 || ET CNC Shadowserver Reported CnC Server Port 4244 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405017 || ET CNC Shadowserver Reported CnC Server Port 5505 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405018 || ET CNC Shadowserver Reported CnC Server Port 6556 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405019 || ET CNC Shadowserver Reported CnC Server Port 6667 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405020 || ET CNC Shadowserver Reported CnC Server Port 6668 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405021 || ET CNC Shadowserver Reported CnC Server Port 6768 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405022 || ET CNC Shadowserver Reported CnC Server Port 6900 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405023 || ET CNC Shadowserver Reported CnC Server Port 7000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405024 || ET CNC Shadowserver Reported CnC Server Port 7890 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405025 || ET CNC Shadowserver Reported CnC Server Port 8000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405026 || ET CNC Shadowserver Reported CnC Server Port 8067 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405027 || ET CNC Shadowserver Reported CnC Server Port 8585 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405028 || ET CNC Shadowserver Reported CnC Server Port 8782 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405029 || ET CNC Shadowserver Reported CnC Server Port 9000 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405030 || ET CNC Shadowserver Reported CnC Server Port 9095 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405031 || ET CNC Shadowserver Reported CnC Server Port 10324 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405032 || ET CNC Shadowserver Reported CnC Server Port 11830 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405033 || ET CNC Shadowserver Reported CnC Server Port 13001 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405034 || ET CNC Shadowserver Reported CnC Server Port 15656 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405035 || ET CNC Shadowserver Reported CnC Server Port 26745 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405036 || ET CNC Shadowserver Reported CnC Server Port 33333 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2405037 || ET CNC Shadowserver Reported CnC Server Port 51987 Group 1 || url,www.shadowserver.org || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2500000 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 1 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500001 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 1 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500002 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 2 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
@@ -26968,16 +27101,6 @@
 2500095 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 48 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500096 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 49 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500097 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 49 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500098 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 50 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500099 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 50 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500100 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 51 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500101 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 51 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500102 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 52 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500103 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 52 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500104 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 53 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500105 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 53 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500106 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 54 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500107 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 54 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520002 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520004 || ET TOR Known Tor Exit Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -27065,6 +27188,9 @@
 2520168 || ET TOR Known Tor Exit Node TCP Traffic group 85 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520170 || ET TOR Known Tor Exit Node TCP Traffic group 86 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520172 || ET TOR Known Tor Exit Node TCP Traffic group 87 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520174 || ET TOR Known Tor Exit Node TCP Traffic group 88 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520176 || ET TOR Known Tor Exit Node TCP Traffic group 89 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520178 || ET TOR Known Tor Exit Node TCP Traffic group 90 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522004 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -27786,3 +27912,10 @@
 2523436 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 719 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523438 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 720 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523440 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 721 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523442 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 722 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523444 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 723 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523446 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 724 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523448 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 725 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523450 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 726 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523452 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 727 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523454 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 728 || url,doc.emergingthreats.net/bin/view/Main/TorRules
