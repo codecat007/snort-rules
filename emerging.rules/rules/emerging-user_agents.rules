@@ -682,3 +682,5 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS Observ
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS Suspicious Custom Firefox UA Observed (Firefox...)"; flow:established,to_server; content:"User-Agent|3a 20|Firefox...|0d|"; http_header; fast_pattern:2,20; metadata: former_category USER_AGENTS; classtype:bad-unknown; sid:2027686; rev:2; metadata:deployment Perimeter, signature_severity Minor, created_at 2019_07_04, performance_impact Low, updated_at 2019_07_04;)
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS User-Agent (single dash)"; flow:to_server,established; content:"User-Agent|3a| |2d 0d 0a|"; http_header; metadata: former_category MALWARE; reference:url,doc.emergingthreats.net/bin/view/Main/2007880; classtype:trojan-activity; sid:2007880; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+
