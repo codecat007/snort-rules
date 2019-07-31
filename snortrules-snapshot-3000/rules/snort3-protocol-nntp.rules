@@ -19,7 +19,7 @@
 # PROTOCOL-NNTP RULES
 #---------------------
 
-# alert tcp $EXTERNAL_NET any -> $HOME_NET 119 ( msg:"PROTOCOL-NNTP Microsoft Windows SEARCH pattern overflow attempt"; flow:to_server,established; content:"SEARCH|20|",depth 7,nocase; isdataat:160,relative; pcre:"/^SEARCH\s+[^\n]{160}/i"; metadata:ruleset community; reference:cve,2004-0574; reference:url,technet.microsoft.com/en-us/security/bulletin/MS04-036; classtype:attempted-admin; sid:3078; rev:11; )
+# alert tcp $EXTERNAL_NET any -> $HOME_NET 119 ( msg:"PROTOCOL-NNTP Microsoft Windows SEARCH pattern overflow attempt"; flow:to_server,established; content:"SEARCH|20|",depth 7,nocase; isdataat:160,relative; pcre:"/^SEARCH\s+[^\n]{160}/i"; metadata:policy max-detect-ips drop,ruleset community; reference:cve,2004-0574; reference:url,technet.microsoft.com/en-us/security/bulletin/MS04-036; classtype:attempted-admin; sid:3078; rev:12; )
 # alert tcp $EXTERNAL_NET 119 -> $HOME_NET any ( msg:"PROTOCOL-NNTP return code buffer overflow attempt"; flow:to_client,established; content:"200"; isdataat:256,relative; pcre:"/^200\s[^\n]{256}/smi"; metadata:ruleset community; reference:bugtraq,4900; reference:cve,2002-0909; classtype:protocol-command-decode; sid:1792; rev:16; )
 # alert tcp $EXTERNAL_NET any -> $HOME_NET 119 ( msg:"PROTOCOL-NNTP AUTHINFO USER overflow attempt"; flow:to_server,established; content:"AUTHINFO",nocase; content:"USER",distance 0,nocase; isdataat:200,relative; pcre:"/^AUTHINFO\s+USER\s[^\n]{200}/smi"; metadata:ruleset community; reference:bugtraq,1156; reference:cve,2000-0341; reference:nessus,10388; classtype:attempted-admin; sid:1538; rev:22; )
 # fast_pattern's 'only' option has been deleted
