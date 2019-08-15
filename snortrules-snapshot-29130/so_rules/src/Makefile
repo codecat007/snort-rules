@@ -202,6 +202,10 @@ ifeq (${SNORT_VERSION},2.9.14.0)
 MYCFLAGS += -DREQ_ENGINE_LIB_MAJOR=3 -DREQ_ENGINE_LIB_MINOR=1 -DNO_NON_ETHER_DECODER
 SEEN=1
 endif
+ifeq (${SNORT_VERSION},2.9.14.1)
+MYCFLAGS += -DREQ_ENGINE_LIB_MAJOR=3 -DREQ_ENGINE_LIB_MINOR=1 -DNO_NON_ETHER_DECODER
+SEEN=1
+endif
 
 # libs is the base name for each of the categories
 libs := $(shell ls ?*\_*.c | cut -d_ -f1 | grep -v deleted | grep -v so-util | uniq)
