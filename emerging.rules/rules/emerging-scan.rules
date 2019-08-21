@@ -9,7 +9,7 @@
 #  as follows:
 #
 #*************************************************************
-#  Copyright (c) 2003-2017, Emerging Threats
+#  Copyright (c) 2003-2019, Emerging Threats
 #  All rights reserved.
 #  
 #  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the 
@@ -592,7 +592,7 @@ alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET SCAN ICMP @hello request 
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET 3389 (msg:"ET SCAN Behavioral Unusually fast Terminal Server Traffic Potential Scan or Infection (Outbound)"; flags: S,12; threshold: type both, track by_src, count 20, seconds 360; metadata: former_category SCAN; reference:url,threatpost.com/en_us/blogs/new-worm-morto-using-rdp-infect-windows-pcs-082811; classtype:misc-activity; sid:2013479; rev:4; metadata:created_at 2011_08_29, updated_at 2017_05_11;)
 
-alert tcp $HOME_NET any -> any any (msg:"ET SCAN Possible Nmap User-Agent Observed"; flow:to_server,established; content:"User-Agent|3a|"; http_header; content:"|20|Nmap"; http_header; fast_pattern; distance:0; metadata: former_category SCAN; classtype:web-application-attack; sid:2024364; rev:3; metadata:affected_product Any, attack_target Client_and_Server, deployment Perimeter, signature_severity Audit, created_at 2017_06_08, performance_impact Low, updated_at 2017_06_13;)
+alert tcp $HOME_NET any -> any any (msg:"ET SCAN Possible Nmap User-Agent Observed"; flow:to_server,established; content:"User-Agent|3a|"; http_header; content:"|20|Nmap"; http_header; fast_pattern; distance:0; metadata: former_category SCAN; classtype:web-application-attack; sid:2024364; rev:3; metadata:affected_product Any, attack_target Client_and_Server, deployment Perimeter, signature_severity Informational, created_at 2017_06_08, performance_impact Low, updated_at 2017_06_13;)
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"ET SCAN struts-pwn User-Agent"; flow:established,to_server; content:"User-Agent|3a 20|struts-pwn"; http_header; fast_pattern;metadata:affected_product Apache_Struts2, attack_target Web_Server, deployment Perimeter, signature_severity Critical; metadata: former_category SCAN; reference:url,github.com/mazen160/struts-pwn_CVE-2017-9805/blob/master/struts-pwn.py; reference:cve,2017-9805; reference:url,paladion.net/paladion-cyber-labs-discovers-a-new-ransomware/; classtype:attempted-user; sid:2024843; rev:1; metadata:affected_product Apache_Struts2, attack_target Web_Server, deployment Datacenter, signature_severity Minor, created_at 2017_10_16, performance_impact Moderate, updated_at 2017_10_16;)
 
@@ -606,7 +606,7 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET 1521 (msg:"ET SCAN Suspicious inbound t
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET 1433 (msg:"ET SCAN Suspicious inbound to MSSQL port 1433"; flow:to_server; flags:S; threshold: type limit, count 5, seconds 60, track by_src; metadata: former_category POLICY; reference:url,doc.emergingthreats.net/2010935; classtype:bad-unknown; sid:2010935; rev:3; metadata:created_at 2010_07_30, updated_at 2018_03_27;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"ET SCAN NYU Internet Census UA Inbound"; content:"User-Agent|3a 20|NYU Internet Census"; http_header; metadata: former_category SCAN; reference:url,scan.lol; classtype:network-scan; sid:2025461; rev:1; metadata:deployment Perimeter, deployment Datacenter, signature_severity Audit, created_at 2018_04_03, updated_at 2018_04_03;)
+alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"ET SCAN NYU Internet Census UA Inbound"; content:"User-Agent|3a 20|NYU Internet Census"; http_header; metadata: former_category SCAN; reference:url,scan.lol; classtype:network-scan; sid:2025461; rev:1; metadata:deployment Perimeter, deployment Datacenter, signature_severity Informational, created_at 2018_04_03, updated_at 2018_04_03;)
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET $HTTP_PORTS (msg:"ET SCAN PHP Attack Tool Morfeus F Scanner"; flow:established,to_server; content:"User-Agent|3a| Morfeus"; fast_pattern:only; nocase; http_header; metadata: former_category WEB_SERVER; reference:url,www.webmasterworld.com/search_engine_spiders/3227720.htm; reference:url,doc.emergingthreats.net/2003466; classtype:web-application-attack; sid:2003466; rev:13; metadata:created_at 2010_07_30, updated_at 2018_04_17;)
 

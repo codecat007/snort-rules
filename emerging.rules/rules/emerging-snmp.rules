@@ -9,7 +9,7 @@
 #  as follows:
 #
 #*************************************************************
-#  Copyright (c) 2003-2017, Emerging Threats
+#  Copyright (c) 2003-2019, Emerging Threats
 #  All rights reserved.
 #  
 #  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the 
@@ -103,4 +103,6 @@ alert udp $EXTERNAL_NET any -> $HOME_NET 161 (msg:"ET SNMP missing community str
 alert udp $EXTERNAL_NET any -> $HOME_NET 161 (msg:"ET SNMP missing community string attempt 4"; content:"|30|"; depth:1; byte_test:1,!&,0x80,0,relative,big; content:"|02|"; distance:1; within:1; byte_test:1,&,0x80,0,relative,big; byte_jump:1,0,relative; content:"|04 00|"; distance:-129; within:2; reference:bugtraq,2112; reference:cve,1999-0517; classtype:misc-attack; sid:2016181; rev:2; metadata:created_at 2013_01_09, updated_at 2013_01_09;)
 
 alert udp $EXTERNAL_NET any -> $HOME_NET 162 (msg:"GPL SNMP SNMP trap Format String detected"; content:"%s"; fast_pattern:only; reference:bugtraq,16267; reference:cve,2006-0250; reference:url,www.osvdb.org/displayvuln.php?osvdb_id=22493; classtype:attempted-recon; sid:2100227; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
+
+#alert udp $EXTERNAL_NET any -> $HOME_NET 162 (msg:"ET SNMP Cisco Non-Trap PDU request on SNMPv1 trap port"; content:"|02 01 00|"; depth:3; byte_test:1,>,159,8,relative; byte_test:1,<,164,8,relative;  metadata: former_category SNMP; classtype:attempted-dos; sid:2027890; rev:1; metadata:created_at 2019_08_15, updated_at 2019_08_16;)
 
