@@ -142,10 +142,16 @@ static RuleMetaData rule31361policy2 =
    "policy security-ips drop"
 };
 
+static RuleMetaData rule31361policy3 =
+{
+    "policy max-detect-ips drop"
+};
+
 static RuleMetaData *rule31361metadata[] =
 {
    &rule31361policy1,
    &rule31361policy2,
+   &rule31361policy3,
    NULL
 };
 
@@ -170,7 +176,7 @@ Rule rule31361 = {
    { 
       3,  /* genid */
       31361, /* sigid */
-      3, /* revision */
+      4, /* revision */
       "attempted-admin", /* classification */
       0,  /* hardcoded priority */
       "SERVER-OTHER OpenSSL DTLSv1.0 handshake fragment buffer overrun attempt",     /* message */

@@ -20,8 +20,8 @@
 
 # fast_pattern's 'only' option has been deleted
 # alert ip $EXTERNAL_NET any -> $HOME_NET any ( msg:"INDICATOR-SHELLCODE Oracle sparc setuid 0"; content:"|82 10| |17 91 D0| |08|",fast_pattern,nocase; metadata:policy max-detect-ips drop,ruleset community; classtype:system-call-detect; sid:647; rev:15; )
-# alert ip $EXTERNAL_NET any -> $HOME_NET any ( msg:"INDICATOR-SHELLCODE x86 setgid 0"; content:"|B0 B5 CD 80|",fast_pattern,nocase; metadata:ruleset community; classtype:system-call-detect; sid:649; rev:14; )
-# alert ip $EXTERNAL_NET any -> $HOME_NET any ( msg:"INDICATOR-SHELLCODE x86 setuid 0"; content:"|B0 17 CD 80|",fast_pattern,nocase; metadata:ruleset community; classtype:system-call-detect; sid:650; rev:14; )
+# alert ip $EXTERNAL_NET any -> $HOME_NET any ( msg:"INDICATOR-SHELLCODE x86 setgid 0"; content:"|B0 B5 CD 80|",fast_pattern,nocase; metadata:policy max-detect-ips drop,ruleset community; classtype:system-call-detect; sid:649; rev:15; )
+# alert ip $EXTERNAL_NET any -> $HOME_NET any ( msg:"INDICATOR-SHELLCODE x86 setuid 0"; content:"|B0 17 CD 80|",fast_pattern,nocase; metadata:policy max-detect-ips drop,ruleset community; classtype:system-call-detect; sid:650; rev:15; )
 # alert ip $EXTERNAL_NET any -> $HOME_NET any ( msg:"INDICATOR-SHELLCODE SGI NOOP"; content:"|03 E0 F8|%|03 E0 F8|%|03 E0 F8|%|03 E0 F8|%",fast_pattern,nocase; metadata:ruleset community; classtype:shellcode-detect; sid:638; rev:11; )
 # alert ip $EXTERNAL_NET any -> $HOME_NET any ( msg:"INDICATOR-SHELLCODE SGI NOOP"; content:"|24 0F 12|4|24 0F 12|4|24 0F 12|4|24 0F 12|4",fast_pattern,nocase; metadata:ruleset community; classtype:shellcode-detect; sid:639; rev:11; )
 # alert ip $EXTERNAL_NET any -> $HOME_NET any ( msg:"INDICATOR-SHELLCODE AIX NOOP"; content:"O|FF FB 82|O|FF FB 82|O|FF FB 82|O|FF FB 82|",fast_pattern,nocase; metadata:ruleset community; classtype:shellcode-detect; sid:640; rev:11; )

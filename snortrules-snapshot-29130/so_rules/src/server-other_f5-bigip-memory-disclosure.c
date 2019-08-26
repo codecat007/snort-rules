@@ -136,11 +136,17 @@ static RuleMetaData rule41547policy2 =
    "policy security-ips alert"
 };
 
+static RuleMetaData rule41547policy3 =
+{
+    "policy max-detect-ips drop"
+};
+
 static RuleMetaData *rule41547metadata[] =
 {
    &rule41547service1,
    &rule41547policy1,
    &rule41547policy2,
+   &rule41547policy3,
    NULL
 };
 
@@ -166,7 +172,7 @@ Rule rule41547 = {
    { 
       3,  /* genid */
       41547, /* sigid */
-      2, /* revision */
+      3, /* revision */
       "protocol-command-decode", /* classification */
       0,  /* hardcoded priority */
       "SERVER-OTHER TLS client hello session resumption detected",     /* message */
@@ -271,11 +277,17 @@ static RuleMetaData rule41548policy2 =
    "policy security-ips drop"
 };
 
+static RuleMetaData rule41548policy3 =
+{
+   "policy max-detect-ips drop"
+};
+
 static RuleMetaData *rule41548metadata[] =
 {
    &rule41548service1,
    &rule41548policy1,
    &rule41548policy2,
+   &rule41548policy3,
    NULL
 };
 
@@ -301,7 +313,7 @@ Rule rule41548 = {
    { 
       3,  /* genid */
       41548, /* sigid */
-      2, /* revision */
+      3, /* revision */
       "attempted-recon", /* classification */
       0,  /* hardcoded priority */
       "SERVER-OTHER F5 BIG-IP TLS session ticket implementation uninitialized memory disclosure attempt",     /* message */
