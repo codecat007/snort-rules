@@ -94,7 +94,7 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET CHAT Yahoo IM Unavailable 
 
 #alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET CHAT Yahoo IM conference watch"; flow: from_server,established; content:"|0D 00 05 00|"; depth: 4; fast_pattern; reference:url,doc.emergingthreats.net/2001264; classtype:policy-violation; sid:2001264; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET CHAT Yahoo IM Client Install"; flow: to_server,established; content:"/ycontent/stats.php?version="; nocase; http_uri; content:"EVENT=InstallBegin"; nocase; http_uri; reference:url,doc.emergingthreats.net/2002659; classtype:policy-violation; sid:2002659; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET CHAT Yahoo IM Client Install"; flow: to_server,established; content:"/ycontent/stats.php?version="; nocase; http_uri; content:"EVENT=InstallBegin"; nocase; http_uri; reference:url,doc.emergingthreats.net/2002659; classtype:policy-violation; sid:2002659; rev:5; metadata:created_at 2010_07_30, updated_at 2019_08_22;)
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET CHAT Yahoo IM voicechat"; flow: from_server,established; content:"YMSG"; nocase; depth: 4; content:"|00|J"; offset: 10; depth: 2; reference:url,doc.emergingthreats.net/2001254; classtype:policy-violation; sid:2001254; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 

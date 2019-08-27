@@ -68,7 +68,7 @@
 
 #alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET INAPPROPRIATE Likely Porn"; flow: established,from_server; pcre:"/ (FREE XXX|dildo|masturbat|oral sex|ejaculat|up skirt|tits|bondage|lolita|clitoris|cock suck|hardcore (teen|anal|sex|porn)|raw sex|((fuck|sex|porn|xxx) (movies|dvd))|((naked|nude) (celeb|lesbian)))\b/i"; reference:url,doc.emergingthreats.net/bin/view/Main/2001608; classtype:policy-violation; sid:2001608; rev:8; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-#alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INAPPROPRIATE Google Image Search, Safe Mode Off"; flow:established,to_server; content:"&safe=off"; http_uri; content:"|0d 0a|Host|3a| images.google.com|0d 0a|"; http_header; reference:url,doc.emergingthreats.net/bin/view/Main/2002925; classtype:policy-violation; sid:2002925; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+#alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INAPPROPRIATE Google Image Search, Safe Mode Off"; flow:established,to_server; content:"&safe=off"; http_uri; content:"|0d 0a|Host|3a| images.google.com|0d 0a|"; http_header; reference:url,doc.emergingthreats.net/bin/view/Main/2002925; classtype:policy-violation; sid:2002925; rev:5; metadata:created_at 2010_07_30, updated_at 2019_08_22;)
 
 #alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"GPL INAPPROPRIATE alt.binaries.pictures.tinygirls"; flow:to_client,established; content:"alt.binaries.pictures.tinygirls"; nocase; classtype:policy-violation; sid:2101837; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 

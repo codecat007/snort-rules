@@ -198,7 +198,7 @@ alert udp $HOME_NET 500 -> $EXTERNAL_NET 500 (msg:"GPL ATTACK_RESPONSE isakmp lo
 
 alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL ATTACK_RESPONSE del attempt"; flow:to_server,established; content:"&del+/s+c|3A 5C|*.*"; fast_pattern:only; nocase; classtype:web-application-attack; sid:2101008; rev:9; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL ATTACK_RESPONSE directory listing"; flow:to_server,established; content:"/ServerVariables_Jscript.asp"; http_uri; nocase; reference:nessus,10573; classtype:web-application-attack; sid:2101009; rev:8; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
+alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL ATTACK_RESPONSE directory listing"; flow:to_server,established; content:"/ServerVariables_Jscript.asp"; http_uri; nocase; reference:nessus,10573; classtype:web-application-attack; sid:2101009; rev:8; metadata:created_at 2010_09_23, updated_at 2019_08_22;)
 
 #alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL ATTACK_RESPONSE directory listing"; flow:established; content:"Volume Serial Number"; fast_pattern:only; classtype:bad-unknown; sid:2101292; rev:11; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 

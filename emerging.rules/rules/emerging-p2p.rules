@@ -98,7 +98,7 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client User-Agent (Bittorrent/5.x.x)"; flow:to_server,established; content:"User-Agent|3a| Bittorrent"; http_header; reference:url,doc.emergingthreats.net/bin/view/Main/2006372; classtype:trojan-activity; sid:2006372; rev:8; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client HTTP Request "; flow:to_server,established; content:"/trackerphp/announce.php?"; nocase; http_uri; content:"?port="; nocase; http_uri; content:"&peer_id="; http_uri; reference:url,doc.emergingthreats.net/bin/view/Main/2006375; classtype:trojan-activity; sid:2006375; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client HTTP Request "; flow:to_server,established; content:"/trackerphp/announce.php?"; nocase; http_uri; content:"?port="; nocase; http_uri; content:"&peer_id="; http_uri; reference:url,doc.emergingthreats.net/bin/view/Main/2006375; classtype:trojan-activity; sid:2006375; rev:5; metadata:created_at 2010_07_30, updated_at 2019_08_22;)
 
 alert udp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET P2P BitTorrent DHT ping request"; content:"d1|3a|ad2|3a|id20|3a|"; depth:12; nocase; threshold: type both, count 1, seconds 300, track by_src; reference:url,wiki.theory.org/BitTorrentDraftDHTProtocol; reference:url,doc.emergingthreats.net/bin/view/Main/2008581; classtype:policy-violation; sid:2008581; rev:3; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -112,11 +112,11 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET P2P LimeWire P2P Traffic";
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET P2P LimeWire P2P Traffic"; flow: established; content:"Server|3a| LimeWire"; nocase; reference:url,www.limewire.com; reference:url,doc.emergingthreats.net/bin/view/Main/2007800; classtype:policy-violation; sid:2007800; rev:4; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Morpheus Install"; flow: to_server,established; content:"/morpheus/morpheus.exe"; nocase; http_uri; reference:url,www.morpheus.com; reference:url,doc.emergingthreats.net/bin/view/Main/2001035; classtype:policy-violation; sid:2001035; rev:8; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Morpheus Install"; flow: to_server,established; content:"/morpheus/morpheus.exe"; nocase; http_uri; reference:url,www.morpheus.com; reference:url,doc.emergingthreats.net/bin/view/Main/2001035; classtype:policy-violation; sid:2001035; rev:8; metadata:created_at 2010_07_30, updated_at 2019_08_22;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Morpheus Install ini Download"; flow: to_server,established; content:"/morpheus/morpheus_sm.ini"; nocase; http_uri; reference:url,www.morpheus.com; reference:url,doc.emergingthreats.net/bin/view/Main/2001036; classtype:policy-violation; sid:2001036; rev:8; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Morpheus Install ini Download"; flow: to_server,established; content:"/morpheus/morpheus_sm.ini"; nocase; http_uri; reference:url,www.morpheus.com; reference:url,doc.emergingthreats.net/bin/view/Main/2001036; classtype:policy-violation; sid:2001036; rev:8; metadata:created_at 2010_07_30, updated_at 2019_08_22;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Morpheus Update Request"; flow: to_server,established; content:"/gwebcache/gcache.asg?hostfile="; nocase; http_uri; reference:url,www.morpheus.com; reference:url,doc.emergingthreats.net/bin/view/Main/2001037; classtype:policy-violation; sid:2001037; rev:8; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Morpheus Update Request"; flow: to_server,established; content:"/gwebcache/gcache.asg?hostfile="; nocase; http_uri; reference:url,www.morpheus.com; reference:url,doc.emergingthreats.net/bin/view/Main/2001037; classtype:policy-violation; sid:2001037; rev:8; metadata:created_at 2010_07_30, updated_at 2019_08_22;)
 
 alert udp $HOME_NET any -> $EXTERNAL_NET 8247 (msg:"ET P2P Octoshape P2P streaming media"; content:"POST / HTTP/1."; depth:64; content:"Oshtcp-streamtype|3a|"; threshold: type limit, track by_src, count 1, seconds 600; reference:url,doc.emergingthreats.net/2010008; classtype:policy-violation; sid:2010008; rev:4; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -128,7 +128,7 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Tor Get Status Request"; flow:established,to_server; content:"/tor/status/"; http_uri; nocase; reference:url,tor.eff.org; reference:url,doc.emergingthreats.net/2008115; classtype:policy-violation; sid:2008115; rev:3; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Tor Get Server Request"; flow:established,to_server; content:"/tor/server/"; http_uri; nocase; reference:url,tor.eff.org; reference:url,doc.emergingthreats.net/2008113; classtype:policy-violation; sid:2008113; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Tor Get Server Request"; flow:established,to_server; content:"/tor/server/"; http_uri; nocase; reference:url,tor.eff.org; reference:url,doc.emergingthreats.net/2008113; classtype:policy-violation; sid:2008113; rev:5; metadata:created_at 2010_07_30, updated_at 2019_08_22;)
 
 #alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P ABC Torrent User-Agent (ABC/ABC-3.1.0)"; flow:to_server,established; content:"User-Agent|3a| ABC/ABC"; nocase; http_header; reference:url,pingpong-abc.sourceforge.net; reference:url,doc.emergingthreats.net/bin/view/Main/2003475; classtype:trojan-activity; sid:2003475; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
