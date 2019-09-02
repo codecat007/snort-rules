@@ -82,97 +82,43 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS H
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.dyndns.* domain"; flow:established,to_server; content:".dyndns."; fast_pattern; http_header; content:!" checkip.dyndns."; http_header; pcre:"/Host\x3a [^\n]+\.dyndns\.(biz|info|org|tv)\x0d\x0a/iH"; classtype:bad-unknown; sid:2013097; rev:5; metadata:created_at 2011_06_22, updated_at 2011_06_22;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious no-ip Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|05|no-ip|03|"; distance:0; fast_pattern; classtype:bad-unknown; sid:2013743; rev:3; metadata:created_at 2011_10_05, updated_at 2011_10_05;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.myftp.biz Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|05|myftp|03|biz"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2013823; rev:2; metadata:created_at 2011_11_04, updated_at 2011_11_04;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.myftp.biz Domain"; flow:established,to_server; content:".myftp.biz|0d 0a|"; http_header; nocase; classtype:bad-unknown; sid:2013824; rev:3; metadata:created_at 2011_11_04, updated_at 2011_11_04;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.ez-dns.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|06|ez-dns|03|com"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2013845; rev:2; metadata:created_at 2011_11_04, updated_at 2011_11_04;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.ez-dns.com Domain"; flow:established,to_server; content:".ez-dns.com|0d 0a|"; http_header; classtype:bad-unknown; sid:2013846; rev:2; metadata:created_at 2011_11_04, updated_at 2011_11_04;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.dyndns-web.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|0a|dyndns-web|03|com"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2013863; rev:3; metadata:created_at 2011_11_07, updated_at 2011_11_07;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.dyndns-web.com Domain"; flow:to_server,established; content:".dyndns-web.com|0D 0A|";  http_header; classtype:bad-unknown; sid:2013864; rev:2; metadata:created_at 2011_11_07, updated_at 2011_11_07;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query for Suspicious .dyndns-at-home.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|0d|dyndns-at-home|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2013971; rev:3; metadata:created_at 2011_11_28, updated_at 2011_11_28;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.3d-game.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|07|3d-game|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014478; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.3d-game.com Domain"; flow:established,to_server; content:".3d-game.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014479; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.4irc.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|4irc|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014480; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.4irc.com Domain"; flow:established,to_server; content:".4irc.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014481; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.b0ne.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|b0ne|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014482; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.b0ne.com Domain"; flow:established,to_server; content:".b0ne.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014483; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.bbsindex.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|08|bbsindex|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014484; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.bbsindex.com Domain"; flow:established,to_server; content:".bbsindex.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014485; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.chatnook.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|08|chatnook|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014486; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.chatnook.com Domain"; flow:established,to_server; content:".chatnook.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014487; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.darktech.org Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|08|darktech|03|org|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014488; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.darktech.org Domain"; flow:established,to_server; content:".darktech.org|0D 0A|"; http_header; classtype:bad-unknown; sid:2014489; rev:3; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.deaftone.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|08|deaftone|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014490; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.deaftone.com Domain"; flow:established,to_server; content:".deaftone.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014491; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.dtdns.net Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|05|dtdns|03|net|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014492; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.effers.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|06|effers|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014494; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.effers.com Domain"; flow:established,to_server; content:".effers.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014495; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.etowns.net Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|06|etowns|03|net|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014496; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.etowns.net Domain"; flow:established,to_server; content:".etowns.net|0D 0A|"; http_header; classtype:bad-unknown; sid:2014497; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.etowns.org Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|06|etowns|03|org|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014498; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.etowns.org Domain"; flow:established,to_server; content:".etowns.org|0D 0A|"; http_header; classtype:bad-unknown; sid:2014499; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.flnet.org Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|05|flnet|03|org|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014500; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.flnet.org Domain"; flow:established,to_server; content:".flnet.org|0D 0A|"; http_header; classtype:bad-unknown; sid:2014501; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.gotgeeks.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|08|gotgeeks|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014502; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.gotgeeks.com Domain"; flow:established,to_server; content:".gotgeeks.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014503; rev:2; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.scieron.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|07|scieron|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014504; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.scieron.com Domain"; flow:established,to_server; content:".scieron.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014505; rev:3; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.slyip.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|05|slyip|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014506; rev:5; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.slyip.com Domain"; flow:established,to_server; content:".slyip.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014507; rev:4; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.slyip.net Domain"; flow:established,to_server; content:".slyip.net|0D 0A|"; http_header; classtype:bad-unknown; sid:2014509; rev:3; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.suroot.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|06|suroot|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014510; rev:5; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.suroot.com Domain"; flow:established,to_server; content:".suroot.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2014511; rev:3; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.2288.org"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|2288|03|org|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014779; rev:6; metadata:created_at 2012_05_18, updated_at 2012_05_18;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.3322.net"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|3322|03|net|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014781; rev:6; metadata:created_at 2012_05_18, updated_at 2012_05_18;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.6600.org"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|6600|03|org|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014782; rev:6; metadata:created_at 2012_05_18, updated_at 2012_05_18;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.7766.org"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|7766|03|org|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014783; rev:6; metadata:created_at 2012_05_18, updated_at 2012_05_18;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.8800.org"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|8800|03|org|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014784; rev:5; metadata:created_at 2012_05_18, updated_at 2012_05_18;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.9966.org"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|9966|03|org|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014786; rev:5; metadata:created_at 2012_05_18, updated_at 2012_05_18;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a 3322.net Domain *.2288.org"; flow:established,to_server; content:".2288.org|0D 0A|"; http_header; classtype:misc-activity; sid:2014787; rev:4; metadata:created_at 2012_05_18, updated_at 2012_05_18;)
 
@@ -186,19 +132,11 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS H
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a 3322.net Domain *.9966.org"; flow:established,to_server; content:".9966.org|0D 0A|"; http_header; classtype:misc-activity; sid:2014792; rev:3; metadata:created_at 2012_05_18, updated_at 2012_05_18;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.org Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|3322|03|org"; fast_pattern; distance:0; nocase; reference:url,isc.sans.edu/diary.html?storyid=3266; reference:url,isc.sans.edu/diary.html?storyid=5710; reference:url,google.com/safebrowsing/diagnostic?site=3322.org/; reference:url,www.mywot.com/en/scorecard/3322.org; classtype:misc-activity; sid:2012171; rev:6; metadata:created_at 2011_01_12, updated_at 2011_01_12;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.8866.org"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|8866|03|org"; fast_pattern; distance:0; nocase; reference:url,isc.sans.edu/diary.html?storyid=6739; reference:url,google.com/safebrowsing/diagnostic?site=8866.org/; reference:url,www.mywot.com/en/scorecard/8866.org; classtype:misc-activity; sid:2012738; rev:6; metadata:created_at 2011_04_28, updated_at 2011_04_28;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to *.dyndns. Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|06|dyndns|03|"; fast_pattern; distance:0; nocase; classtype:misc-activity; sid:2012758; rev:4; metadata:created_at 2011_05_02, updated_at 2011_05_02;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a 3322.net Domain *.3322.org"; flow:established,to_server; content:"Host|3a| "; http_header; content:".3322.org|0D 0A|"; within:50; http_header; classtype:misc-activity; sid:2013213; rev:4; metadata:created_at 2011_07_06, updated_at 2011_07_06;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.dtdns.net Domain"; flow:established,to_server; content:".dtdns.net|0D 0A|"; http_header; classtype:bad-unknown; sid:2014493; rev:5; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET INFO Packed Executable Download"; flow:established,to_client; file_data; content:"MZ"; within:2; isdataat:100,relative; content:"This program "; distance:0; content:"PE|00 00|"; distance:0; content:!"data"; within:400; content:!"text"; within:400; content:!"rsrc"; within:400; classtype:misc-activity; sid:2014819; rev:1; metadata:created_at 2012_05_30, updated_at 2012_05_30;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to dns-stuff.com Domain *.dns-stuff.com"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|09|dns-stuff|03|com"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014868; rev:2; metadata:created_at 2012_06_07, updated_at 2012_06_07;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a dns-stuff.com Domain *.dns-stuff.com"; flow:established,to_server; content:"dns-stuff.com|0d 0a|"; http_header; classtype:bad-unknown; sid:2014867; rev:2; metadata:created_at 2012_06_07, updated_at 2012_06_07;)
 
@@ -213,8 +151,6 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET INFO Compressed Ex
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO Java .jar request to dotted-quad domain"; flow:established,to_server; content:".jar"; http_uri; fast_pattern:only; content:" Java/1"; http_header; pcre:"/^Host: \d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\r?$/Hmi"; classtype:bad-unknown; sid:2015483; rev:2; metadata:created_at 2012_07_17, updated_at 2012_07_17;)
 
 #alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET INFO PDF Using CCITTFax Filter"; flow:established,to_client; content:"obj"; content:"<<"; within:4; content:"/CCITTFaxDecode"; distance:0; metadata: former_category INFO; reference:url,nakedsecurity.sophos.com/2012/04/05/ccittfax-pdf-malware/; reference:url,blog.fireeye.com/research/2012/07/analysis-of-a-different-pdf-malware.html#more; classtype:bad-unknown; sid:2015561; rev:1; metadata:created_at 2012_08_02, updated_at 2017_06_01;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to Abused Domain *.mooo.com"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|mooo|03|com|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2015633; rev:2; metadata:created_at 2012_08_16, updated_at 2012_08_16;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to Abused Domain *.mooo.com"; flow:established,to_server; content:".mooo.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2015634; rev:2; metadata:created_at 2012_08_16, updated_at 2012_08_16;)
 
@@ -526,85 +462,45 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO GENERIC SUSPI
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.mrbasic.com Domain"; flow:established,to_server; content:".mrbasic.com"; http_header; nocase; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.mrbasic\.com(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018365; rev:1; metadata:created_at 2014_04_04, updated_at 2014_04_04;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.mrbasic.com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|07|mrbasic|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2018366; rev:2; metadata:created_at 2014_04_04, updated_at 2014_04_04;)
-
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET INFO Potential Common Malicious JavaScript Loop"; flow:established,to_client; file_data; content:"for("; distance:0; content:"|3B|"; within:20; content:">=0|3B|"; fast_pattern; within:10; content:"--)"; within:10; pcre:"/for\x28[^\x3D\r\n]*[0-9]{1,6}\x2D[0-9]{1,5}\x3B[^\x3D\r\n]\x3E\x3D0\x3B[^\x29\r\n]\x2D\x2D\x29/"; classtype:bad-unknown; sid:2015045; rev:2; metadata:created_at 2012_07_06, updated_at 2012_07_06;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.passinggas.net Domain (Sitelutions)"; flow:established,to_server; content:".passinggas.net"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.passinggas\.net(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018809; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.passinggas.net Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|0a|passinggas|03|net|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018810; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.myredirect.us Domain (Sitelutions)"; flow:established,to_server; content:".myredirect.us"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.myredirect\.us(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018811; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.myredirect.us Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|0a|myredirect|02|us|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018812; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.rr.nu Domain (Sitelutions)"; flow:established,to_server; content:".rr.nu"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.rr\.nu(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018813; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.rr.nu Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|02|rr|02|nu|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018814; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.kwik.to Domain (Sitelutions)"; flow:established,to_server; content:".kwik.to"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.kwik\.to(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018815; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.kwik.to Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|04|kwik|02|to|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018816; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.myfw.us Domain (Sitelutions)"; flow:established,to_server; content:".myfw.us"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.myfw\.us(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018817; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.myfw.us Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|04|myfw|02|us|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018818; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.ontheweb.nu Domain (Sitelutions)"; flow:established,to_server; content:".ontheweb.nu"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.ontheweb\.nu(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018819; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *ontheweb.nu Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|08|ontheweb|02|nu|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018820; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.isthebe.st Domain (Sitelutions)"; flow:established,to_server; content:".isthebe.st"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.isthebe\.st(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018821; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *isthebe.st Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|07|isthebe|02|st|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018822; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.byinter.net Domain (Sitelutions)"; flow:established,to_server; content:".byinter.net"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.byinter\.net(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018823; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *byinter.net Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|07|byinter|03|net|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018824; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.findhere.org Domain (Sitelutions)"; flow:established,to_server; content:".findhere.org"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.findhere\.org(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018825; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *findhere.org Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|08|findhere|03|org|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018826; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.onthenetas.com Domain (Sitelutions)"; flow:established,to_server; content:".onthenetas.com"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.onthenetas\.com(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018827; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *onthenetas.com Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|0a|onthenetas|03|com|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018828; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.uglyas.com Domain (Sitelutions)"; flow:established,to_server; content:".uglyas.com"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.uglyas\.com(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018829; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *uglyas.com Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|06|uglyas|03|com|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018830; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.assexyas.com Domain (Sitelutions)"; flow:established,to_server; content:".assexyas.com"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.assexyas\.com(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018831; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *assexyas.com Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|08|assexyas|03|com|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018832; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.passas.us Domain (Sitelutions)"; flow:established,to_server; content:".passas.us"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.passas\.us(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018833; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *passas.us Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|06|passas|02|us|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018834; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.athissite.com Domain (Sitelutions)"; flow:established,to_server; content:".athissite.com"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.athissite\.com(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018835; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *atthissite.com Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|09|athissite|03|com|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018836; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.athersite.com Domain (Sitelutions)"; flow:established,to_server; content:".athersite.com"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.athersite\.com(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018837; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *athersite.com Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|09|athersite|03|com|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018838; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.isgre.at Domain (Sitelutions)"; flow:established,to_server; content:".isgre.at"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.isgre\.at(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018839; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *isgre.at Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|05|isgre|02|at|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018840; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.lookin.at Domain (Sitelutions)"; flow:established,to_server; content:".lookin.at"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.lookin\.at(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018841; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *lookin.at Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|06|lookin|02|at|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018842; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.bestdeals.at Domain (Sitelutions)"; flow:established,to_server; content:".bestdeals.at"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.bestdeals\.at(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018843; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *bestdeals.at Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|09|bestdeals|02|at|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018844; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to *.lowestprices.at Domain (Sitelutions)"; flow:established,to_server; content:".lowestprices.at"; nocase; http_header; fast_pattern:only; pcre:"/^Host\x3a[^\r\n]+\.lowestprices\.at(?:\x3a\d{1,5})?\r?$/Hmi"; classtype:bad-unknown; sid:2018845; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *lowestprices Domain (Sitelutions)"; content:"|01 00 00 01 00 00 00 00 00 00|"; offset:2; depth:10; content:"|0c|lowestprices|02|at|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018846; rev:1; metadata:created_at 2014_07_30, updated_at 2014_07_30;)
 
 alert udp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET INFO Session Traversal Utilities for NAT (STUN Binding Request obsolete rfc 3489 CHANGE-REQUEST attribute change IP flag false change port flag false)"; dsize:28; content:"|00 01 00 08|"; depth:4; content:"|00 03 00 04 00 00 00 00|"; fast_pattern; distance:16; within:8; threshold: type limit, track by_dst, count 1, seconds 120; reference:url,tools.ietf.org/html/rfc3489; classtype:protocol-command-decode; sid:2018904; rev:6; metadata:created_at 2014_08_06, updated_at 2014_08_06;)
 
@@ -654,8 +550,6 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO HTTP Request 
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO HTTP Request to a *.xe.cx domain"; flow:to_server,established; content:".xe.cx|0D 0A|"; fast_pattern:only; http_header; classtype:bad-unknown; sid:2013842; rev:2; metadata:created_at 2011_11_04, updated_at 2011_11_04;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DNS Query to a Suspicious *.orge.pl Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|04|orge|02|pl"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2013843; rev:2; metadata:created_at 2011_11_04, updated_at 2011_11_04;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO HTTP Request to a *.orge.pl Domain"; flow:established,to_server; content:".orge.pl|0d 0a|"; http_header; nocase; classtype:bad-unknown; sid:2013844; rev:3; metadata:created_at 2011_11_04, updated_at 2011_11_04;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO HTTP Request to a .noip.cn domain"; flow:to_server,established; content:".noip.cn|0D 0A|"; fast_pattern:only; http_header; classtype:bad-unknown; sid:2013969; rev:2; metadata:created_at 2011_11_28, updated_at 2011_11_28;)
@@ -663,8 +557,6 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO HTTP Request 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO HTTP Request to a *.osa.pl domain"; flow:established,to_server; content:".osa.pl|0D 0A|"; http_header; classtype:bad-unknown; sid:2014037; rev:2; metadata:created_at 2011_12_22, updated_at 2011_12_22;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO HTTP Request to a 3322.org.cn Domain"; flow:to_server,established; content:"Host|3a| "; http_header; content:".3322.org.cn|0D 0A|"; within:50; http_header; classtype:bad-unknown; sid:2014289; rev:2; metadata:created_at 2012_02_28, updated_at 2012_02_28;)
-
-alert tcp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DNS Query to a *.slyip.net Dynamic DNS Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:4; content:"|05|slyip|03|net|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014508; rev:5; metadata:created_at 2012_04_05, updated_at 2012_04_05;)
 
 alert tcp $HOME_NET 23 -> $EXTERNAL_NET any (msg:"ET INFO RuggedCom Banner with MAC"; flow:to_client,established; content:"Rugged Operating System"; content:"Copyright |28|c|29| RuggedCom"; distance:0; content:"MAC Address|3A|"; distance:0; flowbits:set,ET.RUGGED.BANNER; reference:url,www.exploit-db.com/exploits/18779/; reference:url,arstechnica.com/business/news/2012/04/backdoor-in-mission-critical-hardware-threatens-power-traffic-control-systems.ars; classtype:attempted-admin; sid:2014645; rev:3; metadata:created_at 2012_04_27, updated_at 2012_04_27;)
 
@@ -752,19 +644,11 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO GENERIC SUSPI
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.dnsip.ru Domain"; flow:to_server,established; content:".dnsip.ru|0D 0A|"; http_header; metadata: former_category INFO; classtype:bad-unknown; sid:2022378; rev:1; metadata:created_at 2016_01_19, updated_at 2017_03_08;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.dnsip.ru Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|05|dnsip|02|ru"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2022382; rev:1; metadata:created_at 2016_01_19, updated_at 2016_01_19;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.dyn-dns.ru Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|07|dyn-dns|02|ru"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2022383; rev:2; metadata:created_at 2016_01_19, updated_at 2016_01_19;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.dnsalias.ru Domain"; flow:to_server,established; content:".dnsalias.ru|0D 0A|"; http_header; metadata: former_category INFO; classtype:bad-unknown; sid:2022377; rev:2; metadata:created_at 2016_01_19, updated_at 2017_03_08;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.dyn-dns.ru Domain"; flow:to_server,established; content:".dyn-dns.ru|0D 0A|"; http_header; classtype:bad-unknown; sid:2022379; rev:2; metadata:created_at 2016_01_19, updated_at 2016_01_19;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.dns-free.ru Domain"; flow:to_server,established; content:".dns-free.com|0D 0A|"; http_header; classtype:bad-unknown; sid:2022380; rev:2; metadata:created_at 2016_01_19, updated_at 2016_01_19;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.dnsalias.ru Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|08|dnsalias|02|ru"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2022381; rev:2; metadata:created_at 2016_01_19, updated_at 2016_01_19;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.dns-free.ru Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|07|dns-free|03|com"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2022384; rev:2; metadata:created_at 2016_01_19, updated_at 2016_01_19;)
 
 #alert udp $EXTERNAL_NET 32768:61000 -> $HOME_NET 1024:65535 (msg:"ET INFO SOCKSv5 UDP Proxy Inbound Connect Request (Linux Source)"; content:"|00 00|"; depth:2; content:"|01|"; offset:3; depth:1; threshold:type both, track by_dst, count 1, seconds 900; metadata: former_category MALWARE; reference:url,handlers.sans.org/wsalusky/rants/; reference:url,en.wikipedia.org/wiki/SOCKS; reference:url,ss5.sourceforge.net/socks4.protocol.txt; reference:url,ss5.sourceforge.net/socks4A.protocol.txt; reference:url,www.ietf.org/rfc/rfc1928.txt; reference:url,www.ietf.org/rfc/rfc1929.txt; reference:url,www.ietf.org/rfc/rfc1961.txt; reference:url,www.ietf.org/rfc/rfc3089.txt; reference:url,doc.emergingthreats.net/bin/view/Main/2003287; classtype:protocol-command-decode; sid:2003287; rev:7; metadata:created_at 2010_07_30, updated_at 2017_10_27;)
 
@@ -782,15 +666,11 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO PhishMe.com P
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO Flowbit set for POST to Quicken Updater"; flow:established,to_server; content:"POST"; http_method; content:"quicken.com|0d 0a|"; http_header; content:"User-Agent|3a 20|InetClntApp"; fast_pattern; content:"Date|3a|"; http_header; flowbits:set,ET.QuickenUpdater; flowbits:noalert; classtype:misc-activity; sid:2022803; rev:1; metadata:created_at 2016_05_11, updated_at 2016_05_11;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious dynapoint.pw Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|09|dynapoint|02|pw|00|"; distance:0; fast_pattern; classtype:bad-unknown; sid:2022876; rev:1; metadata:created_at 2016_06_08, updated_at 2016_06_08;)
-
 alert tcp any any -> any any (msg:"ET INFO WinHttp AutoProxy Request wpad.dat Possible BadTunnel"; flow:established,to_server; content:"GET /wpad.dat HTTP/1.1"; reference:url,tools.ietf.org/html/draft-ietf-wrec-wpad-01; reference:url,ietf.org/rfc/rfc1002.txt; classtype:protocol-command-decode; sid:2022913; rev:1; metadata:created_at 2016_06_23, updated_at 2016_06_23;)
 
 alert udp any any -> $HOME_NET 137 (msg:"ET INFO NBNS Name Query Response Possible WPAD Spoof BadTunnel"; byte_test:1,&,0x80,2; byte_test:1,!&,0x40,2; byte_test:1,!&,0x20,2; byte_test:1,!&,0x10,2; byte_test:1,=,0x00,3; content:"|00 00|"; offset:4; depth:2; content:"|46 48 46 41 45 42 45|"; fast_pattern:only; reference:url,tools.ietf.org/html/draft-ietf-wrec-wpad-01; reference:url,ietf.org/rfc/rfc1002.txt; classtype:protocol-command-decode; sid:2022914; rev:1; metadata:created_at 2016_06_23, updated_at 2016_06_23;)
 
 alert udp any 67 -> any 68 (msg:"ET INFO Web Proxy Auto Discovery Protocol WPAD DHCP 252 option Possible BadTunnel"; content:"|02|"; depth:1; content:"|fc|"; byte_jump:1,0,relative,post_offset -9; content:"/wpad.dat"; within:9; fast_pattern; classtype:protocol-command-decode; sid:2022915; rev:1; metadata:created_at 2016_06_24, updated_at 2016_06_24;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to *.duckdns. Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|07|duckdns|03|"; fast_pattern; distance:0; nocase; classtype:misc-activity; sid:2022918; rev:1; metadata:created_at 2016_06_27, updated_at 2016_06_27;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO SUSPICIOUS Excel Add-in Download M1"; flow:to_server,established; content:".xla"; nocase; http_uri; pcre:"/\.xla$/Ui"; reference:url,blogs.mcafee.com/mcafee-labs/patch-now-simple-office-protected-view-bypass-could-have-big-impact/; classtype:bad-unknown; sid:2022965; rev:1; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, deployment Perimeter, signature_severity Major, created_at 2016_07_13, performance_impact Low, updated_at 2016_07_13;)
 
@@ -875,8 +755,6 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET INFO http string i
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET INFO Redirection to driveby Page Home index.php"; flow:established,from_server; content:"/Home/index.php|22| width=1 height=1 scrolling=no></iframe>"; metadata: former_category INFO; classtype:bad-unknown; sid:2013436; rev:3; metadata:affected_product Any, attack_target Client_Endpoint, deployment Perimeter, tag DriveBy, signature_severity Major, created_at 2011_08_19, updated_at 2017_04_14;)
 
 alert tcp $EXTERNAL_NET 443 -> $HOME_NET any (msg:"ET INFO Lets Encrypt Free SSL Cert Observed with IDN/Punycode Domain - Possible Phishing"; flow:established,from_server; content:"|55 04 0a|"; content:"|0d|Let|27|s Encrypt"; distance:1; within:14; fast_pattern; content:"|55 04 03|"; distance:0; content:"|78 6e 2d 2d|"; within:25; nocase; metadata: former_category INFO; reference:url,isc.sans.edu/forums/diary/Tool+to+Detect+Active+Phishing+Attacks+Using+Unicode+LookAlike+Domains/22310/; reference:url,letsencrypt.org/about/; classtype:policy-violation; sid:2024227; rev:1; metadata:affected_product Web_Browsers, attack_target Client_Endpoint, deployment Perimeter, tag Phishing, signature_severity Minor, created_at 2017_04_19, updated_at 2017_04_19;)
-
-alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DNS Query to Free Hosting Domain (freevnn . com)"; content:"|01 00 00 01 00 00 00 00 00 00|"; content:"|07|freevnn|03|com"; distance:0; fast_pattern; metadata: former_category INFO; reference:md5,18c1c99412549815bdb89c36316243a7; classtype:bad-unknown; sid:2024235; rev:2; metadata:deployment Perimeter, signature_severity Minor, created_at 2017_04_21, performance_impact Low, updated_at 2017_04_21;)
 
 alert tcp $EXTERNAL_NET any -> $SMTP_SERVERS [25,587] (msg:"ET INFO SMTP PDF Attachment Flowbit Set"; flow:established,from_server; content:"|0d 0a 0d 0a|JVBERi"; fast_pattern:only; flowbits:set,ET.pdf.in.smtp.attachment; flowbits:noalert; metadata: former_category INFO; classtype:bad-unknown; sid:2024236; rev:2; metadata:attack_target SMTP_Server, deployment Perimeter, signature_severity Informational, created_at 2017_04_21, updated_at 2017_04_21;)
 
@@ -968,19 +846,9 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO Browser Plugi
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO HTTP POST Request to Suspicious *.gdn Domain"; flow:established,to_server; content:"POST"; http_method; content:".gdn|0d 0a|"; fast_pattern; http_header; metadata: former_category INFO; classtype:bad-unknown; sid:2025097; rev:2; metadata:created_at 2017_12_02, updated_at 2017_12_03;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query for Suspicious .gdn Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|03|gdn|00|"; fast_pattern; nocase; distance:0; metadata: former_category DNS; classtype:bad-unknown; sid:2025098; rev:2; metadata:created_at 2017_12_02, updated_at 2017_12_03;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO HTTP POST Request to Suspicious *.gq domain"; flow:established,to_server; content:"POST"; http_method; content:".gq|0d 0a|"; fast_pattern; http_header; classtype:bad-unknown; sid:2025100; rev:2; metadata:created_at 2017_12_03, updated_at 2017_12_03;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO HTTP POST Request to Suspicious *.ga Domain"; flow:established,to_server; content:"POST"; http_method; content:".ga|0d 0a|"; fast_pattern; http_header; classtype:bad-unknown; sid:2025101; rev:2; metadata:created_at 2017_12_03, updated_at 2017_12_03;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query for Suspicious .gq Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|02|gq|00|"; fast_pattern; nocase; distance:0; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:bad-unknown; sid:2025104; rev:2; metadata:created_at 2017_12_03, updated_at 2017_12_03;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query for Suspicious .ga Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|02|ga|00|"; fast_pattern; nocase; distance:0; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:bad-unknown; sid:2025105; rev:2; metadata:created_at 2017_12_03, updated_at 2017_12_03;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query for Suspicious .ml Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|02|ml|00|"; fast_pattern; nocase; distance:0; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:bad-unknown; sid:2025106; rev:2; metadata:created_at 2017_12_03, updated_at 2017_12_03;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query for Suspicious .cf Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|02|cf|00|"; fast_pattern; nocase; distance:0; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:bad-unknown; sid:2025107; rev:2; metadata:created_at 2017_12_03, updated_at 2017_12_03;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO MIPSEL File Download Request from IP Address"; flow:established,to_server; content:"GET"; http_method; content:".mipsel"; nocase; http_uri; pcre:"/\.mipsel$/Ui"; pcre:"/^Host\x3a\x20(?:\d{1,3}\.){3}\d{1,3}/Hmi"; metadata: former_category INFO; classtype:bad-unknown; sid:2025122; rev:2; metadata:attack_target IoT, created_at 2017_12_05, updated_at 2017_12_05;)
 
@@ -1172,11 +1040,7 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO Dotted Quad H
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO Dotted Quad Host RAR Request"; flow:established,from_client; flowbits:isset,http.dottedquadhost; flowbits:set,http.dottedquadhost.rar; flowbits:unset,http.dottedquadhost; content:".rar"; http_uri; nocase; fast_pattern; pcre:"/\.rar$/Ui"; metadata: former_category INFO; classtype:bad-unknown; sid:2027266; rev:2; metadata:attack_target Client_Endpoint, deployment Perimeter, signature_severity Minor, created_at 2019_04_23, performance_impact Significant, updated_at 2019_04_23;)
 
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.myddns.me Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|06|myddns|02|me|00|"; fast_pattern; distance:0; nocase; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:policy-violation; sid:2027287; rev:2; metadata:attack_target Client_Endpoint, deployment Perimeter, tag DynamicDNS, signature_severity Informational, created_at 2019_04_25, performance_impact Low, updated_at 2019_04_25;)
-
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.myddns.me Domain"; flow:established,to_server; content:".myddns.me|0d 0a|"; http_header; fast_pattern:only; pcre:"/Host\x3A[^\r\n]*\x2Emyddns\x2Eme/H"; metadata: former_category INFO; classtype:policy-violation; sid:2027288; rev:2; metadata:attack_target Client_Endpoint, deployment Perimeter, tag DynamicDNS, signature_severity Informational, created_at 2019_04_25, performance_impact Low, updated_at 2019_04_25;)
-
-alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.autoddns .com Domain"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|08|autoddns|03|com|00|"; fast_pattern; distance:0; nocase; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:policy-violation; sid:2027299; rev:2; metadata:attack_target Client_Endpoint, deployment Perimeter, tag DynamicDNS, signature_severity Informational, created_at 2019_04_30, performance_impact Low, updated_at 2019_04_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET INFO DYNAMIC_DNS HTTP Request to a *.autoddns.com Domain"; flow:established,to_server; content:".autoddns.com|0d 0a|"; fast_pattern:only; http_header; pcre:"/Host\x3A[^\r\n]*\x2Eautoddns\x2Ecom/H"; metadata: former_category INFO; classtype:policy-violation; sid:2027300; rev:2; metadata:attack_target Client_Endpoint, deployment Perimeter, tag DynamicDNS, signature_severity Informational, created_at 2019_04_30, performance_impact Low, updated_at 2019_04_30;)
 
@@ -1323,4 +1187,140 @@ alert udp $HOME_NET any -> any 53 (msg:"ET INFO Observed DNS Query to .ryukyu TL
 alert udp $HOME_NET any -> any 53 (msg:"ET INFO Observed DNS Query to .world TLD"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|05|world|00|"; distance:0; fast_pattern; metadata: former_category INFO; reference:url,www.spamhaus.org/statistics/tlds/; classtype:bad-unknown; sid:2027870; rev:2; metadata:affected_product Any, attack_target Client_Endpoint, deployment Perimeter, signature_severity Major, created_at 2019_08_13, updated_at 2019_08_13;)
 
 alert udp $HOME_NET any -> any 53 (msg:"ET INFO Observed DNS Query to .fit TLD"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|03|fit|00|"; distance:0; fast_pattern; metadata: former_category INFO; reference:url,www.spamhaus.org/statistics/tlds/; classtype:bad-unknown; sid:2027871; rev:2; metadata:affected_product Any, attack_target Client_Endpoint, deployment Perimeter, signature_severity Major, created_at 2019_08_13, updated_at 2019_08_13;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious no-ip Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|05|no-ip|03|"; distance:0; fast_pattern; classtype:bad-unknown; sid:2013743; rev:4; metadata:created_at 2011_10_05, updated_at 2019_08_29;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.myftp.biz Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|05|myftp|03|biz"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2013823; rev:3; metadata:created_at 2011_11_04, updated_at 2019_08_29;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.ez-dns.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|ez-dns|03|com"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2013845; rev:3; metadata:created_at 2011_11_04, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.dyndns-web.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0a|dyndns-web|03|com"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2013863; rev:4; metadata:created_at 2011_11_07, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query for Suspicious .dyndns-at-home.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0d|dyndns-at-home|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2013971; rev:4; metadata:created_at 2011_11_28, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.3d-game.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|3d-game|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014478; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_29;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.4irc.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|4irc|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014480; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.b0ne.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|b0ne|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014482; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.bbsindex.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|bbsindex|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014484; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.chatnook.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|chatnook|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014486; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.darktech.org Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|darktech|03|org|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014488; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.deaftone.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|deaftone|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014490; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.dtdns.net Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|05|dtdns|03|net|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014492; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_29;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.effers.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|effers|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014494; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.etowns.net Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|etowns|03|net|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014496; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.etowns.org Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|etowns|03|org|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014498; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.flnet.org Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|05|flnet|03|org|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014500; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_29;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.gotgeeks.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|gotgeeks|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014502; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.scieron.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|scieron|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014504; rev:5; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.slyip.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|05|slyip|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014506; rev:6; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.suroot.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|suroot|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014510; rev:6; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.2288.org"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|2288|03|org|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014779; rev:7; metadata:created_at 2012_05_18, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.3322.net"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|3322|03|net|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014781; rev:7; metadata:created_at 2012_05_18, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.6600.org"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|6600|03|org|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014782; rev:7; metadata:created_at 2012_05_18, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.7766.org"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|7766|03|org|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014783; rev:7; metadata:created_at 2012_05_18, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.8800.org"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|8800|03|org|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014784; rev:6; metadata:created_at 2012_05_18, updated_at 2019_08_29;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.9966.org"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|9966|03|org|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2014786; rev:6; metadata:created_at 2012_05_18, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.org Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|3322|03|org"; fast_pattern; distance:0; nocase; reference:url,isc.sans.edu/diary.html?storyid=3266; reference:url,isc.sans.edu/diary.html?storyid=5710; reference:url,google.com/safebrowsing/diagnostic?site=3322.org/; reference:url,www.mywot.com/en/scorecard/3322.org; classtype:misc-activity; sid:2012171; rev:7; metadata:created_at 2011_01_12, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to 3322.net Domain *.8866.org"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|8866|03|org"; fast_pattern; distance:0; nocase; reference:url,isc.sans.edu/diary.html?storyid=6739; reference:url,google.com/safebrowsing/diagnostic?site=8866.org/; reference:url,www.mywot.com/en/scorecard/8866.org; classtype:misc-activity; sid:2012738; rev:7; metadata:created_at 2011_04_28, updated_at 2019_08_29;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to *.dyndns. Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|dyndns|03|"; fast_pattern; distance:0; nocase; classtype:misc-activity; sid:2012758; rev:5; metadata:created_at 2011_05_02, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to dns-stuff.com Domain *.dns-stuff.com"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|09|dns-stuff|03|com"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2014868; rev:3; metadata:created_at 2012_06_07, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to Abused Domain *.mooo.com"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|mooo|03|com|00|"; fast_pattern; distance:0; threshold: type limit, count 1, track by_src, seconds 300; classtype:misc-activity; sid:2015633; rev:3; metadata:created_at 2012_08_16, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to a *.mrbasic.com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|mrbasic|03|com|00|"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2018366; rev:3; metadata:created_at 2014_04_04, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DNS Query to a Suspicious *.orge.pl Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|orge|02|pl"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2013843; rev:3; metadata:created_at 2011_11_04, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query to a *.slyip.net Dynamic DNS Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|09|try2check|02|me|00|"; fast_pattern; nocase; classtype:bad-unknown; sid:2014508; rev:6; metadata:created_at 2012_04_05, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.dnsip.ru Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|05|dnsip|02|ru"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2022382; rev:2; metadata:created_at 2016_01_19, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.dyn-dns.ru Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|dyn-dns|02|ru"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2022383; rev:3; metadata:created_at 2016_01_19, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.dnsalias.ru Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|dnsalias|02|ru"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2022381; rev:3; metadata:created_at 2016_01_19, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious *.dns-free.ru Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|dns-free|03|com"; fast_pattern; nocase; distance:0; classtype:bad-unknown; sid:2022384; rev:3; metadata:created_at 2016_01_19, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to a Suspicious dynapoint.pw Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|09|dynapoint|02|pw|00|"; distance:0; fast_pattern; classtype:bad-unknown; sid:2022876; rev:2; metadata:created_at 2016_06_08, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"ET INFO DYNAMIC_DNS Query to *.duckdns. Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|duckdns|03|"; fast_pattern; distance:0; nocase; classtype:misc-activity; sid:2022918; rev:2; metadata:created_at 2016_06_27, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query to Free Hosting Domain (freevnn . com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|10|svfeufheolrunigd"; nocase; distance:0; fast_pattern; metadata: former_category INFO; reference:md5,18c1c99412549815bdb89c36316243a7; classtype:bad-unknown; sid:2024235; rev:3; metadata:deployment Perimeter, signature_severity Minor, created_at 2017_04_21, performance_impact Low, updated_at 2019_08_29;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query for Suspicious .gdn Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|03|gdn|00|"; fast_pattern; nocase; distance:0; metadata: former_category DNS; classtype:bad-unknown; sid:2025098; rev:3; metadata:created_at 2017_12_02, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query for Suspicious .gq Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|02|gq|00|"; fast_pattern; nocase; distance:0; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:bad-unknown; sid:2025104; rev:3; metadata:created_at 2017_12_03, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query for Suspicious .ga Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|02|ga|00|"; fast_pattern; nocase; distance:0; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:bad-unknown; sid:2025105; rev:3; metadata:created_at 2017_12_03, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query for Suspicious .ml Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|02|ml|00|"; fast_pattern; nocase; distance:0; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:bad-unknown; sid:2025106; rev:3; metadata:created_at 2017_12_03, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DNS Query for Suspicious .cf Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|02|cf|00|"; fast_pattern; nocase; distance:0; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:bad-unknown; sid:2025107; rev:3; metadata:created_at 2017_12_03, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.myddns.me Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|myddns|02|me|00|"; fast_pattern; distance:0; nocase; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:policy-violation; sid:2027287; rev:3; metadata:attack_target Client_Endpoint, deployment Perimeter, tag DynamicDNS, signature_severity Informational, created_at 2019_04_25, performance_impact Low, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.autoddns .com Domain"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|autoddns|03|com|00|"; fast_pattern; distance:0; nocase; threshold: type limit, count 1, track by_src, seconds 120; metadata: former_category INFO; classtype:policy-violation; sid:2027299; rev:3; metadata:attack_target Client_Endpoint, deployment Perimeter, tag DynamicDNS, signature_severity Informational, created_at 2019_04_30, performance_impact Low, updated_at 2019_08_28;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.myredirect.us Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0a|myredirect|02|us|00|"; nocase; fast_pattern; classtype:bad-unknown; sid:2018812; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.passinggas.net Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0a|passinggas|03|net|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018810; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.rr.nu Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|02|rr|02|nu|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018814; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.kwik.to Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|kwik|02|to|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018816; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *.myfw.us Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|myfw|02|us|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018818; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *ontheweb.nu Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|ontheweb|02|nu|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018820; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *isthebe.st Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|isthebe|02|st|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018822; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *byinter.net Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|byinter|03|net|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018824; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *findhere.org Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|findhere|03|org|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018826; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *onthenetas.com Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0a|onthenetas|03|com|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018828; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *uglyas.com Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|uglyas|03|com|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018830; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *assexyas.com Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|08|assexyas|03|com|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018832; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *passas.us Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|passas|02|us|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018834; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *atthissite.com Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|09|athissite|03|com|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018836; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *athersite.com Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|09|athersite|03|com|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018838; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *isgre.at Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|05|isgre|02|at|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018840; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *lookin.at Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|lookin|02|at|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018842; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *bestdeals.at Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|09|bestdeals|02|at|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018844; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
+
+alert udp $HOME_NET any -> any 53 (msg:"ET INFO DYNAMIC_DNS Query to *lowestprices Domain (Sitelutions)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0c|lowestprices|02|at|00|"; nocase; fast_pattern:only; classtype:bad-unknown; sid:2018846; rev:3; metadata:created_at 2014_07_30, updated_at 2019_08_30;)
 

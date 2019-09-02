@@ -20570,8 +20570,8 @@
 2023674 || ET TROJAN Possible Linux.Mirai DaHua Default Credentials Login || url,isc.sans.edu/diary/21833
 2023675 || ET TROJAN Win32/Braincrypt Ransomware CnC Checkin || md5,6b938ca31a55e743112ab34dc540a076
 2023676 || ET DELETED Cerber Bitcoin Address Check || url,www.bleepingcomputer.com/news/security/cerber-ransomware-4-10-now-shows-the-version-number-in-ransom-notes/
-2023677 || ET TROJAN Tofsee DGA (2016-12-15 to 2017-05-04) || url,www.govcert.admin.ch/blog/26/tofsee-spambot-features-.ch-dga-reversal-and-countermesaures
-2023678 || ET TROJAN Tofsee DGA (2017-05-04 to 2017-11-02) || url,www.govcert.admin.ch/blog/26/tofsee-spambot-features-.ch-dga-reversal-and-countermesaures
+2023677 || ET TROJAN Tofsee DGA (2016-12-15 to 2017-05-04)
+2023678 || ET TROJAN Tofsee DGA (2017-05-04 to 2017-11-02)
 2023679 || ET TROJAN JS/WSF Downloader Dec 08 2016 M6
 2023680 || ET MOBILE_MALWARE Android Fancy Bear Checkin || url,www.crowdstrike.com/blog/danger-close-fancy-bear-tracking-ukrainian-field-artillery-units/ || md5,6f7523d3019fa190499f327211e01fcb
 2023681 || ET MOBILE_MALWARE Android Fancy Bear Checkin 2 || url,www.crowdstrike.com/blog/danger-close-fancy-bear-tracking-ukrainian-field-artillery-units/ || md5,6f7523d3019fa190499f327211e01fcb
@@ -22897,7 +22897,7 @@
 2026024 || ET EXPLOIT Apache Struts Possible OGNL Java Exec In URI M2
 2026025 || ET EXPLOIT Apache Struts RCE CVE-2018-11776 POC M1 || cve,2018-11776 || url,github.com/jas502n/St2-057/blob/master/README.md
 2026026 || ET EXPLOIT Apache Struts RCE CVE-2018-11776 POC M2 || cve,2018-11776 || url,github.com/jas502n/St2-057/blob/master/README.md
-2026027 || ET TROJAN [PT MALWARE] Hacked Mikrotik C2 Request || url,https://forum.mikrotik.com/viewtopic.php?t=137217
+2026027 || ET TROJAN [PT MALWARE] Hacked Mikrotik C2 Request || url,forum.mikrotik.com/viewtopic.php?t=137217
 2026028 || ET EXPLOIT HP Enterprise VAN SDN Controller Root Command Injection (Unix) || url,github.com/rapid7/metasploit-framework/blob/master/modules/exploits/linux/http/hp_van_sdn_cmd_inject.rb
 2026029 || ET EXPLOIT HP Enterprise VAN SDN Controller Root Command Injection (Linux) || url,github.com/rapid7/metasploit-framework/blob/master/modules/exploits/linux/http/hp_van_sdn_cmd_inject.rb
 2026030 || ET EXPLOIT HP Enterprise VAN SDN Controller Upload Backdoor 2 || url,github.com/rapid7/metasploit-framework/blob/master/modules/exploits/linux/http/hp_van_sdn_cmd_inject.rb
@@ -23999,7 +23999,7 @@
 2027154 || ET MOBILE_MALWARE Android/BasBanke CnC Checkin || url,securelist.com/basbanke-trend-setting-brazilian-banking-trojan/90365/ || md5,79cf391a3ae2477cd804c68850dba80d
 2027155 || ET TROJAN AHK/BKDR_HTV.ZKGD-A CnC Checkin || url,blog.trendmicro.co.jp/archives/19054
 2027156 || ET TROJAN AHK/BKDR_HTV.ZKGD-A Fake HTTP 500 Containing Encoded Commands Inbound || url,blog.trendmicro.co.jp/archives/19054
-2027157 || ET TROJAN Observed Malicious SSL Cert (Gozi CnC) || url,https://sslbl.abuse.ch/ssl-certificates/sha1/16e06a88dbb10c75077780d4baed6d0b2733f985/
+2027157 || ET TROJAN Observed Malicious SSL Cert (Gozi CnC) || url,sslbl.abuse.ch/ssl-certificates/sha1/16e06a88dbb10c75077780d4baed6d0b2733f985/
 2027158 || ET TROJAN DNS Query for Known Malicious Domain Observed Serving Various Phish Campaigns
 2027159 || ET TROJAN DNS Query for Known Malicious Domain Observed Serving Various Phish Campaigns
 2027160 || ET TROJAN DNS Query for Known Malicious Domain Observed Serving Various Phish Campaigns
@@ -24189,7 +24189,7 @@
 2027365 || ET TROJAN HTA.BabyShark Checkin || md5,94b60cf91e550e1d981aaf9962d52e18
 2027366 || ET TROJAN Mirai Variant Checkin Response || url,www.stratosphereips.org/blog/2019/5/17/iot-malware-analysis-series-a-mirai-variant-in-ctu-iot-malware-capture-49-1
 2027367 || ET DNS Query for Suspicious shell .now .sh Domain || url,www.lacework.com/blog-attacks-exploiting-confluence
-2027368 || ET WEB_SPECIFIC_APPS Cisco Prime Infrastruture RCE - CVE-2019-1821 || url,https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20190515-pi-rce || url,srcincite.io/blog/2019/05/17/panic-at-the-cisco-unauthenticated-rce-in-prime-infrastructure.html
+2027368 || ET WEB_SPECIFIC_APPS Cisco Prime Infrastruture RCE - CVE-2019-1821 || url,tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20190515-pi-rce
 2027369 || ET EXPLOIT [NCC GROUP] Possible Inbound RDP Exploitation Attempt (CVE-2019-0708) || url,github.com/nccgroup/Cyber-Defence/blob/master/Signatures/suricata/2019_05_rdp_cve_2019_0708.txt || url,portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0708 || cve,2019,0708
 2027370 || ET TROJAN Suspected ExtraPulsar Backdoor || url,github.com/zerosum0x0/smbdoor
 2027371 || ET CURRENT_EVENTS Successful Generic Phish (set) 2019-05-21
@@ -24223,9 +24223,9 @@
 2027399 || ET TROJAN DarkHotel CnC Domain in DNS Lookup || url,blogs.jpcert.or.jp/ja/2019/05/darkhotel_lnk.html
 2027400 || ET TROJAN DarkHotel CnC Domain in DNS Lookup || url,blogs.jpcert.or.jp/ja/2019/05/darkhotel_lnk.html
 2027401 || ET TROJAN DarkHotel CnC Domain in DNS Lookup || url,blogs.jpcert.or.jp/ja/2019/05/darkhotel_lnk.html
-2027402 || ET TROJAN Executable contained in DICOM Medical Image SMB File Transfer || url,labs.cylera.com/2019/04/16/pe-dicom-medical-malware/ || url,https://github.com/d00rt/pedicom/
-2027403 || ET TROJAN Executable contained in DICOM Medical Image PACS DICOM Protocol Transfer || url,labs.cylera.com/2019/04/16/pe-dicom-medical-malware/ || url,https://github.com/d00rt/pedicom/
-2027404 || ET TROJAN Executable contained in DICOM Medical Image Received from PACS DICOM Device || url,labs.cylera.com/2019/04/16/pe-dicom-medical-malware/ || url,https://github.com/d00rt/pedicom/
+2027402 || ET TROJAN Executable contained in DICOM Medical Image SMB File Transfer || url,labs.cylera.com/2019/04/16/pe-dicom-medical-malware/ || url,github.com/d00rt/pedicom/
+2027403 || ET TROJAN Executable contained in DICOM Medical Image PACS DICOM Protocol Transfer || url,labs.cylera.com/2019/04/16/pe-dicom-medical-malware/ || url,github.com/d00rt/pedicom/
+2027404 || ET TROJAN Executable contained in DICOM Medical Image Received from PACS DICOM Device || url,labs.cylera.com/2019/04/16/pe-dicom-medical-malware/ || url,github.com/d00rt/pedicom/
 2027405 || ET TROJAN Possible APT28 Xtunnel Activity
 2027406 || ET TROJAN APT28 CnC Domain DNS Lookup
 2027407 || ET TROJAN APT28 CnC Domain DNS Lookup
@@ -24702,7 +24702,7 @@
 2027883 || ET EXPLOIT FortiOS SSL VPN - Information Disclosure (CVE-2018-13379) || url,blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html || cve,CVE-2018-13379
 2027884 || ET EXPLOIT FortiOS SSL VPN - Pre-Auth Messages Payload Buffer Overflow (CVE-2018-13381) || url,blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html || cve,CVE-2018-13381
 2027885 || ET EXPLOIT FortiOS SSL VPN - Improper Authorization Vulnerability (CVE-2018-13382) || url,blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html || url,github.com/milo2012/CVE-2018-13382/blob/master/CVE-2018-13382.py || cve,CVE-2018-13382
-2027886 || ET TROJAN Win32/DarkRAT CnC Activity || md5,344720685cc57fa7e7db6175e0624c91 || url,https://github.com/albertzsigovits/malware-writeups/tree/master/DarkRATv2
+2027886 || ET TROJAN Win32/DarkRAT CnC Activity || url,github.com/albertzsigovits/malware-writeups/tree/master/DarkRATv2
 2027887 || ET TROJAN [TGI] Py.Machete HTTP CnC Exfil || url,travisgreen.net/2019/08/14/machete-malware.html
 2027888 || ET TROJAN [TGI] Py.Machete FTP Exfil 1 || url,travisgreen.net/2019/08/14/machete-malware.html
 2027889 || ET TROJAN [TGI] Py.Machete FTP Exfil 2 || url,travisgreen.net/2019/08/14/machete-malware.html
@@ -24736,6 +24736,25 @@
 2027917 || ET TROJAN Win32/Alpha Stealer v1.5 PWS Exfil via HTTP || md5,a55bd3cc5caa47cb45355e9f79d4fc47
 2027918 || ET POLICY Quad9 DNS Over TLS Certificate Inbound || md5,1e686b56ccbcb28667698389703bb13a
 2027919 || ET POLICY Observed External IP Lookup Domain (ipconfig .cf in TLS SNI)
+2027920 || ET MOBILE_MALWARE Android/Spy.Agent.AOX Checkin || url,www.welivesecurity.com/2019/08/22/first-spyware-android-ahmyth-google-play/
+2027921 || ET TROJAN LYCEUM MSIL/DanBot CnC Checkin || md5,9df776b9933fbf95e3d462e04729d074
+2027922 || ET TROJAN LYCEUM CnC Domain Observed in DNS Query || url,www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+2027923 || ET TROJAN LYCEUM CnC Domain Observed in DNS Query || url,www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+2027924 || ET TROJAN LYCEUM CnC Domain Observed in DNS Query || url,www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+2027925 || ET TROJAN LYCEUM CnC Domain Observed in DNS Query || url,www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+2027926 || ET TROJAN LYCEUM CnC Domain Observed in DNS Query || url,www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+2027927 || ET TROJAN LYCEUM CnC Domain Observed in DNS Query || url,www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+2027928 || ET TROJAN LYCEUM CnC Domain Observed in DNS Query || url,www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+2027929 || ET TROJAN LYCEUM CnC Domain Observed in DNS Query || url,www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+2027930 || ET TROJAN LYCEUM CnC Domain Observed in DNS Query || url,www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+2027931 || ET MOBILE_MALWARE Unknown Apple iPhone Implant - Boundary Observed || url,googleprojectzero.blogspot.com/2019/08/implant-teardown.html
+2027932 || ET MOBILE_MALWARE Unknown Apple iPhone Implant - Upload Files || url,googleprojectzero.blogspot.com/2019/08/implant-teardown.html
+2027933 || ET MOBILE_MALWARE Unknown Apple iPhone Implant - Command Executed || url,googleprojectzero.blogspot.com/2019/08/implant-teardown.html
+2027934 || ET CURRENT_EVENTS RIG EK - Unexpected Victim Location Server Response
+2027935 || ET CURRENT_EVENTS Domen SocEng Redirect - Landing Page Observed
+2027936 || ET TROJAN Domen SocEng CnC Observed in DNS Query
+2027937 || ET TROJAN Domen SocEng CnC Observed in DNS Query
+2027938 || ET TROJAN Domen SocEng CnC Observed in DNS Query
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -26765,7 +26784,7 @@
 2404346 || ET CNC Feodo Tracker Reported CnC Server TCP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404347 || ET CNC Feodo Tracker Reported CnC Server UDP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404348 || ET CNC Feodo Tracker Reported CnC Server TCP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404349 || ET CNC Feodo Tracker Reported CnC Server UDP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404349 || ET CNC Feodoo Tracker Reported CnC Server UDP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404400 || ET CNC Ransomware Tracker Reported CnC Server TCP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404401 || ET CNC Ransomware Tracker Reported CnC Server UDP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404402 || ET CNC Ransomware Tracker Reported CnC Server TCP group 2 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -27194,6 +27213,12 @@
 2500071 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 36 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500072 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 37 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500073 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 37 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500074 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 38 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500075 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 38 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500076 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 39 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500077 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 39 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500078 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 40 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
+2500079 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 40 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520002 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520004 || ET TOR Known Tor Exit Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -27287,6 +27312,8 @@
 2520180 || ET TOR Known Tor Exit Node TCP Traffic group 91 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520182 || ET TOR Known Tor Exit Node TCP Traffic group 92 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2520184 || ET TOR Known Tor Exit Node TCP Traffic group 93 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520186 || ET TOR Known Tor Exit Node TCP Traffic group 94 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2520188 || ET TOR Known Tor Exit Node TCP Traffic group 95 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522004 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
