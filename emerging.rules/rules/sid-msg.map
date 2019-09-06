@@ -24755,6 +24755,22 @@
 2027936 || ET TROJAN Domen SocEng CnC Observed in DNS Query
 2027937 || ET TROJAN Domen SocEng CnC Observed in DNS Query
 2027938 || ET TROJAN Domen SocEng CnC Observed in DNS Query
+2027939 || ET TROJAN Possible APT28 Maldoc CnC Checkin || url,blog.telsy.com/zebrocy-dropbox-remote-injection/
+2027940 || ET MOBILE_MALWARE Evil Eye Android Malware Beacon || url,www.volexity.com/blog/2019/09/02/digital-crackdown-large-scale-surveillance-and-exploitation-of-uyghurs/
+2027941 || ET POLICY DNS Query to a Reverse Proxy Service Observed
+2027942 || ET POLICY DNS Query to a Reverse Proxy Service Observed
+2027943 || ET POLICY DNS Query to a Reverse Proxy Service Observed
+2027944 || ET TROJAN Win32/Laturo Stealer CnC Checkin || md5,06a1eaa62d8de97aec8a151f2ca6569b
+2027945 || ET INFO McAfee AV Download - Set
+2027946 || ET TROJAN Observed Glupteba CnC Domain (venoxcontrol .com in TLS SNI) || url,blog.trendmicro.com/trendlabs-security-intelligence/glupteba-campaign-hits-network-routers-and-updates-cc-servers-with-data-from-bitcoin-transactions/
+2027947 || ET TROJAN Glupteba CnC Domain in DNS Lookup || url,blog.trendmicro.com/trendlabs-security-intelligence/glupteba-campaign-hits-network-routers-and-updates-cc-servers-with-data-from-bitcoin-transactions/
+2027948 || ET TROJAN Glupteba CnC Domain in DNS Lookup || url,blog.trendmicro.com/trendlabs-security-intelligence/glupteba-campaign-hits-network-routers-and-updates-cc-servers-with-data-from-bitcoin-transactions/
+2027949 || ET TROJAN Glupteba CnC Domain in DNS Lookup || url,blog.trendmicro.com/trendlabs-security-intelligence/glupteba-campaign-hits-network-routers-and-updates-cc-servers-with-data-from-bitcoin-transactions/
+2027950 || ET TROJAN Glupteba CnC Domain in DNS Lookup || url,blog.trendmicro.com/trendlabs-security-intelligence/glupteba-campaign-hits-network-routers-and-updates-cc-servers-with-data-from-bitcoin-transactions/
+2027951 || ET TROJAN Glupteba CnC Domain in DNS Lookup || url,blog.trendmicro.com/trendlabs-security-intelligence/glupteba-campaign-hits-network-routers-and-updates-cc-servers-with-data-from-bitcoin-transactions/
+2027952 || ET TROJAN Glupteba CnC Domain in DNS Lookup || url,blog.trendmicro.com/trendlabs-security-intelligence/glupteba-campaign-hits-network-routers-and-updates-cc-servers-with-data-from-bitcoin-transactions/
+2027953 || ET TROJAN Glupteba CnC Domain in DNS Lookup || url,blog.trendmicro.com/trendlabs-security-intelligence/glupteba-campaign-hits-network-routers-and-updates-cc-servers-with-data-from-bitcoin-transactions/
+2027954 || ET TROJAN Glupteba CnC Domain in DNS Lookup || url,blog.trendmicro.com/trendlabs-security-intelligence/glupteba-campaign-hits-network-routers-and-updates-cc-servers-with-data-from-bitcoin-transactions/
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -26784,7 +26800,7 @@
 2404346 || ET CNC Feodo Tracker Reported CnC Server TCP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404347 || ET CNC Feodo Tracker Reported CnC Server UDP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404348 || ET CNC Feodo Tracker Reported CnC Server TCP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404349 || ET CNC Feodoo Tracker Reported CnC Server UDP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404349 || ET CNC Feodo Tracker Reported CnC Server UDP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404400 || ET CNC Ransomware Tracker Reported CnC Server TCP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404401 || ET CNC Ransomware Tracker Reported CnC Server UDP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404402 || ET CNC Ransomware Tracker Reported CnC Server TCP group 2 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -28039,3 +28055,29 @@
 2523444 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 723 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523446 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 724 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2523448 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 725 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523450 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 726 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523452 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 727 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523454 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 728 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523456 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 729 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523458 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 730 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523460 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 731 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523462 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 732 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523464 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 733 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523466 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 734 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523468 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 735 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523470 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 736 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523472 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 737 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523474 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 738 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523476 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 739 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523478 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 740 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523480 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 741 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523482 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 742 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523484 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 743 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523486 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 744 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523488 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 745 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523490 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 746 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523492 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 747 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523494 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 748 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523496 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 749 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523498 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 750 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2523500 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 751 || url,doc.emergingthreats.net/bin/view/Main/TorRules
