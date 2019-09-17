@@ -694,3 +694,5 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS Suspic
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS Observed Suspicious UA (Chrome)"; flow:established,to_server; content:"User-Agent|3a 20|Chrome|0d 0a|"; http_header; fast_pattern; metadata: former_category USER_AGENTS; classtype:bad-unknown; sid:2027916; rev:2; metadata:affected_product Any, attack_target Client_Endpoint, deployment Perimeter, signature_severity Informational, created_at 2019_08_26, performance_impact Low, updated_at 2019_08_26;)
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS Observed Suspicious UA (Absent)"; flow:established,to_server; content:"User-Agent|3a 20|Absent|0d 0a|"; http_header; fast_pattern:0,20; metadata: former_category USER_AGENTS; classtype:bad-unknown; sid:2028571; rev:2; metadata:affected_product Any, attack_target Client_Endpoint, deployment Perimeter, signature_severity Informational, created_at 2019_09_12, performance_impact Low, updated_at 2019_09_12;)
+
