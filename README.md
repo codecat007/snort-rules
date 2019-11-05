@@ -16,5 +16,12 @@ Attack Detection from Positive Technologies
 ==========
 rules from https://github.com/ptresearch/AttackDetection
 
+Other rules
+==========
+https://osint.bambenekconsulting.com/feeds/c2-dommasterlist.txt
+https://security.etnetera.cz/feeds/etn_aggressive.rules
+https://rules.emergingthreats.net/open/suricata/rules/
+https://github.com/beave/sagan-rules/
+
 If you like this repo,left a star!
 ==========
