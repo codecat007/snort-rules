@@ -15055,7 +15055,7 @@
 2017974 || ET TROJAN Backdoor family PCRat/Gh0st CnC traffic (OUTBOUND) 15 || md5,edd8c8009fc1ce2991eef6069ae6bf82 || url,www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?Name=Backdoor%3AWin32%2FPcClient.ZR&ThreatID=-2147325231 || url,www.securelist.com/en/descriptions/10155706/Trojan-GameThief.Win32.Magania.eogz
 2017975 || ET CURRENT_EVENTS Possible AnglerEK Landing URI Struct
 2017976 || ET DELETED Possible AnglerEK Java Exploit/Payload Structure Jan 16 2014
-2017977 || ET DELETED Possible Updatre SSL Certificate cardiffpower
+2017977 || ET TROJAN Possible Updatre SSL Certificate cardiffpower
 2017978 || ET DELETED Possible Updatre Compromised SSL Certificate marchsf
 2017979 || ET DELETED Possible Updatre Compromised SSL Certificate california89
 2017980 || ET INFO InformationCardSigninHelper ClassID (Vulnerable ActiveX Control in CVE-2013-3918)
@@ -24185,7 +24185,7 @@
 2027361 || ET TROJAN Winnti Payload - XORed Check-in to Infected System (0xd4413890) || url,medium.com/chronicle-blog/winnti-more-than-just-windows-and-gates-e4f03436031a
 2027362 || ET TROJAN BlackTech Plead CnC in DNS Lookup || url,www.welivesecurity.com/2019/05/14/plead-malware-mitm-asus-webstorage/
 2027363 || ET TROJAN BlackTech Plead CnC in DNS Lookup || url,www.welivesecurity.com/2019/05/14/plead-malware-mitm-asus-webstorage/
-2027364 || ET TROJAN BlackTech Plead Fake Favicon || url,www.welivesecurity.com/2019/05/14/plead-malware-mitm-asus-webstorage/
+2027364 || ET TROJAN BlackTech Plead Encrypted Payload Inbound || url,www.welivesecurity.com/2019/05/14/plead-malware-mitm-asus-webstorage/
 2027365 || ET TROJAN HTA.BabyShark Checkin || md5,94b60cf91e550e1d981aaf9962d52e18
 2027366 || ET TROJAN Mirai Variant Checkin Response || url,www.stratosphereips.org/blog/2019/5/17/iot-malware-analysis-series-a-mirai-variant-in-ctu-iot-malware-capture-49-1
 2027367 || ET DNS Query for Suspicious shell .now .sh Domain || url,www.lacework.com/blog-attacks-exploiting-confluence
@@ -25020,7 +25020,7 @@
 2028866 || ET CURRENT_EVENTS Spelevo Download Payload Landing
 2028867 || ET POLICY Vulnerable Java Version 11.0.x Detected || url,www.oracle.com/technetwork/java/javase/11u-relnotes-5093844.html
 2028868 || ET POLICY Vulnerable Java Version 12.0.x Detected || url,www.oracle.com/technetwork/java/javase/12u-relnotes-5211424.html
-2028869 || ET POLICY Vulnerable Java Version 12.0.x Detected || url,www.oracle.com/technetwork/java/javase/13u-relnotes-5461742.html
+2028869 || ET POLICY Vulnerable Java Version 13.0.x Detected || url,www.oracle.com/technetwork/java/javase/13u-relnotes-5461742.html
 2028870 || ET TROJAN APT-C-27 CnC Domain Observed in DNS Query || url,otx.alienvault.com/pulse/5da9dc215c51c8a86a2d19f1
 2028871 || ET TROJAN APT-C-27 CnC Domain Observed in DNS Query || url,otx.alienvault.com/pulse/5da9dc215c51c8a86a2d19f1
 2028872 || ET TROJAN APT-C-27 CnC Domain Observed in DNS Query || url,otx.alienvault.com/pulse/5da9dc215c51c8a86a2d19f1
@@ -25041,6 +25041,68 @@
 2028890 || ET TROJAN APT 41 LOWKEY Backdoor [TCP Relay Module] - Close Socket Command Observed || url,www.fireeye.com/blog/threat-research/2019/10/lowkey-hunting-for-the-missing-volume-serial-id.html
 2028891 || ET TROJAN APT 41 LOWKEY Backdoor [TCP Relay Module] - Close Named Pipe Command Observed || url,www.fireeye.com/blog/threat-research/2019/10/lowkey-hunting-for-the-missing-volume-serial-id.html
 2028892 || ET TROJAN Unk Spam Bot Template 1 Active - Outbound Malicious Email Spam
+2028893 || ET TROJAN Observed Malicious SSL Cert (DonotGroup CnC) || md5,9d479cec86ea919694dab765bba9abbd
+2028894 || ET TROJAN Observed Malicious SSL Cert (AZORult CnC Server) 2019-10-08 || md5,9a23881abe27dc70ca42597a1e1de354
+2028895 || ET WEB_SERVER Possible PHP Remote Code Execution CVE-2019-11043 PoC (Inbound) || cve,2019-11043 || url,github.com/vulhub/vulhub/tree/master/php/CVE-2019-11043 || url,github.com/neex/phuip-fpizdam
+2028896 || ET TROJAN Observed Win32/Orion Logger SMTP Exfil Subject Line || md5,a96e8c201599af678926ac84020c87e0
+2028897 || ET TROJAN Win32/Orion Logger SMTP Base64 Exfil || md5,a96e8c201599af678926ac84020c87e0
+2028898 || ET TROJAN Observed Malicious SSL Cert (APT32 CnC)
+2028899 || ET TROJAN Lazarus CnC Domain Observed in DNS Query || url,blog.alyac.co.kr/2388
+2028900 || ET TROJAN Lazarus CnC Domain Observed in DNS Query || url,blog.alyac.co.kr/2388
+2028901 || ET TROJAN Lazarus CnC Domain Observed in DNS Query || url,blog.alyac.co.kr/2388
+2028902 || ET TROJAN Lazarus CnC Domain Observed in DNS Query || url,blog.alyac.co.kr/2388
+2028903 || ET TROJAN Lazarus CnC Domain Observed in DNS Query || url,blog.alyac.co.kr/2388
+2028904 || ET TROJAN Lazarus CnC Domain Observed in DNS Query || url,blog.alyac.co.kr/2388
+2028905 || ET TROJAN Observed Malicious SSL Cert (CobInt CnC)
+2028906 || ET TROJAN Suspected Zebrocy Implant CnC Checkin || url,meltx0r.github.io/tech/2019/10/24/apt28.html
+2028907 || ET TROJAN MSIL/Diezen CnC Checkin M2 || url,threatrecon.nshc.net/2019/10/24/sectord01-when-anime-goes-cyber/
+2028908 || ET TROJAN MSIL/Diezen CnC Checkin M1 || url,threatrecon.nshc.net/2019/10/24/sectord01-when-anime-goes-cyber/
+2028909 || ET MALWARE Diezen/Sakabota CnC Domain Observed in DNS Query || url,threatrecon.nshc.net/2019/10/24/sectord01-when-anime-goes-cyber/
+2028910 || ET MALWARE Diezen/Sakabota CnC Domain Observed in DNS Query || url,threatrecon.nshc.net/2019/10/24/sectord01-when-anime-goes-cyber/
+2028911 || ET TROJAN Observed Malicious SSL Cert (MalDoc DL) 2019-10-24 || md5,8868702fb1825a9848eb3dd160a7bea3
+2028912 || ET USER_AGENTS Observed Suspicious UA (Client)
+2028913 || ET TROJAN BadPatch CnC Activity || url,www.fortinet.com/blog/threat-research/badpatch-campaign-uses-python-malware.html
+2028914 || ET POLICY TOR Consensus Data Requested
+2028915 || ET TROJAN Instagram Like Bot (like4u) CnC Activity M1 || md5,673652533091319b83a02fd82026f826 || md5,00a0737576d711a8c3a0fdf48fef035a
+2028916 || ET TROJAN Instagram Like Bot (like4u) CnC Activity M2 || md5,673652533091319b83a02fd82026f826 || md5,00a0737576d711a8c3a0fdf48fef035a
+2028917 || ET TROJAN Instagram Like Bot (like4u) CnC Domain in DNS Lookup || md5,00a0737576d711a8c3a0fdf48fef035a
+2028918 || ET TROJAN Netwire RAT Client Check-in (socket created) || md5,b0e58a8f45a3e45fd7ee2b4cc20474b3
+2028919 || ET TROJAN Patchwork APT CnC Beacon 2 || md5,4027e40dc474f595d46a59f2eaaa4e8d
+2028920 || ET TROJAN Win32/Phorpiex CnC Checkin || md5,03b6c8d49c70df01afc0765f8fa51d0c
+2028921 || ET TROJAN Kimsuky CnC Domain Observed in DNS Query
+2028922 || ET TROJAN Kimsuky CnC Domain Observed in DNS Query
+2028923 || ET DELETED Unk/LNKR CnC Domain Observed in DNS Query
+2028924 || ET TROJAN Unk/LNKR CnC Domain Observed in DNS Query
+2028925 || ET TROJAN Unk/LNKR CnC Domain Observed in DNS Query
+2028926 || ET TROJAN Observed Malicious SSL Cert (StrongPity CnC)
+2028927 || ET MALWARE StrongPity CnC Domain Observed in DNS Query
+2028928 || ET EXPLOIT VMware VeloCloud Authorization Bypass (CVE-2019-5533) || cve,2019-5533
+2028929 || ET TROJAN MSIL.L4L Stealer IP Check || md5,918ffdba1014ec647ae24ddc9de9fde9
+2028930 || ET TROJAN MSIL.L4L Stealer Screenshot Exfiltration || md5,918ffdba1014ec647ae24ddc9de9fde9
+2028931 || ET TROJAN MSIL.L4L Stealer Systeminfo Exfiltration || md5,918ffdba1014ec647ae24ddc9de9fde9
+2028932 || ET TROJAN Win32/CryptInject.BE!MTB Stealer CnC Checkin || md5,644b45001c0e0af1c0a208ffad79e316
+2028933 || ET EXPLOIT Possible rConfig 3.9.2 Remote Code Execution PoC (CVE-2019-16662) || cve,2019-16662 || url,packetstormsecurity.com/files/154999/rConfig-3.9.2-Remote-Code-Execution.html
+2028934 || ET TROJAN Possible Darkhotel Higasia Downloader Requesting Module || url,github.com/blackorbird/APT_REPORT/blob/master/Darkhotel/higaisa/higaisa_apt_report.pdf || md5,0e1ed07bae97d8b1cc4dcfe3d56ea3ee
+2028935 || ET TROJAN Possible Darkhotel Higasia Downloader Connectivity Check || url,github.com/blackorbird/APT_REPORT/blob/master/Darkhotel/higaisa/higaisa_apt_report.pdf || md5,0e1ed07bae97d8b1cc4dcfe3d56ea3ee
+2028936 || ET TROJAN Possible Darkhotel Higasia Downloader Checkin || url,github.com/blackorbird/APT_REPORT/blob/master/Darkhotel/higaisa/higaisa_apt_report.pdf || md5,0e1ed07bae97d8b1cc4dcfe3d56ea3ee
+2028937 || ET CURRENT_EVENTS Capesand EK Landing || url,blog.trendmicro.com/trendlabs-security-intelligence/new-exploit-kit-capesand-reuses-old-and-new-public-exploits-and-tools-blockchain-ruse/
+2028938 || ET CURRENT_EVENTS PluginDetect Observed - Possible EK Activity
+2028939 || ET CURRENT_EVENTS Capesand EK Visitor Tracking
+2028940 || ET CURRENT_EVENTS Possible MSFVenom Exploit via Browser
+2028941 || ET CURRENT_EVENTS Powershell Download Command Observed within Flash File - Probable EK Activity
+2028942 || ET P2P FFTorrent P2P Client User-Agent (FFTorrent/x.x.x)
+2028943 || ET TROJAN Ryuk Wake-on-LAN Packet Observed || url,www.crowdstrike.com/blog/wizard-spider-adds-new-feature-to-ryuk-ransomware/
+2028944 || ET TROJAN Observed Malicious SSL Cert (Turla CnC)
+2028945 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2019-11-06
+2028946 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2019-11-06
+2028947 || ET USER_AGENTS Suspicious User-Agent (Random String) || md5,a1e56bd465d1c1b5fc19384a3a7ec461
+2028948 || ET TROJAN Keyboy CN APT CnC Domain in DNS Lookup
+2028949 || ET TROJAN Keyboy CN APT CnC Domain in DNS Lookup
+2028950 || ET TROJAN Keyboy CN APT CnC Domain in DNS Lookup
+2028951 || ET TROJAN Keyboy CN APT CnC Domain in DNS Lookup
+2028952 || ET TROJAN Keyboy CN APT CnC Domain in DNS Lookup
+2028953 || ET TROJAN Keyboy CN APT CnC Domain in DNS Lookup
+2028954 || ET TROJAN Keyboy CN APT CnC Domain in DNS Lookup
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -26767,6 +26829,7 @@
 2400033 || ET DROP Spamhaus DROP Listed Traffic Inbound group 34 || url,www.spamhaus.org/drop/drop.lasso
 2400034 || ET DROP Spamhaus DROP Listed Traffic Inbound group 35 || url,www.spamhaus.org/drop/drop.lasso
 2400035 || ET DROP Spamhaus DROP Listed Traffic Inbound group 36 || url,www.spamhaus.org/drop/drop.lasso
+2400036 || ET DROP Spamhaus DROP Listed Traffic Inbound group 37 || url,www.spamhaus.org/drop/drop.lasso
 2402000 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
 2402001 || ET DROP Dshield Block Listed Source group 1 || url,feeds.dshield.org/block.txt
 2403300 || ET CINS Active Threat Intelligence Poor Reputation IP TCP group 1 || url,www.cinsscore.com
@@ -27449,90 +27512,6 @@
 2500027 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 14 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500028 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 15 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
 2500029 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 15 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500030 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 16 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500031 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 16 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500032 || ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 17 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2500033 || ET COMPROMISED Known Compromised or Hostile Host Traffic UDP group 17 || url,doc.emergingthreats.net/bin/view/Main/CompromisedHosts
-2520000 || ET TOR Known Tor Exit Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520001 || ET TOR Known Tor Exit Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520002 || ET TOR Known Tor Exit Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520003 || ET TOR Known Tor Exit Node TCP Traffic group 4 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520004 || ET TOR Known Tor Exit Node TCP Traffic group 5 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520005 || ET TOR Known Tor Exit Node TCP Traffic group 6 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520006 || ET TOR Known Tor Exit Node TCP Traffic group 7 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520007 || ET TOR Known Tor Exit Node TCP Traffic group 8 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520008 || ET TOR Known Tor Exit Node TCP Traffic group 9 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520009 || ET TOR Known Tor Exit Node TCP Traffic group 10 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520010 || ET TOR Known Tor Exit Node TCP Traffic group 11 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520011 || ET TOR Known Tor Exit Node TCP Traffic group 12 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520012 || ET TOR Known Tor Exit Node TCP Traffic group 13 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520013 || ET TOR Known Tor Exit Node TCP Traffic group 14 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520014 || ET TOR Known Tor Exit Node TCP Traffic group 15 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520015 || ET TOR Known Tor Exit Node TCP Traffic group 16 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520016 || ET TOR Known Tor Exit Node TCP Traffic group 17 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520017 || ET TOR Known Tor Exit Node TCP Traffic group 18 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520018 || ET TOR Known Tor Exit Node TCP Traffic group 19 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520019 || ET TOR Known Tor Exit Node TCP Traffic group 20 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520020 || ET TOR Known Tor Exit Node TCP Traffic group 21 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520021 || ET TOR Known Tor Exit Node TCP Traffic group 22 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520022 || ET TOR Known Tor Exit Node TCP Traffic group 23 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520023 || ET TOR Known Tor Exit Node TCP Traffic group 24 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520024 || ET TOR Known Tor Exit Node TCP Traffic group 25 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520025 || ET TOR Known Tor Exit Node TCP Traffic group 26 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520026 || ET TOR Known Tor Exit Node TCP Traffic group 27 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520027 || ET TOR Known Tor Exit Node TCP Traffic group 28 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520028 || ET TOR Known Tor Exit Node TCP Traffic group 29 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520029 || ET TOR Known Tor Exit Node TCP Traffic group 30 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520030 || ET TOR Known Tor Exit Node TCP Traffic group 31 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520031 || ET TOR Known Tor Exit Node TCP Traffic group 32 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520032 || ET TOR Known Tor Exit Node TCP Traffic group 33 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520033 || ET TOR Known Tor Exit Node TCP Traffic group 34 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520034 || ET TOR Known Tor Exit Node TCP Traffic group 35 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520035 || ET TOR Known Tor Exit Node TCP Traffic group 36 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520036 || ET TOR Known Tor Exit Node TCP Traffic group 37 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520037 || ET TOR Known Tor Exit Node TCP Traffic group 38 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520038 || ET TOR Known Tor Exit Node TCP Traffic group 39 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520039 || ET TOR Known Tor Exit Node TCP Traffic group 40 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520040 || ET TOR Known Tor Exit Node TCP Traffic group 41 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520041 || ET TOR Known Tor Exit Node TCP Traffic group 42 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520042 || ET TOR Known Tor Exit Node TCP Traffic group 43 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520043 || ET TOR Known Tor Exit Node TCP Traffic group 44 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520044 || ET TOR Known Tor Exit Node TCP Traffic group 45 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520045 || ET TOR Known Tor Exit Node TCP Traffic group 46 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520046 || ET TOR Known Tor Exit Node TCP Traffic group 47 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520047 || ET TOR Known Tor Exit Node TCP Traffic group 48 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520048 || ET TOR Known Tor Exit Node TCP Traffic group 49 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520049 || ET TOR Known Tor Exit Node TCP Traffic group 50 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520050 || ET TOR Known Tor Exit Node TCP Traffic group 51 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520051 || ET TOR Known Tor Exit Node TCP Traffic group 52 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520052 || ET TOR Known Tor Exit Node TCP Traffic group 53 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520053 || ET TOR Known Tor Exit Node TCP Traffic group 54 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520054 || ET TOR Known Tor Exit Node TCP Traffic group 55 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520055 || ET TOR Known Tor Exit Node TCP Traffic group 56 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520056 || ET TOR Known Tor Exit Node TCP Traffic group 57 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520057 || ET TOR Known Tor Exit Node TCP Traffic group 58 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520058 || ET TOR Known Tor Exit Node TCP Traffic group 59 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520059 || ET TOR Known Tor Exit Node TCP Traffic group 60 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520060 || ET TOR Known Tor Exit Node TCP Traffic group 61 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520061 || ET TOR Known Tor Exit Node TCP Traffic group 62 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520062 || ET TOR Known Tor Exit Node TCP Traffic group 63 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520063 || ET TOR Known Tor Exit Node TCP Traffic group 64 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520064 || ET TOR Known Tor Exit Node TCP Traffic group 65 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520065 || ET TOR Known Tor Exit Node TCP Traffic group 66 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520066 || ET TOR Known Tor Exit Node TCP Traffic group 67 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520067 || ET TOR Known Tor Exit Node TCP Traffic group 68 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520068 || ET TOR Known Tor Exit Node TCP Traffic group 69 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520069 || ET TOR Known Tor Exit Node TCP Traffic group 70 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520070 || ET TOR Known Tor Exit Node TCP Traffic group 71 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520071 || ET TOR Known Tor Exit Node TCP Traffic group 72 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520072 || ET TOR Known Tor Exit Node TCP Traffic group 73 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520073 || ET TOR Known Tor Exit Node TCP Traffic group 74 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520074 || ET TOR Known Tor Exit Node TCP Traffic group 75 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520075 || ET TOR Known Tor Exit Node TCP Traffic group 76 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520076 || ET TOR Known Tor Exit Node TCP Traffic group 77 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520077 || ET TOR Known Tor Exit Node TCP Traffic group 78 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520078 || ET TOR Known Tor Exit Node TCP Traffic group 79 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2520079 || ET TOR Known Tor Exit Node TCP Traffic group 80 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522000 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 1 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522001 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 2 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522002 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 3 || url,doc.emergingthreats.net/bin/view/Main/TorRules
@@ -28209,4 +28188,3 @@
 2522673 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 674 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522674 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 675 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522675 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 676 || url,doc.emergingthreats.net/bin/view/Main/TorRules
-2522676 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 677 || url,doc.emergingthreats.net/bin/view/Main/TorRules

@@ -274,3 +274,5 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Pando Client U
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Libtorrent User-Agent"; flow:to_server,established; content:"libtorrent"; nocase; fast_pattern:only; http_header; pcre:"/^User-Agent\x3a [^\r\n]+?libtorrent/Hmi"; metadata: former_category P2P; classtype:policy-violation; sid:2012390; rev:3; metadata:created_at 2011_02_27, updated_at 2019_09_27;)
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P FFTorrent P2P Client User-Agent (FFTorrent/x.x.x)"; flow:to_server,established; content:"User-Agent|3a 20|FFTorrent/"; http_header; classtype:policy-violation; sid:2028942; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, deployment Perimeter, signature_severity Major, created_at 2019_11_05, updated_at 2019_11_05;)
+
