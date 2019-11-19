@@ -7250,7 +7250,7 @@
 2009541 || ET USER_AGENTS Suspicious User-Agent filled with System Details - GET Request || url,doc.emergingthreats.net/2009541
 2009542 || ET DELETED Silentbanker/Yaludle Checkin to C&C || url,doc.emergingthreats.net/2009542
 2009544 || ET USER_AGENTS Suspicious User-Agent (InHold) - Possible Trojan Downloader GET Request || url,doc.emergingthreats.net/2009544
-2009545 || ET MALWARE User-Agent (_TEST_) || url,doc.emergingthreats.net/2009545
+2009545 || ET USER_AGENTS User-Agent (_TEST_) || url,doc.emergingthreats.net/2009545
 2009547 || ET USER_AGENTS Suspicious User-Agent (Forthgoner) - Possible Trojan Downloader GET Request || url,doc.emergingthreats.net/2009547
 2009548 || ET DELETED Adware/Spyware Adrotator for Rogue AV || url,doc.emergingthreats.net/2009548 || url,novirusthanks.org/blog/2008/11/rogue-antispyware-2009-served-through-beedlyus-ads/ || url,www.threatexpert.com/threats/adware-agent-gen.html || url,www.spywaredetector.net/spyware_encyclopedia/Fake AntiSpyware.POWER-ANTIVIRUS-2009.htm || url,www.spywaredetector.net/spyware_encyclopedia/Trojan.Vapsup.htm
 2009549 || ET TROJAN Generic Downloader - HTTP POST || url,doc.emergingthreats.net/2009549
@@ -25091,7 +25091,7 @@
 2028940 || ET CURRENT_EVENTS Possible MSFVenom Exploit via Browser
 2028941 || ET CURRENT_EVENTS Powershell Download Command Observed within Flash File - Probable EK Activity
 2028942 || ET P2P FFTorrent P2P Client User-Agent (FFTorrent/x.x.x)
-2028943 || ET TROJAN Ryuk Wake-on-LAN Packet Observed || url,www.crowdstrike.com/blog/wizard-spider-adds-new-feature-to-ryuk-ransomware/
+2028943 || ET DELETED Ryuk Wake-on-LAN Packet Observed || url,www.crowdstrike.com/blog/wizard-spider-adds-new-feature-to-ryuk-ransomware/
 2028944 || ET TROJAN Observed Malicious SSL Cert (Turla CnC)
 2028945 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2019-11-06
 2028946 || ET CURRENT_EVENTS Possible Successful Generic Phish (set) 2019-11-06
@@ -25103,6 +25103,49 @@
 2028952 || ET TROJAN Keyboy CN APT CnC Domain in DNS Lookup
 2028953 || ET TROJAN Keyboy CN APT CnC Domain in DNS Lookup
 2028954 || ET TROJAN Keyboy CN APT CnC Domain in DNS Lookup
+2028955 || ET TROJAN Win32/IcedID WebSocket Request M2 || md5,977a264f70acf703333f298019c3abd4
+2028956 || ET TROJAN Observed AHK Downloader Request Structure
+2028957 || ET TROJAN Platinum APT - Titanium Payload CnC Checkin (x86) || url,securelist.com/titanium-the-platinum-group-strikes-again/94961/
+2028958 || ET TROJAN Platinum APT - Titanium Payload CnC Checkin (x64) || url,securelist.com/titanium-the-platinum-group-strikes-again/94961/
+2028959 || ET TROJAN Platinum APT Activity || url,securelist.com/titanium-the-platinum-group-strikes-again/94961/
+2028960 || ET TROJAN Platinum APT - Titanium Hardcoded String Observed || url,securelist.com/titanium-the-platinum-group-strikes-again/94961/
+2028961 || ET TROJAN Gamaredon CnC Domain Observed in DNS Query
+2028962 || ET TROJAN Gamaredon CnC Domain Observed in DNS Query
+2028963 || ET TROJAN DADJOKE/Rail Tycoon Initial Macro Execution || md5,4c89d5d8016581060d9781433cfb0bb5
+2028964 || ET TROJAN DADJOKE/Rail Tycoon Payload Extraction || md5,4c89d5d8016581060d9781433cfb0bb5
+2028965 || ET TROJAN DADJOKE/Rail Tycoon Payload Execution || md5,4c89d5d8016581060d9781433cfb0bb5
+2028966 || ET TROJAN Win32/AnteFrigus Ransomware Activity || md5,b34f1592bce63de77b87d1e61bce66e5
+2028967 || ET TROJAN Possible Gamaredon HEAD Request for .dot file on ddns.net || md5,b221647d110bd2be2c6e9c5d727ca8db || md5,dbf4f92852cdae17aa3f2b1234f0140e
+2028968 || ET TROJAN Observed Malicious SSL Cert (Possible APT33 CnC)
+2028969 || ET TROJAN Gamaredon CnC Domain Observed in DNS Query
+2028970 || ET WEB_CLIENT Tech Support Scam 2019-11-14
+2028971 || ET WEB_CLIENT Tech Support Scam 2019-11-14
+2028974 || ET CURRENT_EVENTS Possible PurpleFox EK Framework Landing
+2028975 || ET CURRENT_EVENTS Possible PurpleFox EK Framework Landing - Various Exploits
+2028976 || ET CURRENT_EVENTS Possible PurpleFox EK Framework Payload
+2028977 || ET CURRENT_EVENTS Possible PurpleFox EK Framework Flash HEAD Request
+2028978 || ET CURRENT_EVENTS Possible PurpleFox EK Framework Flash GET Request
+2028979 || ET CURRENT_EVENTS Possible PurpleFox EK Framework URI Struct Landing Request
+2028980 || ET CURRENT_EVENTS Possible PurpleFox EK Framework URI Struct Flash Request
+2028983 || ET USER_AGENTS Observed Suspicious UA (system_file/2.0)
+2028984 || ET TROJAN Win32/1xxbot CnC Checkin || md5,9eb50c6cdb59d11b01ca9f069e8ba79d
+2028985 || ET CURRENT_EVENTS Observed Malicious SSL Cert (MalDoc DL 2019-11-15) || md5,9b1d0537d0734f1ddb53c5567f5d7ab5
+2028986 || ET TROJAN Observed Malicious SSL Cert (Sidewinder APT CnC) || md5,9b1d0537d0734f1ddb53c5567f5d7ab5
+2028987 || ET TROJAN Observed CobInt CnC Domain in TLS SNI
+2028988 || ET TROJAN Observed CobInt CnC Domain in TLS SNI
+2028989 || ET TROJAN ELF/Mirai Variant UA Outbound (ph0ne)
+2028990 || ET TROJAN ELF/Mirai Variant UA Outbound (Ouija_x.86)
+2028991 || ET TROJAN Observed Buran Ransomware UA
+2028992 || ET TROJAN SuperSocialat Plugin Backdoor Code Execution Attempt
+2028993 || ET CURRENT_EVENTS Possible Pipka JS Skimmer CnC Request || url,usa.visa.com/dam/VCOM/global/support-legal/documents/pfd-identifies-new-javascript-skimmer.pdf
+2028994 || ET CURRENT_EVENTS Possible Pipka JS Skimmer - Skimmer Payload Observed M1 || url,usa.visa.com/dam/VCOM/global/support-legal/documents/pfd-identifies-new-javascript-skimmer.pdf
+2028995 || ET CURRENT_EVENTS Possible Pipka JS Skimmer - Skimmer Payload Observed M2 || url,usa.visa.com/dam/VCOM/global/support-legal/documents/pfd-identifies-new-javascript-skimmer.pdf
+2028996 || ET CURRENT_EVENTS Possible Pipka JS Skimmer - Skimmer Payload Observed M3 || url,usa.visa.com/dam/VCOM/global/support-legal/documents/pfd-identifies-new-javascript-skimmer.pdf
+2028997 || ET CURRENT_EVENTS Possible Pipka JS Skimmer - Skimmer Payload Observed M4 || url,usa.visa.com/dam/VCOM/global/support-legal/documents/pfd-identifies-new-javascript-skimmer.pdf
+2028998 || ET CURRENT_EVENTS Possible Pipka JS Skimmer - Skimmer Payload Observed M5 || url,usa.visa.com/dam/VCOM/global/support-legal/documents/pfd-identifies-new-javascript-skimmer.pdf
+2028999 || ET CURRENT_EVENTS Possible Pipka JS Skimmer - Skimmer Payload Observed M6 || url,usa.visa.com/dam/VCOM/global/support-legal/documents/pfd-identifies-new-javascript-skimmer.pdf
+2029000 || ET CURRENT_EVENTS Possible Pipka JS Skimmer - Skimmer Payload Observed M7 || url,usa.visa.com/dam/VCOM/global/support-legal/documents/pfd-identifies-new-javascript-skimmer.pdf
+2029001 || ET TROJAN Observed Malicious SSL Cert (AZORult CnC) 2019-11-18 || md5,e54cbf645b0840c0dd1f212f42cd47fd
 2100110 || GPL DELETED netbus getinfo || arachnids,403
 2100116 || GPL TROJAN BackOrifice access || arachnids,399
 2100139 || GPL WEB_SERVER WEB-IIS Remote IIS Server Name spoof attempt loopback IP || cve,2005-2678
@@ -27133,9 +27176,7 @@
 2404344 || ET CNC Feodo Tracker Reported CnC Server TCP group 23 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404345 || ET CNC Feodo Tracker Reported CnC Server UDP group 23 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404346 || ET CNC Feodo Tracker Reported CnC Server TCP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404347 || ET CNC Feodo Tracker Reported CnC Server UDP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404348 || ET CNC Feodo Tracker Reported CnC Server TCP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
-2404349 || ET CNC Feodoo Tracker Reported CnC Server UDP group 25 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
+2404347 || ET CNC Feodoo Tracker Reported CnC Server UDP group 24 || url,feodotracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404400 || ET CNC Ransomware Tracker Reported CnC Server TCP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404401 || ET CNC Ransomware Tracker Reported CnC Server UDP group 1 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
 2404402 || ET CNC Ransomware Tracker Reported CnC Server TCP group 2 || url,ransomwaretracker.abuse.ch || url,doc.emergingthreats.net/bin/view/Main/BotCC
@@ -28188,3 +28229,10 @@
 2522673 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 674 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522674 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 675 || url,doc.emergingthreats.net/bin/view/Main/TorRules
 2522675 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 676 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2522676 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 677 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2522677 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 678 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2522678 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 679 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2522679 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 680 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2522680 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 681 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2522681 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 682 || url,doc.emergingthreats.net/bin/view/Main/TorRules
+2522682 || ET TOR Known Tor Relay/Router (Not Exit) Node TCP Traffic group 683 || url,doc.emergingthreats.net/bin/view/Main/TorRules

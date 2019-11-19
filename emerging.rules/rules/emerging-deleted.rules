@@ -5392,3 +5392,5 @@
 
 #alert udp $HOME_NET any -> any 53 (msg:"ET DELETED Unk/LNKR CnC Domain Observed in DNS Query"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0e|cdn-javascript|03|net|00|"; distance:0; fast_pattern; metadata: former_category MALWARE; classtype:trojan-activity; sid:2028923; rev:2; metadata:affected_product Web_Browsers, attack_target Client_Endpoint, deployment Perimeter, signature_severity Major, created_at 2019_10_31, updated_at 2019_11_05;)
 
+#alert udp $HOME_NET any -> $HOME_NET 7 (msg:"ET DELETED Ryuk Wake-on-LAN Packet Observed"; dsize:<200; content:"|ff ff ff ff ff ff|"; depth:6; fast_pattern; pcre:"/^(?P<mac_addr>[\x00-\xff]{6})(?P=mac_addr){2,}$/R"; metadata: former_category MALWARE; reference:url,www.crowdstrike.com/blog/wizard-spider-adds-new-feature-to-ryuk-ransomware/; classtype:trojan-activity; sid:2028943; rev:3; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_and_Server, deployment Internal, signature_severity Major, created_at 2019_11_05, malware_family Ryuk, performance_impact Moderate, updated_at 2019_11_08;)
+
