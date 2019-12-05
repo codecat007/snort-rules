@@ -1004,7 +1004,7 @@ alert tcp any any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SERVER CURL Command 
 
 alert tcp any any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SERVER WGET Command Specifying Output in HTTP Headers"; flow:established,to_server; content:"wget "; fast_pattern:only; http_header; pcre:"/(?!^User-Agent\x3a)\bwget\s[^\r\n]+(?:\x3b|&&)/Hm"; reference:url,blogs.akamai.com/2014/09/environment-bashing.html; classtype:attempted-admin; sid:2019309; rev:1; metadata:created_at 2014_09_29, updated_at 2019_10_07;)
 
-alert tcp any any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SERVER WGET Command Specifying Output in HTTP Headers"; flow:established,to_server; content:"lwp-download "; fast_pattern:only; http_header; pcre:"/(?!^User-Agent\x3a)\blwp-download\s[^\r\n]+(?:\x3b|&&)/Hm"; reference:url,blogs.akamai.com/2014/09/environment-bashing.html; classtype:attempted-admin; sid:2019310; rev:1; metadata:created_at 2014_09_29, updated_at 2019_10_07;)
+alert tcp any any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SERVER lwp-download Command Specifying Output in HTTP Headers"; flow:established,to_server; content:"lwp-download "; fast_pattern:only; http_header; pcre:"/(?!^User-Agent\x3a)\blwp-download\s[^\r\n]+(?:\x3b|&&)/Hm"; metadata: former_category WEB_SERVER; reference:url,blogs.akamai.com/2014/09/environment-bashing.html; classtype:attempted-admin; sid:2019310; rev:1; metadata:created_at 2014_09_29, updated_at 2019_10_07;)
 
 alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"ET WEB_SERVER Possible bash shell piped to dev udp Inbound to WebServer"; flow:established,to_server; content:"/dev/udp/"; fast_pattern:only; classtype:bad-unknown; sid:2019314; rev:2; metadata:created_at 2014_09_29, updated_at 2019_10_07;)
 
