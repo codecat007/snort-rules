@@ -498,3 +498,5 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS Observ
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS Observed Suspicious UA (DxD)"; flow:established,to_server; content:"User-Agent|3a 20|DxD|0d 0a|"; http_header; fast_pattern; metadata: former_category USER_AGENTS; classtype:bad-unknown; sid:2029232; rev:2; metadata:attack_target Client_Endpoint, deployment Perimeter, signature_severity Minor, created_at 2020_01_06, performance_impact Low, updated_at 2020_01_06;)
 
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET USER_AGENTS ABBCCoin Activity Observed"; flow:established,to_server; content:"User-Agent|3a 20|ABBCCoin"; fast_pattern; http_header; reference:md5,77ec579347955cfa32f219386337f5bb; classtype:misc-activity; sid:2029423; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, deployment Perimeter, signature_severity Minor, created_at 2020_02_12, updated_at 2020_02_12;)
+
