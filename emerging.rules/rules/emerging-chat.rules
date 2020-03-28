@@ -76,7 +76,7 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET 5222 (msg:"ET CHAT Google Talk (Jabber)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET CHAT MSN status change"; flow:established,to_server; content:"CHG "; depth:55; reference:url,doc.emergingthreats.net/2002192; classtype:policy-violation; sid:2002192; rev:4; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET CHAT Yahoo IM conference request"; flow: to_server,established; content:"<R"; depth: 2; pcre:"/^\x3c(REQIMG|RVWCFG)\x3e/ism"; reference:url,doc.emergingthreats.net/2001263; classtype:policy-violation; sid:2001263; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+#alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET CHAT Yahoo IM conference request"; flow: to_server,established; content:"<R"; depth: 2; pcre:"/^\x3c(REQIMG|RVWCFG)\x3e/ism"; reference:url,doc.emergingthreats.net/2001263; classtype:policy-violation; sid:2001263; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET CHAT IRC authorization message"; flow: established; content:"NOTICE AUTH"; content:"Looking up your hostname..."; nocase; reference:url,doc.emergingthreats.net/2000355; classtype:misc-activity; sid:2000355; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -100,15 +100,15 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET CHAT Yahoo IM voicechat"; 
 
 #alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET CHAT Yahoo IM ping"; flow: to_server,established; content:"YMSG"; nocase; depth: 4; content:"|00 12|"; offset: 10; depth: 2; reference:url,doc.emergingthreats.net/2001255; classtype:policy-violation; sid:2001255; rev:8; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET CHAT Yahoo IM conference invitation"; flow: from_server,established; content:"YMSG"; nocase; depth: 4; content:"|00 18|"; offset: 10; depth: 2; reference:url,doc.emergingthreats.net/2001256; classtype:policy-violation; sid:2001256; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET CHAT Yahoo IM conference invitation"; flow: from_server,established; content:"YMSG"; nocase; depth: 4; content:"|00 18|"; offset: 10; depth: 2; reference:url,doc.emergingthreats.net/2001256; classtype:policy-violation; sid:2001256; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET CHAT Yahoo IM conference logon success"; flow: from_server,established; content:"YMSG"; nocase; depth: 4; content:"|00 19|"; offset: 10; depth: 2; reference:url,doc.emergingthreats.net/2001257; classtype:policy-violation; sid:2001257; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+#alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"ET CHAT Yahoo IM conference logon success"; flow: from_server,established; content:"YMSG"; nocase; depth: 4; content:"|00 19|"; offset: 10; depth: 2; reference:url,doc.emergingthreats.net/2001257; classtype:policy-violation; sid:2001257; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET CHAT Yahoo IM conference message"; flow: to_server,established; content:"YMSG"; nocase; depth: 4; content:"|00 1D|"; offset: 10; depth: 2; reference:url,doc.emergingthreats.net/2001258; classtype:policy-violation; sid:2001258; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+#alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET CHAT Yahoo IM conference message"; flow: to_server,established; content:"YMSG"; nocase; depth: 4; content:"|00 1D|"; offset: 10; depth: 2; reference:url,doc.emergingthreats.net/2001258; classtype:policy-violation; sid:2001258; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
 #alert tcp $HOME_NET any <> $EXTERNAL_NET any (msg:"ET CHAT Yahoo IM message"; flow: established; content:"YMSG"; depth: 4; reference:url,doc.emergingthreats.net/2001260; classtype:policy-violation; sid:2001260; rev:8; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET CHAT Yahoo IM conference offer invitation"; flow: to_server,established; content:"YMSG"; nocase; depth: 4; content:"|00|P"; offset: 10; depth: 2; reference:url,doc.emergingthreats.net/2001262; classtype:policy-violation; sid:2001262; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+#alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET CHAT Yahoo IM conference offer invitation"; flow: to_server,established; content:"YMSG"; nocase; depth: 4; content:"|00|P"; offset: 10; depth: 2; reference:url,doc.emergingthreats.net/2001262; classtype:policy-violation; sid:2001262; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET CHAT Gadu-Gadu Chat Client Checkin via HTTP"; flow:established,to_server; content:"/appsvc/appmsg"; nocase; http_uri; content:"fmnumber="; nocase; http_uri; content:"&version="; nocase; http_uri; content:"&fmt="; nocase; http_uri; content:"&lastmsg="; http_uri; nocase; reference:url,doc.emergingthreats.net/2007866; classtype:trojan-activity; sid:2007866; rev:7; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
