@@ -18,7 +18,7 @@
 # OS-SOLARIS
 #------------
 
-# alert tcp $EXTERNAL_NET any -> $HOME_NET 515 ( msg:"OS-SOLARIS Oracle Solaris LPD overflow attempt"; flow:to_server,established; content:"|02|//////////",depth 11; dsize:>1000; reference:bugtraq,3274; reference:cve,2001-1583; classtype:attempted-admin; sid:3527; rev:12; )
+# alert tcp $EXTERNAL_NET any -> $HOME_NET 515 ( msg:"OS-SOLARIS Oracle Solaris LPD overflow attempt"; flow:to_server,established; content:"|02|//////////",depth 11; isdataat:1000; reference:bugtraq,3274; reference:cve,2001-1583; classtype:attempted-admin; sid:3527; rev:13; )
 alert tcp $EXTERNAL_NET any -> $HOME_NET 515 ( msg:"OS-SOLARIS Oracle Solaris lpd control file upload attempt"; flow:to_server,established; flowbits:isset,lp.cascade; content:"|02|",depth 1; content:"cfA",nocase; pcre:"/^\x02\d+ cfA/smi"; flowbits:set,lp.controlfile; metadata:policy max-detect-ips drop; service:printer; classtype:misc-attack; sid:4144; rev:12; )
 # alert tcp $EXTERNAL_NET any -> $HOME_NET 515 ( msg:"OS-SOLARIS Oracle Solaris lpd unlink file attempt"; flow:to_server,established; flowbits:isset,lp.controlfile; content:"|02|",depth 1; content:"dfA",nocase; pcre:"/^\x02\d+ dfA/smi"; metadata:policy max-detect-ips drop; service:printer; reference:bugtraq,14510; reference:cve,2005-4797; classtype:misc-attack; sid:10418; rev:8; )
 # fast_pattern's 'only' option has been deleted
