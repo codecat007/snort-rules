@@ -98,9 +98,9 @@ alert tcp $HOME_NET 2401 -> $EXTERNAL_NET any (msg:"GPL MISC CVS non-relative pa
 
 #alert tcp $EXTERNAL_NET any <> $HOME_NET 179 (msg:"GPL MISC BGP spoofed connection reset attempt"; flow:established; flags:RSF*; threshold:type both,track by_dst,count 10,seconds 10; metadata: former_category MISC; reference:bugtraq,10183; reference:cve,2004-0230; reference:url,www.uniras.gov.uk/vuls/2004/236929/index.htm; classtype:attempted-dos; sid:2102523; rev:8; metadata:created_at 2010_09_23, updated_at 2019_05_21;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET 8000 (msg:"GPL MISC HP Web JetAdmin remote file upload attempt"; flow:to_server,established; content:"/plugins/hpjwja/script/devices_update_printer_fw_upload.hts"; nocase; content:"Content-Type|3A|"; nocase; content:"Multipart"; distance:0; nocase; reference:bugtraq,9978; classtype:web-application-activity; sid:2102547; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
+alert tcp $EXTERNAL_NET any -> $HOME_NET 8000 (msg:"GPL MISC HP Web JetAdmin remote file upload attempt"; flow:to_server,established; content:"/plugins/hpjwja/script/devices_update_printer_fw_upload.hts"; nocase; content:"Content-Type|3A|"; nocase; content:"Multipart"; distance:0; nocase; reference:bugtraq,9978; classtype:web-application-activity; sid:2102547; rev:3; metadata:created_at 2010_09_23, updated_at 2020_04_21;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET 8000 (msg:"GPL MISC HP Web JetAdmin setinfo access"; flow:to_server,established; content:"/plugins/hpjdwm/script/test/setinfo.hts"; nocase; reference:bugtraq,9972; classtype:web-application-activity; sid:2102548; rev:2; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
+alert tcp $EXTERNAL_NET any -> $HOME_NET 8000 (msg:"GPL MISC HP Web JetAdmin setinfo access"; flow:to_server,established; content:"/plugins/hpjdwm/script/test/setinfo.hts"; nocase; reference:bugtraq,9972; classtype:web-application-activity; sid:2102548; rev:2; metadata:created_at 2010_09_23, updated_at 2020_04_21;)
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET 8000 (msg:"GPL MISC HP Web JetAdmin file write attempt"; flow:to_server,established; content:"/plugins/framework/script/tree.xms"; nocase; content:"WriteToFile"; nocase; reference:bugtraq,9973; classtype:web-application-activity; sid:2102549; rev:2; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 

@@ -90,7 +90,7 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P BearShare P2P Gnutella Client User-Agent (BearShare 6.x.x.x)"; flow:to_server,established; content:"User-Agent|3a| BearShare "; http_header; reference:url,doc.emergingthreats.net/bin/view/Main/2006371; classtype:trojan-activity; sid:2006371; rev:6; metadata:created_at 2010_07_30, updated_at 2019_10_11;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P BearShare P2P Gnutella Client HTTP Request "; flow:to_server,established; content:"/gnutella/"; nocase; http_uri; content:"?client=BEAR"; nocase; http_uri; content:"&version="; http_uri; reference:url,doc.emergingthreats.net/bin/view/Main/2006379; classtype:trojan-activity; sid:2006379; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P BearShare P2P Gnutella Client HTTP Request "; flow:to_server,established; content:"/gnutella/"; nocase; http_uri; content:"?client=BEAR"; nocase; http_uri; content:"&version="; http_uri; reference:url,doc.emergingthreats.net/bin/view/Main/2006379; classtype:trojan-activity; sid:2006379; rev:6; metadata:created_at 2010_07_30, updated_at 2020_04_22;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client User-Agent (BitComet)"; flow:to_server,established; content:"User-Agent|3a| BitComet/"; http_header; reference:url,www.bitcomet.com; reference:url,doc.emergingthreats.net/2011710; classtype:policy-violation; sid:2011710; rev:4; metadata:created_at 2010_07_30, updated_at 2019_10_11;)
 
@@ -208,17 +208,17 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P p2p Related Us
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET 6881:6889 (msg:"GPL P2P BitTorrent transfer"; flow:to_server,established; content:"|13|BitTorrent protocol"; depth:20; classtype:policy-violation; sid:2102181; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL P2P BitTorrent announce request"; flow:to_server,established; content:"GET /announce"; depth:13; content:"info_hash="; distance:0; content:"event=started"; distance:0; classtype:policy-violation; sid:2102180; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL P2P BitTorrent announce request"; flow:to_server,established; content:"GET /announce"; depth:13; content:"info_hash="; distance:0; content:"event=started"; distance:0; classtype:policy-violation; sid:2102180; rev:4; metadata:created_at 2010_09_23, updated_at 2020_04_21;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client User-Agent (Enhanced CTorrent 3.x)"; flow:to_server,established; content:"User-Agent|3a| Enhanced-CTorrent"; fast_pattern:11,18; http_header; reference:url,www.rahul.net/dholmes/ctorrent; reference:url,doc.emergingthreats.net/2011703; classtype:policy-violation; sid:2011703; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client User-Agent (Enhanced CTorrent 3.x)"; flow:to_server,established; content:"User-Agent|3a| Enhanced-CTorrent"; fast_pattern:11,18; http_header; reference:url,www.rahul.net/dholmes/ctorrent; reference:url,doc.emergingthreats.net/2011703; classtype:policy-violation; sid:2011703; rev:6; metadata:created_at 2010_07_30, updated_at 2020_04_23;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client User-Agent (Opera/10.x)"; flow:to_server,established; content:"User-Agent|3a| Opera BitTorrent, Opera/"; fast_pattern:11,15; http_header; reference:url,www.opera.com; reference:url,doc.emergingthreats.net/2011701; classtype:policy-violation; sid:2011701; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client User-Agent (Opera/10.x)"; flow:to_server,established; content:"User-Agent|3a| Opera BitTorrent, Opera/"; fast_pattern:11,15; http_header; reference:url,www.opera.com; reference:url,doc.emergingthreats.net/2011701; classtype:policy-violation; sid:2011701; rev:5; metadata:created_at 2010_07_30, updated_at 2020_04_23;)
 
 #alert tcp $EXTERNAL_NET 6666:6669 -> $HOME_NET any (msg:"GPL P2P eMule buffer overflow attempt"; flow:to_client,established; content:"PRIVMSG"; nocase; content:"|01|SENDLINK|7c|"; distance:0; pcre:"/^PRIVMSG\s+[^\s]+\s+\x3a\s*\x01SENDLINK\x7c[^\x7c]{69}/smi"; reference:bugtraq,10039; reference:nessus,12233; classtype:attempted-user; sid:2102584; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
 alert tcp any 4711 -> $HOME_NET any (msg:"GPL P2P eDonkey server response"; flow:established,from_server; content:"Server|3A| eMule"; reference:url,www.emule-project.net; classtype:policy-violation; sid:2102587; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET P2P QVOD P2P Sharing Traffic detected (tcp)"; flow:established,from_client; content:"POST /service HTTP/1"; depth:20; content:"|13|QVOD protocol|00 00 00 00 00 00 00 00 00 00 00 00 00 00|"; classtype:policy-violation; sid:2014459; rev:1; metadata:created_at 2012_04_03, updated_at 2012_04_03;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET P2P QVOD P2P Sharing Traffic detected (tcp)"; flow:established,from_client; content:"POST /service HTTP/1"; depth:20; content:"|13|QVOD protocol|00 00 00 00 00 00 00 00 00 00 00 00 00 00|"; classtype:policy-violation; sid:2014459; rev:1; metadata:created_at 2012_04_03, updated_at 2020_04_21;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"GPL P2P GNUTella client request"; flow:to_server,established; content:"GNUTELLA OK"; depth:40; classtype:policy-violation; sid:2100557; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
@@ -232,13 +232,13 @@ alert udp $HOME_NET 1024:65535 -> $EXTERNAL_NET 1024:65535 (msg:"ET P2P eMule KA
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client User-Agent (FDM 3.x)"; flow:to_server,established; content:"User-Agent|3a| FDM 3."; http_header; reference:url,www.freedownloadmanager.org; reference:url,doc.emergingthreats.net/2011712; classtype:policy-violation; sid:2011712; rev:5; metadata:created_at 2010_07_30, updated_at 2019_09_27;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET P2P Vagaa peer-to-peer (Transfer)"; flow:from_client,established; content:"|0d 0a|VAGAA-OPERATION|3a| Transfer|0d 0a|"; reference:url,en.wikipedia.org/wiki/Vagaa; classtype:policy-violation; sid:2018012; rev:1; metadata:created_at 2014_01_27, updated_at 2014_01_27;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET P2P Vagaa peer-to-peer (Transfer)"; flow:from_client,established; content:"|0d 0a|VAGAA-OPERATION|3a| Transfer|0d 0a|"; reference:url,en.wikipedia.org/wiki/Vagaa; classtype:policy-violation; sid:2018012; rev:1; metadata:created_at 2014_01_27, updated_at 2020_04_27;)
 
 #alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Torrent Client User-Agent (Solid Core/0.82)"; flow:to_server,established; content:"User-Agent|3a| Solid Core/"; http_header; reference:url,sunbeltsecurity.com/partnerresources/cwsandbox/md5.aspx?id=4a9f376e8d01cb5f7990576ed927869b; classtype:policy-violation; sid:2013869; rev:7; metadata:created_at 2011_11_08, updated_at 2011_11_08;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P zzima_loader"; flow:established, to_server; content: "GET"; http_method; content:"/zzima_loader/"; fast_pattern:only; http_uri; content:"User-Agent|3a| zzima-nloader/ 1.0.3.1"; http_header; content:!"Referer|3a|"; http_header; reference:md5,810b4464785d8d007ca0c86c046ac0ef; classtype:trojan-activity; sid:2018532; rev:1; metadata:created_at 2014_06_05, updated_at 2019_10_07;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client User-Agent (uTorrent)"; flow:to_server,established; content:"User-Agent|3a| uTorrent"; http_header; reference:url,www.utorrent.com; reference:url,doc.emergingthreats.net/2011706; classtype:policy-violation; sid:2011706; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET P2P Bittorrent P2P Client User-Agent (uTorrent)"; flow:to_server,established; content:"User-Agent|3a| uTorrent"; http_header; reference:url,www.utorrent.com; reference:url,doc.emergingthreats.net/2011706; classtype:policy-violation; sid:2011706; rev:5; metadata:created_at 2010_07_30, updated_at 2020_04_30;)
 
 alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET P2P BitTorrent Traffic"; flow: established; content:"|0000400907000000|"; depth:8; threshold: type limit, count 1, seconds 120, track by_src; reference:url,bitconjurer.org/BitTorrent/protocol.html; reference:url,doc.emergingthreats.net/bin/view/Main/2000357; classtype:policy-violation; sid:2000357; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
