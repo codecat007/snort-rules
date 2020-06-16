@@ -51,8 +51,8 @@ file_magic =
     { type = "PDF", id = 22, category = "PDF files", rev = 1,
       magic = { { content = "| 25 50 44 46|",offset = 0 } } },
 
-    { type = "RTF", id = 23, category = " Office Documents", rev = 1,
-      magic = { { content = "| 7B 5C 72 74 66 31|",offset = 0 } } },
+    { type = "RTF", id = 23, category = " Office Documents", rev = 2,
+      magic = { { content = "| 7B 5C 72 74 |",offset = 0 } } },
 
     { type = "RIFF", id = 24, category = "Multimedia", rev = 1,
       magic = { { content = "| 52 49 46 46|",offset = 0 } } },
@@ -459,4 +459,17 @@ file_magic =
     { type = "ZIP_ENC", id = 171, category = "Archive", rev = 1,
       magic = { { content = "| 50 4B 03 04 |",offset = 0 },
                 { content = "| 01 |",offset = 6 } } },
+
+    { type = "EGG", id = 172, category = "Archive", rev = 1,
+      magic = { { content = "| 45 47 47 41 |",offset = 0 } } },
+
+    { type = "HWP", id = 173, category = "Office Documents", rev = 1,
+      magic = { { content = "| d0 cf 11 e0 a1 b1 1a e1 |",offset = 0 } } },
+
+    { type = "HWP", id = 174, category = "Office Documents", rev = 1,
+      magic = { { content = "| 48 57 50 20 44 6f 63 75 6d 65 6e 74 20 46 69 6c 65 |",offset = 0 } } },
+
+    { type = "ALZ", id = 175, category = "Archive", rev = 1,
+      magic = { { content = "| 41 4C 5A 01 0A 00 00 00 42 4C 5A |",offset = 0 } } },
+
 }

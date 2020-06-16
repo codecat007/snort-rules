@@ -28,17 +28,17 @@
 -- export LUA_PATH=$DIR/include/snort/lua/?.lua\;\;
 -- export SNORT_LUA_PATH=$DIR/etc/snort
 
--- this depends on LUA_PATH
--- used to load this conf into Snort
-require('snort_config')
-
--- this depends on SNORT_LUA_PATH
--- where to find other config files
-conf_dir = os.getenv('SNORT_LUA_PATH')
-
-if ( not conf_dir ) then
-    conf_dir = '.'
-end
+-- -- this depends on LUA_PATH
+-- -- used to load this conf into Snort
+-- require('snort_config')
+-- 
+-- -- this depends on SNORT_LUA_PATH
+-- -- where to find other config files
+-- conf_dir = os.getenv('SNORT_LUA_PATH')
+-- 
+-- if ( not conf_dir ) then
+--     conf_dir = '.'
+-- end
 
 ---------------------------------------------------------------------------
 -- 2. configure defaults
@@ -52,8 +52,11 @@ HOME_NET = 'any'
 -- (leave as "any" in most situations)
 EXTERNAL_NET = 'any'
 
-dofile(conf_dir .. '/snort_defaults.lua')
-dofile(conf_dir .. '/file_magic.lua')
+-- dofile(conf_dir .. '/snort_defaults.lua')
+-- dofile(conf_dir .. '/file_magic.lua')
+
+include 'snort_defaults.lua'
+include 'file_magic.lua'
 
 ---------------------------------------------------------------------------
 -- 3. configure inspection
