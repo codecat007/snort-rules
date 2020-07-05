@@ -23,5 +23,8 @@ https://security.etnetera.cz/feeds/etn_aggressive.rules
 https://rules.emergingthreats.net/open/suricata/rules/  
 https://github.com/beave/sagan-rules/  
 
-If you like this repo,left a star!
+If you like this repo,please leave a star!
 ==========
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/codecat007/snort-rules.svg)](https://starchart.cc/codecat007/snort-rules)
