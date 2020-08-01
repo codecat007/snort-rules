@@ -3,7 +3,7 @@ ENGINEDIR=$(BASEDIR)/src/dynamic-plugins/sf_engine
 PLUGINDIR=$(BASEDIR)/src/dynamic-plugins
 ENGINE=$(BASEDIR)/src/dynamic-plugins/sf_engine/.libs/libsf_engine.so
 SNORT=$(BASEDIR)/src/snort
-SNORT_VERSION=2.9.16.0
+SNORT_VERSION=2.9.16.1
 
 PATH:=$(PATH):/opt/intel/compiler70/ia32/bin
 CC=$(shell if PATH=$(PATH) which icc > /dev/null 2>&1; then echo icc; else echo gcc; fi)
@@ -215,6 +215,10 @@ MYCFLAGS += -DREQ_ENGINE_LIB_MAJOR=3 -DREQ_ENGINE_LIB_MINOR=1 -DNO_NON_ETHER_DEC
 SEEN=1
 endif
 ifeq (${SNORT_VERSION},2.9.16.0)
+MYCFLAGS += -DREQ_ENGINE_LIB_MAJOR=3 -DREQ_ENGINE_LIB_MINOR=1 -DNO_NON_ETHER_DECODER
+SEEN=1
+endif
+ifeq (${SNORT_VERSION},2.9.16.1)
 MYCFLAGS += -DREQ_ENGINE_LIB_MAJOR=3 -DREQ_ENGINE_LIB_MINOR=1 -DNO_NON_ETHER_DECODER
 SEEN=1
 endif
