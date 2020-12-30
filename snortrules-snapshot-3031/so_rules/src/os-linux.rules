@@ -1,0 +1,2 @@
+alert udp $EXTERNAL_NET any -> $HOME_NET [161:162] ( msg:"OS-LINUX Linux Kernel snmp nat netfilter memory corruption attempt"; soid:13773; metadata:policy max-detect-ips drop; service:snmp; reference:bugtraq,18081; reference:cve,2006-2444; reference:cve,2008-1673; classtype:attempted-dos; gid:3; sid:13773; rev:8; )
+alert ip $EXTERNAL_NET any -> $HOME_NET any ( msg:"OS-LINUX Linux kernel SCTP INIT null pointer dereference attempt"; soid:38346; metadata:policy max-detect-ips drop; reference:cve,2014-7841; classtype:attempted-dos; gid:3; sid:38346; rev:2; )

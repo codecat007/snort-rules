@@ -1,0 +1,1 @@
+alert http ( msg:"SERVER-IIS Microsoft ASP.NET viewstate denial of service attempt"; soid:15959; metadata:policy max-detect-ips drop; reference:cve,2005-1665; classtype:attempted-dos; gid:3; sid:15959; rev:5; )

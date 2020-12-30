@@ -1,0 +1,2 @@
+alert http ( msg:"POLICY-SOCIAL Pidgin MSNP2P message integer overflow attempt"; soid:14263; metadata:policy max-detect-ips drop, policy security-ips drop; reference:bugtraq,29956; reference:cve,2008-2927; reference:cve,2009-1376; reference:cve,2009-2694; classtype:attempted-user; gid:3; sid:14263; rev:8; )
+alert smtp ( msg:"POLICY-SOCIAL GnuPG Message Packet Length overflow attempt"; soid:17697; metadata:policy max-detect-ips drop; reference:cve,2006-3746; classtype:attempted-user; gid:3; sid:17697; rev:5; )
