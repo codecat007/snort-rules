@@ -1,21 +1,21 @@
 ################################################################
 # abuse.ch Suricata JA3 Fingerprint Ruleset                    #
 # For Suricata 4.1.0 or newer                                  #
-# Last updated: 2020-01-09 14:32:18 UTC                        #
+# Last updated: 2020-04-09 06:48:14 UTC                        #
 #                                                              #
 # Terms Of Use: https://sslbl.abuse.ch/blacklist/              #
 # For questions please contact sslbl [at] abuse.ch             #
 ################################################################
 #
-alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Gozi)"; ja3_hash; content:"57f3642b4e37e28f5cbe3020c9331b4c"; reference:url, sslbl.abuse.ch/ja3-fingerprints/57f3642b4e37e28f5cbe3020c9331b4c/; sid:906200000; rev:1;)
-alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"906004246f3ba5e755b043c057254a29"; reference:url, sslbl.abuse.ch/ja3-fingerprints/906004246f3ba5e755b043c057254a29/; sid:906200001; rev:1;)
-alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Ransomware)"; ja3_hash; content:"2d8794cb7b52b777bee2695e79c15760"; reference:url, sslbl.abuse.ch/ja3-fingerprints/2d8794cb7b52b777bee2695e79c15760/; sid:906200002; rev:1;)
-alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"fd80fa9c6120cdeea8520510f3c644ac"; reference:url, sslbl.abuse.ch/ja3-fingerprints/fd80fa9c6120cdeea8520510f3c644ac/; sid:906200003; rev:1;)
-alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (TrickBot)"; ja3_hash; content:"c50f6a8b9173676b47ba6085bd0c6cee"; reference:url, sslbl.abuse.ch/ja3-fingerprints/c50f6a8b9173676b47ba6085bd0c6cee/; sid:906200004; rev:1;)
-alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"9f62c4f26b90d3d757bea609e82f2eaf"; reference:url, sslbl.abuse.ch/ja3-fingerprints/9f62c4f26b90d3d757bea609e82f2eaf/; sid:906200005; rev:1;)
-alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Gozi)"; ja3_hash; content:"c201b92f8b483fa388be174d6689f534"; reference:url, sslbl.abuse.ch/ja3-fingerprints/c201b92f8b483fa388be174d6689f534/; sid:906200006; rev:1;)
-alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Adware)"; ja3_hash; content:"f6fd83a21f9f3c5f9ff7b5c63bbc179d"; reference:url, sslbl.abuse.ch/ja3-fingerprints/f6fd83a21f9f3c5f9ff7b5c63bbc179d/; sid:906200007; rev:1;)
-alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"b90bdbe961a648f0427db21aaa6ccb59"; reference:url, sslbl.abuse.ch/ja3-fingerprints/b90bdbe961a648f0427db21aaa6ccb59/; sid:906200008; rev:1;)
+alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"9f62c4f26b90d3d757bea609e82f2eaf"; reference:url, sslbl.abuse.ch/ja3-fingerprints/9f62c4f26b90d3d757bea609e82f2eaf/; sid:906200000; rev:1;)
+alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Adware)"; ja3_hash; content:"f6fd83a21f9f3c5f9ff7b5c63bbc179d"; reference:url, sslbl.abuse.ch/ja3-fingerprints/f6fd83a21f9f3c5f9ff7b5c63bbc179d/; sid:906200001; rev:1;)
+alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"906004246f3ba5e755b043c057254a29"; reference:url, sslbl.abuse.ch/ja3-fingerprints/906004246f3ba5e755b043c057254a29/; sid:906200002; rev:1;)
+alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"b90bdbe961a648f0427db21aaa6ccb59"; reference:url, sslbl.abuse.ch/ja3-fingerprints/b90bdbe961a648f0427db21aaa6ccb59/; sid:906200003; rev:1;)
+alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Ransomware)"; ja3_hash; content:"2d8794cb7b52b777bee2695e79c15760"; reference:url, sslbl.abuse.ch/ja3-fingerprints/2d8794cb7b52b777bee2695e79c15760/; sid:906200004; rev:1;)
+alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Gozi)"; ja3_hash; content:"57f3642b4e37e28f5cbe3020c9331b4c"; reference:url, sslbl.abuse.ch/ja3-fingerprints/57f3642b4e37e28f5cbe3020c9331b4c/; sid:906200005; rev:1;)
+alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"fd80fa9c6120cdeea8520510f3c644ac"; reference:url, sslbl.abuse.ch/ja3-fingerprints/fd80fa9c6120cdeea8520510f3c644ac/; sid:906200006; rev:1;)
+alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Gozi)"; ja3_hash; content:"c201b92f8b483fa388be174d6689f534"; reference:url, sslbl.abuse.ch/ja3-fingerprints/c201b92f8b483fa388be174d6689f534/; sid:906200007; rev:1;)
+alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (TrickBot)"; ja3_hash; content:"c50f6a8b9173676b47ba6085bd0c6cee"; reference:url, sslbl.abuse.ch/ja3-fingerprints/c50f6a8b9173676b47ba6085bd0c6cee/; sid:906200008; rev:1;)
 alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"7c410ce832e848a3321432c9a82e972b"; reference:url, sslbl.abuse.ch/ja3-fingerprints/7c410ce832e848a3321432c9a82e972b/; sid:906200009; rev:1;)
 alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"96eba628dcb2b47607192ba74a3b55ba"; reference:url, sslbl.abuse.ch/ja3-fingerprints/96eba628dcb2b47607192ba74a3b55ba/; sid:906200010; rev:1;)
 alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Adware)"; ja3_hash; content:"9c2589e1c0e9f533a022c6205f9719e1"; reference:url, sslbl.abuse.ch/ja3-fingerprints/9c2589e1c0e9f533a022c6205f9719e1/; sid:906200011; rev:1;)
@@ -104,4 +104,5 @@ alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint d
 alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"25d74b7b4b779eb1efd4b31d26d651c6"; reference:url, sslbl.abuse.ch/ja3-fingerprints/25d74b7b4b779eb1efd4b31d26d651c6/; sid:906200094; rev:1;)
 alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"c2b4710c6888a5d47befe865c8e6fb19"; reference:url, sslbl.abuse.ch/ja3-fingerprints/c2b4710c6888a5d47befe865c8e6fb19/; sid:906200095; rev:1;)
 alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (Tofsee)"; ja3_hash; content:"fc2299d5b2964cd242c5a2c8c531a5f0"; reference:url, sslbl.abuse.ch/ja3-fingerprints/fc2299d5b2964cd242c5a2c8c531a5f0/; sid:906200096; rev:1;)
-# END (97) entries
+alert tls any any -> any any (msg:"SSLBL: Malicious JA3 SSL-Client Fingerprint detected (TrickBot)"; ja3_hash; content:"8916410db85077a5460817142dcbc8de"; reference:url, sslbl.abuse.ch/ja3-fingerprints/8916410db85077a5460817142dcbc8de/; sid:906200097; rev:1;)
+# END (98) entries
