@@ -6,7 +6,7 @@ rules from https://snort.org
 
 Emergingthreats rules
 ==========
-https://rules.emergingthreats.net/open/snort-2.9.0/
+https://rules.emergingthreats.net/open/snort-2.9.0/  
 https://rules.emergingthreats.net/OPEN_download_instructions.html
 
 Abuse.ch rules
