@@ -22,6 +22,7 @@ https://osint.bambenekconsulting.com/feeds/c2-dommasterlist.txt
 https://security.etnetera.cz/feeds/etn_aggressive.rules  
 https://rules.emergingthreats.net/open/suricata/rules/  
 https://github.com/beave/sagan-rules/  
+https://github.com/suricata-rules/suricata-rules
 
 If you like this repo,please leave a star!
 ==========
