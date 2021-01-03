@@ -9,7 +9,7 @@
 #  as follows:
 #
 #*************************************************************
-#  Copyright (c) 2003-2019, Emerging Threats
+#  Copyright (c) 2003-2020, Emerging Threats
 #  All rights reserved.
 #  
 #  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the 
@@ -164,7 +164,7 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET 20000 (msg:"ET GAMES Gold VIP Club Casi
 
 #alert tcp $EXTERNAL_NET 6112 -> $HOME_NET any (msg:"ET GAMES Battle.net failed account login (NLS) wrong password"; flow:established,from_server; content:"|FF 54 1C 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00|"; reference:url,doc.emergingthreats.net/bin/view/Main/2002116; classtype:policy-violation; sid:2002116; rev:6; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET GAMES Blizzard Web Downloader Install Detected"; flow: established,to_server; content: "User-Agent|3a| Blizzard Web Client"; nocase; classtype:policy-violation; sid:2012170; rev:2; metadata:created_at 2011_01_10, updated_at 2011_01_10;)
+alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET GAMES Blizzard Web Downloader Install Detected"; flow: established,to_server; content: "User-Agent|3a| Blizzard Web Client"; nocase; classtype:policy-violation; sid:2012170; rev:2; metadata:created_at 2011_01_10, updated_at 2020_08_18;)
 
 #alert tcp $HOME_NET 1024: -> $EXTERNAL_NET 1024: (msg:"ET GAMES TeamSpeak2 Standard/Login Part 2"; flow:established; content:"|f0 be 05 00|"; depth:4; reference:url,teamspeak.com; reference:url,doc.emergingthreats.net/2011738; classtype:policy-violation; sid:2011738; rev:4; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
@@ -182,11 +182,13 @@ alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET GAMES Nintendo Wii
 
 alert tcp $EXTERNAL_NET 25565 -> $HOME_NET any (msg:"ET GAMES MINECRAFT Server response inbound"; flow:established,from_server; content:"|7B 22|"; depth:10; classtype:policy-violation; sid:2021701; rev:1; metadata:created_at 2015_08_21, updated_at 2015_08_21;)
 
-alert tcp $HOME_NET 25565 -> $EXTERNAL_NET any (msg:"ET GAMES MINECRAFT Server response outbound"; flow:established,from_server; content:"|7B 22|"; depth:10; classtype:policy-violation; sid:2021702; rev:1; metadata:created_at 2015_08_21, updated_at 2015_08_21;)
+#alert tcp $HOME_NET 25565 -> $EXTERNAL_NET any (msg:"ET GAMES MINECRAFT Server response outbound"; flow:established,from_server; content:"|7B 22|"; depth:10; classtype:policy-violation; sid:2021702; rev:1; metadata:created_at 2015_08_21, former_category GAMES, updated_at 2015_08_21;)
 
 #alert tcp $EXTERNAL_NET 6112 -> $HOME_NET !443 (msg:"ET GAMES Battle.net connection reset (possible IP-Ban)"; flow:to_client; flags:R,12; reference:url,doc.emergingthreats.net/bin/view/Main/2002117; classtype:policy-violation; sid:2002117; rev:9; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET GAMES Wolfteam HileYapak Server Response"; flow:established,from_server; content:"200"; http_stat_code; content:"Temizleme Yapildi HileYapak"; fast_pattern; content:"Content-Type|3a 20|text/plain"; http_header; metadata: former_category GAMES; reference:md5,85cf4df17fcf04286fcbbdf9fbe11077; classtype:policy-violation; sid:2027417; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, deployment Perimeter, signature_severity Informational, created_at 2019_05_31, performance_impact Low, updated_at 2020_02_19;)
+alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET GAMES Wolfteam HileYapak Server Response"; flow:established,from_server; content:"200"; http_stat_code; content:"Temizleme Yapildi HileYapak"; fast_pattern; content:"Content-Type|3a 20|text/plain"; http_header; reference:md5,85cf4df17fcf04286fcbbdf9fbe11077; classtype:policy-violation; sid:2027417; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, created_at 2019_05_31, deployment Perimeter, former_category GAMES, performance_impact Low, signature_severity Informational, updated_at 2020_10_30;)
 
-alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET GAMES Growtopia Hack - WrongGrow CnC Activity"; flow:established,to_client; content:"200"; http_stat_code; file_data; content:"|20|HeySurfer#1234"; fast_pattern; metadata: former_category GAMES; reference:md5,b76a144f412b680e6a04ee4f4fbcf000; classtype:bad-unknown; sid:2029784; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, deployment Perimeter, signature_severity Informational, created_at 2020_04_01, updated_at 2020_04_01;)
+alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET GAMES Growtopia Hack - WrongGrow CnC Activity"; flow:established,to_client; content:"200"; http_stat_code; file_data; content:"|20|HeySurfer#1234"; fast_pattern; reference:md5,b76a144f412b680e6a04ee4f4fbcf000; classtype:bad-unknown; sid:2029784; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, created_at 2020_04_01, deployment Perimeter, former_category GAMES, signature_severity Informational, updated_at 2020_04_01;)
+
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET GAMES Dragon Raja Activity"; flow:established,to_server; content:"/setup/dir.txt"; http_uri; depth:14; isdataat:!1,relative; content:"User-Agent|3a 20|DragonRajaOrigin|0d 0a|"; fast_pattern:10,20; reference:md5,33200121c71932220c67b9f3ccc57d60; classtype:misc-activity; sid:2030484; rev:2; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, created_at 2020_07_08, deployment Perimeter, former_category GAMES, performance_impact Low, signature_severity Major, updated_at 2020_07_08;)
 

@@ -9,7 +9,7 @@
 #  as follows:
 #
 #*************************************************************
-#  Copyright (c) 2003-2019, Emerging Threats
+#  Copyright (c) 2003-2020, Emerging Threats
 #  All rights reserved.
 #  
 #  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the 
@@ -96,7 +96,7 @@ alert tcp $HOME_NET 2401 -> $EXTERNAL_NET any (msg:"GPL MISC CVS non-relative pa
 
 #alert tcp $EXTERNAL_NET any -> $HOME_NET 873 (msg:"GPL MISC rsyncd overflow attempt"; flow:to_server; byte_test:2,>,4000,0; content:"|00 00|"; depth:2; offset:2; reference:bugtraq,9153; reference:cve,2003-0962; reference:nessus,11943; classtype:misc-activity; sid:2102048; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert tcp $EXTERNAL_NET any <> $HOME_NET 179 (msg:"GPL MISC BGP spoofed connection reset attempt"; flow:established; flags:RSF*; threshold:type both,track by_dst,count 10,seconds 10; metadata: former_category MISC; reference:bugtraq,10183; reference:cve,2004-0230; reference:url,www.uniras.gov.uk/vuls/2004/236929/index.htm; classtype:attempted-dos; sid:2102523; rev:8; metadata:created_at 2010_09_23, updated_at 2019_05_21;)
+#alert tcp $EXTERNAL_NET any <> $HOME_NET 179 (msg:"GPL MISC BGP spoofed connection reset attempt"; flow:established; flags:RSF*; threshold:type both,track by_dst,count 10,seconds 10; reference:bugtraq,10183; reference:cve,2004-0230; reference:url,www.uniras.gov.uk/vuls/2004/236929/index.htm; classtype:attempted-dos; sid:2102523; rev:8; metadata:created_at 2010_09_23, former_category MISC, updated_at 2019_05_21;)
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET 8000 (msg:"GPL MISC HP Web JetAdmin remote file upload attempt"; flow:to_server,established; content:"/plugins/hpjwja/script/devices_update_printer_fw_upload.hts"; nocase; content:"Content-Type|3A|"; nocase; content:"Multipart"; distance:0; nocase; reference:bugtraq,9978; classtype:web-application-activity; sid:2102547; rev:3; metadata:created_at 2010_09_23, updated_at 2020_04_21;)
 

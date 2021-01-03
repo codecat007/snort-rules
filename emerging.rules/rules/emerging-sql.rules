@@ -9,7 +9,7 @@
 #  as follows:
 #
 #*************************************************************
-#  Copyright (c) 2003-2019, Emerging Threats
+#  Copyright (c) 2003-2020, Emerging Threats
 #  All rights reserved.
 #  
 #  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the 
@@ -88,7 +88,7 @@ alert tcp $EXTERNAL_NET any -> $SQL_SERVERS 139 (msg:"GPL SQL shellcode attempt"
 
 alert tcp $SQL_SERVERS 1433 -> $EXTERNAL_NET any (msg:"GPL SQL sa brute force failed login unicode attempt"; flow:from_server,established; content:"L|00|o|00|g|00|i|00|n|00| |00|f|00|a|00|i|00|l|00|e|00|d|00| |00|f|00|o|00|r|00| |00|u|00|s|00|e|00|r|00| |00|'|00|s|00|a|00|'|00|"; threshold:type threshold, track by_src, count 5, seconds 2; reference:bugtraq,4797; reference:cve,2000-1209; reference:nessus,10673; classtype:unsuccessful-user; sid:2103273; rev:4; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL SQL Oracle iSQLPlus login.uix username overflow attempt"; flow:to_server,established; content:"/login.uix"; fast_pattern:only; http_uri; nocase; content:"username="; nocase; isdataat:250,relative; content:!"|0A|"; within:250; pcre:"/username=[^&\x3b\r\n]{250}/smi"; reference:bugtraq,10871; reference:url,www.nextgenss.com/advisories/ora-isqlplus.txt; classtype:web-application-attack; sid:2102703; rev:4; metadata:created_at 2010_09_23, updated_at 2019_10_07;)
+alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"GPL SQL Oracle iSQLPlus login.uix username overflow attempt"; flow:to_server,established; content:"/login.uix"; fast_pattern:only; http_uri; nocase; content:"username="; nocase; isdataat:250,relative; content:!"|0A|"; within:250; pcre:"/username=[^&\x3b\r\n]{250}/smi"; reference:bugtraq,10871; reference:url,www.nextgenss.com/advisories/ora-isqlplus.txt; classtype:web-application-attack; sid:2102703; rev:4; metadata:created_at 2010_09_23, updated_at 2020_09_17;)
 
 alert tcp $EXTERNAL_NET any -> $SQL_SERVERS $ORACLE_PORTS (msg:"GPL SQL TO_CHAR buffer overflow attempt"; flow:to_server,established; content:"TO_CHAR"; nocase; pcre:"/TO_CHAR\s*\(\s*SYSTIMESTAMP\s*,\s*(\x27[^\x27]{256}|\x22[^\x22]{256})/smi"; classtype:attempted-user; sid:2102699; rev:2; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
@@ -658,5 +658,5 @@ alert tcp $EXTERNAL_NET any -> $SQL_SERVERS $ORACLE_PORTS (msg:"GPL SQL instanti
 
 alert tcp $EXTERNAL_NET any -> $SQL_SERVERS $ORACLE_PORTS (msg:"GPL SQL og.begin_load ordered gname buffer overflow attempt"; flow:to_server,established; content:"dbms_offline_og.begin_load"; nocase; pcre:"/\(\s*((\x27[^\x27]{1000})|(\x22[^\x22]{1000}))/Rmsi"; reference:url,www.appsecinc.com/Policy/PolicyCheck632.html; classtype:attempted-user; sid:2102653; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET 3306 (msg:"ET SQL MySQL mysql.user Dump (Used in Metasploit Auth-Bypass Module)"; flow:established,to_server; content:"SELECT|20|user|2c|password|20|from|20|mysql|2e|user"; classtype:bad-unknown; sid:2014910; rev:3; metadata:affected_product Any, attack_target Client_and_Server, deployment Perimeter, deployment Internet, deployment Internal, deployment Datacenter, tag Metasploit, signature_severity Critical, created_at 2012_06_15, updated_at 2016_07_01;)
+alert tcp $EXTERNAL_NET any -> $HOME_NET 3306 (msg:"ET SQL MySQL mysql.user Dump (Used in Metasploit Auth-Bypass Module)"; flow:established,to_server; content:"SELECT|20|user|2c|password|20|from|20|mysql|2e|user"; classtype:bad-unknown; sid:2014910; rev:3; metadata:affected_product Any, attack_target Client_and_Server, created_at 2012_06_15, deployment Perimeter, deployment Internet, deployment Internal, deployment Datacenter, signature_severity Critical, tag Metasploit, updated_at 2016_07_01;)
 

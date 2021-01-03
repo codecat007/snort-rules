@@ -9,7 +9,7 @@
 #  as follows:
 #
 #*************************************************************
-#  Copyright (c) 2003-2019, Emerging Threats
+#  Copyright (c) 2003-2020, Emerging Threats
 #  All rights reserved.
 #  
 #  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the 
@@ -68,13 +68,13 @@ alert udp any any -> any 69 (msg:"GPL TFTP GET nc.exe"; content:"|00 01|"; depth
 
 alert udp $EXTERNAL_NET any -> $HOME_NET 69 (msg:"GPL TFTP MISC TFTP32 Get Format string attempt"; content:"|00 01 25 2E|"; depth:4; reference:url,www.securityfocus.com/archive/1/422405/30/0/threaded; reference:url,www.critical.lt/?vulnerabilities/200; classtype:attempted-admin; sid:2101222; rev:3; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-#alert udp $EXTERNAL_NET any -> $HOME_NET 69 (msg:"ET TFTP TFTPGUI Long Transport Mode Buffer Overflow"; content:"|00 02|"; depth:2; content:"|00|"; distance:0; within:50; content:!"|00|"; distance:0; within:9; reference:url,www.exploit-db.com/exploits/12482/; reference:url,packetstormsecurity.org/files/view/96395/tftputilgui-dos.rb.txt; reference:url,securityfocus.com/bid/39872/; classtype:attempted-dos; sid:2012051; rev:2; metadata:created_at 2010_12_14, updated_at 2010_12_14;)
+#alert udp $EXTERNAL_NET any -> $HOME_NET 69 (msg:"ET TFTP TFTPGUI Long Transport Mode Buffer Overflow"; content:"|00 02|"; depth:2; content:"|00|"; distance:0; within:50; content:!"|00|"; distance:0; within:9; reference:url,www.exploit-db.com/exploits/12482/; reference:url,packetstormsecurity.org/files/view/96395/tftputilgui-dos.rb.txt; reference:url,securityfocus.com/bid/39872/; classtype:attempted-dos; sid:2012051; rev:2; metadata:created_at 2010_12_14, updated_at 2020_08_20;)
 
 alert udp $HOME_NET any -> [$EXTERNAL_NET,!255.255.255.255] 69 (msg:"ET TFTP Outbound TFTP Read Request"; content:"|00 01|"; depth:2; reference:url,doc.emergingthreats.net/2008120; classtype:policy-violation; sid:2008120; rev:4; metadata:created_at 2010_07_30, updated_at 2017_01_12;)
 
 alert udp $HOME_NET any -> [$EXTERNAL_NET,!255.255.255.255] 69 (msg:"ET TFTP Outbound TFTP Write Request"; content:"|00 02|"; depth:2; reference:url,doc.emergingthreats.net/2008116; classtype:policy-violation; sid:2008116; rev:4; metadata:created_at 2010_07_30, updated_at 2017_01_25;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 69 (msg:"ET TFTP Outbound TFTP Data Transfer with Cisco config"; content:"|00 03|"; depth:2; content:"|0a 21 20|version|20|"; distance:2; within:12; metadata: former_category TFTP; classtype:policy-violation; sid:2015857; rev:5; metadata:created_at 2012_10_31, updated_at 2017_07_19;)
+alert udp $HOME_NET any -> $EXTERNAL_NET 69 (msg:"ET TFTP Outbound TFTP Data Transfer with Cisco config"; content:"|00 03|"; depth:2; content:"|0a 21 20|version|20|"; distance:2; within:12; classtype:policy-violation; sid:2015857; rev:5; metadata:created_at 2012_10_31, former_category TFTP, updated_at 2017_07_19;)
 
-alert udp $HOME_NET any -> $EXTERNAL_NET 69 (msg:"ET TFTP Outbound TFTP Data Transfer With Cisco Config 2"; content:"|00 03|"; depth:2; content:"NVRAM config last update"; distance:0; metadata: former_category TFTP; classtype:policy-violation; sid:2024481; rev:2; metadata:affected_product Cisco_ASA, affected_product Cisco_PIX, affected_product CISCO_Catalyst, attack_target Networking_Equipment, deployment Perimeter, signature_severity Major, created_at 2017_07_19, performance_impact Moderate, updated_at 2017_07_19;)
+alert udp $HOME_NET any -> $EXTERNAL_NET 69 (msg:"ET TFTP Outbound TFTP Data Transfer With Cisco Config 2"; content:"|00 03|"; depth:2; content:"NVRAM config last update"; distance:0; classtype:policy-violation; sid:2024481; rev:2; metadata:affected_product Cisco_ASA, affected_product Cisco_PIX, affected_product CISCO_Catalyst, attack_target Networking_Equipment, created_at 2017_07_19, deployment Perimeter, former_category TFTP, performance_impact Moderate, signature_severity Major, updated_at 2017_07_19;)
 

@@ -9,7 +9,7 @@
 #  as follows:
 #
 #*************************************************************
-#  Copyright (c) 2003-2019, Emerging Threats
+#  Copyright (c) 2003-2020, Emerging Threats
 #  All rights reserved.
 #  
 #  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the 
@@ -72,7 +72,7 @@ alert udp $EXTERNAL_NET any -> $HOME_NET 5060 (msg:"GPL VOIP EXPLOIT SIP UDP Sof
 
 alert ip any 5060 -> any any (msg:"GPL VOIP SIP 401 Unauthorized Flood"; content:"SIP/2.0 401 Unauthorized"; depth:24; threshold: type both, track by_dst, count 100, seconds 60; classtype:attempted-dos; sid:2100162; rev:5; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET 1720 (msg:"ET VOIP Possible Misuse Call from Cisco ooh323"; flow:to_server,established; content:"|28 06|cisco|00|"; offset:14; depth:8; content:"|b8 00 00 27 05|ooh323|06|"; distance:0; within:60; reference:url,videonationsltd.co.uk/2015/04/h-323-cisco-spam-calls/; classtype:misc-attack; sid:2021066; rev:1; metadata:created_at 2015_05_07, updated_at 2015_05_07;)
+alert tcp $EXTERNAL_NET any -> $HOME_NET 1720 (msg:"ET VOIP Possible Misuse Call from Cisco ooh323"; flow:to_server,established; content:"|28 06|cisco|00|"; offset:14; depth:8; content:"|b8 00 00 27 05|ooh323|06|"; distance:0; within:60; reference:url,videonationsltd.co.uk/2015/04/h-323-cisco-spam-calls/; classtype:misc-attack; sid:2021066; rev:1; metadata:created_at 2015_05_07, updated_at 2020_08_19;)
 
 alert tcp $EXTERNAL_NET any -> $HOME_NET 1720 (msg:"ET VOIP Possible Misuse Call from MERA RTU"; flow:to_server,established; content:"|22 c0 09 00 7a b7 07|MERA RTU|08|"; classtype:misc-attack; sid:2022022; rev:1; metadata:created_at 2015_11_02, updated_at 2015_11_02;)
 
