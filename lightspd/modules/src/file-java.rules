@@ -1,0 +1,1 @@
+alert file ( msg:"FILE-JAVA Sun JDK image parsing library ICC buffer overflow attempt"; soid:15328; metadata:policy max-detect-ips drop; reference:bugtraq,24004; reference:cve,2007-2788; reference:url,scary.beasts.org/security/CESA-2006-004.html; classtype:attempted-user; gid:3; sid:15328; rev:6; )

@@ -239,6 +239,11 @@ block (gid:3; sid:56060; enable;)
 block (gid:3; sid:56306; enable;)
 block (gid:3; sid:56552; enable;)
 block (gid:3; sid:56553; enable;)
+block (gid:3; sid:57115; enable;)
+block (gid:3; sid:57116; enable;)
+block (gid:3; sid:57117; enable;)
+block (gid:3; sid:57118; enable;)
+block (gid:3; sid:57136; enable;)
 
 
 # The following rules are for enabling flowbits that are checked in this policy

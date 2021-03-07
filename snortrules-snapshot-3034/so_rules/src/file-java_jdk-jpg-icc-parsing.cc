@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------------
-// Copyright (C) 2019-2020 Cisco and/or its affiliates. All rights reserved.
+// Copyright (C) 2019-2021 Cisco and/or its affiliates. All rights reserved.
 //
 // This file may contain proprietary rules that were created, tested and
 // certified by Sourcefire, Inc. (the "VRT Certified Rules") as well as

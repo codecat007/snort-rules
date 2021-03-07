@@ -17,7 +17,6 @@
 #-------------------
 # SERVER-MAIL RULES
 #-------------------
-
 # alert tcp $EXTERNAL_NET any -> $SMTP_SERVERS 25 ( msg:"SERVER-MAIL battle-mail traffic"; flow:to_server,established; content:"BattleMail"; metadata:ruleset community; service:smtp; classtype:policy-violation; sid:490; rev:12; )
 # fast_pattern's 'only' option has been deleted
 # alert tcp $EXTERNAL_NET any -> $SMTP_SERVERS 25 ( msg:"SERVER-MAIL X-LINK2STATE CHUNK command attempt"; flow:to_server,established; content:"X-LINK2STATE",fast_pattern,nocase; pcre:"/^X-LINK2STATE\s+CHUNK/smi"; metadata:policy max-detect-ips drop; service:smtp; reference:bugtraq,13118; reference:cve,2005-0560; reference:nessus,18024; reference:url,technet.microsoft.com/en-us/security/bulletin/MS05-021; classtype:protocol-command-decode; sid:3627; rev:14; )
@@ -213,4 +212,3 @@ alert tcp $EXTERNAL_NET any -> $SMTP_SERVERS 25 ( msg:"SERVER-MAIL Exim remote c
 # alert tcp $EXTERNAL_NET any -> $SMTP_SERVERS 25 ( msg:"SERVER-MAIL OpenSMTPD smtp_mailaddr command injection attempt"; flow:to_server,established; content:"MAIL FROM:<",fast_pattern,nocase; pcre:"/^MAIL\x20FROM\x3a\x3c[^\r\n]*?(\x3b|\x3c\x28|\x3e\x28)/im"; metadata:policy max-detect-ips drop; service:smtp; reference:cve,2020-7247; classtype:attempted-admin; sid:53431; rev:1; )
 # alert tcp $EXTERNAL_NET any -> $SMTP_SERVERS 25 ( msg:"SERVER-MAIL OpenSMTPD smtp_mailaddr command injection attempt"; flow:to_server,established; content:"RCPT TO:<",fast_pattern,nocase; pcre:"/^RCPT\x20TO\x3a\x3c[^\r\n]*?(\x3b|\x3c\x28|\x3e\x28)/im"; metadata:policy max-detect-ips drop; service:smtp; reference:cve,2020-7247; classtype:attempted-admin; sid:53432; rev:1; )
 alert tcp $EXTERNAL_NET 143 -> $HOME_NET any ( msg:"SERVER-MAIL iOS MobileMail Maild heap overflow attempt"; flow:to_client,established; content:"FETCH",nocase; content:"RFC822.SIZE ",distance 0,nocase; byte_test:10,>,999999999,0,relative,string; pcre:"/FETCH[^\x0a\x0d]+?RFC822\x2eSIZE\x20\d{10}/i"; metadata:policy balanced-ips drop,policy max-detect-ips drop,policy security-ips drop; service:imap; reference:url,blog.zecops.com/vulnerabilities/unassisted-ios-attacks-via-mobilemail-maild-in-the-wild/; classtype:attempted-user; sid:53769; rev:1; )
-

@@ -242,7 +242,7 @@ ips =
         include $RULE_PATH/snort3-sql.rules
         include $RULE_PATH/snort3-x11.rules
 
-    ]]
+    ]],
 
     variables = default_variables
 }

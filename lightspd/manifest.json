@@ -1,0 +1,73 @@
+{
+   "snort versions" : {
+      "3.1.0.0-0" : {
+         "architectures" : {
+            "opensuse-leap-152-x64" : {
+               "modules_path" : "modules/3.0.1.0/opensuse-leap-152-x64/"
+            },
+            "debian10-x64" : {
+               "modules_path" : "modules/3.0.1.0/debian10-x64/"
+            },
+            "ubuntu-x64" : {
+               "modules_path" : "modules/3.0.1.0/ubuntu-x64/"
+            },
+            "fc33-x64" : {
+               "modules_path" : "modules/3.0.1.0/fc33-x64/"
+            },
+            "alpine312-x64" : {
+               "modules_path" : "modules/3.0.1.0/alpine312-x64/"
+            },
+            "centos-x64" : {
+               "modules_path" : "modules/3.0.1.0/centos-x64/"
+            }
+         },
+         "policies_path" : "policies/3.0.3-4/"
+      },
+      "3.0.3-4" : {
+         "policies_path" : "policies/3.0.3-4/",
+         "architectures" : {
+            "opensuse-leap-152-x64" : {
+               "modules_path" : "modules/3.0.1.0/opensuse-leap-152-x64/"
+            },
+            "debian10-x64" : {
+               "modules_path" : "modules/3.0.1.0/debian10-x64/"
+            },
+            "ubuntu-x64" : {
+               "modules_path" : "modules/3.0.1.0/ubuntu-x64/"
+            },
+            "fc33-x64" : {
+               "modules_path" : "modules/3.0.1.0/fc33-x64/"
+            },
+            "alpine312-x64" : {
+               "modules_path" : "modules/3.0.1.0/alpine312-x64/"
+            },
+            "centos-x64" : {
+               "modules_path" : "modules/3.0.1.0/centos-x64/"
+            }
+         }
+      },
+      "3.0.3-1" : {
+         "policies_path" : "policies/3.0.3-1/",
+         "architectures" : {
+            "debian10-x64" : {
+               "modules_path" : "modules/3.0.1.0/debian10-x64/"
+            },
+            "ubuntu-x64" : {
+               "modules_path" : "modules/3.0.1.0/ubuntu-x64/"
+            },
+            "opensuse-leap-152-x64" : {
+               "modules_path" : "modules/3.0.1.0/opensuse-leap-152-x64/"
+            },
+            "fc33-x64" : {
+               "modules_path" : "modules/3.0.1.0/fc33-x64/"
+            },
+            "alpine312-x64" : {
+               "modules_path" : "modules/3.0.1.0/alpine312-x64/"
+            },
+            "centos-x64" : {
+               "modules_path" : "modules/3.0.1.0/centos-x64/"
+            }
+         }
+      }
+   }
+}
