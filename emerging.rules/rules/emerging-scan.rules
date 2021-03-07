@@ -716,3 +716,9 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET SCAN ELF/Mirai Var
 
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET SCAN ELF/Mirai Variant User-Agent (Inbound)"; flow:established,to_server; content:"User-Agent|3a 20|JuffHell/"; nocase; http_header; classtype:attempted-admin; sid:2030995; rev:2; metadata:affected_product Linux, attack_target IoT, created_at 2020_10_12, deployment Perimeter, signature_severity Minor, updated_at 2020_10_12;)
 
+alert tcp any any -> $HOME_NET $HTTP_PORTS (msg:"ET SCAN WordPress Scanner Performing Multiple Requests to Windows Live Writer XML"; flow:established,to_server; threshold: type both, track by_src, count 4, seconds 8; content:"/wp-includes/wlwmanifest.xml"; http_uri; classtype:network-scan; sid:2031505; rev:2; metadata:affected_product Wordpress, attack_target Web_Server, created_at 2021_01_08, deployment Perimeter, former_category SCAN, signature_severity Minor, updated_at 2021_01_08;)
+
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET SCAN Generic IDBTE4M Exploit Scanner (Outbound)"; flow:to_server,established; content:"IDBTE4M CODE87"; fast_pattern; http_header; pcre:"/^User-Agent\x3a\x20[^\r\n]+IDBTE4M CODE87/Hmi"; classtype:bad-unknown; sid:2031602; rev:2; metadata:affected_product Web_Server_Applications, attack_target Web_Server, created_at 2021_02_02, deployment Perimeter, former_category SCAN, signature_severity Minor, updated_at 2021_02_02;)
+
+alert tcp $EXTERNAL_NET any -> any $HTTP_PORTS (msg:"ET SCAN Generic IDBTE4M Exploit Scanner (Inbound)"; flow:to_server,established; content:"IDBTE4M CODE87"; fast_pattern; http_header; pcre:"/^User-Agent\x3a\x20[^\r\n]+IDBTE4M CODE87/Hmi"; classtype:bad-unknown; sid:2031603; rev:2; metadata:affected_product Web_Server_Applications, attack_target Web_Server, created_at 2021_02_02, deployment Perimeter, former_category SCAN, signature_severity Minor, updated_at 2021_02_02;)
+
